@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="PDF"
+  Type="PDF"
+  Destinations=""
+  ConditionTagExpression="include[Primary.Print] exclude[&quot;Primary.Branch Next&quot; or Primary.ExcludeFromAllBuilds or Primary.Online or Primary.RegDotNetOnline or Primary.RegDotNetPrint] "
+  MasterToc="/Project/TOCs/PDF TOC.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="false"
+  OutputFile="eSellerateUsersGuide.pdf">
+  <Glossaries></Glossaries>
+  <PDF
+    ShowUsedBookmarks="false"
+    DownsampleImages="true"
+    ImageCompression="JPEG"
+    ImagePPIThreshold="500"
+    JPEGQuality="75" />
+  <DocumentProperties
+    Author=""
+    Title="eSellerate User's Guide" />
+  <Variables>
+    <Variable
+      Name="Primary/CompanyName">eSellerate</Variable>
+  </Variables>
+</CatapultTarget>

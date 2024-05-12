@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Windows">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_InstallEngineFromResource</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_277523"></a><a name="Embedded_SDKReference_1955650137_52715"></a>eWeb_InstallEngineFromResource</h2>
+        <p><a name="kanchor61"></a>Copies the eSellerate Embedded Web Store Engine (eWebClient.dll) from resources specified to the proper location on the user's machine. Replaces an older version of the engine if one is present. See also <a href="SDK2_libWin_DefaultLoc.htm#Embedded_SDKReference_1955650137_562190" title="" alt="" class="MCXref xref">Default Locations for eWebClient.dll</a>.</p>
+        <p>This approach requires that the eSellerate Embedded Web Store Engine is built into the application as a resource. It allows the application to not depend on an installer or other strategy to ensure that the engine is in place. </p>
+        <p>For information on installing the eSellerate Embedded Web Store Engine with an installer instead of the <span class="strong">eWeb_InstallEngineFromResource</span> function, see <a href="SDK2_libWin_InstallingCl.htm#Embedded_SDKReference_1955650137_562192" title="" alt="" class="MCXref xref">Installing eWebClient.dll </a>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eWebLibrary.h<br />Included in the development project.</li>
+            <li value="2">eWebClient.lib<br />Included in the development project.</li>
+            <li value="3">eWebCompress<br />Included in the development project.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">HRESULT <span class="strong">eWeb_InstallEngineFromResource</span> ( <i>ownerModule, resourceID, resourceType </i>)</p>
+        <p class="pwDefinition"><i>ownerModule</i> – handle to a valid Win32 module that contains the engine resource</p>
+        <p class="pwDefinition"><i>resourceID</i> – ID given to the engine resource within <i>ownerModule</i></p>
+        <p class="pwDefinition"><i>resourceType</i> – type-name given to the engine resource within <i>ownerModule</i></p>
+        <p>
+            <br />See <a href="SDK2_libWin_ReturnValues.htm#Embedded_SDKReference_1955650137_413448" title="" alt="" class="MCXref xref">eSellerate Return Values</a> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eWeb_InstallEngineFromResource Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>ownerModule</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Handle to a valid Win32 module that contains the engine resource. Pass NULL if the application making the call contains the engine resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>resourceID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The ID given to the engine resource within <i>ownerModule</i>. Required.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>resourceType</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">The type-name given to the engine resource within <i>ownerModule</i>. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><span class="strong">Tip</span>:&#160;For the best protection against engine tampering, you should compile your application with the latest eSellerate libraries, and include the latest eSellerate Embedded Web Store Engine as a resource. Next, use the API call <span class="strong">eWeb_InstallEngineFromResource</span> immediately before any call that requires the engine. Calling <span class="strong">eWeb_InstallEngineFromResource</span> replaces an altered engine, if one is present.</p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eWebLibrary.h"</p>
+        <p class="pwSDKCodeSamples">HRESULT result = eWeb_InstallEngineFromResource(NULL, IDR_ENGINE1, "ENGINE");</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or use the eSellerate Embedded Web Store Engine */</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_DefLoc.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_RetVal.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_DefLoc.htm#Embedded_SDKReference_1955650137_703616" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_RetVal.htm#Embedded_SDKReference_1955650137_696500" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_696031" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_74575" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="GetOrderCount"
+      Conditions=""
+      LocalConditions=""
+      Position="8" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

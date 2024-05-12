@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Windows">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_InstallEngineFromPath</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_463692"></a><a name="Embedded_SDKReference_1955650137_36988"></a>eWeb_InstallEngineFromPath</h2>
+        <p><a name="kanchor62"></a>Copies the eSellerate Embedded Web Store Engine (eWebClient.dll) from the path specified to the proper location on the user's machine. Replaces an older version of the engine if one is present. See also <a href="SDK2_libWin_DefaultLoc.htm#Embedded_SDKReference_1955650137_562190" title="" alt="" class="MCXref xref">Default Locations for eWebClient.dll</a>.</p>
+        <p>When this function is called, you will pass it a path to the .dll. This file must exist somewhere else on the user's machine already. It is not included in the resources of the application, but would have to be included in the installer or somehow placed on the user's machine alongside the application. This will essentially take the .dll and place it in the proper eSellerate directory.</p>
+        <p>For information on installing the eSellerate Embedded Web Store Engine with an installer instead of the <span class="strong">eWeb_InstallEngineFromPath</span> function, see <a href="SDK2_libWin_InstallingCl.htm#Embedded_SDKReference_1955650137_562192" title="" alt="" class="MCXref xref">Installing eWebClient.dll </a>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eWebLibrary.h<br />Included in the development project.</li>
+            <li value="2">eWebClient.lib<br />Included in the development project. </li>
+            <li value="3">eWebClient.dll<br />Included in the development project.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">HRESULT <span class="strong">eWeb_InstallEngineFromPath</span> ( <i>path </i>)</p>
+        <p class="pwDefinition"><i>path</i> – string that locates the engine to install</p>
+        <p>
+            <br />See <a href="SDK2_libWin_ReturnValues.htm#Embedded_SDKReference_1955650137_413448" title="" alt="" class="MCXref xref">eSellerate Return Values</a> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eWeb_InstallEngineFromPath Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>path</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">A path string that locates the engine to install. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><b>Tip</b>: For the best protection against engine tampering, you should compile your application with the latest eSellerate libraries, and place the latest eSellerate Embedded Web Store Engine where it will be available for installing from a specified path. Next, use the API call <span class="strong">eWeb_InstallEngineFromPath</span> immediately before any call that requires the engine. Calling <span class="strong">eWeb_InstallEngineFromPath</span> replaces an altered engine, if one is present.</p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eWebLibrary.h"</p>
+        <p class="pwSDKCodeSamples">HRESULT result = eWeb_InstallEngineFromPath("c:\MyInstallDir\eWebClient.dll");</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or use the eSellerate Embedded Web Store Engine */</p>
+        <p>&#160;</p>
+    </body>
+</html>

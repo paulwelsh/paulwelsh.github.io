@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_IsComp.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Install.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Purchase.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Check.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Silent.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_SetOpt.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetOrderC.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetOrderAt.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Activate.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Manual.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_ValidateAc.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Date.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Deact.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_ConfirmSer.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Validate.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Standard.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Today.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Translate.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetLast.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_NewFunct.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_IsComp.htm#Embedded_SDKReference_1955650137_695608" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Install.htm#Embedded_SDKReference_1955650137_703711" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Purchase.htm#Embedded_SDKReference_1955650137_695666" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Check.htm#Embedded_SDKReference_1955650137_695772" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Silent.htm#Embedded_SDKReference_1955650137_695874" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_SetOpt.htm#Embedded_SDKReference_1955650137_695935" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetOrderC.htm#Embedded_SDKReference_1955650137_696031" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetOrderAt.htm#Embedded_SDKReference_1955650137_696052" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Activate.htm#Embedded_SDKReference_1955650137_696139" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Manual.htm#Embedded_SDKReference_1955650137_773852" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_ValidateAc.htm#Embedded_SDKReference_1955650137_696301" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Date.htm#Embedded_SDKReference_1955650137_696352" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Deact.htm#Embedded_SDKReference_1955650137_696355" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_ConfirmSer.htm#Embedded_SDKReference_1955650137_696358" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Validate.htm#Embedded_SDKReference_1955650137_696361" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Standard.htm#Embedded_SDKReference_1955650137_696425" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Today.htm#Embedded_SDKReference_1955650137_696428" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_Translate.htm#Embedded_SDKReference_1955650137_696442" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_GetLast.htm#Embedded_SDKReference_1955650137_696485" />
+    <Link
+      Url="Content/EWSSDK/SDK2_pluginRB_NewFunct.htm#Embedded_SDKReference_1955650137_711369" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_663883" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_31145" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

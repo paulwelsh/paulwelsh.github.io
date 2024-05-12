@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="741" MadCap:lastWidth="491" MadCap:tocPath="Integrated eSellers" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Integrated eSeller: CheckForUpdate Redirect</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Integrated eSeller: CheckForUpdate Redirect" MadCap:sourceTitle="Integrated eSeller: CheckForUpdate Redirect"><a MadCap:generatedBookmark="TOC" name="Integrated eSeller: CheckForUpdate Redirect"></a>Integrated eSeller: CheckForUpdate Redirect</h2>
+        <p>The CheckForUpdate Redirect feature allows an application to use the same eSeller RefNum for purchasing and checking for updates. This is useful because only one Integrated eSeller is required for initial setup. When you're ready to release an update, you can create a second Integrated eSeller for that purpose, and redirect to it from the original eSeller. </p>
+        <p class="pwNote"><span class="strong">Tip:</span> For an example of how to handle updates throughout several product releases, see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Integrated_eSellers/Integrated_CFURedirectEx.htm#Integrated_eSellers_772768980_1041180" target="" title="" alt="" MadCap:xrefTarget="CheckForUpdate Redirect Example"><span style="color: Blue;" class="mcFormatColor"><u>"CheckForUpdate Redirect Example" on page 1</u></span></MadCap:xref>.)<br /></p>
+        <h5>To set the CheckForUpdate Redirect:</h5>
+        <ol>
+            <li value="1">
+                <p>In the CheckForUpdate Redirect dialog box, click a radio button to select one of the following options:</p>
+                <table style="caption-side: bottom; mc-table-style: url('file:///H:/Win/_eSellerate Docs Flare/Content/Resources/TableStyles/Rows.css'); margin-left: 0; margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+                    <caption>CheckForUpdate Redirect Options</caption>
+                    <thead>
+                        <tr>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColSep">Option</th>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Use current eSeller, no update available</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">This is the appropriate setting for the first time you release your application as an Integrated eSeller, and any other time that no update is available. When a customer uses your software to check for a newer version, the CheckForUpdate Message specified for this eSeller will display. (See <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Integrated_eSellers/Integrated_Wizard.htm" target="" title="" alt="" MadCap:xrefTarget="Integrated eSeller: Software Delivery Wizard"><span style="color: Blue;" class="mcFormatColor"><u>"Integrated eSeller: Software Delivery Wizard" on page 1</u></span></MadCap:xref>.) After reading your message, the customer will need to click OK, which will return control to your application.</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">Use current eSeller, update available</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Use this setting if an update is available, and this Integrated eSeller will provide the update. When a customer uses your application to check for a newer version, the CheckForUpdate Message specified for this eSeller will display. (See <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Integrated_eSellers/Integrated_Wizard.htm" target="" title="" alt="" MadCap:xrefTarget="Integrated eSeller: Software Delivery Wizard"><span style="color: Blue;" class="mcFormatColor"><u>"Integrated eSeller: Software Delivery Wizard" on page 1</u></span></MadCap:xref>.) After reading your message, the customer will have the option to receive the newer version, which could be a free upgrade or a purchased upgrade.</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">Redirect to different eSeller</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">Use this setting if an update is available, and a different Integrated eSeller will provide the update. Make your eSeller selection from the list provided.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="2">Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Tip:</span>&#160;For a look at all the CheckForUpdate Redirects set up for your Integrated eSellers, use the Integrated eSeller CheckForUpdate Redirects report, which is available in Admin Reports.<br /></p>
+    </body>
+</html>

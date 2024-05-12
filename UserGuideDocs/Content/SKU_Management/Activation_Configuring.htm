@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="799" MadCap:lastWidth="998" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>
+            <MadCap:keyword term="Product Activation:configuring software for;Product Activation:SDK functions" />Configuring Your Software for Activation</h2>
+        <p>For an overview of Product Activation, see <MadCap:xref href="Activation_Overview.htm" target="" title="" alt="">Setting Up Product Activation</MadCap:xref>.</p>
+        <p>
+            <MadCap:keyword term="serial numbers:activating through SDK functions" />After you create a Product Activation set, the next step is to configure your application source code to support activation. This requires use of <MadCap:variable name="Primary.CompanyName" /> SDK or <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store SDK functions that can reference the Product Activation Set ID, which are as follows:</p>
+        <ul>
+            <li><span class="strong">Purchase, CheckForUpdate and Reinstall</span> (Reinstall is an  <![CDATA[ ]]><MadCap:variable name="Primary.CompanyName" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> SDK function only) – To initiate new activations, you can pass the Product Activation Set ID in the activationID parameter of these API calls.</li>
+            <li><span class="strong">ActivateSerialNumber</span> – To activate a product without using one of the above API calls, you can use an API call to ActivateSerialNumber. This approach can be used to activate a product purchased through a web store, for example, or to reactivate/verify activation on a regular basis.</li>
+            <li><span class="strong">ManualActivateSerialNumber</span> – To enable activation when the computer's configuration prevents the <MadCap:variable name="Primary.CompanyName" /> Engine or the <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store Engine from accessing the <MadCap:variable name="Primary.CompanyName" /> servers, you can use an API call to ManualActivateSerialNumber. This will bring up a wizard and allow the user to manually activate the software using a web browser on the current computer or another computer with web access.</li>
+            <li><span class="strong">ValidateActivation</span> – To locally determine if a previous activation exists on the computer, or if the computer has been significantly changed since a previous activation, you can use an API call to ValidateActivation.</li>
+            <li><span class="strong">DateActivation</span> – To retrieve the date of the last activation, you can use an API call to DateActivation. This call performs the same validation as ValidateActivation, and also returns the activation date for purposes such as reactivating/verifying activation (with ActivateSerialNumber) on a regular basis.</li>
+            <li><span class="strong">DeactivateSerialNumber</span> – To allow your customers to deactivate products for purposes such as moving software to a new computer, you can use an API call to DeactivateSerialNumber. A successful deactivation will clear the local activation data, and free up an activation for the Product Activation set on the <MadCap:variable name="Primary.CompanyName" /> servers.</li>
+        </ul>
+        <h5>Example uses of Product Activation</h5>
+        <ul>
+            <li>For software purchased through an Integrated eSeller or an Embedded Web Store eSeller, the eSeller passes the activationID in the Purchase function. Product Activation occurs immediately after the purchase concludes (barring any configuration errors, such as a duplicate serial number).</li>
+            <li>For software purchased through a web store, the customer enters the serial number after the purchase. In response, the application calls ValidateActivation to check the computer for previous activations with that serial number. If none exist, the application calls ActivateSerialNumber and contacts the <MadCap:variable name="Primary.CompanyName" /> servers. If the ActivateSerialNumber function returns success, Product Activation occurs.</li>
+            <li>At launch, an application calls ValidateActivation to validate the information stored locally on the computer, if present. If the validation fails, the application prompts the user to reactivate the product.</li>
+            <li>A customer who wants to move activated software to a new computer selects a "Deactivate" option within the application on the current computer. In response, the application calls DeactivateSerialNumber to clear the local activation data, if present, and to free up an activation on the <MadCap:variable name="Primary.CompanyName" /> servers. The customer then activates the software on the new computer.</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> This note applies to Embedded Web Store eSellers only. If you use Product Activation in conjunction with the up-sell feature, all SKUs that you offer in a given up-sell opportunity should use the same Product Activation Set ID. This is because the Product Activation Set ID that your eSeller passes for Purchase or CheckForUpdate API calls is the one <MadCap:variable name="Primary.CompanyName" /> uses for activation, even if the customer ends up purchasing an up-sell SKU instead of the original selection. By coding related eSellers to pass the same Product Activation Set ID, you can avoid problems with validating activations after an up-sell purchase.</p>
+        <p class="pwNote"><span class="strong">Note:</span> In cross-sell purchases, Integrated eSellers can activate the primary SKU only. The cross-sell SKUs will each need to use their own serial numbers, and be configured to handle Product Activation through some function other than Purchase.</p>
+        <p>For more information about these API functions, see the  <MadCap:variable name="Primary.CompanyName" /> SDK Reference.</p>
+        <h3 class="See_Also">See Also</h3>
+        <p>
+            <MadCap:xref href="Activation_Manual.htm" target="" title="" alt="">Manually Activating Serial Numbers</MadCap:xref>
+        </p>
+    </body>
+</html>

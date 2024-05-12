@@ -1,8 +1,0 @@
-This is the current version of the help.
-
-The one in the regular SDK folder (not labeled "backup") is ready to be used as the current, when we're ready to go with the new integrated Mac SDK. (This one's current until that time. Then need to switch to the other, which already has all the integrated changes made.)
-
-
-On 7/6/2012, took the system that was last published April 13, 2011, and published one update, for the SDK2_ActiveX_Standard.htm file (QC 7135).
-
-10/24/2012 This is back to being the only SDK help project. 

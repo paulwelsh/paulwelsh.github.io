@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Layouts/Layouts_Landing.htm" />
+    <Link
+      Url="Content/Resources/Images/layouts_files_land.jpg" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingTagsVars.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingVarNotes.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingCustomURL.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Layouts/Layouts_Landing.htm" />
+    <Link
+      Url="Content/Resources/Images/layouts_files_land.jpg" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Listing" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Editing" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Downloading" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Uploading" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Discarding" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Inspecting" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Testing" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Publishing" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm#Generating" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingTagsVars.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingVarNotes.htm#Layouts_2469577869_262033" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingTagsVars.htm#Layouts_2469577869_261731" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingCustomURL.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Layouts_2469577869_261308" />
+    <Anchor
+      Name="Layouts_2469577869_20348" />
+    <Anchor
+      Name="Listing" />
+    <Anchor
+      Name="Editing" />
+    <Anchor
+      Name="Downloading" />
+    <Anchor
+      Name="Uploading" />
+    <Anchor
+      Name="Discarding" />
+    <Anchor
+      Name="Inspecting" />
+    <Anchor
+      Name="Testing" />
+    <Anchor
+      Name="Publishing" />
+    <Anchor
+      Name="Generating" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables>
+    <Variable
+      Name="Primary.CompanyName" />
+  </Variables>
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Primary.Online" />
+    <Condition
+      Tag="Primary.Print" />
+  </AllConditions>
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

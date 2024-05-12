@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Advanced Sales Options|Setting Up Subscription-Based Licensing">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Cancel Subscription API</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor92"></a>Cancel Subscription API</h1>
+        <p>The Cancel Subscription API allows canceling a subscription by passing query string parameters in a URL. It is functionally the same as canceling the subscription through After-Purchase Services. With the API, there is the choice of canceling immediately, or waiting until the next scheduled billing (to make full use of the time already purchased for the current subscription). When the cancellation occurs, e-mail notifications are sent to the publisher and the subscriber.</p>
+        <h4>Prerequisites</h4>
+        <p>This option requires that you use either the XML&#160;order notice (version 3) or the Order Lookup Web Service to obtain one of the required parameters (subscription order ID). These resources can also be helpful for locating other order-related items that you will need for the API.</p>
+        <h4>Parameters  </h4>
+        <p class="pwNote"><span class="strong">Note:</span> Because each renewal and recurring billing creates a new order, there can be multiple orders associated with a subscription. In those instances, only the current (and still active) subscription can be canceled.</p>
+        <p>You can find values for the first three parameters by using the XML resources previously mentioned. </p>
+        <ul>
+            <li value="1"><strong>oid</strong> – Original order ID for the subscription order (<span class="strong">Required</span>).</li>
+            <li value="2"><strong>soid </strong>– Subscription order ID (<span class="strong">Required</span>).</li>
+            <li value="3"><span class="strong">email</span> – Customer e-mail address for the subscription order (<span class="strong">Required</span>).</li>
+            <li value="4"><span class="strong">action </span>– Always pass "cancel" (<span class="strong">Required</span>).</li>
+            <li value="5"><span class="strong">nextbilling </span>– Should this cancellation occur at the next scheduled billing, or immediately? Pass "true" to have the cancellation occur at the next billing, or "false" to cancel the subscription immediately (<span class="strong">Optional—defaults to "true"</span>).</li>
+        </ul>
+        <h4>Example Usage</h4>
+        <p>This API uses the http://store1.esellerate.net domain. An example call follows.</p>
+        <p data-mc-conditions="Primary.Online">http://store1.esellerate.net/ws/Service/SubscriptionService.aspx?action=cancel&amp;oid=ST12345&amp;email=someone@mindvision.com&amp;soid=SO12345&amp;nextbilling=false</p>
+        <h4>Response</h4>
+        <p>The response is either <span class="strong">YES</span> (if the API canceled the subscription), or <span class="strong">NO </span>(if it couldn't cancel).</p>
+        <h3 class="See_Also">See Also</h3>
+        <p><a href="../Account_Management/Account_XML.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Using the XML Order Notice</a>
+        </p>
+        <p data-mc-conditions="Primary.Online"><a href="../Account_Management/Account_XML.htm#orderlookupwebservice">Order Lookup Web Service</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

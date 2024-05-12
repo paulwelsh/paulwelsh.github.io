@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Check.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialCo.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialNu.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialKe.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialID.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLocC.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLoc.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLocI.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopCoun.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopSKU.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopID.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_LaunchUp.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_WebURL.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_ValidateAct.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Deactivate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Confirm.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_ValidateSer.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Standard.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_NewFunct.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Check.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialCo.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialNu.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialKe.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetSerialID.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLocC.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLoc.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetFileLocI.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopCoun.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopSKU.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_GetShopID.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_LaunchUp.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_WebURL.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_ValidateAct.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Deactivate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Confirm.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_ValidateSer.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Standard.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_ActiveX_NewFunct.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

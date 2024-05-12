@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Layouts|Custom Layouts">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Styles</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Layouts_2469577869_243419"></a><a name="Layouts_2469577869_32920"></a>Styles</h2>
+        <p>Custom Layouts support the use of cascading style sheets, which are grouped under CSS Files on the Files tab. You can use style sheets to control the formatting attributes of multiple HTML layout files. Like the template file, style sheets offer the advantage of keeping reusable code in one central location, so you can change the formatting of all files that use the style sheet by editing just one file.</p>
+        <h3>Using Style Sheets</h3>
+        <p>Use proper HTML structure when creating and linking to style sheets. The style sheets and HTML files included with every default layout provide examples of proper structure. To see code that defines a cascading style, open the default style sheet, styles.css. Open any of the default template files (MyTemplate.htm) to see how to link to a style sheet with a &lt;LINK&gt; tag, and how to apply specific styles.</p>
+        <h3>Customizing  <span class="PrimaryCompanyName">eSellerate</span> System Page Styles</h3>
+        <p>This section focuses on  <span class="PrimaryCompanyName">eSellerate</span> system pages that are displayed when applicable during order processing. The pages listed here are system generated, and are not defined within the Custom Layout. For that reason, these pages do not support full customization.</p>
+        <p>The following system pages are not customizable:</p>
+        <ul>
+            <li value="1">Store Login (for private web stores) </li>
+            <li value="2">Page Not Found </li>
+            <li value="3">Policy </li>
+            <li value="4">CSC What's This </li>
+            <li value="5">eCD What's This </li>
+            <li value="6">eDP What's This</li>
+            <li value="7">VAT What's This</li>
+            <li value="8">Volume Discounts</li>
+            <li value="9">Message (used if unable to display the error page configured on the Settings tab)</li>
+            <li value="10">Payer Authentication</li>
+        </ul>
+        <p>System pages that support limited customization are:</p>
+        <ul>
+            <li value="1">Terms of Sale </li>
+            <li value="2">Duplicate Order Warning </li>
+            <li value="3">Processing Order </li>
+        </ul>
+        <p>Although you cannot edit these system pages, you can affect the way they display by defining specific styles in their style sheets. Information that you can use in your customization follows.</p>
+        <h5>Required Files</h5>
+        <p>Your layout will need to include the following files:</p>
+        <ul>
+            <li value="1">The default style sheet, styles.css, or another style sheet that includes the default styles from that file </li>
+            <li value="2">The default template file (MyTemplate.htm), which must use the style sheet described in the preceding bullet </li>
+        </ul>
+        <h5>Required Styles </h5>
+        <p>The required styles and their default values as found in styles.css appear in the following list. </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Style Sheet Class References for Styles.css</caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeadingFM" style="text-align: left;"><b>Selector</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeadingFM" style="text-align: left;"><b>Function</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p>.duporder_bodyfont {font-family: verdana; font-size: 11px}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p>Formats the following text on the Duplicate Order Warning page: </p>
+                        <ul>
+                            <li value="1">Name, quantity and price of order items that are duplicates from a recent order </li>
+                            <li value="2">"For information on the previous order, you can visit the <span class="PrimaryCompanyName">eSellerate</span> Support page and use your e-mail address to look up your order history. Otherwise, click 'Continue' to proceed with the purchase or 'Cancel' to return to the previous page."</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.duporder_inputSubmit {color: #000000; font-family : verdana; font-size: 10px; font-weight: bold}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the text for "Cancel" and "Continue" buttons on the Duplicate Order Warning page</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.duporder_errorheader {font-family: verdana; font-size: 11px; font-weight: bold}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Duplicate Order Warning page: "POSSIBLE DUPLICATE ORDER"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.duporder_errormessage {font-family: verdana; font-size: 11px}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Duplicate Order Warning page: "Another order placed in the past 7 days also used your e-mail address and included the item(s) below:"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.duporder_labelbackground {background-color: #f1f1f1}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Sets the background color for the following text on the Duplicate Order Warning page: "Product &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Quantity"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.duporder_labelheader {font-family: verdana; font-size: 11px; font-weight: bold}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Duplicate Order Warning page: "Product &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Quantity"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.processing_bodyfont {font-family: verdana; font-size: 11px}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Processing Order page: "Order processing typically occurs in seconds, but can take up to two minutes, depending on your payment method."</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.processing_labelheader {font-family: verdana; font-size: 11px; font-weight: bold}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Processing Order page: "Please wait while your order is processed…"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBodyFM">.terms_header {font-family: verdana; font-size: 11px; font-weight: bold}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Formats the following text on the Terms of Sale page: "Terms of Sale: &lt;SKU Name&gt;"</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBodyFM">.terms_inputBox {font-family: verdana; font-size: 10px; background-color: #FFFFFF; border: 1px solid #D2D2D2;}</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBodyFM">Formats the following items on the Terms of Sale page:</p>
+                        <ul>
+                            <li value="1">Terms of sale text </li>
+                            <li value="2">The box containing the terms of sale text </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

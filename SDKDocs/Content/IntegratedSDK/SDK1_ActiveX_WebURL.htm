@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="779" MadCap:lastWidth="724">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>GetWebStoreURL</h2>
+        <p>
+            <MadCap:keyword term="GetWebStoreURL" />Retrieves a web store URL stored by eSellerate SalesTrac Technology (eST) functions. See "eST downloads" in the eSellerate <MadCap:conditionalText MadCap:conditions="Primary.Print">User's Guide</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eSellerateControl365.dll<br />Registered and located in the appropriate directory. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:
+                <br /><ul><li>For Windows Vista, place and register eSellerateControl365.dll in the ProgramData\eSellerate directory</li><li>For pre-Vista Windows versions, place and register eSellerateControl365.dll in the Windows directory</li></ul></li>
+        </ul>
+        <h4>Definition
+        </h4>
+        <p class="pwDefinition"><span class="strong">GetWebStoreURL</span> <![CDATA[ ]]> (
+        </p>
+        <p class="pwDefinition1"><i>publisherID</i> <![CDATA[ ]]> As String,	– Publisher ID string</p>
+        <p class="pwDefinition1"><i>skuRefNum</i> <![CDATA[ ]]> As String	– SKU RefNum string
+        </p>
+        <p class="pwDefinition">) As String
+        </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Return Value</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Courier">""
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if no URL was found.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>web store URL</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if the URL was found<i>.</i></p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for GetWebStoreURL Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>publisherID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Publisher ID, as found on the Sales Manager Home page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>skuRefNum</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing the SKU RefNum, as found on the Sales Manager Available SKU Detail page. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for GetWebStoreURL Function
+            </caption>
+        </table>
+        <h4>Example
+        </h4>
+        <p class="pwSDKCodeSamples">Dim eSellerate As eSeller
+        </p>
+        <p class="pwSDKCodeSamples">Dim webStoreURL As String
+        </p>
+        <p class="pwSDKCodeSamples">Set eSellerate = CreateObject("eSellerateControl.365")
+        </p>
+        <p class="pwSDKCodeSamples">webStoreURL = eSellerate.GetWebStoreURL("PUB775527079", "SKU123456789")</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: utilize webStoreURL if found **</p>
+        <p class="pwSDKCodeSamples">Set eSellerate = Nothing
+        </p>
+    </body>
+</html>

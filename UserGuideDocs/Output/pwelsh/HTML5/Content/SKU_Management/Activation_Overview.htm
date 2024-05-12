@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Setting Up Product Activation</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor54"></a>Setting Up Product Activation</h2>
+        <p>eSellerate Product Activation is an option for protecting your software against casual software piracy. It allows you to limit the number of times a copy of your software can be activated—or made functional through serial number registration—on different computers.
+</p>
+        <h5>Notes on Product Activation
+</h5>
+        <ul>
+            <li value="1">You define activation limits through Product Activation sets.
+</li>
+            <li value="2">The <span class="PrimaryCompanyName">eSellerate</span> Product Activation API requires use of the Product Activation Set ID, as found on the Product Activation Set Detail page.
+</li>
+            <li value="3">You can deploy Product Activation Set IDs broadly—such as having one serial number activate a whole suite of products—or narrowly—such as forcing reactivation when updating to a newer version of an activated product.
+</li>
+            <li value="4">Serial numbers used in Product Activation must be unique. Be sure to keep this restriction in mind when you choose serial number sets for activation purposes.
+</li>
+            <li value="5">Product Activation associates a serial number with the unique hardware identification of the computer in use. After the initial activation, subsequent activations from the same computer will not increase the activation count for the serial number (provided there are no major changes to the hardware configuration). This behavior makes it possible for a product to reactivate/verify activation on a regular basis, without affecting the activation count.
+</li>
+            <li value="6">When creating Product Activation sets, you may want to allow enough activations to accommodate users who frequently purchase new computers or make major changes to their hardware configurations.
+</li>
+            <li value="7">Once you return a product, <span class="PrimaryCompanyName">eSellerate</span> will deny future activation attempts for that product. 
+</li>
+            <li value="8">You may test Product Activation with eSellers running in preview mode.
+</li>
+            <li value="9"><a name="kanchor55"></a>Privacy information for <span class="PrimaryCompanyName">eSellerate</span> Product Activation is available at
+<a href="https://publishers.esellerate.net/activation_policy.asp" target="_blank">https://publishers.esellerate.net/activation_policy.asp</a>. You can include this URL in your privacy statement and other places where privacy information may be appropriate.
+</li>
+            <li value="10">Important information for Mach-O developers is available at "Mach-O applications: protecting" in the <span class="PrimaryCompanyName">eSellerate</span> SDK Reference index.
+</li>
+        </ul>
+        <h4>Overview
+</h4>
+        <p>Setting up Product Activation involves the following steps:
+</p>
+        <ul>
+            <li value="1"><a href="Activation_Creating.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Creating Product Activation Sets</a>
+            </li>
+            <li value="2"><a href="Activation_Configuring.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Configuring Your Software for Activation</a>
+            </li>
+            <li value="3"><a href="Activation_Other.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Other Options for Activation</a>
+            </li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> You should never use more than one browser window to manage your account in the <span class="PrimaryCompanyName">eSellerate</span> Sales Manager. Any editing that you do in multiple windows can cause data to be lost.
+</p>
+        <p>&#160;</p>
+    </body>
+</html>

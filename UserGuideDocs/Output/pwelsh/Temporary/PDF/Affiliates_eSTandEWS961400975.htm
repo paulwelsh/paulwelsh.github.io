@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="319" MadCap:lastWidth="969" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="eSellerate Affiliates|Creating eST Downloads" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>eST and Embedded Web Store eSellers</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3 MadCap:xrefTargetName="eST and Embedded Web Store eSellers" MadCap:sourceTitle="eST and Embedded Web Store eSellers"><a MadCap:generatedBookmark="TOC" name="eST and Embedded Web Store eSellers"></a><a name="eSellerateAffiliates_686029767_260870"></a><a name="eSellerateAffiliates_686029767_78969"></a>eST and Embedded Web Store eSellers</h3>
+        <p>At present, the eSellerate SalesTrac Technology (eST) feature of eSellerate Affiliates associates one eST download with one SKU. (You set up these relationships on the Available SKU Detail page.) If you use Embedded Web Store eSellers in conjunction with eST, it's important to note that you could inadvertently bypass eST if you direct users to a catalog page, rather than adding the associated SKU to the shopping cart.</p>
+        <p>To allow eST to work as designed, you should set up your eST downloads as follows: When a customer initiates an integrated purchase, your application should call the Purchase function and include the SKURefNum of the SKU associated with the eST download. Provided that your Custom Layout uses the default settings, this approach will cause the Embedded Web Store to add the referenced SKU to the shopping cart and display the cart page. No other SKUs will be visible, unless the user removes the current SKU from the shopping cart.</p>
+        <p>If you need alternatives to the default eST behavior, a few possible workarounds are as follows:</p>
+        <ul>
+            <li value="1">You can configure your application source code to locate the eST entry in the registry and duplicate it for the other SKUs, making the necessary SKURefNum changes in the key name and the URL value. </li>
+            <li value="2">Provided that "SKU A" uses the normal eST functionality, you can configure your application source code to use the WebStoreURL function call to retrieve the eST entry from the registry, and then parse the URL to extract the affiliateID for use in the Purchase parameters for "SKU B." </li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span>&#160;The affiliate-specific URL is stored as the "URL" (string) value of the registry key "HKEY_CURRENT_USER\Software\eSellerate\Affiliates\PUB123456789\SKU123456789"<br /></p>
+    </body>
+</html>

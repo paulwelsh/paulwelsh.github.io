@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Resources/Images/account_receipt.jpg" />
+    <Link
+      Url="http://www.eslr8.com/" />
+    <Link
+      Url="http://store.esellerate.net/support" />
+    <Link
+      Url="Content/Layouts/Layouts_CustomReceiptPag.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Receipt.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Advanced.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Resources/Images/account_receipt.jpg" />
+    <Link
+      Url="http://www.eslr8.com/" />
+    <Link
+      Url="http://store.esellerate.net/support" />
+    <Link
+      Url="Content/Layouts/Layouts_CustomReceiptPag.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Receipt.htm#FormattingCustom" />
+    <Link
+      Url="Content/SKU_Management/SKU_Advanced.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Invoice_Detail" />
+    <Anchor
+      Name="Order_Confirm_Email" />
+    <Anchor
+      Name="FormattingCustom" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="receipt information"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+    <IndexCacheEntry
+      Term="default receipt information"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables>
+    <Variable
+      Name="Primary.CompanyName" />
+  </Variables>
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Primary.Print" />
+  </AllConditions>
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

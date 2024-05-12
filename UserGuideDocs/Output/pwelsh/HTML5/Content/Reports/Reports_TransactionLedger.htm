@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reports|Running Sales Reports">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Transaction Ledger</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Transaction Ledger</h2>
+        <p class="pwNote"><span class="strong">Note:</span> Beginning on 4/26/2011, we have temporarily enabled estimated costing information (your profit and our commission) for our on-screen reports. This short-term change will allow us to complete some enhancements to Business Intelligence and Business Navigator reports.</p>
+        <p>You can use this report to list transactions in three different ways:</p>
+        <ul>
+            <li value="1">By date range, which lists transactions for any date(s)</li>
+            <li value="2">By payment ID, which lists transactions associated with a specific payment</li>
+            <li value="3">By unpaid items, which lists transactions that are not yet associated with a payment</li>
+        </ul>
+        <p>The options for listing transactions are available through the <span class="strong">Transaction List Criteria</span> list. This list displays the payment date next to completed payments, and "Pending" next to payments for which a voucher has been created, but payment has not yet been made. It also includes an "All Unpaid Items" option, which you can use to search for transactions that are not yet associated with a payment.</p>
+        <h5>To run a Transaction Ledger report:</h5>
+        <ol>
+            <li value="1">Click the <span class="strong">Sales Reports</span> tab.</li>
+            <li value="2">Click <span class="strong">Transaction Ledger</span>. The Transaction Ledger page appears.<br /></li>
+            <li value="3">See the instructions that follow for listing transactions by date range, payment ID or unpaid items.</li>
+        </ol>
+        <h5>To list transactions by date range:</h5>
+        <ol>
+            <li value="1">This report can return results as an HTML table, a tab-delimited file, a comma-delimited file or an XML file. Make your selection from the <span class="strong">Return Results As</span> list.</li>
+            <li value="2">Use the <span class="strong">Transaction List Criteria</span> list to select <span class="strong">Use Date Range</span>.</li>
+            <li value="3">By default, this report will exclude line items that have a $0.00 gross amount. (Gross amount is the unit price before any adjustments such as coupon discounts and service fees are applied.) For example, if a given transaction involved a $5.00 SKU, a $0.00 SKU and $0.00 shipping, the Transaction Ledger report would list the $5.00 SKU only (by default). If you would like your report to include line items that have a $0.00 gross amount, select the <span class="strong">Include Zero Dollar Sales</span> check box.</li>
+            <li value="4">If you would like your report to find transactions within a specific date range, do one of the following to complete the <span class="strong">From </span>and <span class="strong">To </span>date fields:</li>
+            <ul>
+                <li value="1">Click the calendar graphic to the right of <span class="strong">Date Range</span>, and then select from a list of common date ranges.</li>
+                <li value="2">Edit or enter dates in the fields.</li>
+                <li value="3">Right-click in each field, and then select from a list of common dates.</li>
+                <li value="4">Click the calendar graphic to the right of each field, and then select a date from a calendar interface. (See <a href="Reports_CalendarInterface.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Selecting a Date from the Calendar Interface</a>.)</li>
+            </ul>
+            <li value="5">Click <span class="strong">Run</span>.</li>
+            <li value="6">See <a href="#Report" title="" alt="" class="MCXref xref" xrefformat="{para}">Report Results</a>.</li>
+        </ol>
+        <h5>To list transactions by payment ID or by unpaid items:</h5>
+        <ol>
+            <li value="1">This report can return results as an HTML table, a tab-delimited file, a comma-delimited file or an XML file. Make your selection from the <span class="strong">Return Results As</span> list.</li>
+            <li value="2">Use the <span class="strong">Transaction List Criteria</span> list to select a payment ID, or <span class="strong">All Unpaid Items</span>.</li>
+            <li value="3">Click <span class="strong">Run</span>.</li>
+            <li value="4">See <a href="#Report" title="" alt="" class="MCXref xref" xrefformat="{para}">Report Results</a>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span>&#160;The <span class="strong">From </span>and <span class="strong">To </span>date fields and the <span class="strong">Include Zero Dollar Sales</span> check box are only effective when listing transactions by date range. These options are ignored when listing transactions by payment ID or by unpaid items.</p>
+        <h4><a name="Report"></a>Report Results</h4>
+        <p>The results of the Transaction Ledger report depend on your selection from the <span class="strong">Return Results As</span> list.</p>
+        <h5>If you selected HTML table results:</h5>
+        <p>The table will display all transactions that matched your report criteria.</p>
+        <h5>If you selected comma-delimited, tab-delimited or XML file results:</h5>
+        <p>The resulting Save As dialog will display a default file name, which you can change if desired. (The default file extension should be correct for your chosen format.) When you're finished making any changes to the file name, save the file.</p>
+        <p>You can now import the file into a database, or open it in a spreadsheet program such as Microsoft Excel.</p>
+        <p>&#160;</p>
+    </body>
+</html>

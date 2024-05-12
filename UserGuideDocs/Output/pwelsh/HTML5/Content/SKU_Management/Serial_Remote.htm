@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management|Creating Serial Numbers|External">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Remote URL</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor50"></a>Remote URL</h2>
+        <p>With this option, <span class="PrimaryCompanyName">eSellerate</span> issues serial numbers obtained through a URL that you provide.<br /></p>
+        <h5>Notes
+</h5>
+        <ul>
+            <li value="1">This option requires you to host your own serial number generation code on a server. </li>
+            <li value="2">The server hosting the code must be available at all times, and responsive enough to handle requests from <span class="PrimaryCompanyName">eSellerate</span> in a timely manner.</li>
+            <li value="3"> 
+If <span class="PrimaryCompanyName">eSellerate</span> requests a serial number through your URL and the response is delayed, the process may time out. </li>
+            <li value="4">There is a 255-character limit for Remote URL serial numbers.
+</li>
+            <li value="5">If you are interested in using this option, please contact <span class="PrimaryCompanyName">eSellerate</span> Support at support@esellerate.net. Our support team can tell you more about the requirements of this option, and help you determine if it suits your needs.
+</li>
+        </ul>
+        <p>Information on how to use the available settings for Remote URL serial numbers follows.
+</p>
+        <h5>To create a Remote URL serial number set:</h5>
+        <ol>
+            <li value="1">From the <span class="strong">External Type</span> list, select <span class="strong">Remote URL</span>.</li>
+            <li value="2">
+                <p>In the <span class="strong">URL Template</span> field, enter the URL that <span class="PrimaryCompanyName">eSellerate</span> should use to obtain your serial numbers. You can include parameters such as &lt;OrderID&gt; to specify order information that you want <span class="PrimaryCompanyName">eSellerate</span> to send through the URL, as in the following example:</p>
+                <p>http://www.mysiteaddress1.com/mycode.php?myattr1=&lt;OrderID&gt;</p>
+            </li>
+            <li value="3">
+                <p>Your serial number generation can be based on any of the following:</p>
+                <ul>
+                    <li value="1">None</li>
+                    <li value="2"> 
+The customer's first and last name 
+</li>
+                    <li value="3">The company name 
+</li>
+                    <li value="4">Some special data (Prompted Data) that the customer is required to enter 
+</li>
+                </ul>
+                <p>Make your selection from the <span class="strong">Based On</span> list. </p>
+            </li>
+            <li value="4">
+                <p>With the Prompted Data feature, you can use prompts to base your serial number generation on customer input. If you enable this feature, your <span class="PrimaryCompanyName">eSellerate</span> web stores (standard and embedded) will prompt customers to enter specific information as part of the purchase process.</p>
+                <p>From the <span class="strong">Prompt For</span> list, select the information your web stores should require for SKUs that use this serial number set. Your choices are as follows:
+</p>
+                <ul>
+                    <li value="1">None 
+</li>
+                    <li value="2">RegCode 
+</li>
+                    <li value="3">Palm OS® HotSync Name 
+</li>
+                    <li value="4">Pocket PC Owner Name 
+</li>
+                    <li value="5">(Custom Prompt) 
+</li>
+                </ul>
+                <p class="pwNote"><span class="strong">Note: </span>When appropriate, online help will be available to show your customers how to locate handheld device information such as RegCode.
+</p>
+            </li>
+            <li class="pwNote" value="5">This text field appears/applies only when you select the "(Custom Prompt)" option in the Prompt For list. Text that you enter here (up to 50 characters) will define the prompt displayed to your customers. For example, if you enter "Nickname" in the Custom Prompt field, your web store will display "<span class="strong">Nickname:</span> [input field]" when that information is required for a SKU purchase.</li>
+            <li class="pwNote" value="6">Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

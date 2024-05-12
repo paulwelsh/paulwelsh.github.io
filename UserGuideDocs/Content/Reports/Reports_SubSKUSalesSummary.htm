@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1386" MadCap:lastWidth="545">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Subscription SKU Sales Summary</h2>
+        <p>You can use this report to see subscription SKU sales by count or U.S. dollar amount, with the results broken down by year, quarter or month.</p>
+        <h5>Notes</h5>
+        <ul>
+            <li>The results can include subscriptions with any of the following statuses: new, billed, renewed, expired, set to expire, canceled and suspended.</li>
+            <li>Billed status refers to the automatic charges that occur during the subscription duration, according to the billing frequency.</li>
+            <li>A subscription goes into suspended status when <MadCap:variable name="Primary.CompanyName" /> is unable to charge the customer's payment method for a scheduled billing during the duration, or when the reminder e-mail sent in advance of a scheduled billing is returned as undeliverable. In either case, <MadCap:variable name="Primary.CompanyName" /> sends e-mail notifications to the appropriate parties with information on how to resolve the issue.</li>
+            <li>If there are no sales to report for a given status, that status will not appear in the results. For example, if there were no new subscriptions sold during the reporting period, the results will not include a row for that information.</li>
+            <li>The results for the following subscription statuses will include forecasts when future dates are involved: billed, renewed and expired. Another status, set to expire, always involves forecasts because it pertains to future expirations.</li>
+            <li>Although forecasts can be useful for planning purposes, it's important to note that events such as the user canceling a subscription can affect the outcome.</li>
+            <li>This report always returns results for one year, beginning with the month or quarter that you have selected. You cannot use this report to find results for more than a one-year period at a time.</li>
+            <li>For the purposes of this report, manual renewal subscriptions expire at the end of their grace period, rather than at the end of their duration. Therefore, if a subscription is not appearing in report results as expected, check its grace period, which could have pushed the expiration date into the next month or quarter.</li>
+        </ul>
+        <h5>To run a Subscription SKU Sales Summary report:</h5>
+        <ol>
+            <li>Click the <span class="strong">Sales Reports</span> tab.</li>
+            <li>Click <span class="strong">Subscription SKU Sales Summary</span>. The Subscription SKU Sales Summary page appears.<br /><img src="../Resources/Images/report_subscription_summary.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li>If you would like to limit your report results to a single SKU, make your selection from the <span class="strong">SKU </span>list. Otherwise, you can accept the default setting, which is <span class="strong">All SKUs</span>.</li>
+            <li>This report can return results as an HTML table, a tab-delimited file, a comma-delimited file or an XML file. Make your selection from the <span class="strong">Return Results As</span> <![CDATA[ ]]>list.</li>
+            <li>If you would like to limit your report results to a single subscription, make your selection from the <span class="strong">Subscription Name </span>list. Otherwise, you can accept the default setting, which is <span class="strong">All Subscriptions</span>.</li>
+            <li>This report can provide subscription SKU sales information by count, such as the number of expired subscriptions, or by U.S. dollar amount. Make your selection from the choices provided.</li>
+            <li>This report can display results by year, quarter or month. Make your selection from the choices provided.</li>
+            <li>This report will find results for a one-year period. Select the starting month or quarter (whichever one applies) and the year for your report.</li>
+            <li>Click <span class="strong">Run</span>.</li>
+        </ol>
+        <h5>If you selected HTML table results:</h5>
+        <p>The table will display all subscription SKU sales that matched your report criteria.</p>
+        <h5>If you selected comma-delimited, tab-delimited or XML file results:</h5>
+        <p>The resulting Save As dialog will display a default file name, which you can change if desired. (The default file extension should be correct for your chosen format.) When you're finished making any changes to the file name, save the file.</p>
+        <p>You can now import the file into a database, or open it in a spreadsheet program such as Microsoft Excel.</p>
+    </body>
+</html>

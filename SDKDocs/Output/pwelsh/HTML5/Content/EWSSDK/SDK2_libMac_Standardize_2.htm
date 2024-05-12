@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Macintosh|Embedded Framework">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_StandardizeSerialNumber</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_646848"></a><a name="Embedded_SDKReference_1955650137_70414"></a>eWeb_StandardizeSerialNumber</h2>
+        <p><a name="kanchor18"></a>Takes a Standard or Standard Enhanced serial number that has been validated with <span class="strong">eWeb_Validate-SerialNumber</span> and prepares the serial number for use with <span class="strong">eWeb_ActivateSerialNumber</span>.</p>
+        <p>This function bridges the gap between <span class="strong">eWeb_ValidateSerialNumber</span>, which tolerates certain characters if they are mistakenly entered in Standard or Standard Enhanced serial numbers, and <span class="strong">eWeb_ActivateSerialNumber</span>, which requires the exact serial numbers. </p>
+        <p>To prepare a validated serial number for activation, <span class="strong">eWeb_StandardizeSerialNumber</span> replaces certain characters that should never appear in a Standard or Standard Enhanced serial number (see the <span class="strong">eWeb_ValidateSerialNumber</span> notes), substitutes uppercase characters for lowercase ones and writes the result to output buffer <i>correctedSerialNumber</i>.</p>
+        <p>This function relies on the library libValidateUniversal.a, which you will need to link into your application.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">validateLib.h<br />Included in the development project.</li>
+            <li value="2">libValidateUniversal.a<br />Linked into your application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">eWeb_StandardizeSerialNumber</span>
+            <o style="font-weight: normal;">(<i> validatedSerialNumber, correctedSerialNumber </i>)</o>
+        </p>
+        <p class="pwDefinition"><i>validatedSerialNumber</i>
+            <o style="font-style: normal;"> – string containing the serial number</o>
+        </p>
+        <p class="pwDefinition"><i>correctedSerialNumber</i>
+            <o style="font-style: normal;"> – buffer for holding the corrected serial number string</o>
+        </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eWeb_StandardizeSerialNumber Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>validatedSerialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Standard or Standard Enhanced serial number that has been validated by <span class="strong">eWeb_ValidateSerialNumber</span>. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>correctedSerialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Buffer that <span class="strong">eWeb_StandardizeSerialNumber</span> will fill in with the corrected serial number. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "validateLib.h"</p>
+        <p class="pwSDKCodeSamples">char *validatedSerialNumber [64];</p>
+        <p class="pwSDKCodeSamples">char *correctedSerialNumber [64];</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain validatedSerialNumber */</p>
+        <p class="pwSDKCodeSamples">eWeb_StandardizeSerialNumber(validatedSerialNumber, correctedSerialNumber);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: utilize correctedSerialNumber */</p>
+        <p>&#160;</p>
+    </body>
+</html>

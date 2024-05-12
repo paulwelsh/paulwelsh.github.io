@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DefaultLoc.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DefaultLoc.htm#Embedded_SDKReference_1955650137_562190" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_492051" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_20133" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="eWeb_NewPrefillData"
+      Conditions=""
+      LocalConditions=""
+      Position="8" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

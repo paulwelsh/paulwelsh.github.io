@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="592" MadCap:lastWidth="1252">
+	<head>
+		<link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+	</head>
+    <body>
+        <h2>eWeb Libraries for Macintosh</h2>
+        <p>Two different versions of the eSellerate Embedded Web Store Engine are available for use with eWeb Libraries for Macintosh. The only difference between these engine versions is that one is always included within the application, while the other is typically installed in locations external to the application. Developers can use either or both of these engines to suit their needs.</p>
+        <p>Each engine version has its own SDK, and this documentation is divided into Embedded and Non-Embedded sections to show the differences.</p>
+        <p>The two engine versions are as follows:</p>
+        <h3>Embedded Framework</h3>
+        <h5>Benefits:</h5>
+        <ul>
+            <li>Follows Apple's recommendation that custom frameworks intended for internal use should be installed inside the application that uses them</li>
+            <li>Eliminates permissions issues related to installing the framework externally</li>
+            <li>Application can be dragged to a local system and used without any additional steps for installing the framework</li>
+        </ul>
+        <h5>Limitations:</h5>
+        <ul>
+            <li>Works with applications only; other products must use the Non-Embedded Framework</li>
+            <li>Only one product can access the framework (no sharing allowed)</li>
+            <li>Does not support automatic engine updating</li>
+        </ul>
+        <p>For more information, see <MadCap:xref href="SDK2_libMac_2.htm">eWeb Libraries for Macintosh — Embedded Framework</MadCap:xref>.</p>
+        <h3>Non-Embedded Framework</h3>
+        <h5>Benefits:</h5>
+        <ul>
+            <li>Works with products that are not applications, such as plug-ins</li>
+            <li>Installing the framework externally allows multiple products to share it</li>
+            <li>Supports automatic engine updating (when that functionality is enabled for the publisher)</li>
+        </ul>
+        <h5>Limitations:</h5>
+        <ul>
+            <li>Possible permissions issues related to installing the frameworks externally</li>
+            <li>Requires a separate installation step (typically, calling <span class="strong">eWeb_InstallEngineFromPath</span>)</li>
+        </ul>
+        <p>For more information, see <MadCap:xref href="SDK2_libMac.htm">eWeb Libraries for Macintosh — Non-Embedded Framework</MadCap:xref>.</p>
+    </body>
+</html>

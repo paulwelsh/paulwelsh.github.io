@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesCrossSell.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingCrossGr.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CrossOptions.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/About_Active_and_Preview.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CrossSellSKUAssign.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesCrossSell.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingCrossGr.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CrossOptions.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/About_Active_and_Preview.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CrossSellSKUAssign.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="AdvancedSalesOptions_3786514807_284698" />
+    <Anchor
+      Name="AdvancedSalesOptions_3786514807_85223" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="cross-sells:creating"
+      Conditions=""
+      LocalConditions=""
+      Position="7" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Primary.Print" />
+  </AllConditions>
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

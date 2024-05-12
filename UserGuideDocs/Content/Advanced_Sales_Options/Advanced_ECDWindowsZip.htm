@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="448" MadCap:lastWidth="754">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="AdvancedSalesOptions_3786514807_108124"></a><a name="AdvancedSalesOptions_3786514807_18769"></a>Windows Zip</h2>
+        <p>The following options are available when using Windows Zip archives with eCD: </p>
+        <ul>
+            <li>An autorun HTML menu of the CD contents can be automatically created. In this case, the user will be able to click an "Install" button in the menu, which will open the corresponding file. </li>
+            <li>You can supply your own AUTORUN.INF file within the Zip archive to enable custom functionality. Your autorun will be used when this eCD file is the only one on the CD. If other eCD files are included on the CD (which is possible only with eCD Optional), your autorun will not be used, and instead an autorun HTML menu of the CD contents will be automatically created. </li>
+        </ul>
+        <p>With either option, you will need to include a file named "readme.xml" in the Zip archive. This XML file is needed to specify which file within the Zip archive should be opened from the autorun HTML menu (when applicable). The required format is as follows:</p>
+        <p>&lt;Product&gt;<br />&lt;InstallFileName&gt;.exe autorun points to &lt;/InstallFileName&gt;<br />&lt;/Product&gt;</p>
+        <p>Also note that the name of the file to be opened from the autorun menu must follow these conventions:</p>
+        <ul>
+            <li>No spaces</li>
+            <li>Standard alphanumeric characters only</li>
+            <li>8.3 format (up to eight characters for the file name, followed by a three-character extension)</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> You can use the Valid eCD Files feature on the eCD Configuration tab to control whether Zip archives are extracted before they're placed on the CD. If you choose to not extract a Windows Zip archive, there is no need to include an XML file as described in the preceding information. In this case, clicking the appropriate button in the autorun HTML menu will open the unextracted Zip archive.</p>
+    </body>
+</html>

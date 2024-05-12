@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Macintosh|Regular Framework">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_Purchase</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_526865"></a><a name="Embedded_SDKReference_1955650137_86663"></a>eWeb_Purchase</h2>
+        <p><a name="kanchor35"></a>Invokes the Embedded Web Store Engine to perform a purchase.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">EWSLib.h<br />Included in the development project.</li>
+            <li value="2">libEWS.a (standard) or<br />libEWS-GC.a (garbage collecting)<br />Included in the development project.</li>
+            <li value="3">EWSMac.framework (standard) or<br />EWSMac-GC.framework (garbage collecting)<br />Typically located in the /Library/Frameworks folder, but in some cases will be located in the <span class="_Override" style="font-family: 'Times New Roman';">~</span>/Library/Frameworks folder. It may be already placed in one or both of these locations by another eSellerate-enabled application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">OSStatus <span class="strong">eWeb_Purchase</span> ( <i>esellerID, SkuRefNum, previewID, layoutCertificate, trackingID, affiliateID, couponID, activationID, extraData, resultData</i> )</p>
+        <p class="pwDefinition"><i>esellerID</i> – eSeller ID code</p>
+        <p class="pwDefinition"><i>SkuRefNum</i> – SKU RefNum code (optional)</p>
+        <p class="pwDefinition"><i>previewID</i> – Preview Certificate string (optional)</p>
+        <p class="pwDefinition"><i>layoutCertificate</i> – Layout Test Certificate string (optional)</p>
+        <p class="pwDefinition"><i>trackingID</i> – tracking ID code (optional)</p>
+        <p class="pwDefinition"><i>affiliateID</i> – affiliate ID code (optional)</p>
+        <p class="pwDefinition"><i>couponID</i> – coupon ID code (optional)</p>
+        <p class="pwDefinition"><i>activationID</i> – Product Activation Set ID string (optional)</p>
+        <p class="pwDefinition"><i>extraData</i> – special serial number data string (optional)</p>
+        <p class="pwDefinition"><i>resultData</i> – pointer to memory that will be allocated and filled by the eSellerate Embedded Web Store Engine</p>
+        <p>
+            <br />See <a href="SDK2_libMac_RetValues.htm#Embedded_SDKReference_1955650137_528087" title="" alt="" class="MCXref xref">eSellerate Return Values</a> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eWeb_Purchase Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>esellerID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            String containing the Embedded Web Store ID, as found on the Sales Manager Embedded Web Store eSeller Summary page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>SkuRefNum</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the SKU RefNum, as found on the Sales Manager Embedded Web Store SKU Attributes page. Causes the Embedded Web Store to add the referenced SKU to the shopping cart and display the cart page. May be NULL, in which case the Embedded Web Store will display the catalog page. For information on assigning the store layout's cart and catalog pages, see "Custom Layouts: Files tab" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>previewID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            String containing the Preview Certificate, as found on the Sales Manager Embedded Web Store eSeller Summary page. Required to purchase in Preview mode. Pass NULL in Active mode. If the Preview Certificate passed here does not match the Preview Certificate on the Sales Manager Embedded Web Store eSeller Summary page, the purchase will be Active. This means that you can clear the Preview Certificate in the Sales Manager to activate the eSeller without having to recompile your application.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>layoutCertificate</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            String containing the Layout Test Certificate, as found on the Settings tab of the Custom Layout Detail page. Allows testing of unpublished Custom Layouts. May be NULL. If the Layout Test Certificate passed here does not match the one on the Settings tab of the Custom Layout Detail page, the eSeller will use the published version of the Custom Layout. This means that you can clear the Layout Test Certificate in the Sales Manager to use the published layout without having to recompile your application.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>trackingID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing special information that marks the function call so that it can be tracked in reports. May be NULL. See "tracking IDs" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>affiliateID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an affiliate ID that marks the function call so that it can be tracked in reports. May be NULL. For information on the eSellerate Affiliates program, see "eSellerate Affiliates: joining" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>couponID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing a coupon ID that enables coupon discounts on qualified purchases. May be NULL. See "coupons: creating" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>activationID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an activation ID for use in eSellerate Product Activation. May be NULL. Automatic activation occurs if the Embedded Web Store Engine completes the action and returns a unique serial number for use with the <i>activationID </i>(barring any activation errors). See "Product Activation: setting up" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                        <p class="CellBody">When you pass a non-NULL value for the <i>activationID</i> parameter, you must also pass a non-NULL value for the <i>SkuRefNum</i> parameter. The <i>SkuRefNum</i> specifies the SKU whose serial number should be activated according to the rules set by <i>activationID</i>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>extraData</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing special additional information needed for serial number generation. Required for serial number type option <span class="strong">Application Supplied</span> and optional for <span class="strong">Standard</span>, <span class="strong">Standard Enhanced</span> and <span class="strong">Armadillo</span>. For all other serial number type options, pass NULL. See "serial numbers: Serial Number Type options" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                        <p class="CellBody">When you pass a non-NULL value for the <i>extraData</i> parameter, you must also pass a non-NULL value for the <i>SkuRefNum</i> parameter. The <i>SkuRefNum</i> specifies the SKU that should use the additional serial number information provided by <i>extraData</i>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>resultData</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">
+                            Address of a declared variable of type char *. The variable may be initialized to NULL. Memory is allocated and filled when <span class="strong">eWeb_Purchase</span> is called. This memory must later be de-allocated by calling <span class="strong">eWeb_DisposeResultData</span>.
+                          
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> All strings passed into the engine are UTF-8 encoded cStrings.<br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "EWSLib.h"</p>
+        <p class="pwSDKCodeSamples">char *resultData = NULL;</p>
+        <p class="pwSDKCodeSamples">OSStatus resultCode = eWeb_Purchase("STR9199856688", "SKU862610260", "NzIk6XXD", NULL, NULL, NULL, NULL, NULL, NULL, &amp;resultData);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error or utilize result data */</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposeResultData(resultData);</p>
+        <p>&#160;</p>
+    </body>
+</html>

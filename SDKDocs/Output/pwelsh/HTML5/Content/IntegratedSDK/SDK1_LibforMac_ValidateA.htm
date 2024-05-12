@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate SDK (Legacy Option)|eSellerate Libraries for Macintosh">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eSellerate_ValidateActivation</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>eSellerate_ValidateActivation</h2>
+        <p><a name="kanchor140"></a>For eSellerate Product Activation purposes, validates that a serial number is activated and associated with the unique hardware identification of the computer in use. This is done by checking a hidden activation key on the computer.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eSellerate.h<br />Included in the development project.</li>
+            <li value="2">eSellerateLibrary.lib(Carbon) or<br />libeSellerate.a (Mach-O version)<br />Included in the development project.</li>
+            <li value="3">eSellerateEngine (Carbon)<br />Located in the appropriate folder. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li value="1">For Mac OS 9.1 or later with CarbonLib 1.5 or later, place eSellerateEngine (Carbon) in System Folder:Application Support:MindVision</li><li value="2">For Mac OS X, place eSellerateEngine (Carbon) in /Library/Application Support/MindVision</li></ul></li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">eSellerate_ErrorCode <span class="strong">eSellerate_ValidateActivation</span> ( <i>publisherID, activationID, serialNumber</i> )</p>
+        <p class="pwDefinition">eSellerate_InputString <i>publisherID</i>		– Publisher ID string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>activationID</i>	– 	Product Activation Set ID string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>serialNumber	</i>– serial number string</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Return Values for eSellerate_ValidateActivation Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Return Value</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_NOENGINE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine cannot be found.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_FAILURE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if <i>publisherID,</i> <![CDATA[ ]]><i>activationID </i>or<i> serialNumber </i> is nil or if the eSellerateEngine encounters a fatal error during activation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_SUCCESS
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">-25006</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the activation key was unknown.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">-25007</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the activation key was not the one associated with <i>serialNumber.</i></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">-25008</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the activation key was invalid.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eSellerate_ValidateActivation Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>publisherID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Publisher ID, as found on the Sales Manager Home page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>activationID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an activation ID for use in eSellerate Product Activation. Required. See "Product Activation: setting up" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>serialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing the serial number. Required.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Type Definitions for eSellerate_ValidateActivation Function
+            </caption>
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Data Type</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Definition</b></p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Ctype.h Naming</b></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_ErrorCode
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">unsigned long
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_InputString
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">const unsigned char*
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">ConstStrParam
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> Strings are handled as length-prepended Pascal strings.
+            <br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eSellerate.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_InputString serialNumber;</p>
+        <p class="pwSDKCodeSamples">eSellerate_ErrorCode resultCode;</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain serialNumber */</p>
+        <p class="pwSDKCodeSamples">resultCode = eSellerate_ValidateActivation("\pPUB775527079", "\pACT123456789:9EUYLP-UZ8H-9J7J70-7FE4-6T18FY-72X9YK-FU9K-BDKLNQ-G53H-7FZTTU", serialNumber);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or react to success */</p>
+        <p>&#160;</p>
+    </body>
+</html>

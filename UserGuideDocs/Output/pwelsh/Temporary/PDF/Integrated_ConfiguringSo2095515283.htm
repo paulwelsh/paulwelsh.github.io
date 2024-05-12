@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1547" MadCap:lastWidth="639" MadCap:tocPath="Integrated eSellers" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Configuring Your Application's Source Code to Reference the eSeller</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Configuring Your Application's Source Code to Reference the eSeller_..6" MadCap:sourceTitle="Configuring Your Application's Source Code to Reference the eSeller"><a MadCap:generatedBookmark="TOC" name="Configuring Your Application's Source Code to Reference the eSeller_..6"></a><a name="Integrated_eSellers_772768980_33722"></a>
+            <MadCap:keyword term="Integrated eSellers:configuring source code for" />Configuring Your Application's Source Code to Reference the eSeller</h2>
+        <p>
+            <o>Once you create an Integrated eSeller, you can use the information to integrate eSellerate functionality into your application.</o>
+        </p>
+        <h5>To configure your application's source code to reference the eSeller:</h5>
+        <ol>
+            <li value="1">
+                <p>
+                    You will need several pieces of information from the Sales Manager, so you may want to leave your browser open to it. The following list summarizes information that you may need to integrate eSellerate into your application.
+                </p>
+                <table class="TableStyle_Rows" style="mc-table-style: url('file:///H:/Win/_eSellerate Docs Flare/Content/Resources/TableStyles/Rows.css');caption-side: bottom;margin-left: 0;margin-right: auto;" cellspacing="0">
+                    <caption>Sales Manager Information for Integrated eSellers</caption>
+                    <col style="width: 50%;" />
+                    <col style="width: 50%;" />
+                    <thead>
+                        <tr>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColSep">Item</th>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">Sales Manager Page</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Publisher ID value</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Home</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">Based On setting (optional, used to validate Standard and Standard Enhanced serial numbers)</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Home &gt; Serial Number Set List &gt; Serial Number Set Detail</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Publisher Key value (optional, used to validate Standard and Standard Enhanced serial numbers)</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Home &gt; Serial Number Set List &gt; Serial Number Set Detail</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">Integrated eSeller RefNum value</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Home &gt; eSeller Lists &gt; Integrated eSeller Summary</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">eSeller Status setting (optional)</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Home &gt; eSeller Lists &gt; Integrated eSeller Summary</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">Preview Certificate value</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">Home &gt; eSeller Lists &gt; Integrated eSeller Summary</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="2">
+                Download and install the eSellerate (Integrated) SDK files. Because it is a legacy option that was superceded by the Embedded Web Store SDK, the eSellerate SDK is no longer available on the eSellerate Downloads page. You can request it by contacting our support team.</li>
+            <li value="3">
+                Add and link the eSellerate components into your application's source code.
+            </li>
+            <li value="4">
+                <p>Decide how you are going to implement access to the eSellerate Engine within your application, according to the interface provided for your environment. You have almost unlimited flexibility in how you can implement a purchase or upgrade of your product. If you haven't already done so, please look carefully at the source code provided with the eSellerate demo applications, and the extensive comments. No documentation can describe this process better than looking at actual source code. This will also provide you some ideas of how to implement eSellerate in your own application. 
+                </p>
+                <p>The following is an overview of the actions you can perform from your application.</p>
+                <ul>
+                    <li value="1">Invoking the eSellerate Software Delivery Wizard
+                        <ul><li value="1">Purchase an application. You will almost always perform this action from a demo version of your application. It is intended for the customer's "first time" purchase of the software. Typically, you will charge the customer the full retail price for your software. After the purchase, eSellerate will generally return a new serial number and optionally deliver a new file download of your retail software. You can choose to update the demo application "in place" using the new serial number to enable full functionality, or you can just replace the demo application with a retail version.</li><li value="2">Check for an update to the application. This action allows customers that have already purchased your software to check for new versions and upgrade directly from inside the application. These new versions of your software can be free upgrades or purchased upgrades. Once the user decides to upgrade, eSellerate will typically download a new version of the software. This download can be a new installer or an updater.</li></ul></li>
+                    <li value="2">Accessing Information Returned by the Software Delivery Wizard<ul><li value="1">Receive serial numbers, download locations and shopping cart information. A successful purchase or check for update will return any serial numbers, file download locations and shopping cart information that applies. You can use this information to automate delivery of the new product. For example, you could use the new serial number to automatically register the customer's application and enable features. With the download information, you could automatically launch one of the downloaded files directly from the application. Finally, you could use the shopping cart information to manage any cross-sell items the customer purchased.</li></ul></li>
+                    <li value="3">Validating a Serial Number
+                        <ul><li value="1">You can use your application to check the validity of a Standard or Standard Enhanced serial number.
+                            </li></ul></li>
+                </ul>
+                <p class="pwNote"><span class="strong">Note:</span> The preview certificate (a number generated when you created your Integrated eSeller in the Sales Manager) allows you to test your application before shipping it. When you perform a purchase or check for update from your application and use the proper preview certificate number, the only information returned would be for preview SKUs assigned to this eSeller. Furthermore, credit card processing would execute in demo mode only, so no charges would occur. When you are ready to ship this application, just clear the preview certificate number, either from your source code or from the Sales Manager. The next time you perform a purchase or check for update, the information returned will be for active SKUs assigned to this eSeller, and credit cards will be billed.</p>
+            </li>
+            <li value="5">Build your application and try it out.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> When you are finished testing your application and ready to ship, remember to clear out the preview certificate number from either your source code (this requires you to rebuild your application) or from the Sales Manager. Also, make sure that the SKUs assigned to your Integrated eSeller are correctly set to Active status.</p>
+        <p class="pwNote"><span class="strong">Note:</span>&#160;<o>To install the eSellerate Engine file automatically, you can use the API call </o><span class="strong">InstallEngine</span><o style="font-weight: normal;">, which is available for all eSellerate SDK options except the ActiveX control. If you use some other method to install the engine, we recommend that you use version checking to prevent replacing an existing engine with an older version. The engine automatically checks our servers and self-updates when necessary. However, when you replace an existing engine with an older version, your users will experience longer downloads while the engine updates itself.</o></p>
+        <p class="pwNote"><span class="strong">Tip:</span> If your Integrated eSeller can be run on Mac OS 9, you should allocate at least 500K of additional memory to the application. This will allow the eSellerate Engine to perform various functions. No such memory constraints apply for Integrated eSellers that run exclusively on Mac OS X or Windows, because those operating systems will freely give memory to the application as needed.</p>
+    </body>
+</html>

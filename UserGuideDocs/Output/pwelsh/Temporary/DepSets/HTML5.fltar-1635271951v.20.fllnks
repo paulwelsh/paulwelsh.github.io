@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Project/Skins/HTML5.flskn" />
+    <Link
+      Url="Content/Resources/Stylesheets/StylesHTML5.css" />
+    <Link
+      Url="Content/Resources/MasterPages/NewPage.flmsp" />
+    <Link
+      Url="Content/Title_Page.htm" />
+    <Link
+      Url="Project/Advanced/eSellerateHelpAlias.flali" />
+    <Link
+      Url="Project/Destinations/QADestination.fldes" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+  </Links>
+  <LongLinks />
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

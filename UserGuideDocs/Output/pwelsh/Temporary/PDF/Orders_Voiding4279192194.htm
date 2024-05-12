@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1155" MadCap:lastWidth="998" MadCap:tocPath="Order Management" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Voiding Orders</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Voiding Orders" MadCap:sourceTitle="Voiding Orders"><a MadCap:generatedBookmark="TOC" name="Voiding Orders"></a>
+            <MadCap:keyword term="orders:voiding;voiding orders" />Voiding Orders</h2>
+        <p>The Voids editor allows you to void unfulfilled orders before shipping occurs.</p>
+        <h5>Notes on voids</h5>
+        <ul>
+            <li value="1">Although you can't void fulfilled orders, you can use the Returns editor to credit customers for all or part of the purchase amounts. For details, see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Order_Management/Orders_Returning.htm" target="" title="" alt="" MadCap:xrefTarget="Returning Orders"><span style="color: Blue;" class="mcFormatColor"><u>"Returning Orders" on page 1</u></span></MadCap:xref>.</li>
+            <li value="2">You cannot void orders that have payment methods of international wire or purchase order. In these instances, you would need to mark the orders fulfilled (without actually shipping anything) and then refund the orders through the Returns editor.</li>
+            <li value="3">E-check (ACH) orders are not available for voiding until eSellerate has received the payments.</li>
+            <li value="4">When an order involves charges for shipping items only:</li>
+            <li class="Indent1" value="5">Credit cards – eSellerate waits to capture any funds until you mark the order as fulfilled. (Or you can void the order to prevent any payment processing.) If you void the order, the order status becomes Void and the credit card authorization is allowed to expire.</li>
+            <li class="Indent1" value="6">PayPal – eSellerate captures all funds at the conclusion of the purchase. If you void the order, the order status becomes Canceled and the amounts captured for the shipping items are refunded to the customer.</li>
+            <li class="Indent1" value="7">ACH – eSellerate captures all funds in a single transaction, which requires 5-7 business days after the purchase for payment processing to be completed. If you void the order, the order status becomes Canceled and the amounts captured for the shipping items are refunded to the customer.</li>
+            <li value="8">When an order involves charges for both non-shipping and shipping items:</li>
+            <li class="Indent1" value="9">Credit cards – eSellerate captures funds for non-shipping items at the conclusion of the purchase, and delays capturing funds for shipping items until you mark the items as fulfilled. (Or you can void the order to prevent any additional payment processing.) The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and no further payment processing occurs. The shipping items for the order will then have a status of Void.</li>
+            <li class="Indent1" value="10">PayPal – eSellerate captures all funds at the conclusion of the purchase. The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and the amounts captured for the shipping items are refunded to the customer. The shipping items for the order will then have a status of Canceled.</li>
+            <li class="Indent1" value="11">ACH – eSellerate captures all funds in a single transaction, which requires 5-7 business days after the purchase for payment processing to be completed. The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and the amounts captured for the shipping items are refunded to the customer. The shipping items for the order will then have a status of Canceled.</li>
+            <li value="12">If you void an order that involves charges for both non-shipping and shipping items, you will not be able to find that order by searching for voided orders, because its status will be Fulfilled. The Fulfilled status makes it possible for you to do a return or refund on the non-shipping items from the order, which are already fulfilled and cannot be voided.</li>
+            <li value="13">
+                <p>If your account is set up to integrate with Amazon Fulfillment, a search for unfulfilled orders can return orders that are pending fulfillment by Amazon. Normally, these orders are fulfilled automatically, so there is no need for you to take action unless you have a specific reason for voiding or returning the orders. See also <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Account_Management/Account_Amazon.htm" target="" title="" alt="" MadCap:xrefTarget="Integrating with Amazon Fulfillment"><span style="color: Blue;" class="mcFormatColor"><u>"Integrating with Amazon Fulfillment" on page 1</u></span></MadCap:xref>.</p>
+            </li>
+        </ul>
+        <h5>To void an order:</h5>
+        <ol>
+            <li value="1">Click the <span class="strong">Voids</span> tab. The Voids page appears.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/order_voids.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li value="2">In the <span class="strong">Search For</span> list, use the default selection, <span class="strong">Unfulfilled Orders</span>.</li>
+            <li value="3">Use any of the text fields and/or the <span class="strong">Date Range</span> list to narrow your search.</li>
+            <li value="4">Click <span class="strong">Find</span>. This will display all orders that matched your search criteria.</li>
+            <li value="5">Select the unfulfilled order by clicking on its order number. The Order Detail page appears.</li>
+            <li value="6">Click <span class="strong">Void</span>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> To protect against unintentional processing, you can only select and void one order at a time.</p>
+        <p class="pwNote"><span class="strong">Note:</span> The order information that is available through voids processing does not include your profit or eSellerate's commission on your orders from 4/1/2011 and later.      <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reporting. See <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Reports/Reports_Business_Intel.htm" target="" title="" alt="" MadCap:xrefTarget="Business Intelligence Reporting"><span style="color: Blue;" class="mcFormatColor"><u>"Business Intelligence Reporting" on page 1</u></span></MadCap:xref>.</MadCap:conditionalText></p>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/PrintOnly/printFront.htm" />
+    <Link
+      Url="Content/Resources/PageLayouts/FrontMatter.flpgl" />
+    <Link
+      Url="Content/PrintOnly/printLegal.htm" />
+    <Link
+      Url="Content/PrintOnly/printTOCFirst.htm" />
+    <Link
+      Url="Content/Resources/PageLayouts/Chapters.flpgl" />
+    <Link
+      Url="Content/Getting Started/Getting Started.htm" />
+    <Link
+      Url="Content/Getting Started/System Requirements.htm" />
+    <Link
+      Url="Content/Getting Started/Components of eSellerate.htm" />
+    <Link
+      Url="Content/Getting Started/Setting Up and Using eSellerate.htm" />
+    <Link
+      Url="Content/Getting Started/Finding More Information.htm" />
+    <Link
+      Url="Content/Getting Started/Quick Start Guide.htm" />
+    <Link
+      Url="Content/Getting Started/Setting Up a Basic Web Store.htm" />
+    <Link
+      Url="Content/Getting Started/Adding Functionality.htm" />
+    <Link
+      Url="Content/Getting Started/Doing More with eSellerate.htm" />
+    <Link
+      Url="Content/PrintOnly/printGlossary.htm" />
+    <Link
+      Url="Content/Resources/PageLayouts/Glossary.flpgl" />
+    <Link
+      Url="Content/PrintOnly/printIndexFirst.htm" />
+    <Link
+      Url="Content/Resources/PageLayouts/Index.flpgl" />
+  </Links>
+  <LongLinks />
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

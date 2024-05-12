@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Advanced Sales Options|Configuring eCD">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Organizing Your Files for eCD</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Organizing Your Files for eCD</h2>
+        <p>As part of eCD configuration, you will decide which of your SKUs should support eCD, and then assign a download—or eCD file—to each SKU. How you work through this process depends on the eCD type.</p>
+        <h3>eCD Included</h3>
+        <p>With this type, the CD can contain an eCD file for one SKU (the one that included eCD), plus trial files when applicable.</p>
+        <p>The content of the eCD file can be anything you choose. It can be a backup copy of the associated SKU, but that is not a requirement.</p>
+        <p>We recommend that you use either a disk image (.dmg or .iso) or an installer executable (.exe) for your eCD file. If you use one of the disk image formats, the image will be extracted to the root of the CD. If you use an installer executable, the file will be placed in its own subdirectory on the CD, and an autorun HTML menu of the CD contents will be automatically created. The user will be able to click an "Install" button in the menu to open the corresponding file.</p>
+        <p>When you have a disk image or installer ready for use with eCD, you can skip to <a href="Advanced_eCDUploading.htm" title="" alt="" class="MCXref xref">Uploading eCD Files</a>.</p>
+        <h3>eCD Optional</h3>
+        <p>With this type, the CD can contain eCD files for all SKUs in the order that are set up for eCD Optional. It can also contain trial files when applicable.</p>
+        <p>Each eCD&#160;file should provide a backup copy of its associated SKU. This follows the standard for how eCD Optional is presented to customers as a purchase option.</p>
+        <p>For simplicity's sake, your eCD file could contain trial versions of all your products (organized within a Zip archive or an installer, for instance), so that the same files would be included on every CD purchased. Or you could create multiple eCD files, which would enable multiple eCD files to be included on a single CD.</p>
+        <p>The number of eCD files on a CD and the formats of those files will affect the CD configuration. For example, if a CD contains both Windows and Macintosh eCD files (other than disk images), an autorun HTML menu will be automatically created in support of the Windows files. However, if a CD contains only Macintosh eCD files (other than Zip archives), no autorun will be created.</p>
+        <p>For information related to the file formats that you offer, use the appropriate links below:</p>
+        <ul>
+            <li value="1">ISO disk image files (.iso) – See <a href="Advanced_ECDISOImg.htm" title="" alt="" class="MCXref xref">ISO Disk Image</a>.</li>
+            <li value="2">Windows Zip archives (.zip) – See <a href="Advanced_ECDWindowsZip.htm" title="" alt="" class="MCXref xref">Windows Zip</a>.</li>
+            <li value="3">Windows files such as executables (.exe) and PDF (.pdf) – See <a href="Advanced_ECDWindowsNotZi.htm" title="" alt="" class="MCXref xref">Windows Not Zip</a>.</li>
+            <li value="4">Mac OS 9 disk image files (.img), Mac OS X disk image files (.dmg) – See <a href="Advanced_ECDMacDiskImg.htm#AdvancedSalesOptions_3786514807_108156" title="" alt="" class="MCXref xref">Macintosh Disk Image</a>.</li>
+            <li value="5">Macintosh Zip archives (.zip) – See <a href="Advanced_ECDMacZip.htm" title="" alt="" class="MCXref xref">Macintosh Zip </a>.</li>
+            <li value="6">Macintosh StuffIt archives (.sit), BinHex encoded files (.hqx), MacBinary encoded files (.bin) – See <a href="Advanced_ECDMacNot.htm" title="" alt="" class="MCXref xref">Macintosh Not Disk Image, Not Zip</a>.</li>
+            <li value="7">Combinations of the above file types – See <a href="Advanced_ECDCombined.htm" title="" alt="" class="MCXref xref">Combined File Types (eCD Optional Only)</a>.</li>
+        </ul>
+        <p>When you have your files ready for use with eCD, see <a href="Advanced_eCDUploading.htm" title="" alt="" class="MCXref xref">Uploading eCD Files</a>.</p>
+        <p>&#160;</p>
+    </body>
+</html>

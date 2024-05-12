@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="416" MadCap:lastWidth="750">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_731897"></a><a name="Embedded_SDKReference_1955650137_44710"></a>eWeb_NewPrefillData</h2>
+        <p>
+            <MadCap:keyword term="eWeb_NewPrefillData" />Allocates a memory region for use by prefill data. Before passing prefill data to an Embedded Web Store API you must allocate memory for it using <span class="strong">eWeb_NewPrefillData</span>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>EWSLib.h<br />Included in the development project.</li>
+            <li>libEWS.a (standard) or<br />libEWS-GC.a (garbage collecting)<br />Included in the development project.</li>
+            <li>EWSMac.framework (standard) or<br />EWSMac-GC.framework (garbage collecting)<br />Typically located in the /Library/Frameworks folder, but in some cases will be located in the <span class="_Override" style="font-family: 'Times New Roman';">~</span>/Library/Frameworks folder. It may be already placed in one or both of these locations by another eSellerate-enabled application.</li>
+        </ul>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "EWSLib.h"</p>
+        <p class="pwSDKCodeSamples">char *prefillData = eWeb_NewPrefillData();</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use eWeb_AddPrefillData() to prefill information for the purchase */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use prefillData in a function that uses it */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error or utilize result data */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: dispose prefill data */</p>
+    </body>
+</html>

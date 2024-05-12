@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Order Management">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Returning Orders</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor64"></a>Returning Orders</h2>
+        <p class="pwNote"><span class="strong">Note</span>: For orders placed prior to August 31, 2010, coupon and shipping amounts will not be specified at the line level in Full Order Returns and Partial Returns/Refunds. Instead, these items will be applied across the entire order, and will appear in the top section of the returns pages. The look and functionality will be the same as returns done prior to when <span class="PrimaryCompanyName">eSellerate</span> expanded the options for returns (in August 2010).</p>
+        <p>You can use the Returns editor to initiate returns and refunds for everything from entire orders to single line items. There is also an option for refunding arbitrary amounts (Satisfaction Refunds) without returning any quantities from the order.             <![CDATA[ ]]></p>
+        <h5>Notes on returns</h5>
+        <ul>
+            <li value="1">For the purposes of these instructions, a return involves returning a quantity, and a refund involves giving funds back to the customer.</li>
+            <li value="2">The Returns editor provides a number of different ways to process subscription orders. See <a href="../Advanced_Sales_Options/Advanced_SubCancelReturn.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Canceling and Returning Subscriptions</a> for details. Information on how to cancel subscriptions without issuing credits/refunds appears at <a href="#CancelingSubscriptions" title="" alt="" class="MCXref xref" xrefformat="{para}">Canceling Subscriptions</a>.</li>
+            <li value="3">Returning a line item also returns any serial number associated with that item. The serial number is then invalid, so that subsequent attempts to activate or confirm it (using ActivateSerialNumber or ConfirmSerialNumber API calls) will fail.</li>
+            <li value="4">With a Partial Return/Refund, it is possible to return a line item without canceling its associated subscription. If you do this, be sure to consider that the Partial Return/Refund returns any serial number associated with the item, which may be problematic if you are using the serial number in conjunction with <span class="PrimaryCompanyName">eSellerate</span> Product Activation.</li>
+            <li value="5">In general, order items that you do not select when returning an order will remain available for returning/refunding at another time. When you return to the order to process an additional return, there will be figures such as Amount Already Adjusted, Amount Already Refunded and Refundable Unit Amount to indicate which amounts are still available for returning/refunding.             <![CDATA[ ]]></li>
+            <li value="6">The $20 USD processing fee that your customers pay for international wire transfers is not refundable.</li>
+            <li value="7">Returned coupon discounts apply to all line items. They are prorated across the entire order, and are always returned. (You cannot exclude them from returns.)</li>
+            <li value="8">It is possible to charge a restocking fee on a return, and later go back to that order and refund the restocking fee.             <![CDATA[ ]]></li>
+            <li value="9">When a return for a purchase order is complete, <span class="PrimaryCompanyName">eSellerate</span> sends the customer a check for the refund amount. A wire refund goes to the account the publisher specifies when completing the return processing. Refunds for the other available payment types go back to the accounts the customers used for the original transactions.</li>
+            <li value="10">Orders with purchase order payments can be fulfilled once <span class="PrimaryCompanyName">eSellerate</span> has received the purchase orders and marked the orders as complete, which initiates all the normal order elements such as serial number generation and customer e-mail notifications. However, these orders will not be available for returns until <span class="PrimaryCompanyName">eSellerate</span> has received payment for the purchase orders.</li>
+        </ul>
+        <p>To process a return or refund:</p>
+        <h4>Locate the order</h4>
+        <ol>
+            <li value="1">Click the <span class="strong">Returns </span>tab. The Returns page appears.<br /></li>
+            <li value="2">Click the <span class="strong">Search For</span> list and make a selection. If you are processing a new return, use the default selection, <span class="strong">Orders to Return</span>. Otherwise, you can choose to search for processed returns, submitted returns or pending returns. (For information on these types of returns, see <a href="#ProcessedVersus" title="" alt="" class="MCXref xref" xrefformat="{para}">Processed versus Submitted versus Pending Returns</a>.)</li>
+            <li value="3">Use any of the text fields and/or the <span class="strong">Date Range</span> <![CDATA[ ]]>list to narrow your search.</li>
+            <li value="4">Click <span class="strong">Find</span>. This will display all orders that matched your search criteria.<br /></li>
+            <li value="5">(Skip this step if the search returned a single order.) Click the order number of the order that you want to return.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> The order information that is available through returns processing does not include your profit or <span class="PrimaryCompanyName">eSellerate</span>'s commission on your orders from 4/1/2011 and later. <MadCap:conditionalText data-mc-conditions="Primary.Online">To find that information and more, please use <a href="../Reports/Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]></p>
+        <h4>Select a return or refund type</h4>
+        <p>There are several ways that you can process returns or refunds on an order or individual order items. Depending on the order contents and any returns or refunds that you have previously processed on the order, some of these options may not always be available.</p>
+        <p>The Standard Return/Refund types are Full Order Return, Shipping Refund and Satisfaction Refund. Full Order Returns will return all line items, cancel all subscriptions and serial numbers and refund the full amount of the order. (They also work with $0 orders.) Shipping Refunds allow you to refund the entire shipping amount for the order. Satisfaction Refunds allow you to refund a set dollar amount of the order without returning any items or canceling any subscriptions.</p>
+        <p>As an alternative to the Standard Return/Refund types, the Partial Return/Refund is for returning items and issuing refunds on a line-by-line basis.</p>
+        <p>To select a return or refund type, do one of the following:</p>
+        <ul>
+            <li value="1">Click <span class="strong">Full Order Return</span> and follow the instructions provided at <a href="Orders_Return_Full.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Full Order Returns</a>.</li>
+            <li value="2">Click <span class="strong">Shipping Refund</span> and follow the instructions provided at <a href="Orders_Return_Ship.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Shipping Refunds</a>.</li>
+            <li value="3">Click <span class="strong">Satisfaction Refund</span> and follow the instructions provided at <a href="Orders_Return_Satisf.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Satisfaction Refunds</a>.</li>
+            <li value="4">For a Partial Return/Refund, click the <span class="strong">Select </span>check box for each order item that you want to return. Then click <span class="strong">Specify Return Details</span>. See <a href="Orders_Return_Partial.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Partial Returns/Refunds</a> for more information.</li>
+        </ul>
+        <h3><a name="ProcessedVersus"></a>Processed versus Submitted versus Pending Returns</h3>
+        <p>A return can have one of three statuses:</p>
+        <ul>
+            <li value="1"><span class="strong">Processed</span> – A processed return is one that has been credited to the customer account.</li>
+            <li value="2"><span class="strong">Submitted </span>– Most returns for PayPal orders will be processed (Status: Processed) as soon as you click Process The Return. However, if you are returning a credit card or e-check (ACH) order, the return status will be Submitted until processing is complete.</li>
+            <li value="3">
+                <p><span class="strong">Pending </span>– Returns for international wire orders will have Pending status until the publisher enters the additional information required for those returns, after which time the status will be Submitted until processing is complete. </p>
+                <p>Returns for orders with purchase order payments will have Pending status until processing is complete. </p>
+                <p>Pending status can also indicate that one of the following conditions delayed processing of your return:</p>
+            </li>
+            <li class="Indent1" value="4">An error occurred while crediting the customer account. In this case, the system will periodically retry the credit procedure until it is successful.</li>
+            <li class="Indent1" value="5">Your account balance is insufficient to cover the credit specified by the return. The <span class="PrimaryCompanyName">eSellerate</span> team monitors pending returns, and will contact you when appropriate. We will notify you by e-mail when we process a return that was pending due to an insufficient account balance.</li>
+        </ul>
+        <h3><a name="ReturningWire"></a>Returning International Wire Orders</h3>
+        <p>When you process returns on international wire orders, the return status will change to Pending, and an "Enter Wire Return Information" link will be displayed on the Return Detail page. Clicking that link will bring up the Wire Return page with the fields that are required to finish processing the return. You can leave the Wire Return page (such as after taking a screenshot to send to your customer) and return to it when you have all of the required information.</p>
+        <h3><a name="CancelingSubscriptions"></a>Canceling Subscriptions</h3>
+        <h5>To cancel a subscription without issuing credits/refunds:</h5>
+        <ol>
+            <li value="1">From the Returns page, click the <span class="strong">Search For</span> list and select <span class="strong">Subscriptions to Cancel</span>.</li>
+            <li value="2">Use any of the text fields and/or the <span class="strong">Date Range</span> list to narrow your search.</li>
+            <li value="3">Click <span class="strong">Find</span>. This will display all orders that matched your search criteria.</li>
+            <li value="4">(Skip this step if the search returned a single order.) Click the order number of the subscription that you want to cancel.</li>
+            <li value="5">Click the <span class="strong">Select </span>check box for each subscription that you want to cancel.</li>
+            <li value="6">Click <span class="strong">Cancel Selected Subscriptions</span>. A confirmation dialog appears.</li>
+            <li value="7">Click <span class="strong">OK</span>.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

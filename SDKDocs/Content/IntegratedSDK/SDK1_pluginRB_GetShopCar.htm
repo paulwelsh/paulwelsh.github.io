@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="590" MadCap:lastWidth="750">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>GetShoppingCartCount</h2>
+        <p>
+            <MadCap:keyword term="GetShoppingCartCount" />Organizes the shopping cart information obtained by a Wizard-invoking function and provides a count of the items in the shopping cart.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eSelleratePlugin.rbx<br />Located in the REALbasic:Plugins folder.</li>
+        </ul>
+        <h4>Definition
+        </h4>
+        <p class="pwDefinition"><span class="strong">GetShoppingCartCount</span>  () as Integer
+        </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Return Value</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">-1</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the Wizard-invoking function failed to complete.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">0
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the Wizard-invoking function completed, but no items were in the shopping cart.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>n</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if the Wizard-invoking function completed, and <i>n</i> items were in the shopping cart.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for GetShoppingCartCount Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note</span>: A Wizard-invoking function must be called before <span class="strong">GetShoppingCartCount</span>  is called.
+            <br />
+            <br />Call <span class="strong">GetShoppingCartCount</span> to organize data only once after calling a Wizard-invoking function.</p>
+        <h4>Example
+        </h4>
+        <p class="pwSDKCodeSamples">dim eSellerate as eSeller</p>
+        <p class="pwSDKCodeSamples">dim shoppingCartCount as Integer</p>
+        <p class="pwSDKCodeSamples">eSellerate = new eSeller</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: call a Wizard-invoking function **</p>
+        <p class="pwSDKCodeSamples">shoppingCartCount = eSellerate.GetShoppingCartCount()</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: handle error, or utilize results **</p>
+    </body>
+</html>

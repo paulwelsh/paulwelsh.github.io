@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate01.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate03.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate04.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate05.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate06.JPG" />
+    <Link
+      Url="http://activate.esellerate.net/" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate08.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate07.JPG" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate01.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate03.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate04.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate05.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate06.JPG" />
+    <Link
+      Url="http://activate.esellerate.net/" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate08.JPG" />
+    <Link
+      Url="Content/Resources/Images/ManualActivate07.JPG" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Product Activation:manually activating serial numbers"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables>
+    <Variable
+      Name="Primary.CompanyName" />
+  </Variables>
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

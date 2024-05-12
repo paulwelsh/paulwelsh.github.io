@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Plug-in for REALbasic">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>DeactivateSerialNumber</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_696355"></a><a name="Embedded_SDKReference_1955650137_65847"></a>DeactivateSerialNumber</h2>
+        <p><a name="kanchor101"></a>For eSellerate Product Activation purposes, removes the association between a serial number and the unique hardware identification of the computer in use.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">ewsPlugin.rbx<br />Located in the REALbasic/Plugins folder.</li>
+        </ul>
+        <h5>Macintosh targets</h5>
+        <ul>
+            <li value="1">EWSMac.framework<br />Typically located in the /Library/Frameworks folder, but in some cases will be located in the <span class="_Override" style="font-family: 'Times New Roman';">~</span>/Library/Frameworks folder. It may be already placed in one or both of these locations by another eSellerate-enabled application.</li>
+        </ul>
+        <h5>Windows targets</h5>
+        <ul>
+            <li value="1">eWebClient.dll<br />Located in the eSellerate directory noted at <a href="SDK2_pluginRB_DefLoc.htm#Embedded_SDKReference_1955650137_703616" title="" alt="" class="MCXref xref">Default Locations for eWebClient.dll</a>. It may be already be placed here by another eSellerate-enabled application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">DeactivateSerialNumber</span> ( <i>publisherID, activationID, serialNumber</i> ) as Integer</p>
+        <p class="pwDefinition"><i>publisherID </i>as String – Publisher ID string</p>
+        <p class="pwDefinition"><i>activationID </i>as String – Product Activation Set ID string</p>
+        <p class="pwDefinition"><i>serialNumber </i>as String – <o>serial number string</o></p>
+        <p>
+            <br />See <a href="SDK2_pluginRB_RetVal.htm#Embedded_SDKReference_1955650137_696500" title="" alt="" class="MCXref xref">eSellerate Return Values</a> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for DeactivateSerialNumber Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>publisherID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            <o>String containing the Publisher ID, as found on the Sales Manager Home page. Required.</o>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>activationID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an activation ID for use in eSellerate Product Activation. Required. See "Product Activation: setting up" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>serialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing the serial number. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">dim eSellerate as eStore</p>
+        <p class="pwSDKCodeSamples">dim serialNumber as String</p>
+        <p class="pwSDKCodeSamples">dim resultCode as Integer</p>
+        <p class="pwSDKCodeSamples">eSellerate = new eStore</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: obtain serialNumber **</p>
+        <p class="pwSDKCodeSamples">resultCode = eSellerate.DeactivateSerialNumber("PUB775527079", "ACT123456789:9EUYLP-UZ8H-9J7J70-7FE4-6T18FY-72X9YK-FU9K-BDKLNQ-G53H-7FZTTU", serialNumber)</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: handle error, or react to success **</p>
+        <p>&#160;</p>
+    </body>
+</html>

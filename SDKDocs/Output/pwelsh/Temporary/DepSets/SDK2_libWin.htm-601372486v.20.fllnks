@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IsSystem.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_InstallRes.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_InstPath.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_AppLoc.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Purchase.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Check.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Silent.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_WebURL.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ActivateSeri.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Manual.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ValidateAct.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DateAct.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Deactivate.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ConfirmSeria.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Today.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ValidateSeri.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Standardize.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Today1.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_NewPre.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_AddPre.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_PurchaseEx.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_CheckEx.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DisposePre.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetByIndex.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetDatLength.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetResultDat.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IndexGetResu.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IndexGetDat.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Dispose.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_NewFunct.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IsSystem.htm#Embedded_SDKReference_1955650137_491611" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_InstallRes.htm#Embedded_SDKReference_1955650137_277523" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_InstPath.htm#Embedded_SDKReference_1955650137_463692" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_AppLoc.htm#Embedded_SDKReference_1955650137_369873" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Purchase.htm#Embedded_SDKReference_1955650137_425755" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Check.htm#Embedded_SDKReference_1955650137_487482" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Silent.htm#Embedded_SDKReference_1955650137_488549" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_WebURL.htm#Embedded_SDKReference_1955650137_648795" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ActivateSeri.htm#Embedded_SDKReference_1955650137_489645" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Manual.htm#Embedded_SDKReference_1955650137_489706" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ValidateAct.htm#Embedded_SDKReference_1955650137_489776" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DateAct.htm#Embedded_SDKReference_1955650137_649152" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Deactivate.htm#Embedded_SDKReference_1955650137_649301" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ConfirmSeria.htm#Embedded_SDKReference_1955650137_673944" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Today.htm#Embedded_SDKReference_1955650137_673947" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_ValidateSeri.htm#Embedded_SDKReference_1955650137_489826" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Standardize.htm#Embedded_SDKReference_1955650137_650977" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Today1.htm#Embedded_SDKReference_1955650137_649340" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_NewPre.htm#Embedded_SDKReference_1955650137_492051" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_AddPre.htm#Embedded_SDKReference_1955650137_493390" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_PurchaseEx.htm#Embedded_SDKReference_1955650137_470703" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_CheckEx.htm#Embedded_SDKReference_1955650137_458622" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_DisposePre.htm#Embedded_SDKReference_1955650137_490395" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetByIndex.htm#Embedded_SDKReference_1955650137_370472" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetDatLength.htm#Embedded_SDKReference_1955650137_399832" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_GetResultDat.htm#Embedded_SDKReference_1955650137_399945" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IndexGetResu.htm#Embedded_SDKReference_1955650137_773824" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_IndexGetDat.htm#Embedded_SDKReference_1955650137_370791" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_Dispose.htm#Embedded_SDKReference_1955650137_462688" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libWin_NewFunct.htm#Embedded_SDKReference_1955650137_664334" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_469372" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_57581" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5.flskn"
+  ConditionTagExpression="include[Primary.Online] exclude[&quot;Primary.Branch Next&quot; or Primary.ExcludeFromAllBuilds or Primary.Print or Primary.RegDotNetOnline or Primary.RegDotNetPrint] "
+  MasterStylesheet="/Content/Resources/Stylesheets/StylesHTML5.css"
+  AliasFile="/Project/Advanced/SplitPayAliasFile.flali"
+  DefaultUrl="/Content/Title_Page.htm"
+  OutputFile="ApplicationHelp.htm"
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Glossaries />
+  <Variables>
+    <Variable
+      Name="Primary/CompanyName">eSellerate</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/QADestination.fldes" />
+  </Destinations>
+</CatapultTarget>

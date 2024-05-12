@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameMakerImport
+  GenerateImages="false"
+  PreserveImageSize="false"
+  CreateTableStyleForTables="True"
+  PreserveSourceStyles="False"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="True"
+  AddContinuedLinks="False"
+  AddContinuedFromLinks="False"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="False"
+  UseMinCharLimit="True"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  LastCollectTime="2010-02-09T10:30:01.6744681-06:00"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2009-11-02T15:16:21.3328326-06:00">
+  <ImportStyles>
+    <Styles>
+      <Style
+        Name="Paragraph">
+        <Classes>
+          <StyleClass
+            Name="Body" />
+          <StyleClass
+            Name="Chapter NumberFM" />
+          <StyleClass
+            Name="Chapter NameFM" />
+          <StyleClass
+            Name="Body textFM" />
+          <StyleClass
+            Name="Body bulletFM" />
+          <StyleClass
+            Name="-Sidehead 1FM" />
+          <StyleClass
+            Name="-Sidehead 2FM" />
+          <StyleClass
+            Name="Body Num BulletsFM" />
+          <StyleClass
+            Name="Body bullet three indentsFM" />
+          <StyleClass
+            Name="Body Num-1FM" />
+          <StyleClass
+            Name="Body NumFM" />
+          <StyleClass
+            Name="Body Steps HeadingFM" />
+          <StyleClass
+            Name="Body NoteFM" />
+          <StyleClass
+            Name="Code Custom LayoutsFM" />
+          <StyleClass
+            Name="v one-use format for Google codeFM" />
+          <StyleClass
+            Name="Body text preceding large tableFM" />
+        </Classes>
+      </Style>
+      <Style
+        Name="Character">
+        <Classes>
+          <StyleClass
+            Name="ZapfBullet" />
+          <StyleClass
+            Name="BoldSans10" />
+          <StyleClass
+            Name="Default Paragraph FontFM" />
+          <StyleClass
+            Name="Default_XREF_styleFM" />
+        </Classes>
+      </Style>
+      <Style
+        Name="Cross-Reference">
+        <Classes>
+          <StyleClass
+            Name="heading on page" />
+          <StyleClass
+            Name="heading only" />
+          <StyleClass
+            Name="Chapter &amp; Num" />
+        </Classes>
+      </Style>
+      <Style
+        Name="Table">
+        <Classes>
+          <StyleClass
+            Name="Illustration Table" />
+          <StyleClass
+            Name="Format A" />
+          <StyleClass
+            Name="Large table" />
+        </Classes>
+      </Style>
+    </Styles>
+  </ImportStyles>
+  <ParagraphStyles>
+    <Map
+      From="Heading1"
+      To="h1.(FrameMaker Style)" />
+    <Map
+      From="Heading2"
+      To="h2.(FrameMaker Style)" />
+    <Map
+      From="Heading3"
+      To="h3.(FrameMaker Style)" />
+    <Map
+      From="Heading4"
+      To="h4.(FrameMaker Style)" />
+    <Map
+      From="Heading5"
+      To="h5.(FrameMaker Style)" />
+    <Map
+      From="Heading6"
+      To="h6.(FrameMaker Style)" />
+    <Map
+      From="Body"
+      To="p" />
+    <Map
+      From="Body bullet three indentsFM"
+      To="p" />
+    <Map
+      From="Body bulletFM"
+      To="p" />
+    <Map
+      From="Body NoteFM"
+      To="p.pwNote" />
+    <Map
+      From="Body Num BulletsFM"
+      To="p" />
+    <Map
+      From="Body Num-1FM"
+      To="p" />
+    <Map
+      From="Body NumFM"
+      To="p" />
+    <Map
+      From="Body Steps HeadingFM"
+      To="h5" />
+    <Map
+      From="Body text preceding large tableFM"
+      To="p" />
+    <Map
+      From="Body textFM"
+      To="p" />
+    <Map
+      From="Chapter NameFM"
+      To="h1" />
+    <Map
+      From="Chapter NumberFM"
+      To="p" />
+    <Map
+      From="Code Custom LayoutsFM"
+      To="p" />
+    <Map
+      From="-Sidehead 1FM"
+      To="h2" />
+    <Map
+      From="-Sidehead 2FM"
+      To="h2" />
+    <Map
+      From="v one-use format for Google codeFM"
+      To="p" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="BoldSans10"
+      To="span.strong" />
+    <Map
+      From="Default Paragraph FontFM"
+      To="a" />
+    <Map
+      From="Default_XREF_styleFM"
+      To="a" />
+    <Map
+      From="ZapfBullet"
+      To="o" />
+  </CharacterStyles>
+  <XRefStyles>
+    <Map
+      From="Chapter &amp; Num"
+      To="MadCap:xref" />
+    <Map
+      From="heading on page"
+      To="MadCap:xref" />
+    <Map
+      From="heading only"
+      To="MadCap:xref" />
+  </XRefStyles>
+  <Files>
+    <Url
+      Source="../../../_eSellerate For Importing to Flare/Layouts.fm"
+      AbsoluteSource="file:///H:/Win/_eSellerate For Importing to Flare/Layouts.fm" />
+  </Files>
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Layouts/Layouts.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_Custom.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_Custom_Signup.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomNotes.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomCreate.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomAssign.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/layouts_settings.jpg"
+      TimeStamp="8/12/2008 4:22:22 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/Illustration_Table.css"
+      TimeStamp="11/2/2009 3:14:33 PM" />
+    <Url
+      Source="../../Content/Layouts/1_11.jpg"
+      TimeStamp="11/2/2009 3:14:33 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomSettings.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/layouts_files.jpg"
+      TimeStamp="8/18/2008 3:38:01 PM" />
+    <Url
+      Source="../../Content/Layouts/1_13.jpg"
+      TimeStamp="11/2/2009 3:14:33 PM" />
+    <Url
+      Source="../../Content/Layouts/1_10.jpg"
+      TimeStamp="11/2/2009 3:14:33 PM" />
+    <Url
+      Source="../../Content/Layouts/1_12.jpg"
+      TimeStamp="11/2/2009 3:14:33 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomFiles.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/Format_A.css"
+      TimeStamp="11/2/2009 3:14:34 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomStyles.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomTemplate.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Sample_code_for_using___.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomVariablesN.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomPrefillDat.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomReceiptPag.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomPrepCLRece.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomPayPal.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_CustomRemovePayP.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/1_5.jpg"
+      TimeStamp="11/2/2009 3:14:34 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_Landing.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingNotes.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingCreate.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingAssign.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/layouts_settings_land.jpg"
+      TimeStamp="8/12/2008 4:30:44 PM" />
+    <Url
+      Source="../../Content/Layouts/1_2.jpg"
+      TimeStamp="11/2/2009 3:14:35 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingSettings.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/layouts_files_land.jpg"
+      TimeStamp="8/12/2008 4:33:14 PM" />
+    <Url
+      Source="../../Content/Layouts/1_3.jpg"
+      TimeStamp="11/2/2009 3:14:35 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingFiles.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/1_9.jpg"
+      TimeStamp="11/2/2009 3:14:35 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingCustomURL.htm"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingTagsVars.htm"
+      TimeStamp="11/2/2009 3:14:38 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/Large_table.css"
+      TimeStamp="11/2/2009 3:14:36 PM" />
+    <Url
+      Source="../../Content/Layouts/1_8.jpg"
+      TimeStamp="11/2/2009 3:14:36 PM" />
+    <Url
+      Source="../../Content/Layouts/Variables.htm"
+      TimeStamp="11/2/2009 3:14:38 PM" />
+    <Url
+      Source="../../Content/Layouts/Tags.htm"
+      TimeStamp="11/2/2009 3:14:38 PM" />
+    <Url
+      Source="../../Content/Layouts/Layouts_LandingVarNotes.htm"
+      TimeStamp="11/2/2009 3:14:38 PM" />
+    <Url
+      Source="../ConditionTagSets/Layouts.flcts"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+    <Url
+      Source="../TOCs/Layouts.fltoc"
+      TimeStamp="11/2/2009 3:14:37 PM" />
+  </GeneratedFiles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Chapter NameFM" />
+    <StyleName
+      Name="-Sidehead 1FM" />
+    <StyleName
+      Name="-Sidehead 2FM" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Body" />
+    <StyleName
+      Name="Body bullet three indentsFM" />
+    <StyleName
+      Name="Body bulletFM" />
+    <StyleName
+      Name="Body NoteFM" />
+    <StyleName
+      Name="Body Num BulletsFM" />
+    <StyleName
+      Name="Body Num-1FM" />
+    <StyleName
+      Name="Body NumFM" />
+    <StyleName
+      Name="Body Steps HeadingFM" />
+    <StyleName
+      Name="Body text preceding large tableFM" />
+    <StyleName
+      Name="Body textFM" />
+    <StyleName
+      Name="Chapter NameFM" />
+    <StyleName
+      Name="Chapter NumberFM" />
+    <StyleName
+      Name="Code Custom LayoutsFM" />
+    <StyleName
+      Name="-Sidehead 1FM" />
+    <StyleName
+      Name="-Sidehead 2FM" />
+    <StyleName
+      Name="v one-use format for Google codeFM" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="BoldSans10" />
+    <StyleName
+      Name="Default Paragraph FontFM" />
+    <StyleName
+      Name="Default_XREF_styleFM" />
+    <StyleName
+      Name="ZapfBullet" />
+  </UsedCharacterStyles>
+  <UsedXRefStyles>
+    <StyleName
+      Name="Chapter &amp; Num" />
+    <StyleName
+      Name="heading on page" />
+    <StyleName
+      Name="heading only" />
+  </UsedXRefStyles>
+  <UsedTableStyles>
+    <StyleName
+      Name="Illustration Table" />
+    <StyleName
+      Name="Format A" />
+    <StyleName
+      Name="Large table" />
+  </UsedTableStyles>
+  <CharacterStyleDefinitions>
+    <Style
+      Name="ZapfBullet"
+      style="" />
+    <Style
+      Name="BoldSans10"
+      style="" />
+    <Style
+      Name="Default\000020Paragraph\000020FontFM"
+      style="" />
+    <Style
+      Name="Default_XREF_styleFM"
+      style="font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #0000ff; text-decoration: underline;" />
+  </CharacterStyleDefinitions>
+  <ParagraphStyleDefinitions>
+    <Style
+      Name="Body"
+      style="" />
+    <Style
+      Name="Chapter\000020NumberFM"
+      style="text-align: left; margin-left: 1.25in; margin-right: 0in; margin-top: 0pt; margin-bottom: 1pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 14pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; mc-auto-number-format: 'H:Chapter {n+}{ =0}{ =0}'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; text-indent: -118px; line-height: 14pt; text-decoration: none;" />
+    <Style
+      Name="Chapter\000020NameFM"
+      style="text-align: left; margin-left: 1.25in; margin-right: 0in; margin-top: 2pt; margin-bottom: 100pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 24pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: -118px; line-height: 24pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020textFM"
+      style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020bulletFM"
+      style="text-align: left; margin-left: 0.5in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="-Sidehead\0000201FM"
+      style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 8pt; margin-bottom: 4pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 14pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: 0px; line-height: 17pt; text-decoration: none;" />
+    <Style
+      Name="-Sidehead\0000202FM"
+      style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 12pt; margin-bottom: 0pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 12pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: 0px; line-height: 14pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020Num\000020BulletsFM"
+      style="text-align: left; margin-left: 0.75in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020bullet\000020three\000020indentsFM"
+      style="text-align: left; margin-left: 1in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020Num-1FM"
+      style="text-align: left; margin-left: 0.375in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: '{n=1}.&#x9;'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; mc-auto-number-class: BoldSans10; text-indent: -21px; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020NumFM"
+      style="text-align: left; margin-left: 0.375in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: '{n+}.&#x9;'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; mc-auto-number-class: BoldSans10; text-indent: -21px; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020Steps\000020HeadingFM"
+      style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020NoteFM"
+      style="text-align: left; margin-left: 0.153in; margin-right: 0in; margin-top: 12pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+    <Style
+      Name="Code\000020Custom\000020LayoutsFM"
+      style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 0pt; margin-bottom: 0pt; font-family: Courier; font-weight: normal; font-style: normal; font-size: 9pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 11pt; text-decoration: none;" />
+    <Style
+      Name="v\000020one-use\000020format\000020for\000020Google\000020codeFM"
+      style="text-align: left; margin-left: 1in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 14pt; text-decoration: none;" />
+    <Style
+      Name="Body\000020text\000020preceding\000020large\000020tableFM"
+      style="text-align: left; margin-left: 1in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+  </ParagraphStyleDefinitions>
+  <XRefStyleDefinitions>
+    <Style
+      Name="heading\000020on\000020page"
+      style="mc-format: '{Default_XREF_style}“{paratext}” on page {paranumonly[Chapter Number]}‑{page}';" />
+    <Style
+      Name="heading\000020only"
+      style="mc-format: '{Default_XREF_style}“{paratext}”';" />
+    <Style
+      Name="Chapter\000020\000026\000020Num"
+      style="mc-format: '{Default_XREF_style}Chapter {paranumonly[Chapter Number]}‑{paratext}';" />
+  </XRefStyleDefinitions>
+  <TableStyleDefinitions>
+    <Style
+      Name="Illustration\000020Table"
+      style="" />
+    <Style
+      Name="Format\000020A"
+      style="" />
+    <Style
+      Name="Large\000020table"
+      style="" />
+  </TableStyleDefinitions>
+</FrameMakerImport>

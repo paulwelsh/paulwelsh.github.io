@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Front" Link="/Content/PrintOnly/printFront.htm" StartSection="true" StartChapter="true" PageType="title" PageNumber="1" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" AutoEndOnLeftPage="disabled" VolumeNumberReset="same" SectionNumberReset="continue" ChapterNumberReset="continue" ReplaceMergeNode="false" />
+    <TocEntry Title="Legal" Link="/Content/PrintOnly/printLegal.htm" StartChapter="true" PageType="normal" StartSection="true" ComputeToc="false" ReplaceMergeNode="Unchecked" PageNumber="1" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" AutoEndOnLeftPage="disabled" VolumeNumberReset="same" SectionNumberReset="continue" ChapterNumberReset="continue" />
+    <TocEntry Title="TOCFirst" Link="/Content/PrintOnly/printTOCFirst.htm" StartChapter="true" PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" PageType="first" PageNumber="1" PageNumberReset="continue" StartSection="true" ComputeToc="false" />
+    <TocEntry Title="[%=Primary.CompanyName%] Publishers Help" Link="/Content/PrintOnly/printeSellPubHelp.htm" StartSection="true" StartChapter="true" PageLayout="/Content/Resources/PageLayouts/OtherResources.flpgl" PageType="first" PageNumber="1" PageNumberReset="continue" VolumeNumberReset="same" SectionNumberReset="continue" ChapterNumberReset="continue" />
+    <TocEntry Title="eSellerate SDK Reference" Link="/Content/eSellSDKRef.htm" StartSection="true" StartChapter="true" PageLayout="/Content/Resources/PageLayouts/OtherResources.flpgl" PageType="first" PageNumber="1" PageNumberReset="continue" VolumeNumberReset="same" SectionNumberReset="continue" ChapterNumberReset="continue" />
+    <TocEntry Title="Other Resources" Link="/Content/OtherResources.htm" StartSection="true" StartChapter="true" PageLayout="/Content/Resources/PageLayouts/OtherResources.flpgl" PageType="first" PageNumber="1" PageNumberReset="continue" VolumeNumberReset="same" SectionNumberReset="continue" ChapterNumberReset="continue" conditions="Primary.eSellerateOnly" />
+    <TocEntry Title="Getting Started" Link="/Content/Getting_Started/Getting_Started.htm" StartChapter="true" StartSection="true" PageType="first" PageNumber="1" PageNumberReset="continue" ChapterNumberReset="reset" ChapterNumber="1" VolumeNumberReset="same" SectionNumberReset="continue">
+        <TocEntry Title="System Requirements" Link="/Content/Getting_Started/System_Requirements.htm" />
+        <TocEntry Title="Components of [%=Primary.CompanyName%]" Link="/Content/Getting_Started/Components_of_eSellerate.htm" />
+        <TocEntry Title="Setting Up and Using [%=Primary.CompanyName%]" Link="/Content/Getting_Started/Setting_Up_and_Using.htm" />
+        <TocEntry Title="Quick Start Guide" Link="/Content/Getting_Started/Quick_Start_Guide.htm">
+            <TocEntry Title="Setting Up a Basic Web Store" Link="/Content/Getting_Started/Setting_Up_a_Basic_Web_Store.htm" />
+            <TocEntry Title="Adding Functionality" Link="/Content/Getting_Started/Adding_Functionality.htm" />
+            <TocEntry Title="Doing More with [%=Primary.CompanyName%]" Link="/Content/Getting_Started/Doing_More_With.htm" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Using the [%=Primary.CompanyName%] Sales Manager" Link="/Content/Using_Sales_Manager.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue" ReplaceMergeNode="false" />
+    <TocEntry Title="SKU Management" Link="/Content/SKU_Management/SKU_Management.htm" StartChapter="true" StartSection="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Creating SKUs" Link="/Content/SKU_Management/Creating_SKUs.htm">
+            <TocEntry Title="Creating the SKU and Setting Its Basic Properties" Link="/Content/SKU_Management/SKU_Basic.htm" />
+            <TocEntry Title="Setting the SKU's Advanced Properties (Optional)" Link="/Content/SKU_Management/SKU_Advanced.htm" />
+            <TocEntry Title="Adding the SKU's Payees (Optional)" Link="/Content/SKU_Management/SKU_SplitPay.htm" />
+            <TocEntry Title="Setting Up the SKU as a Bundle (Optional)" Link="/Content/SKU_Management/SKU_Bundle.htm" />
+            <TocEntry Title="Setting the SKU's Renewal Properties (Optional)" Link="/Content/SKU_Management/SKU_Renewal.htm" />
+            <TocEntry Title="Adding the SKU to Web Store or Embedded Web Store eSellers" Link="/Content/SKU_Management/SKU_eSellers.htm" />
+            <TocEntry Title="Export Compliance" Link="/Content/SKU_Management/Export_Compliance.htm" />
+            <TocEntry Title="Bundle Overview" Link="/Content/SKU_Management/Bundle_Overview.htm" />
+            <TocEntry Title="Notes on Bundles and Enhancements for Serial Numbers" Link="/Content/SKU_Management/Bundle_and_Serial.htm" />
+        </TocEntry>
+        <TocEntry Title="Setting Up Pricing" Link="/Content/SKU_Management/Setting_Pricing.htm">
+            <TocEntry Title="Setting Native Currency Pricing for SKUs" Link="/Content/SKU_Management/Pricing_SKU.htm" />
+            <TocEntry Title="Setting Native Currency Pricing for Volume Discounts" Link="/Content/SKU_Management/Pricing_Volume.htm" />
+            <TocEntry Title="Setting Native Currency Pricing for Cross-Sell SKUs" Link="/Content/SKU_Management/Pricing_Cross.htm" />
+            <TocEntry Title="Setting Native Currency Pricing for Coupons" Link="/Content/SKU_Management/Pricing_Coupons.htm" />
+            <TocEntry Title="Setting Native Currency Pricing for eCD" Link="/Content/SKU_Management/Pricing_eCD.htm" />
+            <TocEntry Title="Setting Native Currency Pricing for Up-Sell SKUs" Link="/Content/SKU_Management/Pricing_Up.htm" />
+            <TocEntry Title="Setting Preferences for Native Currency Pricing" Link="/Content/SKU_Management/Pricing_Preferences.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating eSellers" Link="/Content/SKU_Management/Creating_eSellers.htm" />
+        <TocEntry Title="Creating Serial Numbers" Link="/Content/SKU_Management/Creating_Serial.htm">
+            <TocEntry Title="Ready-to-Use" Link="/Content/SKU_Management/Serial_Ready.htm">
+                <TocEntry Title="Standard" Link="/Content/SKU_Management/Serial_Standard.htm" />
+                <TocEntry Title="Standard Enhanced" Link="/Content/SKU_Management/Serial_Enhanced.htm" />
+                <TocEntry Title="eSellerate Armadillo" Link="/Content/SKU_Management/Serial_eSell_Arm.htm" />
+                <TocEntry Title="Armadillo" Link="/Content/SKU_Management/Serial_Armadillo.htm" />
+                <TocEntry Title="RPN" Link="/Content/SKU_Management/Serial_RPN.htm" />
+            </TocEntry>
+            <TocEntry Title="Custom" Link="/Content/SKU_Management/Serial_Custom.htm" />
+            <TocEntry Title="External" Link="/Content/SKU_Management/Serial_External.htm">
+                <TocEntry Title="Pre-generated" Link="/Content/SKU_Management/Serial_Pre.htm" />
+                <TocEntry Title="Publisher E-Mailed" Link="/Content/SKU_Management/Serial_Pub.htm" />
+                <TocEntry Title="Remote URL" Link="/Content/SKU_Management/Serial_Remote.htm" />
+                <TocEntry Title="Application Supplied" Link="/Content/SKU_Management/Serial_App.htm" />
+            </TocEntry>
+            <TocEntry Title="Manually Generating Serial Numbers" Link="/Content/SKU_Management/Serial_Manual.htm">
+                <TocEntry Title="Generating One Serial Number" Link="/Content/SKU_Management/Serial_Manual_Single.htm" />
+                <TocEntry Title="Generating Multiple Serial Numbers" Link="/Content/SKU_Management/Serial_Manual_Multiple.htm" />
+            </TocEntry>
+            <TocEntry Title="AquaticPrime License Files" Link="/Content/SKU_Management/Serial_Aquatic.htm" />
+        </TocEntry>
+        <TocEntry Title="Setting Up Product Activation" Link="/Content/SKU_Management/Activation_Overview.htm" conditions="Primary.eSellerateOnly">
+            <TocEntry Title="Creating Product Activation Sets" Link="/Content/SKU_Management/Activation_Creating.htm" />
+            <TocEntry Title="Configuring Your Software for Activation" Link="/Content/SKU_Management/Activation_Configuring.htm" />
+            <TocEntry Title="Other Options for Activation" Link="/Content/SKU_Management/Activation_Other.htm" />
+        </TocEntry>
+        <TocEntry Title="Importing External Serial Numbers for Activation" Link="/Content/SKU_Management/Activation_Ext_Import.htm" conditions="Primary.eSellerateOnly" />
+        <TocEntry Title="Manually Activating Serial Numbers" Link="/Content/SKU_Management/Activation_Manual.htm" conditions="Primary.eSellerateOnly" />
+    </TocEntry>
+    <TocEntry Title="Order Management" Link="/Content/Order_Management/Order_Management.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Searching for Orders" Link="/Content/Order_Management/Orders_Searching.htm">
+            <TocEntry Title="Order Detail Page" Link="/Content/Order_Management/Orders_Detail_Page.htm" />
+            <TocEntry Title="Activation Details Page" Link="/Content/Order_Management/Orders_Activation_Detail.htm" />
+            <TocEntry Title="Subscription Events Testing – Preview Orders" Link="/Content/Order_Management/Orders_Sub_Event_Test.htm" />
+        </TocEntry>
+        <TocEntry Title="Fulfilling Orders" Link="/Content/Order_Management/Orders_Fulfilling.htm">
+            <TocEntry Title="Printing Packing Slips" Link="/Content/Order_Management/Orders_Packing_Slips.htm" />
+        </TocEntry>
+        <TocEntry Title="Returning Orders" Link="/Content/Order_Management/Orders_Returning.htm">
+            <TocEntry Title="Full Order Returns" Link="/Content/Order_Management/Orders_Return_Full.htm" />
+            <TocEntry Title="Shipping Refunds" Link="/Content/Order_Management/Orders_Return_Ship.htm" />
+            <TocEntry Title="Satisfaction Refunds" Link="/Content/Order_Management/Orders_Return_Satisf.htm" />
+            <TocEntry Title="Partial Returns/Refunds" Link="/Content/Order_Management/Orders_Return_Partial.htm" />
+            <TocEntry Title="Tax-Only Refunds" Link="/Content/Order_Management/Orders_TaxOnly_Refund.htm" />
+        </TocEntry>
+        <TocEntry Title="Voiding Orders" Link="/Content/Order_Management/Orders_Voiding.htm" />
+        <TocEntry Title="Maintaining the XML Order Notice" Link="/Content/Order_Management/Orders_XML.htm" />
+    </TocEntry>
+    <TocEntry Title="References" Link="/Content/References/References.htm" StartSection="true" StartChapter="true" PageNumber="1" PageNumberReset="continue" PageType="first">
+        <TocEntry Title="Creating Downloads" Link="/Content/References/References_Downloads.htm" />
+        <TocEntry Title="Creating Shipping Tables" Link="/Content/References/References_Shipping.htm">
+            <TocEntry Title="Shipping Regions" Link="/Content/References/References_ShippingRegions.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Country Restrictions" Link="/Content/References/References_Country.htm" />
+        <TocEntry Title="Creating URL Aliases" Link="/Content/References/References_URL_Alias.htm" />
+        <TocEntry Title="Creating Categories" Link="/Content/References/References_Categories.htm" />
+    </TocEntry>
+    <TocEntry Title="Account Management" Link="/Content/Account_Management/Account_Management.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Entering Account Information" Link="/Content/Account_Management/Account_Contact.htm">
+            <TocEntry Title="Using the XML Order Notice" Link="/Content/Account_Management/Account_XML.htm" />
+            <TocEntry Title="Integrating with Amazon Fulfillment" Link="/Content/Account_Management/Account_Amazon.htm" />
+        </TocEntry>
+        <TocEntry Title="Entering Default Receipt Information" Link="/Content/Account_Management/Account_Receipt.htm" />
+        <TocEntry Title="Creating Terms of Sale" Link="/Content/Account_Management/Account_Terms.htm" />
+        <TocEntry Title="Entering Return and Privacy Policies" Link="/Content/Account_Management/Account_Return_Privacy.htm">
+            <TocEntry Title="Presenting the eSellerate Download Protection (eDP) Option to Customers" Link="/Content/Account_Management/Account_eDP.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Return Reasons" Link="/Content/Account_Management/Account_Return_Reasons.htm" />
+    </TocEntry>
+    <TocEntry Title="Reports" Link="/Content/Reports/Reports.htm" StartChapter="true" PageType="first" StartSection="true" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Business Intelligence Reporting" Link="/Content/Reports/Reports_Business_Intel.htm" />
+        <TocEntry Title="Running Customer Reports" Link="/Content/Reports/Reports_SectCustomer.htm">
+            <TocEntry Title="Customer Listing" Link="/Content/Reports/Reports_Customer.htm" />
+        </TocEntry>
+        <TocEntry Title="Running Sales Reports" Link="/Content/Reports/Reports_SectSales.htm">
+            <TocEntry Title="SKU Sales by Date Range" Link="/Content/Reports/Reports_SKUSalesbyDate.htm" />
+            <TocEntry Title="SKU Sales by Currency" Link="/Content/Reports/Reports_SKUSalesbyCurrency.htm" />
+            <TocEntry Title="SKU Sales by Country" Link="/Content/Reports/Reports_SKUSalesbyCountry.htm" />
+            <TocEntry Title="SKU Sales Summary" Link="/Content/Reports/Reports_SKUSalesSummary.htm" />
+            <TocEntry Title="Subscription SKU Sales Summary" Link="/Content/Reports/Reports_SubSKUSalesSummary.htm" />
+            <TocEntry Title="Transaction Ledger" Link="/Content/Reports/Reports_TransactionLedger.htm" />
+            <TocEntry Title="Orders by Payment Type" Link="/Content/Reports/Reports_OrdersbyPayment.htm" />
+            <TocEntry Title="Daily Summary File" Link="/Content/Reports/Reports_DailySummaryFile.htm" />
+            <TocEntry Title="SplitPay Transaction Export" Link="/Content/Reports/Reports_SplitPayTransaction.htm" />
+            <TocEntry Title="Cross-Sell Activity by Primary SKU" Link="/Content/Reports/Reports_CrossSellbyPrimary.htm" />
+            <TocEntry Title="Cross-Sell Activity by Group" Link="/Content/Reports/Reports_CrossSellbyGroup.htm" />
+            <TocEntry Title="Up-Sell Activity by Primary SKU" Link="/Content/Reports/Reports_UpSellbyPrimary.htm" />
+            <TocEntry Title="Up-Sell Activity by Group" Link="/Content/Reports/Reports_UpSellbyGroup.htm" />
+            <TocEntry Title="Basic Affiliate Sales by Date Range" Link="/Content/Reports/Reports_BasicbyDate.htm" />
+            <TocEntry Title="eSellerate Affiliate Sales by Date Range" Link="/Content/Reports/Reports_eSellbyDate.htm" />
+            <TocEntry Title="Using Tracking IDs" Link="/Content/Reports/Reports_TrackingIDs.htm" />
+        </TocEntry>
+        <TocEntry Title="Running Payment Reports" Link="/Content/Reports/Reports_SectPayment.htm">
+            <TocEntry Title="Payments" Link="/Content/Reports/Reports_Payments.htm" />
+            <TocEntry Title="Payment Detail Page" Link="/Content/Reports/Reports_PaymentDetail.htm" />
+        </TocEntry>
+        <TocEntry Title="Running Admin Reports" Link="/Content/Reports/Reports_SectAdmin.htm">
+            <TocEntry Title="Affiliate Listing" Link="/Content/Reports/Reports_AffiliateListing.htm" />
+            <TocEntry Title="Hosted eST Tracking" Link="/Content/Reports/Reports_HostedeST.htm" />
+            <TocEntry Title="Bandwidth Usage" Link="/Content/Reports/Reports_Bandwidtth.htm" />
+            <TocEntry Title="CheckForUpdate Redirects" Link="/Content/Reports/Reports_CheckForUpdate.htm" />
+            <TocEntry Title="Embedded Web Store CheckForUpdate Redirects" Link="/Content/Reports/Reports_EWSCheckFor.htm" />
+            <TocEntry Title="SKU Redirects" Link="/Content/Reports/Reports_SKURedirects.htm" />
+            <TocEntry Title="Serial Numbers" Link="/Content/Reports/Reports_SerialNumbers.htm" />
+            <TocEntry Title="Serial Number Activation Attempts" Link="/Content/Reports/Reports_SerialNumberAct.htm" />
+            <TocEntry Title="Activation History Export" Link="/Content/Reports/Reports_ActivationHistory.htm" />
+            <TocEntry Title="Activation Failures Export" Link="/Content/Reports/Reports_ActivationFailures.htm" />
+            <TocEntry Title="Coupon Usage" Link="/Content/Reports/Reports_CouponUsage.htm" />
+            <TocEntry Title="Login Attempts" Link="/Content/Reports/Reports_LoginAttempts.htm" />
+        </TocEntry>
+        <TocEntry Title="Running Pricing Reports" Link="/Content/Reports/Reports_SectPricing.htm">
+            <TocEntry Title="SKU Pricing by Currency" Link="/Content/Reports/Reports_SKUbyCurrency.htm" />
+            <TocEntry Title="Volume Discount by Currency" Link="/Content/Reports/Reports_VolumebyCurrency.htm" />
+            <TocEntry Title="Cross-Sell Discount by Currency" Link="/Content/Reports/Reports_CrossbyCurrency.htm" />
+            <TocEntry Title="Coupons by Currency" Link="/Content/Reports/Reports_CouponsbyCurrency.htm" />
+            <TocEntry Title="Up-Sell Discount by Currency" Link="/Content/Reports/Reports_UpSellbyCurrency.htm" />
+        </TocEntry>
+        <TocEntry Title="Selecting a Date from the Calendar Interface" Link="/Content/Reports/Reports_CalendarInterface.htm" />
+    </TocEntry>
+    <TocEntry Title="Advanced Sales Options" Link="/Content/Advanced_Sales_Options/AdvancedSalesOptions.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Setting Up Subscription-Based Licensing" Link="/Content/Advanced_Sales_Options/Advanced_SettingUpSub.htm">
+            <TocEntry Title="Getting Started: The About Subscriptions Page" Link="/Content/Advanced_Sales_Options/Advanced_SigningUpSub.htm" />
+            <TocEntry Title="Overview of Subscriptions" Link="/Content/Advanced_Sales_Options/Advanced_OverviewSub.htm" />
+            <TocEntry Title="Notes on Subscriptions" Link="/Content/Advanced_Sales_Options/Advanced_NotesSub.htm" />
+            <TocEntry Title="Creating Subscription Methods" Link="/Content/Advanced_Sales_Options/Advanced_CreatingSubMeth.htm" />
+            <TocEntry Title="Subscriptions: Details" Link="/Content/Advanced_Sales_Options/Advanced_SubDetails.htm" />
+            <TocEntry Title="Subscriptions: Terms" Link="/Content/Advanced_Sales_Options/Advanced_SubTerms.htm" />
+            <TocEntry Title="Subscriptions: E-mails" Link="/Content/Advanced_Sales_Options/Advanced_SubEmails.htm" />
+            <TocEntry Title="Subscriptions: Usage" Link="/Content/Advanced_Sales_Options/Advanced_SubUsage.htm" />
+            <TocEntry Title="Subscription Examples" Link="/Content/Advanced_Sales_Options/Advanced_SubExamples.htm" />
+            <TocEntry Title="Canceling and Returning Subscriptions" Link="/Content/Advanced_Sales_Options/Advanced_SubCancelReturn.htm" />
+            <TocEntry Title="Cancel Subscription API" Link="/Content/Advanced_Sales_Options/Advanced_Cancel_Sub_API.htm" />
+            <TocEntry Title="Allowing Change of Quantity" Link="/Content/Advanced_Sales_Options/Advanced_SubQty.htm" />
+        </TocEntry>
+        <TocEntry Title="Configuring eCD" Link="/Content/Advanced_Sales_Options/Advanced_ConfigECD.htm">
+            <TocEntry Title="Getting Started: About eCD Page." Link="/Content/Advanced_Sales_Options/Advanced_SigningUpECD.htm" />
+            <TocEntry Title="Notes on eCD" Link="/Content/Advanced_Sales_Options/Advanced_NotesECD.htm" />
+            <TocEntry Title="Organizing Your Files for eCD" Link="/Content/Advanced_Sales_Options/Advanced_OrganizingECD.htm" />
+            <TocEntry Title="ISO Disk Image" Link="/Content/Advanced_Sales_Options/Advanced_ECDISOImg.htm" />
+            <TocEntry Title="Windows Zip" Link="/Content/Advanced_Sales_Options/Advanced_ECDWindowsZip.htm" />
+            <TocEntry Title="Windows Not Zip" Link="/Content/Advanced_Sales_Options/Advanced_ECDWindowsNotZi.htm" />
+            <TocEntry Title="Macintosh Disk Image" Link="/Content/Advanced_Sales_Options/Advanced_ECDMacDiskImg.htm" />
+            <TocEntry Title="Macintosh Zip" Link="/Content/Advanced_Sales_Options/Advanced_ECDMacZip.htm" />
+            <TocEntry Title="Macintosh Not Disk Image, Not Zip" Link="/Content/Advanced_Sales_Options/Advanced_ECDMacNot.htm" />
+            <TocEntry Title="Combined File Types (eCD Optional Only)" Link="/Content/Advanced_Sales_Options/Advanced_ECDCombined.htm" />
+            <TocEntry Title="Uploading eCD Files" Link="/Content/Advanced_Sales_Options/Advanced_eCDUploading.htm" />
+            <TocEntry Title="eCD Images" Link="/Content/Advanced_Sales_Options/Advanced_ECDImg.htm" />
+            <TocEntry Title="eCD Images: Detail" Link="/Content/Advanced_Sales_Options/Advanced_ECDImg2.htm" />
+            <TocEntry Title="eCD Layouts" Link="/Content/Advanced_Sales_Options/Advanced_ECDLay.htm" />
+            <TocEntry Title="eCD Layouts: Detail" Link="/Content/Advanced_Sales_Options/Advanced_ECDLay2.htm" />
+            <TocEntry Title="eCD Configuration" Link="/Content/Advanced_Sales_Options/Advanced_ECDConfig.htm" />
+            <TocEntry Title="Valid eSellers" Link="/Content/Advanced_Sales_Options/Advanced_ECDeSeller.htm" />
+            <TocEntry Title="Valid SKUs" Link="/Content/Advanced_Sales_Options/Advanced_ECDSKU.htm" />
+            <TocEntry Title="Valid eCD Files" Link="/Content/Advanced_Sales_Options/Advanced_ECDFile.htm" />
+            <TocEntry Title="eCD Image Requirements" Link="/Content/Advanced_Sales_Options/Advanced_ECDRequirements.htm" />
+            <TocEntry Title="eCD Optional and Tax-Inclusive Pricing" Link="/Content/Advanced_Sales_Options/Advanced_ECDTaxInclus.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Up-Sells" Link="/Content/Advanced_Sales_Options/Advanced_CreatingUpSell.htm">
+            <TocEntry Title="Overview of Up-Selling" Link="/Content/Advanced_Sales_Options/Advanced_UpSellOverview.htm" />
+            <TocEntry Title="Creating Up-Sell SKU Groups" Link="/Content/Advanced_Sales_Options/Advanced_CreatingUpSell1.htm" />
+            <TocEntry Title="Up-Sell SKU Options" Link="/Content/Advanced_Sales_Options/Advanced_UpSellOptions.htm" />
+            <TocEntry Title="Assigning Up-Sell SKU Groups to eSellers" Link="/Content/Advanced_Sales_Options/Advanced_UpSellSKUAssign.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Cross-Sells" Link="/Content/Advanced_Sales_Options/Advanced_CreatingCrossIt.htm">
+            <TocEntry Title="Notes on Cross-Selling" Link="/Content/Advanced_Sales_Options/Advanced_NotesCrossSell.htm" />
+            <TocEntry Title="Creating Cross-Sell SKU Groups" Link="/Content/Advanced_Sales_Options/Advanced_CreatingCrossGr.htm" />
+            <TocEntry Title="Cross-Sell SKU Options" Link="/Content/Advanced_Sales_Options/Advanced_CrossOptions.htm" />
+            <TocEntry Title="About Active and Preview Modes" Link="/Content/Advanced_Sales_Options/About_Active_and_Preview.htm" />
+            <TocEntry Title="Assigning Cross-Sell SKU Groups to eSellers" Link="/Content/Advanced_Sales_Options/Advanced_CrossSellSKUAssign.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Coupons" Link="/Content/Advanced_Sales_Options/Advanced_CreatingCoupons.htm" StartSection="false" StartChapter="false" PageType="normal">
+            <TocEntry Title="Notes on Coupons" Link="/Content/Advanced_Sales_Options/Advanced_CouponNotes.htm" />
+            <TocEntry Title="Creating Coupon Discounts" Link="/Content/Advanced_Sales_Options/Advanced_CreatingCouponD.htm" />
+            <TocEntry Title="Generating One-Time Use Coupons" Link="/Content/Advanced_Sales_Options/Advanced_CouponOneTime.htm" />
+            <TocEntry Title="Extending the Coupon Expiration Date" Link="/Content/Advanced_Sales_Options/Advanced_CouponExtendExp.htm" />
+            <TocEntry Title="Editing Active Coupons" Link="/Content/Advanced_Sales_Options/Advanced_EditingActCoupo.htm" />
+            <TocEntry Title="Prefilling Coupon ID" Link="/Content/Advanced_Sales_Options/Advanced_PrefillCoupon.htm" />
+        </TocEntry>
+        <TocEntry Title="Creating Volume Discounts" Link="/Content/Advanced_Sales_Options/Advanced_CreatingVolume.htm">
+            <TocEntry Title="Volume Discount Example" Link="/Content/Advanced_Sales_Options/Advanced_VolumeExample.htm" />
+            <TocEntry Title="Creating Volume Discount Sets" Link="/Content/Advanced_Sales_Options/Advanced_VolumeCreating.htm" />
+            <TocEntry Title="Assigning Volume Discounts to eSellers" Link="/Content/Advanced_Sales_Options/Advanced_VolumeAssign.htm" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="eSellerate Affiliates" Link="/Content/eSellerate_Affiliates/Affiliates.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue" conditions="Primary.eSellerateOnly">
+        <TocEntry Title="Joining eSellerate Affiliates" Link="/Content/eSellerate_Affiliates/Affiliates_Joining.htm" />
+        <TocEntry Title="Entering Affiliate Contact Information" Link="/Content/eSellerate_Affiliates/Affiliates_EnteringConta.htm" />
+        <TocEntry Title="Submitting SKUs" Link="/Content/eSellerate_Affiliates/Affiliates_SubmitSKUs.htm" />
+        <TocEntry Title="Creating eST Downloads" Link="/Content/eSellerate_Affiliates/Affiliates_eSTDownloads.htm">
+            <TocEntry Title="eST and Embedded Web Store eSellers" Link="/Content/eSellerate_Affiliates/Affiliates_eSTandEWS.htm" />
+            <TocEntry Title="In-App Buy URL" Link="/Content/eSellerate_Affiliates/Affiliates_InAppBuy.htm" />
+            <TocEntry Title="Retrieving Affiliate Information: C Code Example" Link="/Content/eSellerate_Affiliates/Affiliates_C_Code.htm" />
+            <TocEntry Title="Retrieving Affiliate Information: Visual Basic Code Example" Link="/Content/eSellerate_Affiliates/Affiliates_VB_Code.htm" />
+        </TocEntry>
+        <TocEntry Title="Testing eST Downloads" Link="/Content/eSellerate_Affiliates/Affiliates_TestingeST.htm" />
+        <TocEntry Title="Updating eST Downloads" Link="/Content/eSellerate_Affiliates/Affiliates_UpdatingeST.htm" />
+        <TocEntry Title="Customizing Online Stores for Select Affiliates" Link="/Content/eSellerate_Affiliates/Affiliates_CustomOnlineS.htm" />
+        <TocEntry Title="Making Affiliate Level Changes" Link="/Content/eSellerate_Affiliates/Affiliates_MakingAffLeve.htm" />
+    </TocEntry>
+    <TocEntry Title="Other Sales Partnerships" Link="/Content/Other_Sales_Partnerships/Other_Sales_Partnerships.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Setting Up Basic Affiliates" Link="/Content/Other_Sales_Partnerships/Other_Basic_Affiliates.htm" />
+        <TocEntry Title="Joining eSellerate SplitPay" Link="/Content/Other_Sales_Partnerships/Other_SplitPay.htm" />
+    </TocEntry>
+    <TocEntry Title="Layouts" Link="/Content/Layouts/Layouts.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue" conditions="Primary.eSellerateOnly">
+        <TocEntry Title="Custom Layouts" Link="/Content/Layouts/Layouts_Custom.htm">
+            <TocEntry Title="Notes on Custom Layouts" Link="/Content/Layouts/Layouts_CustomNotes.htm" />
+            <TocEntry Title="Creating Custom Layouts" Link="/Content/Layouts/Layouts_CustomCreate.htm" />
+            <TocEntry Title="Assigning Custom Layouts to eSellers" Link="/Content/Layouts/Layouts_CustomAssign.htm" />
+            <TocEntry Title="Settings Tab" Link="/Content/Layouts/Layouts_CustomSettings.htm" />
+            <TocEntry Title="Files Tab" Link="/Content/Layouts/Layouts_CustomFiles.htm" />
+            <TocEntry Title="Styles" Link="/Content/Layouts/Layouts_CustomStyles.htm" />
+            <TocEntry Title="Template File" Link="/Content/Layouts/Layouts_CustomTemplate.htm" />
+            <TocEntry Title="Sample Code for Using &lt;_CONTENT&gt; Tags" Link="/Content/Layouts/Sample_code_for_using.htm" />
+            <TocEntry Title="Variables Notes" Link="/Content/Layouts/Layouts_CustomVariablesN.htm" />
+            <TocEntry Title="Prefilling Data" Link="/Content/Layouts/Layouts_CustomPrefillDat.htm" />
+            <TocEntry Title="Custom Layout Extensions" Link="/Content/Layouts/Layouts_CLExt.htm" />
+            <TocEntry Title="eSellerate Functions" Link="/Content/Layouts/Layouts_Functions.htm" />
+            <TocEntry Title="Ad Hoc Variables" Link="/Content/Layouts/Layouts_AdHoc.htm" />
+            <TocEntry Title="Assignment Statements" Link="/Content/Layouts/Layouts_AssignmentSt.htm" />
+            <TocEntry Title="Receipt Page Notes" Link="/Content/Layouts/Layouts_CustomReceiptPag.htm" />
+            <TocEntry Title="Preparing Custom Layouts for Receipts" Link="/Content/Layouts/Layouts_CustomPrepCLRece.htm" />
+            <TocEntry Title="Payment Methods Integration" Link="/Content/Layouts/Layouts_CustomPaymentMethods.htm" />
+        </TocEntry>
+        <TocEntry Title="Custom Layout Lexicon" Link="/Content/Layouts/Custom_Layout_Lexicon.htm">
+            <TocEntry Title="Language Selection" Link="/Content/Layouts/Language_Selection.htm" />
+            <TocEntry Title="Translations" Link="/Content/Layouts/Translations.htm" />
+        </TocEntry>
+        <TocEntry Title="Affiliate Landing Pages" Link="/Content/Layouts/Layouts_Landing.htm">
+            <TocEntry Title="Notes on Landing Pages" Link="/Content/Layouts/Layouts_LandingNotes.htm" />
+            <TocEntry Title="Creating Landing Pages" Link="/Content/Layouts/Layouts_LandingCreate.htm" />
+            <TocEntry Title="Assigning Landing Pages to SKUs" Link="/Content/Layouts/Layouts_LandingAssign.htm" />
+            <TocEntry Title="Settings Tab" Link="/Content/Layouts/Layouts_LandingSettings.htm" />
+            <TocEntry Title="Files Tab" Link="/Content/Layouts/Layouts_LandingFiles.htm" />
+            <TocEntry Title="Generating Custom URLs" Link="/Content/Layouts/Layouts_LandingCustomURL.htm" />
+            <TocEntry Title="Tags &amp; Variables" Link="/Content/Layouts/Layouts_LandingTagsVars.htm" />
+            <TocEntry Title="Variables Notes" Link="/Content/Layouts/Layouts_LandingVarNotes.htm" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="User Management" Link="/Content/User_Management/User_Management.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Users &amp; Permissions" Link="/Content/User_Management/User_AndPermissions.htm">
+            <TocEntry Title="Login Company ID" Link="/Content/User_Management/User_CompanyID.htm" />
+            <TocEntry Title="User List" Link="/Content/User_Management/User_List.htm" />
+            <TocEntry Title="User Detail" Link="/Content/User_Management/User_Detail.htm" />
+            <TocEntry Title="Reset Password" Link="/Content/User_Management/User_Reset.htm" />
+        </TocEntry>
+        <TocEntry Title="My Profile" Link="/Content/User_Management/User_MyProfile.htm" />
+    </TocEntry>
+    <TocEntry Title="Embedded Web Store eSellers" Link="/Content/Embedded_Web_Store_eSellers/EWS_Main.htm" StartChapter="true" StartSection="true" PageType="first" PageNumber="1" PageNumberReset="continue" conditions="Primary.eSellerateOnly">
+        <TocEntry Title="Development Options" Link="/Content/Embedded_Web_Store_eSellers/EWS_DevOptions.htm" />
+        <TocEntry Title="Overview" Link="/Content/Embedded_Web_Store_eSellers/EWS_Overview.htm" />
+        <TocEntry Title="Creating an Embedded Web Store eSeller" Link="/Content/Embedded_Web_Store_eSellers/EWS_CreatingeSeller.htm">
+            <TocEntry Title="Embedded Web Store: General Attributes" Link="/Content/Embedded_Web_Store_eSellers/EWS_IDNameLayout.htm" />
+            <TocEntry Title="Embedded Web Store: Receipt Information" Link="/Content/Embedded_Web_Store_eSellers/EWS_ReceiptInfo.htm" />
+        </TocEntry>
+        <TocEntry Title="Adding Embedded Web Store SKUs" Link="/Content/Embedded_Web_Store_eSellers/EWS_AddingSKUs.htm">
+            <TocEntry Title="Embedded Web Store SKUs: General Attributes" Link="/Content/Embedded_Web_Store_eSellers/EWS_General.htm" />
+            <TocEntry Title="Embedded Web Store SKUs: CheckForUpdate" Link="/Content/Embedded_Web_Store_eSellers/EWS_CFU.htm" />
+            <TocEntry Title="Embedded Web Store SKUs: Advanced Sales Options" Link="/Content/Embedded_Web_Store_eSellers/EWS_Advanced.htm" />
+            <TocEntry Title="Embedded Web Store SKUs: Try and Buy Downloads" Link="/Content/Embedded_Web_Store_eSellers/EWS_Buy.htm" />
+        </TocEntry>
+        <TocEntry Title="Setting Display Order for Categories and SKUs" Link="/Content/Embedded_Web_Store_eSellers/EWS_StoreSKUCat.htm" />
+        <TocEntry Title="Generating a Preview Certificate" Link="/Content/Embedded_Web_Store_eSellers/EWS_PreviewCert.htm" />
+        <TocEntry Title="Configuring Your Application’s Source Code to Reference the eSeller" Link="/Content/Embedded_Web_Store_eSellers/EWS_ConfigureSource.htm" />
+        <TocEntry Title="Product Update Example" Link="/Content/Embedded_Web_Store_eSellers/EWS_ProductUpdateEx.htm" />
+    </TocEntry>
+    <TocEntry Title="Integrated eSellers" Link="/Content/Integrated_eSellers/Integrated_eSellers.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue" conditions="Primary.eSellerateOnly">
+        <TocEntry Title="Development Options" Link="/Content/Integrated_eSellers/Integrated_DevOpt.htm" />
+        <TocEntry Title="Overview" Link="/Content/Integrated_eSellers/Integrated_Overview.htm" />
+        <TocEntry Title="Creating an Integrated eSeller" Link="/Content/Integrated_eSellers/Integrated_CreatingeSell.htm" />
+        <TocEntry Title="Adding a Primary SKU to the eSeller" Link="/Content/Integrated_eSellers/Integrated_AddPrimarySKU.htm">
+            <TocEntry Title="Integrated eSeller SKUs: SKU Attributes" Link="/Content/Integrated_eSellers/Integrated_SKUAttributes.htm" />
+            <TocEntry Title="Integrated eSeller SKUs: SKU Status" Link="/Content/Integrated_eSellers/Integrated_SKUStatus.htm" />
+            <TocEntry Title="Integrated eSeller SKUs: Volume Discount" Link="/Content/Integrated_eSellers/Integrated_SKUVolumeD.htm" />
+            <TocEntry Title="Integrated eSeller SKUs: Download" Link="/Content/Integrated_eSellers/Integrated_SKUDownload.htm" />
+        </TocEntry>
+        <TocEntry Title="Integrated eSeller: CheckForUpdate Redirect" Link="/Content/Integrated_eSellers/Integrated_CFURedirect.htm" />
+        <TocEntry Title="Integrated eSeller: Cross-Sell SKUs" Link="/Content/Integrated_eSellers/Integrated_CrossSell.htm" />
+        <TocEntry Title="Integrated eSeller: Software Delivery Wizard" Link="/Content/Integrated_eSellers/Integrated_Wizard.htm" />
+        <TocEntry Title="Integrated eSeller: Preview Certificate" Link="/Content/Integrated_eSellers/Integrated_Preview.htm" />
+        <TocEntry Title="Configuring Your Application’s Source Code to Reference the eSeller" Link="/Content/Integrated_eSellers/Integrated_ConfiguringSo.htm" />
+        <TocEntry Title="CheckForUpdate Redirect Example" Link="/Content/Integrated_eSellers/Integrated_CFURedirectEx.htm" />
+    </TocEntry>
+    <TocEntry Title="Web Store eSellers" Link="/Content/Web_Store_eSellers/Web_Main.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Overview" Link="/Content/Web_Store_eSellers/Web_Overview.htm" />
+        <TocEntry Title="Creating a Web Store eSeller" Link="/Content/Web_Store_eSellers/Web_CreatingeSeller.htm">
+            <TocEntry Title="Web Store: General Attributes" Link="/Content/Web_Store_eSellers/Web_eSellerDetail.htm" />
+            <TocEntry Title="Web Store: Receipt Information" Link="/Content/Web_Store_eSellers/Web_Receipt.htm" />
+            <TocEntry Title="Web Store: Private Login" Link="/Content/Web_Store_eSellers/Web_PrivateLogin.htm" />
+            <TocEntry Title="Web Store: Layout" Link="/Content/Web_Store_eSellers/Web_Layout.htm" />
+        </TocEntry>
+        <TocEntry Title="Adding Web Store SKUs" Link="/Content/Web_Store_eSellers/Web_AddingSKUs.htm">
+            <TocEntry Title="Web Store SKUs: SKU Attributes" Link="/Content/Web_Store_eSellers/Web_SKUAttr.htm" />
+            <TocEntry Title="Web Store SKUs: SKU Status" Link="/Content/Web_Store_eSellers/Web_SKUStatus.htm" />
+            <TocEntry Title="Web Store SKUs: SKU Redirect" Link="/Content/Web_Store_eSellers/Web_SKURedirect.htm" />
+            <TocEntry Title="Web Store SKUs: Volume Discount" Link="/Content/Web_Store_eSellers/Web_VolumeDis.htm" />
+            <TocEntry Title="Web Store SKUs: SKU Category" Link="/Content/Web_Store_eSellers/Web_SKUCat.htm" />
+            <TocEntry Title="Web Store SKUs: Cross-Sell SKU Group" Link="/Content/Web_Store_eSellers/Web_CrossSellSKU.htm" />
+            <TocEntry Title="Web Store SKUs: Up-Sell SKU Group" Link="/Content/Web_Store_eSellers/Web_UpSellSKU.htm" />
+            <TocEntry Title="Web Store SKUs: Buy Download" Link="/Content/Web_Store_eSellers/Web_BuyDownload.htm" />
+            <TocEntry Title="Web Store SKUs: Try Download" Link="/Content/Web_Store_eSellers/Web_TryDownload.htm" />
+        </TocEntry>
+        <TocEntry Title="Web Store: Links" Link="/Content/Web_Store_eSellers/Web_Links.htm" />
+        <TocEntry Title="Web Store: Store SKU Categories" Link="/Content/Web_Store_eSellers/Web_StoreSKUCategories.htm" />
+        <TocEntry Title="Enabling Phone and Fax Orders" Link="/Content/Web_Store_eSellers/Web_EnablePFO.htm" />
+    </TocEntry>
+    <TocEntry Title="Miscellaneous" Link="/Content/Miscellaneous/Miscellaneous.htm" StartSection="true" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue">
+        <TocEntry Title="Tax-Inclusive Pricing" Link="/Content/Miscellaneous/TaxInclusive.htm" />
+        <TocEntry Title="PayPal Payments" Link="/Content/Miscellaneous/PayPalPayments.htm" />
+        <TocEntry Title="E-check (ACH) Payments" Link="/Content/Miscellaneous/ACHPayments.htm" />
+        <TocEntry Title="International Wire Payments" Link="/Content/Miscellaneous/WirePayments.htm" />
+        <TocEntry Title="Purchase Order Payments" Link="/Content/Miscellaneous/POPayments.htm" />
+        <TocEntry Title="Localizing [%=Primary.CompanyName%] Stores" Link="/Content/Miscellaneous/LocalizingStores.htm">
+            <TocEntry Title="Localization Overview" Link="/Content/Miscellaneous/Local_Overview.htm" />
+            <TocEntry Title="Localization Steps for Publishers" Link="/Content/Miscellaneous/Local_Steps.htm" />
+            <TocEntry Title="Information for Translators" Link="/Content/Miscellaneous/Local_Translators.htm" />
+            <TocEntry Title="Summary of Setting Up Localization" Link="/Content/Miscellaneous/Local_Summary.htm" />
+            <TocEntry Title="Another Capability - Code Blocks" Link="/Content/Miscellaneous/Code_Blocks.htm" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="IndexFirst" Link="/Content/PrintOnly/printIndexFirst.htm" StartChapter="true" PageType="first" PageNumber="1" PageNumberReset="continue" StartSection="true" PageLayout="/Content/Resources/PageLayouts/Index.flpgl" />
+</CatapultToc>

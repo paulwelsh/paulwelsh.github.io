@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Installing.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_RetVal.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Installing.htm#Embedded_SDKReference_1955650137_689330" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_RetVal.htm#Embedded_SDKReference_1955650137_507432" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_506015" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_22075" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="eWeb_Today"
+      Conditions=""
+      LocalConditions=""
+      Position="8" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

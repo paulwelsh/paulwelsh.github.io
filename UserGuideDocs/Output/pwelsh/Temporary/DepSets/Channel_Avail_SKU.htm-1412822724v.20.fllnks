@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm" />
+    <Link
+      Url="Content/Channels/Channels_Select_Cat.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#searchby" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#sortprod" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#downloadSKU" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#downloadSKUTry" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#categprod" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#accessdetails" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#category" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm#inchannelqualified" />
+    <Link
+      Url="Content/Channels/Channels_Select_Cat.htm" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="searchby" />
+    <Anchor
+      Name="sortprod" />
+    <Anchor
+      Name="downloadSKU" />
+    <Anchor
+      Name="DownloadSKUTry" />
+    <Anchor
+      Name="categprod" />
+    <Anchor
+      Name="category" />
+    <Anchor
+      Name="inchannelqualified" />
+    <Anchor
+      Name="accessdetails" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

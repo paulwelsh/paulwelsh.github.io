@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reports|Running Payment Reports">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Payment Detail Page</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Payment Detail Page</h2>
+        <p class="pwNote"><span class="strong">Note:</span> The information that is available on the Payment Detail page does not include your profit or <span class="PrimaryCompanyName">eSellerate</span>'s commission on your orders from 4/1/2011 and later. <MadCap:conditionalText data-mc-conditions="Primary.Online">To find that information and more, please use <a href="Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]></p>
+        <p>The Payment Detail page displays when you run the Payments report and then click a <span class="strong">Payment ID</span> field to find more information about a specific payment. This page provides a payment summary in the top section, and payment details in the bottom section.</p>
+        <p>Options on this page include:</p>
+        <ul>
+            <li value="1">If a net affiliate commission exists, you can click the provided link to see a breakdown of the affiliate names and commission amounts due for the payment. (See the note that follows.)</li>
+            <li value="2">If a net SplitPay amount exists, you can click the provided link to see a breakdown of the payee names and SplitPay amounts due for the payment. (See the note that follows.)</li>
+            <li value="3">In addition to the HTML table that displays at the bottom of the Payment Detail page by default, this report can return results as a tab-delimited file, a comma-delimited file or an XML file. To use one of the file export options, make a selection from the <span class="strong">Return Results As</span> list and then click <span class="strong">Run</span>.<ul><li value="1">The resulting Save As dialog will display a default file name, which you can change if desired. (The default file extension should be correct for your chosen format.) When you're finished making any changes to the file name, save the file.</li><li value="2">You can now import the file into a database, or open it in a spreadsheet program such as Microsoft Excel.</li></ul></li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> The top section of the Payment Detail page displays figures for Net Affiliate Commission and Net SplitPay Amount. When these figures apply for a given payment, they will display as negative amounts (except in some cases involving returned orders). The reason is that affiliate commissions and split payments are negative adjustments to the Net Payment figure, which is the amount of your publisher payment. However, if you click the underlined link for either figure, the resulting Details page will display the figures as positive amounts (except in some cases involving returned orders). This is because the Details page shows the figures from the perspective of the amount due to your sales partner(s), which will be a positive amount in most cases.</p>
+        <p>&#160;</p>
+    </body>
+</html>

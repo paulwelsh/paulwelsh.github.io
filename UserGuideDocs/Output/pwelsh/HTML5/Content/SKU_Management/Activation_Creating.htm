@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management|Setting Up Product Activation">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Product Activation Sets</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Creating Product Activation Sets</h2>
+        <p>For an overview of Product Activation, see <a href="Activation_Overview.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Setting Up Product Activation</a>.</p>
+        <h5>To create a Product Activation set:</h5>
+        <ol>
+            <li value="1">Click the <span class="strong">Product Activation</span> tab. The Product Activation Sets page appears.
+</li>
+            <li value="2">Click <span class="strong">New</span>. The Product Activation Set Detail page appears.
+<br /></li>
+            <li value="3">In the <span class="strong">Description </span>field, enter a description for this Product Activation set. This is a good place to note important details, such as "Used with Product X version 3.2, Q4 2009." The description is for internal identification only, and will not be visible to your customers.</li>
+            <li value="4">Leave the <span class="strong">Unlimited Activations</span> check box cleared at this point. See <a href="Activation_Other.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Other Options for Activation</a> for details.
+</li>
+            <li value="5">The <span class="strong">Activations Per Quantity</span> field is for specifying the number of activations to allow for each product purchased. For example, if five copies of Product X are purchased and the Activations Per Quantity is 1, each product is allowed one activation (plus any additional activations that you specify, as described below). You can enter a number here (whole numbers or decimals), or you can accept the default value of 1.
+</li>
+            <li value="6">In the <span class="strong">Activations Beyond Quantity</span> field, enter the number of activations to allow beyond the quantity purchased (whole numbers only). If you accept the default value of 0, each product purchased will be allowed exactly the number of activations specified in the Activations Per Quantity field. Any value other than 0 will extend the activations. For example, assume that you enter 2 here and the Activations Per Quantity is 4. When a customer purchases two copies of Product X (which uses this activation set), the total number of activations allowed is: Quantity Purchased (2) x Activations Per Quantity (4) + Activations Beyond Quantity (2) = 10.
+</li>
+            <li value="7">Leave the <span class="strong">Reclaim Activations</span> check box cleared at this point. See <a href="Activation_Other.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Other Options for Activation</a> for details.
+</li>
+            <li value="8">
+                <p>The "Country Restrictions" option is for restricting customers in certain countries from activating your product. If an activation fails due to country restrictions, the SDK will return an error that indicates <span class="PrimaryCompanyName">eSellerate</span> denied the activation request. </p>
+                <p>To use this option, make a selection from the <span class="strong">Country Restrictions</span> <![CDATA[ ]]>list. </p>
+                <p>If you need to edit or create a country restriction set before you make your selection, click <span class="strong">Save</span>, and then click <span class="strong">Edit Country Restriction Sets</span>.
+</p>
+            </li>
+            <li value="9">To allow unlimited deactivations through the DeactivateSerialNumber API, select the <span class="strong">Unlimited Deactivations</span> check box.</li>
+            <li value="10">The <span class="strong">Deactivations Per Quantity</span> field is for specifying the number of deactivations (successful calls to the DeactivateSerialNumber API) to allow for each product purchased. For example, if five copies of Product X are purchased and the Deactivations Per Quantity is 1, each product is allowed one deactivation (plus any additional deactivations that you specify, as described below). You can enter a number here (whole numbers or decimals), or you can accept the default value of 1.</li>
+            <li value="11">In the <span class="strong">Deactivations Beyond Quantity</span> field, enter the number of deactivations to allow beyond the quantity purchased (whole numbers only). If you accept the default value of 0, each product purchased will be allowed exactly the number of deactivations specified in the Deactivations Per Quantity field. Any value other than 0 will extend the deactivations. For example, assume that you enter 2 here and the Deactivations Per Quantity is 4. When a customer purchases two copies of Product X (which uses this activation set), the total number of deactivations allowed is: Quantity Purchased (2) x Deactivations Per Quantity (4) + Deactivations Beyond Quantity (2) = 10.</li>
+            <li value="12">Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> If you use country restrictions with your Product Activation sets (see the preceding step 8), we recommend using the same country restrictions for the SKUs that you plan to activate. Doing so can prevent scenarios in which customers are able to purchase a product, but are unable to use the product because of country restrictions on the activation. For information on assigning country restrictions at the SKU level, see <a href="SKU_Advanced.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Setting the SKU's Advanced Properties (Optional)</a>.
+</p>
+        <p class="pwNote"><span class="strong">Note:</span> The deactivation rules for a Product Activation set (see the preceding steps 9-11) apply only to deactivations made through the DeactivateSerialNumber API. These rules do not apply to deactivations that you can perform from the Activation Details page, which are unrestricted.</p>
+        <p>&#160;</p>
+    </body>
+</html>

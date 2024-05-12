@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/SKU_Management/SKU_Advanced.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Basic.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_eSellers.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Bundle.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_SKU.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_Volume.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_Cross.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_Coupons.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_eCD.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_Up.htm" />
+    <Link
+      Url="Content/SKU_Management/Pricing_Preferences.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CreatingeSell.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_AddPrimarySKU.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirect.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CrossSell.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_Wizard.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_Preview.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_SKUAttributes.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_SKUStatus.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_SKUVolumeD.htm" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_SKUDownload.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_IDNameLayout.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_ReceiptInfo.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_StoreSKUCat.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_PreviewCert.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_Buy.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_CFU.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_General.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_eSellerDetail.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_Receipt.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_PrivateLogin.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_Layout.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_Links.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_StoreSKUCategories.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_SKUAttr.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_SKUStatus.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_SKURedirect.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_VolumeDis.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_SKUCat.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_CrossSellSKU.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_UpSellSKU.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_BuyDownload.htm" />
+    <Link
+      Url="Content/Web_Store_eSellers/Web_TryDownload.htm" />
+    <Link
+      Url="Content/SKU_Management/Creating_Serial.htm" />
+    <Link
+      Url="Content/SKU_Management/Activation_Ext_Import.htm" />
+    <Link
+      Url="Content/SKU_Management/Activation_Creating.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Searching.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Fulfilling.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Returning.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Voiding.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_XML.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Detail_Page.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Activation_Detail.htm" />
+    <Link
+      Url="Content/References/References_Downloads.htm" />
+    <Link
+      Url="Content/References/References_Shipping.htm" />
+    <Link
+      Url="Content/References/References_Country.htm" />
+    <Link
+      Url="Content/References/References_URL_Alias.htm" />
+    <Link
+      Url="Content/References/References_Categories.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Contact.htm" />
+    <Link
+      Url="Content/Account_Management/Account_XML.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Receipt.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Terms.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Return_Privacy.htm" />
+    <Link
+      Url="Content/Account_Management/Account_eDP.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Return_Reasons.htm" />
+    <Link
+      Url="Content/Reports/Reports_Customer.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKUSalesbyDate.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKUSalesbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKUSalesbyCountry.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKUSalesSummary.htm" />
+    <Link
+      Url="Content/Reports/Reports_SubSKUSalesSummary.htm" />
+    <Link
+      Url="Content/Reports/Reports_TransactionLedger.htm" />
+    <Link
+      Url="Content/Reports/Reports_OrdersbyPayment.htm" />
+    <Link
+      Url="Content/Reports/Reports_DailySummaryFile.htm" />
+    <Link
+      Url="Content/Reports/Reports_SplitPayTransaction.htm" />
+    <Link
+      Url="Content/Reports/Reports_CrossSellbyPrimary.htm" />
+    <Link
+      Url="Content/Reports/Reports_CrossSellbyGroup.htm" />
+    <Link
+      Url="Content/Reports/Reports_UpSellbyPrimary.htm" />
+    <Link
+      Url="Content/Reports/Reports_BasicbyDate.htm" />
+    <Link
+      Url="Content/Reports/Reports_eSellbyDate.htm" />
+    <Link
+      Url="Content/Reports/Reports_SectPayment.htm" />
+    <Link
+      Url="Content/Reports/Reports_AffiliateListing.htm" />
+    <Link
+      Url="Content/Reports/Reports_HostedeST.htm" />
+    <Link
+      Url="Content/Reports/Reports_Bandwidtth.htm" />
+    <Link
+      Url="Content/Reports/Reports_CheckForUpdate.htm" />
+    <Link
+      Url="Content/Reports/Reports_EWSCheckFor.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKURedirects.htm" />
+    <Link
+      Url="Content/Reports/Reports_SerialNumbers.htm" />
+    <Link
+      Url="Content/Reports/Reports_SerialNumberAct.htm" />
+    <Link
+      Url="Content/Reports/Reports_ActivationHistory.htm" />
+    <Link
+      Url="Content/Reports/Reports_ActivationFailures.htm" />
+    <Link
+      Url="Content/Reports/Reports_CouponUsage.htm" />
+    <Link
+      Url="Content/Reports/Reports_LoginAttempts.htm" />
+    <Link
+      Url="Content/Reports/Reports_SKUbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_VolumebyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CrossbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CouponsbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_UpSellbyCurrency.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubDetails.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubTerms.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubEmails.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubUsage.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDConfig.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDeSeller.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDSKU.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDWindowsZip.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDFile.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_UpSellOptions.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingCrossGr.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CrossOptions.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingCouponD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CouponNotes.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingUpSell.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingVolume.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates_MakingAffLeve.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates_SubmitSKUs.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates_TestingeST.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates_EnteringConta.htm" />
+    <Link
+      Url="Content/Other_Sales_Partnerships/Other_Basic_Affiliates.htm" />
+    <Link
+      Url="Content/Other_Sales_Partnerships/Other_SplitPay.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_CustomFiles.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_CustomSettings.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingAssign.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingSettings.htm" />
+    <Link
+      Url="Content/Layouts/Layouts_LandingFiles.htm" />
+    <Link
+      Url="Content/User_Management/User_CompanyID.htm" />
+    <Link
+      Url="Content/User_Management/User_List.htm" />
+    <Link
+      Url="Content/User_Management/User_Detail.htm" />
+    <Link
+      Url="Content/User_Management/User_Reset.htm" />
+    <Link
+      Url="Content/User_Management/User_MyProfile.htm" />
+    <Link
+      Url="Content/Title_Page.htm" />
+    <Link
+      Url="Content/References/References_ShippingRegions.htm" />
+    <Link
+      Url="Content/Channels/Channel_Details.htm" />
+    <Link
+      Url="Content/Channels/Channel_List.htm" />
+    <Link
+      Url="Content/Channels/Channel_Order_Detail.htm" />
+    <Link
+      Url="Content/Channels/Channel_Publishers.htm" />
+    <Link
+      Url="Content/Channels/Channel_Returns.htm" />
+    <Link
+      Url="Content/Channels/Channel_Avail_SKU.htm" />
+    <Link
+      Url="Content/Channels/Channel_Change.htm" />
+    <Link
+      Url="Content/Channels/Channel_Default_Receipt.htm" />
+    <Link
+      Url="Content/Channels/Channel_Pending.htm" />
+    <Link
+      Url="Content/Channels/Channels_Select_Cat.htm" />
+    <Link
+      Url="Content/Channels/Channel_SplitPay.htm" />
+    <Link
+      Url="Content/Channels/Channel_SKUs.htm" />
+    <Link
+      Url="Content/eSellerate_Affiliates/Affiliates_eSTDownloads.htm" />
+    <Link
+      Url="Content/Reports/Reports_UpSellbyGroup.htm" />
+    <Link
+      Url="Content/Reports/Reports_Payments.htm" />
+    <Link
+      Url="Content/Reports/Reports_PaymentDetail.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDRequirements.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDLay.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDLay2.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDImg.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDImg2.htm" />
+    <Link
+      Url="Content/Embedded_Web_Store_eSellers/EWS_Advanced.htm" />
+    <Link
+      Url="Content/SKU_Management/Serial_Manual_Single.htm" />
+    <Link
+      Url="Content/SKU_Management/Serial_Manual_Multiple.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_OrganizingECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ConfigECD.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Return_Full.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Return_Ship.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Return_Satisf.htm" />
+    <Link
+      Url="Content/Order_Management/Orders_Return_Partial.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDTaxInclus.htm" />
+    <Link
+      Url="Content/Miscellaneous/TaxInclusive.htm" />
+    <Link
+      Url="Content/Miscellaneous/PayPalPayments.htm" />
+    <Link
+      Url="Content/Miscellaneous/ACHPayments.htm" />
+    <Link
+      Url="Content/Miscellaneous/WirePayments.htm" />
+    <Link
+      Url="Content/Miscellaneous/POPayments.htm" />
+    <Link
+      Url="Content/Getting_Started/Quick_Start_Guide.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubExamples.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Renewal.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_OverviewSub.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesSub.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_CreatingSubMeth.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_Cancel_Sub_API.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SubQty.htm" />
+    <Link
+      Url="Content/User_Management/User_AndPermissions.htm" />
+    <Link
+      Url="Content/Layouts/Translations.htm" />
+    <Link
+      Url="Content/Layouts/Language_Selection.htm" />
+    <Link
+      Url="Content/Layouts/Custom_Layout_Lexicon.htm" />
+  </Links>
+  <LongLinks />
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

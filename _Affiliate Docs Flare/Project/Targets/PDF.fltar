@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultTarget Version="1" Comment="PDF" Type="PDF" Destinations="" ConditionTagExpression="include[Primary.Print] exclude[Primary.Online] " MasterToc="/Project/TOCs/PDF TOC.fltoc" PatchHeadingLevels="false" InjectBookHeadings="false">
-    <Glossaries>
-    </Glossaries>
-</CatapultTarget>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1975" MadCap:lastWidth="438">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>
+            <MadCap:keyword term="Embedded Web Store eSellers:configuring your source code for" />Configuring Your Application's Source Code to Reference the eSeller</h2>
+        <p>Once you create an Embedded Web Store eSeller, you can use the information to integrate <MadCap:variable name="Primary.CompanyName" /> functionality into your application.
+        </p>
+        <h5>To configure your application's source code to reference the eSeller:</h5>
+        <ol>
+            <li>
+                <p>You will need several pieces of information from the Sales Manager, so you may want to leave your browser open to it. The following list summarizes information that you may need to integrate <MadCap:variable name="Primary.CompanyName" /> into your application.
+</p>
+                <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+                    <col style="width: 50%;" />
+                    <col style="width: 50%;" />
+                    <caption>Sales Manager Information for Embedded Web Store eSellers</caption>
+                    <thead>
+                        <tr>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColSep">Item</th>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">Sales Manager Page</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Based On setting (optional, used to validate Standard and Standard Enhanced serial numbers)</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Home &gt; Serial Number Set List &gt; Serial Number Set Detail</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">Publisher Key value (optional, used to validate Standard and Standard Enhanced serial numbers)</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Home &gt; Serial Number Set List &gt; Serial Number Set Detail</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Embedded Web Store ID value</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Home &gt; eSeller Lists &gt; Embedded Web Store eSeller Summary</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">eSeller Status setting (optional)</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Home &gt; eSeller Lists &gt; Embedded Web Store eSeller Summary</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">Preview Certificate value</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">Home &gt; eSeller Lists &gt; Embedded Web Store eSeller Summary</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Download and install the <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store SDK files. The SDK is available for downloading through the <MadCap:variable name="Primary.CompanyName" /> Downloads page. The link for accessing the downloads is on the Sales Manager home page, under the "What's New for eSellerate" information. If you already have the SDK, we still recommend that you check our web site for the latest version.</li>
+            <li>Add and link the <MadCap:variable name="Primary.CompanyName" /> components into your application's source code. 
+        </li>
+            <li>
+                <p>Decide how you are going to implement access to the <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store Engine within your application, according to the interface provided for your environment. You have almost unlimited flexibility in how you can implement a purchase or upgrade of your product. If you haven't already done so, please look carefully at the source code provided with the <MadCap:variable name="Primary.CompanyName" /> demo applications, and the extensive comments. No documentation can describe this process better than looking at actual source code. This will also provide you some ideas of how to implement <MadCap:variable name="Primary.CompanyName" /> in your own application. </p>
+                <p>        The following is an overview of the actions you can perform from your application.
+        </p>
+                <ul>
+                    <li>Invoking the Embedded Web Store<ul><li>Purchase an application. You will almost always perform this action from a demo version of your application. It is intended for the customer's "first time" purchase of the software. Typically, you will charge the customer the full retail price for your software. After the purchase, <MadCap:variable name="Primary.CompanyName" /> will generally return a new serial number and optionally deliver a new file download of your retail software. You can choose to update the demo application "in place" using the new serial number to enable full functionality, or you can just replace the demo application with a retail version.</li><li>Check for an update to the application. This action allows customers that have already purchased your software to check for new versions and upgrade directly from inside the application. These new versions of your software can be free upgrades or purchased upgrades. Once the user decides to upgrade, <MadCap:variable name="Primary.CompanyName" /> will typically download a new version of the software. This download can be a new installer or an updater.
+        </li></ul></li>
+                    <li>Accessing Information Returned by the Embedded Web Store
+        <ul><li>Receive serial numbers and shopping cart information. A successful purchase or check for update will return any serial numbers and shopping cart information that applies. You can use this information to automate delivery of the products purchased. For example, you could use the new serial numbers to automatically register and enable features for each product the customer purchased.</li></ul></li>
+                    <li>Validating a Serial Number
+                        <ul><li>You can use your application to check the validity of a Standard or Standard Enhanced serial number.
+        </li></ul></li>
+                </ul>
+                <p class="pwNote"><span class="strong">Note:</span> The preview certificate (a number generated when you created your Embedded Web Store eSeller in the Sales Manager) allows you to test your application before shipping it. When you perform a purchase or check for update from your application and use the proper preview certificate number, the only information returned would be for preview SKUs assigned to this eSeller. Furthermore, payment processing would execute in demo mode only, so no charges would occur. When you are ready to ship this application, just clear the preview certificate number, either from your source code or from the Sales Manager. The next time you perform a purchase or check for update, the information returned will be for active SKUs assigned to this eSeller, and the customers' payment methods will be billed.
+</p>
+            </li>
+            <li>Build your application and try it out.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> When you are finished testing your application and ready to ship, remember to clear out the preview certificate number from either your source code (this requires you to rebuild your application) or from the Sales Manager. Also, make sure that the SKUs assigned to your Embedded Web Store eSeller are correctly set to Active status.
+        </p>
+        <p class="pwNote"><span class="strong">Note:</span> The <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store SDK provides API calls that you can use to install the <MadCap:variable name="Primary.CompanyName" /> Embedded Web Store Engine automatically. (An example of these calls is <span class="strong">eWeb_InstallEngineFromPath</span>.) If you use some other method to install the engine, we recommend that you use version checking to prevent replacing an existing engine with an older version. The engine automatically checks our servers and self-updates when necessary. However, when you replace an existing engine with an older version, your users will experience longer downloads while the engine updates itself.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate SDK (Legacy Option)|eSellerate Libraries for Macintosh">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eSellerate_ManualActivateSerialNumber</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>eSellerate_ManualActivateSerialNumber</h2>
+        <p><a name="kanchor139"></a>For eSellerate Product Activation purposes, enables activation when the computer's configuration prevents the eSellerateEngine from accessing the eSellerate servers. Invokes a wizard and allows the user to manually activate the software using a web browser on the current computer or another computer with web access. Otherwise works like the eSellerate_ActivateSerialNumber function in that it confirms that a serial number originated from eSellerate and associates that serial number with the unique hardware identification of the computer in use.</p>
+        <p>Also see "Product Activation: manually activating serial numbers" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eSellerate.h<br />Included in the development project.</li>
+            <li value="2">eSellerateLibrary.lib(Carbon) or<br />libeSellerate.a (Mach-O version)<br />Included in the development project.</li>
+            <li value="3">eSellerateEngine (Carbon)<br />Located in the appropriate folder. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li value="1">For Mac OS 9.1 or later with CarbonLib 1.5 or later, place eSellerateEngine (Carbon) in System Folder:Application Support:MindVision</li><li value="2">For Mac OS X, place eSellerateEngine (Carbon) in /Library/Application Support/MindVision</li></ul></li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">eSellerate_ErrorCode <span class="strong">eSellerate_ManualActivateSerialNumber</span> ( <i>publisherID, activationID, serialNumber, </i><i>	titlePreface, otherOptions</i> )</p>
+        <p class="pwDefinition">eSellerate_InputString <i>publisherID</i>		– Publisher ID string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>activationID</i>	–	Product Activation Set ID string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>serialNumber	</i>– serial number string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>titlePreface	</i>	– custom text, to preface activation wizard titles</p>
+        <p class="pwDefinition">eSellerate_InputString <i>otherOptions	</i>	– custom text, to include phone number, e-mail or other contact</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Return Values for eSellerate_ManualActivateSerialNumber Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Return Value</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_NOENGINE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine cannot be found.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_FAILURE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if <i>publisherID,</i> <![CDATA[ ]]><i>activationID </i>or<i> serialNumber </i> is nil or if the eSellerateEngine does not complete the action (such as when the user cancels the Manual Product Activation Wizard).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_SUCCESS
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eSellerate_ManualActivateSerialNumber Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>publisherID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Publisher ID, as found on the Sales Manager Home page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic">activationID</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an activation ID for use in eSellerate Product Activation. Required. See "Product Activation: setting up" in the eSellerate <MadCap:conditionalText data-mc-conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>serialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the serial number. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>titlePreface</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing a custom preface to the titles of all Manual Product Activation Wizard pages. Causes the titles to be "&lt;Preface&gt;: Product Activation." May be nil, in which case the titles will simply be "Product Activation."</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>otherOptions</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing custom information to help users without web access activate their software. (This might be contact information for the publisher, who would visit  <a href="http://activate.esellerate.net" target="_blank">http://activate.esellerate.net</a> to obtain an Activation Key for the user.) The wizard will display up to seven lines for this string. May be nil, in which case the option to activate without web access will not be available to users.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Type Definitions for eSellerate_ManualActivateSerialNumber Function
+            </caption>
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Data Type</b></p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Definition</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Ctype.h Naming</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_ErrorCode
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">unsigned long
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_InputString
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">const unsigned char*
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">ConstStrParam
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> Strings are handled as length-prepended Pascal strings.
+            <br /></p>
+        <p class="pwNote"><span class="strong">Note:</span> Unless there is a specific need for your application source code to directly invoke the Manual Product Activation Wizard, it is more efficient to use the <span class="strong">eSellerate_ActivateSerialNumber</span> function instead of <span class="strong">eSellerate_ManualActivateSerialNumber</span>.<br /><br />When used with the proper <i>askToConnect</i> parameter, <span class="strong">eSellerate_ActivateSerialNumber</span> can handle normal (automatic) activations and also invoke the Manual Product Activation Wizard when needed. In contrast, <span class="strong">eSellerate_ManualActivateSerialNumber</span> can only handle manual activations, and consequently is limited to use in special circumstances.</p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eSellerate.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_InputString serialNumber;</p>
+        <p class="pwSDKCodeSamples">eSellerate_ErrorCode resultCode;</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain serialNumber */</p>
+        <p class="pwSDKCodeSamples">resultCode = eSellerate_ManualActivateSerialNumber("\pPUB775527079", 	"\pACT123456789:9EUYLP-UZ8H-9J7J70-7FE4-6T18FY-72X9YK-FU9K-BDKLNQ-G53H-7FZTTU", serialNumber, nil, nil);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or react to success */</p>
+        <p>&#160;</p>
+    </body>
+</html>

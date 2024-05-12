@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_IsSys.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Install.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Purchase.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_PurchaseEx.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Check.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_CheckEx.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Silent.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_WebURL.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ActivateSer.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Manual.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ValidateAct.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Date.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Deact.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Confirm.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ValidateSer.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Standard.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Today.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_PrefAttr.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_GetByIndex.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_GetResultDa.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_IndexGetRes.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_NewFunt.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_IsSys.htm#Embedded_SDKReference_1955650137_503005" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Install.htm#Embedded_SDKReference_1955650137_447313" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Purchase.htm#Embedded_SDKReference_1955650137_508653" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_PurchaseEx.htm#Embedded_SDKReference_1955650137_447478" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Check.htm#Embedded_SDKReference_1955650137_447551" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_CheckEx.htm#Embedded_SDKReference_1955650137_463416" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Silent.htm#Embedded_SDKReference_1955650137_447707" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_WebURL.htm#Embedded_SDKReference_1955650137_650256" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ActivateSer.htm#Embedded_SDKReference_1955650137_503288" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Manual.htm#Embedded_SDKReference_1955650137_503346" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ValidateAct.htm#Embedded_SDKReference_1955650137_503416" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Date.htm#Embedded_SDKReference_1955650137_650457" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Deact.htm#Embedded_SDKReference_1955650137_650471" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Confirm.htm#Embedded_SDKReference_1955650137_650578" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_ValidateSer.htm#Embedded_SDKReference_1955650137_503467" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Standard.htm#Embedded_SDKReference_1955650137_650586" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_Today.htm#Embedded_SDKReference_1955650137_506015" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_PrefAttr.htm#Embedded_SDKReference_1955650137_496611" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_GetByIndex.htm#Embedded_SDKReference_1955650137_503958" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_GetResultDa.htm#Embedded_SDKReference_1955650137_505853" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_IndexGetRes.htm#Embedded_SDKReference_1955650137_504112" />
+    <Link
+      Url="Content/EWSSDK/SDK2_ActiveX_NewFunt.htm#Embedded_SDKReference_1955650137_665981" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_578041" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_33322" />
+    <Anchor
+      Name="Embedded_SDKReference_1955650137_43215" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

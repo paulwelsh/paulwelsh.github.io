@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Macintosh|Regular Framework">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_DisposePrefillData</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_731903"></a><a name="Embedded_SDKReference_1955650137_73276"></a>eWeb_DisposePrefillData</h2>
+        <p><a name="kanchor52"></a>Disposes of memory allocated by <span class="strong">eWeb_NewPrefillData</span> and used by any routines that consume prefill data. This function must be called on the prefill data for it to be properly disposed.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">EWSLib.h<br />Included in the development project.</li>
+            <li value="2">libEWS.a (standard) or<br />libEWS-GC.a (garbage collecting)<br />Included in the development project.</li>
+            <li value="3">EWSMac.framework (standard) or<br />EWSMac-GC.framework (garbage collecting)<br />Typically located in the /Library/Frameworks folder, but in some cases will be located in the <span class="_Override" style="font-family: 'Times New Roman';">~</span>/Library/Frameworks folder. It may be already placed in one or both of these locations by another eSellerate-enabled application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">eWeb_DisposePrefillData</span> ( <i>prefillData </i>)</p>
+        <p class="pwDefinition"><i>prefillData – </i>prefill data buffer returned by <span class="strong">eWeb_NewPrefillData</span></p>
+        <p>
+            <br />See <a href="SDK2_libWin_ReturnValues.htm#Embedded_SDKReference_1955650137_413448" title="" alt="" class="MCXref xref" xrefformat="{para}">eSellerate Return Values</a> for details on return values.</p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "EWSLib.h"</p>
+        <p class="pwSDKCodeSamples">char *resultData = NULL;</p>
+        <p class="pwSDKCodeSamples">char *prefillData = eWeb_NewPrefillData();</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use eWeb_AddPrefillData() to prefill information for the purchase */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use prefillData in a function that uses it */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error or utilize result data */</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposePrefillData(prefillData);</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposeResultData(resultData);</p>
+        <p>&#160;</p>
+    </body>
+</html>

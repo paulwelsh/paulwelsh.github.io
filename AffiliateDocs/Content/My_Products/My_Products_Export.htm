@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1330" MadCap:lastWidth="540">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Exporting "My Products" Data</h2>
+        <p>There are two ways to get your latest "My Products" data in XML format:</p>
+        <ul>
+            <li>By using a <a href="My_Products_Web_Service.htm">web service</a></li>
+            <li>By exporting it from affiliates.esellerate.net as described below</li>
+        </ul>
+        <h5>Notes:</h5>
+        <ul>
+            <li>This option is for users who are already familiar with the instructions provided on the various tabs of the Product Detail page.</li>
+            <li>eSellerate provides the following resources to help you use the exported data: <ul><li>The My Products Service WSDL, which also describes the data in version 2 of the data export: <a href="https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl" target="_blank">https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl</a></li><li>"My Products" XML Resources, a download that includes:<ul><li>A sample XML document (Sample MyProducts.xml) that makes use of all the possible data fields </li><li>A Read Me file (MyProductsServiceReadMe.pdf) that is applicable only if you plan to use the web service</li></ul><p>The download is available at <a href="http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip" target="_blank">http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip</a>.</p></li></ul></li>
+            <li>There are two settings on the Purchase Links tab that you cannot control when you export data: link appearance and link action. These settings will default to the first choice listed for each of them on the corresponding Purchase Links tab.</li>
+            <li>There is one setting on the Landing Pages tab that you cannot control when you export data: link appearance. This setting will default to the first choice listed for it on the corresponding Landing Pages tab.</li>
+            <li>The "My Products" data will note when the available options for selling a product include Downloadable eST, but it will not provide a link to the eST file. If you want to use the Downloadable eST option, you will need to go to the eST tab and follow the instructions provided.</li>
+            <li>PRODUCT_IMAGE_URL, BUY_URL, MORE_INFO_URL, and CATALOG_URL will be blank when SKU STATUS is Pending or Declined. The fields will be populated when SKU STATUS is Active.</li>
+            <li>eSellerate will be removing the version 1 export option by the end of 2009. If you use version 1, please make the transition to version 2 in advance of the cutoff.</li>
+        </ul>
+        <h5>To export your "My Products" data (version 1):</h5>
+        <ol>
+            <li>If you want to export data for all products, you can accept the default export option, <span class="strong">All</span>. Then skip to step 4.</li>
+            <li>Do one of the following to select the desired product(s): <ul><li>To select individual products, check the box to the left of the product.</li><li>To select all products on the page, check the box in the table heading.</li></ul></li>
+            <li>From the <span class="strong">Export</span> popmenu, select <span class="strong">Checked</span>.</li>
+            <li>If you specify a tracking ID, eSellerate will record that ID along with other order details whenever the "Buy" or "Try" links provided in the exported data generate a sale. You can then use the SKU Sales by Date Range report to find sales that involved the tracking ID. If you would like to use the tracking ID option, enter an ID in the field provided. The ID can be any alphanumeric name you choose, up to a 100-character limit.</li>
+            <li>Click <span class="strong">Export</span>.</li>
+            <li>Save the XML document.</li>
+        </ol>
+        <h5>To export your "My Products" data (version 2):</h5>
+        <ol>
+            <li>If you want to export data for all products, you can accept the default export option, <span class="strong">All</span>. Then skip to step 4.</li>
+            <li>From the <span class="strong">Export </span>popmenu, select one of the following options:<ul><li><span class="strong">Checked</span> <![CDATA[ ]]></li><li><span class="strong">Active</span> <![CDATA[ ]]></li><li><span class="strong">Declined</span> <![CDATA[ ]]></li><li><span class="strong">Pending</span></li></ul></li>
+            <li>If you selected <span class="strong">Checked</span> in the preceding step, do one of the following to select the desired product(s): <ul><li>To select individual products, check the box to the left of the product.</li><li>To select all products on the page, check the box in the table heading.</li></ul></li>
+            <li>If you specify a tracking ID, eSellerate will record that ID along with other order details whenever the "Buy" or "Try" links provided in the exported data generate a sale. You can then use the SKU Sales by Date Range report to find sales that involved the tracking ID. If you would like to use the tracking ID option, enter an ID in the field provided. The ID can be any alphanumeric name you choose, up to a 100-character limit.</li>
+            <li>Click <span class="strong">Export</span>.</li>
+            <li>Save the XML document.</li>
+        </ol>
+        <h3>See Also</h3>
+        <p>
+            <MadCap:xref href="My_Products.htm" target="" title="" alt="">My Products</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="My_Products_Web_Service.htm" target="" title="" alt="">Getting "My Products" Data with a Web Service</MadCap:xref>
+        </p>
+    </body>
+</html>

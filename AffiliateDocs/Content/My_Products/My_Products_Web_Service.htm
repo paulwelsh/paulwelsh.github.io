@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="703" MadCap:lastWidth="540">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Getting "My Products" Data with a Web Service</h2>
+        <p>There are two ways to get your latest "My Products" data in XML format:</p>
+        <ul>
+            <li>By exporting it from affiliates.esellerate.net as described at <MadCap:xref href="My_Products_Export.htm" target="" title="" alt="">Exporting "My Products" Data</MadCap:xref></li>
+            <li>By using the My Products Web Service as described below</li>
+        </ul>
+        <h5>Notes:</h5>
+        <ul>
+            <li>This option is for users who are already familiar with the instructions provided on the various tabs of the Product Detail page.</li>
+            <li>eSellerate provides the following resources to help you implement the My Products Web Service: <ul><li>The My Products Service WSDL, which also describes the data in version 2 of the data export: <a href="https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl" target="_blank">https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl</a></li><li>"My Product" XML Resources, a download that includes:<ul><li>A Read Me file (MyProductsServiceReadMe.pdf) with general instructions for using the service</li><li>A sample XML document (Sample MyProducts.xml) that makes use of all the possible data fields</li></ul><p> The download is available at <a href="http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip" target="_blank">http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip</a>.<br /></p></li></ul></li>
+            <li>There are two settings on the Purchase Links tab that you cannot control when you get data with the web service: link appearance and link action. These settings will default to the first choice listed for each of them on the corresponding Purchase Links tab.</li>
+            <li>There is one setting on the Landing Pages tab that you cannot control when you get data with the web service: link appearance. This setting will default to the first choice listed for it on the corresponding Landing Pages tab.</li>
+            <li>The "My Products" data will note when the available options for selling a product include Downloadable eST, but it will not provide a link to the eST file. If you want to use the Downloadable eST option, you will need to go to the eST tab and follow the instructions provided.</li>
+            <li>PRODUCT_IMAGE_URL, BUY_URL, MORE_INFO_URL, and CATALOG_URL will be blank when SKU STATUS is Pending or Declined. The fields will be populated when SKU STATUS is Active.</li>
+        </ul>
+        <h3>See Also</h3>
+        <p>
+            <MadCap:xref href="My_Products.htm" target="" title="" alt="">My Products</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="My_Products_Export.htm" target="" title="" alt="">Exporting "My Products" Data</MadCap:xref>
+        </p>
+    </body>
+</html>

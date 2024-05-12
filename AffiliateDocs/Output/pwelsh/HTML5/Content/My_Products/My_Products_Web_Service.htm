@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="My Products">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Getting "My Products" Data with a Web Service</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-20']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Getting "My Products" Data with a Web Service</h2>
+        <p>There are two ways to get your latest "My Products" data in XML format:</p>
+        <ul>
+            <li value="1">By exporting it from affiliates.esellerate.net as described at <a href="My_Products_Export.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Exporting "My Products" Data</a></li>
+            <li value="2">By using the My Products Web Service as described below</li>
+        </ul>
+        <h5>Notes:</h5>
+        <ul>
+            <li value="1">This option is for users who are already familiar with the instructions provided on the various tabs of the Product Detail page.</li>
+            <li value="2">eSellerate provides the following resources to help you implement the My Products Web Service: <ul><li value="1">The My Products Service WSDL, which also describes the data in version 2 of the data export: <a href="https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl" target="_blank">https://affiliates.esellerate.net/affiliates/ws/myproductsservice.asmx?wsdl</a></li><li value="2">"My Product" XML Resources, a download that includes:<ul><li value="1">A Read Me file (MyProductsServiceReadMe.pdf) with general instructions for using the service</li><li value="2">A sample XML document (Sample MyProducts.xml) that makes use of all the possible data fields</li></ul><p> The download is available at <a href="http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip" target="_blank">http://affiliates.esellerate.net/Affiliates/Downloads/MyProducts_XML_Resources.zip</a>.<br /></p></li></ul></li>
+            <li value="3">There are two settings on the Purchase Links tab that you cannot control when you get data with the web service: link appearance and link action. These settings will default to the first choice listed for each of them on the corresponding Purchase Links tab.</li>
+            <li value="4">There is one setting on the Landing Pages tab that you cannot control when you get data with the web service: link appearance. This setting will default to the first choice listed for it on the corresponding Landing Pages tab.</li>
+            <li value="5">The "My Products" data will note when the available options for selling a product include Downloadable eST, but it will not provide a link to the eST file. If you want to use the Downloadable eST option, you will need to go to the eST tab and follow the instructions provided.</li>
+            <li value="6">PRODUCT_IMAGE_URL, BUY_URL, MORE_INFO_URL, and CATALOG_URL will be blank when SKU STATUS is Pending or Declined. The fields will be populated when SKU STATUS is Active.</li>
+        </ul>
+        <h3>See Also</h3>
+        <p><a href="My_Products.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">My Products</a>
+        </p>
+        <p><a href="My_Products_Export.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Exporting "My Products" Data</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

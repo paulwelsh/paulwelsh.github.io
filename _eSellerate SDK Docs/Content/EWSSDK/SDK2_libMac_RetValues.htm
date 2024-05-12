@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2184" MadCap:lastWidth="685">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_528087"></a><a name="Embedded_SDKReference_1955650137_22164"></a>eSellerate Return Values</h2>
+        <p>The following are eSellerate-specific return values and their descriptions. </p>
+        <p class="pwNote"><span class="strong">Tip</span>: Numeric equivalents for the following return values are available in the latest header file (EWSLib.h). In general, negative return values represent errors, positive values represent non-errors, and zero represents success.<br /></p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Return</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>E_SUCCESS</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            <o>The call completed successfully.</o>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_INSTALLED_ENGINE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The latest engine was successfully installed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_LATEST_ENGINE_ALREADY_INSTALLED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The latest engine is already installed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_CREATE_ENTRY_ERROR</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The SDK failed to add a name/value entry.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_BAD_PARAMETER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A parameter is incorrect.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_ENGINE_NOT_INSTALLED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">There was an error installing the engine.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_ENGINE_NOT_LOADED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">There was an error loading the installed engine.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_ENGINE_CORRUPTED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The engine is corrupted.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_OBJECT_NOT_FOUND</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The result from the engine could not be found.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_ENGINE_BUSY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The engine is already running within the application.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_SDK_INSTALL_CORRUPTED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The engine being installed is corrupted.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_INET_CONNECTION_FAILURE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A general connection failure has occurred.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_INET_ESELLERATE_FAILURE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The engine failed to connect to the eSellerate servers.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_INET_DOWNLOAD_ENGINE_FAILURE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The engine failed to download an update.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_INET_ESTATE_NOT_FOUND</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The eSellerate Engine data is missing from the results.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_VALIDATEACTIVATION_MACHINE_MATCH</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The current machine matches the machine on which the product was activated.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_VALIDATEACTIVATION_MACHINE_MISMATCH</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The current machine does not match the machine on which the product was activated.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_VALIDATEACTIVATION_OLD_ACTIVATION_KEY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The activation key is an older format that is invalid.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATION_MANUAL_CANCEL</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The user canceled a manual activation attempt.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATION_REQUEST_DENIED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">eSellerate denied the activation request.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_UNKNOWN_ACTIVATION_KEY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The format of the supplied activation key is invalid.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_UNKNOWN_SN</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to activate an unknown serial number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_IMPROPER_USAGE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Improper usage of the activation routines.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_BLACKLISTED_SN</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to activate a blacklisted serial number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_INVALID_ORDER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An activation attempt was made on an invalid order.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_LIMIT_MET</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">An activation attempt failed due to the maximum number of allowable activations being met.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_NOT_UNIQUE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">The serial number to be activated is not unique.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_UNKNOWN_SERVER_ERROR</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">An unknown server error has occurred.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_FINALIZATION_ERROR</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An error occurred finalizing the activation on the client machine.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ACTIVATESN_NO_SN_FROM_SERVER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">The eSellerate servers failed to return a valid activation key.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_CONFIRMATION_NO_SUCH_SERIAL_NUMBER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to confirm an unknown serial number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_CONFIRMATION_PUBLISHER_SN_MISMATCH</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A confirmation attempt failed because the supplied serial number does not correspond to the supplied publisher ID.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_CONFIRMATION_BLACKLISTED_SERIAL_NUMBER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to confirm a blacklisted serial number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_CONFIRMATION_INVALID_ORDER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A confirmation attempt was made on an invalid order.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_CONFIRMATION_UNEXPECTED_FAILURE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A confirmation attempt failed due to an unexpected error.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_NO_SUCH_SERIAL_NUMBER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to deactivate an unknown serial number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_BLACKLISTED_SERIAL_NUMBER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An attempt was made to deactivate a blacklisted serial number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_INVALID_ORDER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt was made on an invalid order.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_MISSING_ACTIVATION_KEY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed because the supplied activation key is unknown.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_MACHINE_MISMATCH</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed because the current machine does not match the machine on which the product was activated.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_INVALID_ACTIVATION_KEY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed because the supplied activation key is invalid.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_NONUNIQUE_SERIAL_NUMBER</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed because the serial number to be deactivated is not unique.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_NO_SUCH_ACTIVATION_KEY</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed because the supplied activation key is unknown.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_DEACTIVATION_DEACTIVATION_LIMIT_MET</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A deactivation attempt failed due to the maximum number of allowable deactivations being met.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ENGINE_SKU_UPDATE_AVAILABLE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">A SKU update is available from the eSellerate servers.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ENGINE_SKU_NO_UPDATE_AVAILABLE</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">No SKU update is available from the eSellerate servers.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ENGINE_INTERNAL_ERROR</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">An internal error has occurred in the engine.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_ENGINE_PURCHASE_NOTSUCCESSFUL</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">A purchase attempt was unsuccessful.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">E_OS_FUNCTIONALITY_UNSUPPORTED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">The system does not meet the minimum requirements for the Embedded Web Store.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>
+                eSellerate Return Values
+            </caption>
+        </table>
+    </body>
+</html>

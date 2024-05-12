@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SigningUpECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_OrganizingECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_eCDUploading.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDImg.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDLay.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDConfig.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDSKU.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Basic.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Advanced.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDFile.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_SigningUpECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_OrganizingECD.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_eCDUploading.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDImg.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDLay.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDConfig.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDSKU.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_NotesECD.htm#pricing" />
+    <Link
+      Url="Content/SKU_Management/SKU_Basic.htm" />
+    <Link
+      Url="Content/SKU_Management/SKU_Advanced.htm" />
+    <Link
+      Url="Content/Advanced_Sales_Options/Advanced_ECDFile.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="eCD"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

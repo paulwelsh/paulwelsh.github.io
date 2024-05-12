@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1218" MadCap:lastWidth="781">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Allowing Change of Quantity</h2>
+        <p>There may be times when your customers will start a subscription, and then want to change the quantity that they originally purchased. This isn't possible with the default settings, but you can easily provide that capability so your customers don't have to resort to less convenient methods, such as canceling and repurchasing their subscriptions.</p>
+        <p>If you set up a subscription to allow changing the quantity, your customers will be able to increase or decrease the quantity at any time while the subscription is active, and <MadCap:variable name="Primary.CompanyName" /> will adjust the charges accordingly (details follow). </p>
+        <p>Customers manage their subscriptions through  <MadCap:variable name="Primary.CompanyName" /> After-Purchase Services, where they can use the "change quantity" option to change the quantity of a subscription right away, or at the next scheduled billing (when applicable). </p>
+        <p>
+            <img src="../Resources/Images/APSChgQty.jpg" class="PWimgAPS" />
+        </p>
+        <p>The differences between changing right away or at the next scheduled billing are as follows:</p>
+        <ul>
+            <li>
+                <p><span class="strong">Change Now</span> – For an increase in quantity, a new order is created to charge the customer for the additional quantities. These charges are prorated over the time remaining until the next billing or renewal.</p>
+                <p>Orders with prorated adjustments will also include charges (not prorated) for items such as shipping and eCD, when applicable.</p>
+                <p>Like other changes in the life of the subscription, orders with prorated adjustments appear in the history of the original order. The subscription SKUs for these orders have "- Prorated Adjustment" at the end of their names to distinguish them from their full-priced counterparts.</p>
+                <p>There are no automatic refunds for quantities that customers reduce with "Change Now".  You can issue the refunds yourself if needed, by using the Returns editor to return  just the desired quantities for the subscription orders.</p>
+                <p>After the "Change Now" quantity adjustment (and prorated adjustment, when applicable), the next scheduled billing will use the new quantity, and the total charges for that billing will change accordingly. At that point, everything is the same as if the customer had chosen to wait until the next billing for the change of quantity to take effect.</p>
+            </li>
+            <li>
+                <p><span class="strong">Change at Next Billing</span> – In contrast to "Change Now", this option simply sets the quantity to change later, and does not involve creating new orders for prorated adjustments. The next scheduled billing will use the new quantity, and the total charges for that billing will change accordingly.</p>
+            </li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> The "change quantity" option is not available for orders that use international wire or purchase order as the payment method.</p>
+        <p class="pwNote"><span class="strong">Note:</span> Shipping charges may vary when customers change the quantities of subscriptions that are set up for shipping.</p>
+        <h5>To set up a subscription to allow changing the quantity:</h5>
+        <ol>
+            <li>You will need to start with a new subscription (which could be a duplicate of an active subscription), or a subscription that you have not yet activated. On the Details tab of the Subscription Detail page, select the <span class="strong">Allow Change of Quantity</span> check box.</li>
+            <li>When you're ready to save and activate the subscription, click <span class="strong">Activate</span>.</li>
+            <li>
+                <p>For each SKU&#160;that should use the new subscription, go to the Advanced tab, and then do the following:</p>
+                <ul>
+                    <li>In the <span class="strong">Subscription</span> list, select the new subscription.</li>
+                    <li>Make sure that the <span class="strong">Allow multi-quantity sales</span> check box is selected. (This option is selected by default.)</li>
+                    <li>Save your changes.</li>
+                </ul>
+            </li>
+            <li>Assign the SKUs to your eSellers, if you haven't already done so.</li>
+        </ol>
+        <h3 class="See_Also">More Options for Changing Quantity</h3>
+        <p>Customers have the ability to change the quantity when renewing their subscriptions through After-Purchase Services. Changing quantity with renewals is allowed if the subscription SKU is set up for multi-quantity sales. The "Allow Change of Quantity" setting in the subscription method has no effect in this case.</p>
+        <p>Publishers can change (decrease) the quantity by using the Returns editor to return just the desired quantities for the subscription orders.  </p>
+        <h3 class="See_Also">See Also</h3>
+        <p>
+            <MadCap:xref href="../References/References_Shipping.htm" target="" title="" alt="">Creating Shipping Tables</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Advanced_SubDetails.htm" target="" title="" alt="">Subscriptions: Details</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../SKU_Management/SKU_Advanced.htm" target="" title="" alt="">Setting the SKU's Advanced Properties (Optional)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Advanced_SubCancelReturn.htm" target="" title="" alt="">Canceling and Returning Subscriptions</MadCap:xref>
+        </p>
+    </body>
+</html>

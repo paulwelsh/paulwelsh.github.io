@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part2.htm" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part3.htm" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part4.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part2.htm" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part3.htm" />
+    <Link
+      Url="Content/My_Payment_Info/My_Payment_Info_International_ACH_part4.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="617" MadCap:lastWidth="497">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="eSellerateAffiliates_686029767_257097"></a><a name="eSellerateAffiliates_686029767_81297"></a>Customizing Online Stores for Select Affiliates</h2>
+        <p>By default, all affiliate sales for a given SKU are directed through the <MadCap:variable name="Primary.CompanyName" /> Web Store <MadCap:conditionalText MadCap:conditions="Primary.Print,Primary.Online">or Embedded Web Store</MadCap:conditionalText> assigned to the SKU at the Available SKU Detail page. If you'd like to vary this default behavior for select affiliates, you have two options:</p>
+        <ul>
+            <li>You can use a different Custom Layout for the default online store, when applicable. </li>
+            <li>You can use a different online store than the default store. </li>
+        </ul>
+        <h5>To use a different Custom Layout for the default online store:</h5>
+        <ol>
+            <li>Go to the Custom Layout Detail page of the layout that you want to use. </li>
+            <li>Click <span class="strong">Settings</span>. The Settings tab appears. </li>
+            <li>Copy the Layout ID that is displayed at the top of the page. </li>
+            <li>Instruct your affiliates to append "&amp;L=LayoutID" to URLs that they use for listing the SKU on their affiliate web sites. For example: <ul><li>Layout ID: 068131648</li><li>Default URL: http://store.eSellerate.net/a.asp?c=0_SKU123456789_AFL123456789</li><li>Custom URL: http://store.eSellerate.net/a.asp?c=0_SKU123456789_AFL123456789&amp;L=068131648 </li></ul></li>
+        </ol>
+        <h5>To use a different online store than the default store:</h5>
+        <ol>
+            <li>Go to the eSeller List page and locate the <MadCap:conditionalText MadCap:conditions="Primary.Print,Primary.Online">Embedded Web Store eSeller or</MadCap:conditionalText> Web Store eSeller that you want to use. </li>
+            <li>Copy the eSeller ID. </li>
+            <li>Instruct your affiliates to append "&amp;S=eSellerID" to URLs that they use for listing the SKU on their affiliate web sites. For example: <ul><li>eSeller ID: STR415756918 </li><li>Default URL: http://store.eSellerate.net/a.asp?c=0_SKU123456789_AFL123456789 </li><li>Custom URL: http://store.eSellerate.net/a.asp?c=0_SKU123456789_AFL123456789&amp;S=STR415756918 </li></ul></li>
+        </ol>
+    </body>
+</html>

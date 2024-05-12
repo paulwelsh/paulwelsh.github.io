@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="3400" MadCap:lastWidth="969" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="SKU Management" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Manually Activating Serial Numbers</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Manually Activating Serial Numbers" MadCap:sourceTitle="Manually Activating Serial Numbers"><a MadCap:generatedBookmark="TOC" name="Manually Activating Serial Numbers"></a>
+            <MadCap:keyword term="Product Activation:manually activating serial numbers" />Manually Activating Serial Numbers</h2>
+        <p>To enable activation when the computer's configuration prevents the eSellerate Engine from accessing the eSellerate servers, you can use an API call to ManualActivateSerialNumber. This will bring up a wizard and allow the user to manually activate the software using a web browser on the current computer or another computer with web access.</p>
+        <p>The standard ActivateSerialNumber function also provides the option to invoke the Manual Product Activation Wizard in the event that access to the eSellerate servers is unavailable.</p>
+        <p>For details on these API functions, see the eSellerate SDK Reference.</p>
+        <h4>Activation options screen<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate01.JPG" class="PWimg" /></h4>
+        <p>Activation options is the first Manual Product Activation Wizard screen to appear. It explains to the user that automatic activation is not an option with the present computer configuration, and provides the following options:</p>
+        <ul>
+            <li value="1">Activate using a web browser on this computer</li>
+            <li value="2">Activate using a different computer that has web access</li>
+            <li value="3">I already have an Activation Key and would like to activate now</li>
+        </ul>
+        <p>If configured to do so, the wizard will also present a fourth option:</p>
+        <ul>
+            <li value="1">I do not have any of the above options available to me</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> You can add a custom preface to the title displayed for all the wizard screens. For example, if you used "My Software," each screen title would be "My Software: Product Activation." See the ManualActivateSerialNumber descriptions for your development environment in the eSellerate SDK Reference.</p>
+        <h4>Web activation screen</h4>
+        <p>If the user chooses "Activate using a web browser on this computer," the following screen will explain how to visit the manual product activation web site and create an Activation Key.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate03.JPG" class="PWimg" /></p>
+        <h4>Activate using another computer with web access screen</h4>
+        <p>If the user chooses "Activate using a different computer that has web access," the following screen will explain how to go to another computer with web access and create an Activation Key.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate04.JPG" class="PWimg" /></p>
+        <h4>Enter Activation Key screen</h4>
+        <p>If the user chooses "I already have an Activation Key and would like to activate now," the following screen will explain how to enter an Activation Key.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate05.JPG" class="PWimg" /></p>
+        <p>After creating an Activation Key, users can also reach the above screen by returning to one of the web activation screens and clicking Next.</p>
+        <h4>Other activation options screen (optional)</h4>
+        <p>If the user chooses "I do not have any of the above options available to me," the following screen presents custom options that the publisher has defined.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate06.JPG" class="PWimg" /></p>
+        <h4>Manual product activation web site</h4>
+        <p>Users can create Activation Keys by visiting the manual product activation web site at <a href="http://activate.esellerate.net/" target="_blank">http://activate.esellerate.net</a> and following the instructions provided.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate08.JPG" class="PWimg" /></p>
+        <h4>Success screen</h4>
+        <p>After entering a valid Activation Key into one of the screens that allows it, the user clicks Activate. If activation is successful, the following screen appears. The user has the option to save the Installation ID and Activation Key to a text file before closing the wizard and using the activated product.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ManualActivate07.JPG" class="PWimg" /></p>
+    </body>
+</html>

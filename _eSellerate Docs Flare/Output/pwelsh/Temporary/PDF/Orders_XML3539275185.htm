@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2844" MadCap:lastWidth="542" MadCap:tocPath="Order Management" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Maintaining the XML Order Notice</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Maintaining the XML Order Notice" MadCap:sourceTitle="Maintaining the XML Order Notice"><a MadCap:generatedBookmark="TOC" name="Maintaining the XML Order Notice"></a>
+            <MadCap:keyword term="orders:XML order notice;XML order notice" />Maintaining the XML Order Notice</h2>
+        <p class="pwNote"><span class="strong">Note:</span> The information that is available through the XML order notice does not include your profit or eSellerate's commission on your orders from 4/1/2011 and later. (The values for that information will always be 0.)      <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reporting. See <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Reports/Reports_Business_Intel.htm" target="" title="" alt="" MadCap:xrefTarget="Business Intelligence Reporting"><span style="color: Blue;" class="mcFormatColor"><u>"Business Intelligence Reporting" on page 1</u></span></MadCap:xref>.</MadCap:conditionalText></p>
+        <p>The Maintenance tab of the Sales Manager provides two functions for maintaining the XML order notice (available through the Account Information page). For details on the notice, see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Account_Management/Account_XML.htm" target="" title="" alt="" MadCap:xrefTarget="Using the XML Order Notice"><span style="color: Blue;" class="mcFormatColor"><u>"Using the XML Order Notice" on page 1</u></span></MadCap:xref>.</p>
+        <h3>Manually Posting the XML Order Notice</h3>
+        <p>You can use this feature to manually post XML order notices to a specified URL.</p>
+        <p>Some examples of how this feature might be useful are:</p>
+        <ul>
+            <li value="1">Before you set up the XML order notice option, you can test the URLs that will receive the notices.</li>
+            <li value="2">If eSellerate successfully posts an order notice but you need to post the notice again for any reason, you have that option.</li>
+        </ul>
+        <h5>To post an XML order notice:</h5>
+        <ol>
+            <li value="1">Click the <span class="strong">Maintenance</span> tab. The XML Order Notice Maintenance page appears.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/order_notice.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li value="2">In the <span class="strong">Order Number</span> field, enter the order number to use for this notice.&#160;</li>
+            <li value="3">In the <span class="strong">Order Notice URL</span> field, enter the URL that should receive this notice.</li>
+            <li value="4">Select a version for the XML order notice. Version 2 is the legacy option that remains available for backwards compatibility. Version 3 includes all the information from version 2, with additional data fields for features that eSellerate released in May of 2009. You need version 3 if you use bundles, or if any of your SKUs have "Issue serial numbers in ratio to quantity" enabled. Also, version 3 includes fields for these 10 eSellerate variables: _Custom.Data10 through _Custom.Data19.</li>
+            <li value="5">To enable you to verify the sender, eSellerate can include secret text in your data. Enter your text in the <span class="strong">Secret</span> field if desired. Otherwise, you can leave this field blank.</li>
+            <li value="6">Click <span class="strong">Post</span>. The result displayed will specify success or failure, and include a response if the web server returned one.</li>
+        </ol>
+        <h3>Addressing XML Order Notice Errors</h3>
+        <p>After you set up the XML order notice option, you will receive e-mail notification if eSellerate is unable to complete a post to your web server. This e-mail will list all XML order notice errors and provide a link that you can use to directly log in to your publisher account to address the problem.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/order_notice_errors.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></p>
+        <p>The XML Order Notice Maintenance page within the Sales Manager's Maintenance tab will list all XML order errors for your account. This page provides three primary options for addressing the errors:</p>
+        <ul>
+            <li value="1">Retry posting with the original URL</li>
+            <li value="2">Retry posting with a different URL</li>
+            <li value="3">Delete the errors</li>
+        </ul>
+        <h5>To change an order notice URL, do the following:</h5>
+        <ol>
+            <li value="1">Click the pencil graphic to the right of the URL you want to change.</li>
+            <li value="2">Edit the URL.</li>
+            <li value="3">Click the disk graphic to save your changes.</li>
+        </ol>
+        <h5>To delete all order notice errors for a given URL, do the following:</h5>
+        <ol>
+            <li value="1">Click the trash can graphic to the right of the order notice errors you want to delete. A confirmation dialog appears.</li>
+            <li value="2">Click <span class="strong">OK </span>to delete the errors.</li>
+        </ol>
+        <p>When you have finished changing URLs and deleting errors as needed, you can retry posting all order notices listed as errors. To do this, click <span class="strong">Retry</span>. The results displayed will list the number of posts attempted, and the number that succeeded.</p>
+        <p class="pwNote"><span class="strong">Note:</span> For your convenience, you will continue to receive the error notification e-mail until you have successfully posted or deleted all XML order notices that had errors.</p>
+    </body>
+</html>

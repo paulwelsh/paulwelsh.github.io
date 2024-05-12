@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1155" MadCap:lastWidth="998">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>
+            <MadCap:keyword term="orders:voiding;voiding orders" />Voiding Orders</h2>
+        <p>The Voids editor allows you to void unfulfilled orders before shipping occurs.</p>
+        <h5>Notes on voids</h5>
+        <ul>
+            <li>Although you can't void fulfilled orders, you can use the Returns editor to credit customers for all or part of the purchase amounts. For details, see <MadCap:xref href="Orders_Returning.htm" target="" title="" alt="">Returning Orders</MadCap:xref>.</li>
+            <li>You cannot void orders that have payment methods of international wire or purchase order. In these instances, you would need to mark the orders fulfilled (without actually shipping anything) and then refund the orders through the Returns editor.</li>
+            <li>E-check (ACH) orders are not available for voiding until <MadCap:variable name="Primary.CompanyName" /> has received the payments.</li>
+            <li>When an order involves charges for shipping items only:</li>
+            <li class="Indent1">Credit cards – <MadCap:variable name="Primary.CompanyName" /> waits to capture any funds until you mark the order as fulfilled. (Or you can void the order to prevent any payment processing.) If you void the order, the order status becomes Void and the credit card authorization is allowed to expire.</li>
+            <li class="Indent1">PayPal – <MadCap:variable name="Primary.CompanyName" /> captures all funds at the conclusion of the purchase. If you void the order, the order status becomes Canceled and the amounts captured for the shipping items are refunded to the customer.</li>
+            <li class="Indent1">ACH – <MadCap:variable name="Primary.CompanyName" /> captures all funds in a single transaction, which requires 5-7 business days after the purchase for payment processing to be completed. If you void the order, the order status becomes Canceled and the amounts captured for the shipping items are refunded to the customer.</li>
+            <li>When an order involves charges for both non-shipping and shipping items:</li>
+            <li class="Indent1">Credit cards – <MadCap:variable name="Primary.CompanyName" /> captures funds for non-shipping items at the conclusion of the purchase, and delays capturing funds for shipping items until you mark the items as fulfilled. (Or you can void the order to prevent any additional payment processing.) The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and no further payment processing occurs. The shipping items for the order will then have a status of Void.</li>
+            <li class="Indent1">PayPal – <MadCap:variable name="Primary.CompanyName" /> captures all funds at the conclusion of the purchase. The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and the amounts captured for the shipping items are refunded to the customer. The shipping items for the order will then have a status of Canceled.</li>
+            <li class="Indent1">ACH – <MadCap:variable name="Primary.CompanyName" /> captures all funds in a single transaction, which requires 5-7 business days after the purchase for payment processing to be completed. The non-shipping items will remain fulfilled and cannot be voided. If you void the order, the order status becomes Fulfilled and the amounts captured for the shipping items are refunded to the customer. The shipping items for the order will then have a status of Canceled.</li>
+            <li>If you void an order that involves charges for both non-shipping and shipping items, you will not be able to find that order by searching for voided orders, because its status will be Fulfilled. The Fulfilled status makes it possible for you to do a return or refund on the non-shipping items from the order, which are already fulfilled and cannot be voided.</li>
+            <li>
+                <p>If your account is set up to integrate with Amazon Fulfillment, a search for unfulfilled orders can return orders that are pending fulfillment by Amazon. Normally, these orders are fulfilled automatically, so there is no need for you to take action unless you have a specific reason for voiding or returning the orders. See also <MadCap:xref href="../Account_Management/Account_Amazon.htm" target="" title="" alt="">Integrating with Amazon Fulfillment</MadCap:xref>.</p>
+            </li>
+        </ul>
+        <h5>To void an order:</h5>
+        <ol>
+            <li>Click the <span class="strong">Voids</span> tab. The Voids page appears.<br /><img src="../Resources/Images/order_voids.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li>In the <span class="strong">Search For</span> list, use the default selection, <span class="strong">Unfulfilled Orders</span>.</li>
+            <li>Use any of the text fields and/or the <span class="strong">Date Range</span> list to narrow your search.</li>
+            <li>Click <span class="strong">Find</span>. This will display all orders that matched your search criteria.</li>
+            <li>Select the unfulfilled order by clicking on its order number. The Order Detail page appears.</li>
+            <li>Click <span class="strong">Void</span>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> To protect against unintentional processing, you can only select and void one order at a time.</p>
+        <p class="pwNote"><span class="strong">Note:</span> The order information that is available through voids processing does not include your profit or <MadCap:variable name="Primary.CompanyName" />'s commission on your orders from 4/1/2011 and later. <MadCap:conditionalText MadCap:conditions="Primary.Online">To find that information and more, please use <a href="../Reports/Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reporting. See <MadCap:xref href="../Reports/Reports_Business_Intel.htm" target="" title="" alt="">Business Intelligence Reporting</MadCap:xref>.</MadCap:conditionalText></p>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Macintosh|Regular Framework">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eSellerate_Today</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_647291"></a><a name="Embedded_SDKReference_1955650137_15088"></a>eSellerate_Today</h2>
+        <p><a name="kanchor47"></a>Returns the current date, expressed as the number of days since Jan. 1, 2000. </p>
+        <p>This function relies on the library libValidateUniversal.a, which you will need to link into your application.</p>
+        <p class="pwNote"><span class="strong">Tip</span>: <span class="strong">eSellerate_Today</span> is for finding the current date when you're using the validation library (libValidateUniversal.a) for Standard or Standard Enhanced serial numbers. To find the current date with the purchase library (libEWS.a/libEWS-GC.a), you can use <span class="strong">eWeb_Today</span>. See <a href="SDK2_libMac_Today.htm#Embedded_SDKReference_1955650137_668458" title="" alt="" class="MCXref xref" xrefformat="{para}">eWeb_Today</a>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">validateLib.h <br />Included in the development project.</li>
+            <li value="2">libValidateUniversal.a<br />Linked into your application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">
+            <o>eSellerate_DaysSince2000 </o><span class="strong">eSellerate_Today</span>
+            <o style="font-weight: normal;"> ()</o>
+        </p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "validateLib.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_DaysSince2000 timeStamp;</p>
+        <p class="pwSDKCodeSamples">timeStamp = eSellerate_DaysSince2000 eSellerate_Today()</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use result to verify valid serial number using </p>
+        <p class="pwSDKCodeSamples">eWeb_ValidateSerialNumber */</p>
+        <p>&#160;</p>
+    </body>
+</html>

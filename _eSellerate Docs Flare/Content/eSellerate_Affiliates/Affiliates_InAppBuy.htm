@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="544" MadCap:lastWidth="1024">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>In-App Buy URL</h2>
+        <p>This option does not apply if you sell your product through an Integrated or Embedded Web Store eSeller.</p>
+        <p>As an alternative to Integrated and Embedded Web Store eSellers, you can create an  eSellerate SalesTrac Technology (eST) download with buy capabilities that rely on a Web Store eSeller. Because this option (In-App Buy URL) requires you to design how your application will retrieve affiliate registry information and display the store pages, we recommend that you first consider using Integrated or Embedded Web Store eSellers, which handle these tasks seamlessly through use of the <MadCap:variable name="Primary.CompanyName" /> Engine.</p>
+        <p>If you decide to use the In-App Buy URL option, you will need to design your application to do the following:</p>
+        <h4>Provide a "Buy" option</h4>
+        <p>To make it easy for users to purchase when they're ready, your application should prominently display a "Buy" option. You can implement this option through a menu command, a "Buy Now" button, a message that appears at startup, or any other way you choose.</p>
+        <h4>Retrieve affiliate information from the registry</h4>
+        <p>When an eST download is first launched, it writes an affiliate-specific URL to the registry. Your application will need to retrieve this URL when the user initiates a purchase. The affiliate that provided the eST download will then receive credit for the sale.</p>
+        <p>The affiliate-specific URL is stored as the "URL" (string) value of the registry key "HKEY_CURRENT_USER\Software\eSellerate\Affiliates\PUB123456789\SKU123456789"</p>
+        <p MadCap:conditions="Primary.Online">This information can be retrieved through functions provided in the SDK, or through program code similar to that in the <a href="Affiliates_C_Code.htm">C Code</a> and <a href="Affiliates_VB_Code.htm">Visual Basic Code</a> examples.</p>
+        <p MadCap:conditions="Primary.Print">This information can be retrieved through functions provided in the SDK, or through program code similar to that in the C Code and Visual Basic Code examples. See <MadCap:xref href="Affiliates_C_Code.htm" target="" title="" alt="">Retrieving Affiliate Information: C Code Example</MadCap:xref> and <MadCap:xref href="Affiliates_VB_Code.htm" target="" title="" alt="">Retrieving Affiliate Information: Visual Basic Code Example</MadCap:xref>.</p>
+        <h4>Display HTML for the web store</h4>
+        <p>Your application will need to use the affiliate-specific URL to display HTML for the web store. For a clean, integrated look, we recommend displaying the store pages from within your application, rather than launching a separate browser.</p>
+        <p>Once you've set up your application to handle the preceding tasks, you will need to package it as a single Windows executable. (This executable will typically be an installer, created with your choice of installer builder.) Finally, you will need to upload the file and save it as an eST download through the Available SKU Detail page.</p>
+        <p>When one of your affiliates elects to sell your product through the eST option, <MadCap:variable name="Primary.CompanyName" /> will dynamically customize the file for use by that affiliate. </p>
+    </body>
+</html>

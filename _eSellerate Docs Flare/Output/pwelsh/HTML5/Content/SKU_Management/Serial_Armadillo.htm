@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management|Creating Serial Numbers|Ready-to-Use">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Armadillo</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor44"></a>Armadillo</h2>
+        <p>This option provides serial numbers (known as keys in this instance) for software that uses the standard version of the Armadillo Software Protection System.<br /></p>
+        <h5>Prerequisites</h5>
+        <p>In order to use this serial number option, you must:</p>
+        <ul>
+            <li value="1">Be a licensed Armadillo user</li>
+            <li value="2">Have already protected your software with Armadillo</li>
+        </ul>
+        <h4>Creating an Armadillo Serial Number Set</h4>
+        <p>Whenever applicable, the settings that you choose for this serial number set should match the ones you used in the Armadillo project to design the software protection. Detailed information about each of those settings is available in the Armadillo help system.</p>
+        <h5>To create an Armadillo serial number set:</h5>
+        <ol>
+            <li value="1">From the <span class="strong">Ready-to-Use Type</span> list, select <span class="strong">Armadillo</span>.</li>
+            <li value="2">Use the <span class="strong">Signature Level</span> lists to select the Signature Level and key version used in your Armadillo project. Your options are as follows: </li>
+            <ul>
+                <li value="1"><span class="strong">v1</span> – Signature Level 0 (Unsigned) only</li>
+                <li value="2"><span class="strong">v2</span> – Signature Levels 0 (Unsigned) through 4</li>
+                <li value="3"><span class="strong">v3</span> – Signature Levels 0 (Unsigned) through 9</li>
+                <li value="4"><span class="strong">v3 Short Key</span> – (for issuing Armadillo ShortV3 keys) Signature Levels 1 through 10</li>
+            </ul>
+            <p class="pwNote"><span class="strong">Note:</span> If you're matching your settings from a SoftwarePassport for Mac project, you must select Signature Level <span class="strong">10</span> and <span class="strong">v3 Short Key</span> for this step.</p>
+        </ol>
+        <ol data-mc-continue="true">
+            <li value="3">In the <span class="strong">Encryption Template</span> field, enter the Encryption Template used in your Armadillo project.</li>
+            <li value="4">Your key generation must be based on either the customer's first and last name or the company name. Make your selection from the <span class="strong">Based On</span> list.</li>
+        </ol>
+        <p>The remaining options for this type of serial number set enable you to store certain registration information in the key, rather than in your program.</p>
+        <ol data-mc-continue="true">
+            <li value="5">
+                <p>The "Prompt For" option applies if you use Armadillo's Hardware Locking feature to restrict usage of the registered software to a single computer, and an    <![CDATA[ ]]><span class="PrimaryCompanyName">eSellerate</span> web store (regular or embedded) will handle the transaction. (Integrated eSeller information is noted below.) In this case, your web stores will need to prompt customers to enter the computer's unique identifier—called a Hardware Fingerprint—as part of the purchase process.</p>
+                <p>From the <span class="strong">Prompt For</span> list, select the prompt that your web stores should display for SKUs that use this serial number set. Your choices are as follows:</p>
+                <ul>
+                    <li value="1">Hardware Fingerprint</li>
+                    <li value="2">(Custom Prompt)</li>
+                </ul>
+                <h5>Notes</h5>
+                <ul>
+                    <li value="1">While you can customize the prompt, the required input is always Hardware Fingerprint.</li>
+                    <li value="2">When appropriate, online help will be available to show your customers how to locate the Hardware Fingerprint.</li>
+                    <li value="3">Integrated eSellers do not prompt for Hardware Fingerprint. Instead, the applications must use a special parameter (extraData) to pass the fingerprint to the <span class="PrimaryCompanyName">eSellerate</span> servers during an API call to Purchase or CheckForUpdate. For more information about these API functions and the extraData parameter, see <MadCap:conditionalText data-mc-conditions="Primary.Online">the <span class="PrimaryCompanyName">eSellerate</span> SDK section of the <span class="PrimaryCompanyName">eSellerate</span> SDK Reference</MadCap:conditionalText>.</li>
+                </ul>
+            </li>
+            <li value="6">The <span class="strong">Custom Prompt</span> field appears only when you select the "(Custom Prompt)" option in the Prompt For list. Text that you enter here (up to 50 characters) will define the prompt displayed to your customers. For example, if you enter "Hardware fingerprint of the computer using this software" in the Custom Prompt field, your web store will display "<span class="strong">Hardware fingerprint of the computer using this software: </span>[input field]" when that information is required for a SKU purchase.</li>
+            <li value="7">The "Extra Info" option enables you to store extra information in the key for use by your program. To use this option, enter a number of up to 10 digits in the <span class="strong">Extra Info</span> field. (The number of digits supported depends on the Armadillo version and whether keys are signed or unsigned.) Your program can retrieve this information through the EXTRAINFO or EXTRAINFOBITS Armadillo environment strings.</li>
+            <li value="8">
+                <p>The "Expiration" option applies if you use one of Armadillo's expiration options to limit usage of the registered software, and the expiration value is to be stored in the key. You can enter whole numbers up to five digits in the <span class="strong">Expiration</span> field. Depending on the expiration option set in your Armadillo project, your entry could be one of the following:</p>
+                <ul>
+                    <li value="1">Fixed date in Armadillo date format (the number of days since Jan. 1, 1999)</li>
+                    <li value="2">Number of allowed days</li>
+                    <li value="3">Number of allowed launches</li>
+                    <li value="4">Version limit (version XX.xx multiplied by 100)</li>
+                </ul>
+                <p>The Expiration field can be left blank.</p>
+            </li>
+            <li value="9">
+                <p> The "Use Relative Date" option can only be used in conjunction with a fixed expiration date. If you select the <span class="strong">Use Relative Date</span> check box, the value in the Expiration field will be added to the key generation date and stored in Armadillo date format. For instance, if the value in the Expiration field is 10 and the key generation date is Jan. 1, 2010, the key will be valid through January 11, 2010.</p>
+                <p>Two advantages of this option are:</p>
+                <ul>
+                    <li value="1">You simply enter the days from key generation date to expiration, and <span class="PrimaryCompanyName">eSellerate</span> will automatically compute the date in Armadillo format.</li>
+                    <li value="2">By dynamically setting the expiration date, you prevent issuing keys that are already expired.</li>
+                </ul>
+            </li>
+            <li value="10">The "Use Network Licensing" option applies if you use Armadillo's Network Licensing option, and the number of copies to allow is to be stored in the key. If you select the <span class="strong">Use Network Licensing</span> check box, the purchase quantity will be stored in the key. (Multiple quantity sales require a special setting at the SKU level. See <a href="SKU_Advanced.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Setting the SKU's Advanced Properties (Optional)</a>.)</li>
+            <li value="11">When you are done setting up the Armadillo serial number set, click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/User_Management/User_MyProfile.htm" />
+    <Link
+      Url="Content/Resources/Images/account_contact.jpg" />
+    <Link
+      Url="Content/Account_Management/Account_XML.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Amazon.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/User_Management/User_MyProfile.htm" />
+    <Link
+      Url="Content/Resources/Images/account_contact.jpg" />
+    <Link
+      Url="Content/Account_Management/Account_XML.htm" />
+    <Link
+      Url="Content/Account_Management/Account_Amazon.htm" />
+    <Link
+      Url="Project/ConditionTagSets/Primary.flcts" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="companyaddress" />
+    <Anchor
+      Name="companyprimarycontact" />
+    <Anchor
+      Name="companyshippingcontact" />
+    <Anchor
+      Name="companybillingcontact" />
+    <Anchor
+      Name="companybillingdetails" />
+    <Anchor
+      Name="emailedreports" />
+    <Anchor
+      Name="amazonweb" />
+    <Anchor
+      Name="infopreferences" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="account information"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables>
+    <Variable
+      Name="Primary.CompanyName" />
+  </Variables>
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Primary.Print" />
+    <Condition
+      Tag="Primary.ExcludeFromAllBuilds" />
+  </AllConditions>
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

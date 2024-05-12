@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management|Setting Up Product Activation">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Configuring Your Software for Activation</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor56"></a>Configuring Your Software for Activation</h2>
+        <p>For an overview of Product Activation, see <a href="Activation_Overview.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Setting Up Product Activation</a>.</p>
+        <p><a name="kanchor57"></a>After you create a Product Activation set, the next step is to configure your application source code to support activation. This requires use of <span class="PrimaryCompanyName">eSellerate</span> SDK or <span class="PrimaryCompanyName">eSellerate</span> Embedded Web Store SDK functions that can reference the Product Activation Set ID, which are as follows:</p>
+        <ul>
+            <li value="1"><span class="strong">Purchase, CheckForUpdate and Reinstall</span> (Reinstall is an    <![CDATA[ ]]><span class="PrimaryCompanyName">eSellerate</span> SDK function only) – To initiate new activations, you can pass the Product Activation Set ID in the activationID parameter of these API calls.</li>
+            <li value="2"><span class="strong">ActivateSerialNumber</span> – To activate a product without using one of the above API calls, you can use an API call to ActivateSerialNumber. This approach can be used to activate a product purchased through a web store, for example, or to reactivate/verify activation on a regular basis.</li>
+            <li value="3"><span class="strong">ManualActivateSerialNumber</span> – To enable activation when the computer's configuration prevents the <span class="PrimaryCompanyName">eSellerate</span> Engine or the <span class="PrimaryCompanyName">eSellerate</span> Embedded Web Store Engine from accessing the <span class="PrimaryCompanyName">eSellerate</span> servers, you can use an API call to ManualActivateSerialNumber. This will bring up a wizard and allow the user to manually activate the software using a web browser on the current computer or another computer with web access.</li>
+            <li value="4"><span class="strong">ValidateActivation</span> – To locally determine if a previous activation exists on the computer, or if the computer has been significantly changed since a previous activation, you can use an API call to ValidateActivation.</li>
+            <li value="5"><span class="strong">DateActivation</span> – To retrieve the date of the last activation, you can use an API call to DateActivation. This call performs the same validation as ValidateActivation, and also returns the activation date for purposes such as reactivating/verifying activation (with ActivateSerialNumber) on a regular basis.</li>
+            <li value="6"><span class="strong">DeactivateSerialNumber</span> – To allow your customers to deactivate products for purposes such as moving software to a new computer, you can use an API call to DeactivateSerialNumber. A successful deactivation will clear the local activation data, and free up an activation for the Product Activation set on the <span class="PrimaryCompanyName">eSellerate</span> servers.</li>
+        </ul>
+        <h5>Example uses of Product Activation</h5>
+        <ul>
+            <li value="1">For software purchased through an Integrated eSeller or an Embedded Web Store eSeller, the eSeller passes the activationID in the Purchase function. Product Activation occurs immediately after the purchase concludes (barring any configuration errors, such as a duplicate serial number).</li>
+            <li value="2">For software purchased through a web store, the customer enters the serial number after the purchase. In response, the application calls ValidateActivation to check the computer for previous activations with that serial number. If none exist, the application calls ActivateSerialNumber and contacts the <span class="PrimaryCompanyName">eSellerate</span> servers. If the ActivateSerialNumber function returns success, Product Activation occurs.</li>
+            <li value="3">At launch, an application calls ValidateActivation to validate the information stored locally on the computer, if present. If the validation fails, the application prompts the user to reactivate the product.</li>
+            <li value="4">A customer who wants to move activated software to a new computer selects a "Deactivate" option within the application on the current computer. In response, the application calls DeactivateSerialNumber to clear the local activation data, if present, and to free up an activation on the <span class="PrimaryCompanyName">eSellerate</span> servers. The customer then activates the software on the new computer.</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> This note applies to Embedded Web Store eSellers only. If you use Product Activation in conjunction with the up-sell feature, all SKUs that you offer in a given up-sell opportunity should use the same Product Activation Set ID. This is because the Product Activation Set ID that your eSeller passes for Purchase or CheckForUpdate API calls is the one <span class="PrimaryCompanyName">eSellerate</span> uses for activation, even if the customer ends up purchasing an up-sell SKU instead of the original selection. By coding related eSellers to pass the same Product Activation Set ID, you can avoid problems with validating activations after an up-sell purchase.</p>
+        <p class="pwNote"><span class="strong">Note:</span> In cross-sell purchases, Integrated eSellers can activate the primary SKU only. The cross-sell SKUs will each need to use their own serial numbers, and be configured to handle Product Activation through some function other than Purchase.</p>
+        <p>For more information about these API functions, see the  <span class="PrimaryCompanyName">eSellerate</span> SDK Reference.</p>
+        <h3 class="See_Also">See Also</h3>
+        <p><a href="Activation_Manual.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Manually Activating Serial Numbers</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

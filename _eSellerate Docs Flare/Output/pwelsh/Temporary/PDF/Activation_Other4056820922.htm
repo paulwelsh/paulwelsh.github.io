@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="665" MadCap:lastWidth="943" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="SKU Management|Setting Up Product Activation" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Other Options for Activation</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 MadCap:xrefTargetName="Other Options for Activation" MadCap:sourceTitle="Other Options for Activation"><a MadCap:generatedBookmark="TOC" name="Other Options for Activation"></a>Other Options for Activation</h3>
+        <p>For an overview of Product Activation, see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/SKU_Management/Activation_Overview.htm" target="" title="" alt="" MadCap:xrefTarget="Setting Up Product Activation"><span style="color: Blue;" class="mcFormatColor"><u>"Setting Up Product Activation" on page 1</u></span></MadCap:xref>.</p>
+        <p>The following options are available to you once Product Activation is in use.</p>
+        <h4>Activation Details Page</h4>
+        <p>Options available at the at the Activation Details page (see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Order_Management/Orders_Activation_Detail.htm" target="" title="" alt="" MadCap:xrefTarget="Activation Details Page"><span style="color: Blue;" class="mcFormatColor"><u>"Activation Details Page" on page 1</u></span></MadCap:xref>) include:</p>
+        <ul>
+            <li value="1">Monitoring the number of activations on a per-order basis</li>
+            <li value="2">Overriding the set activation limits for select orders at your discretion</li>
+            <li value="3">Deactivating previous activations</li>
+            <li value="4">Blacklisting certain serial numbers to disable all existing and future activation of products using those serial numbers</li>
+        </ul>
+        <h4>Product Activation Set Detail Page</h4>
+        <p>Options available at the Product Activation Set Detail page include:</p>
+        <ul>
+            <li value="1">
+                <p><span class="strong">Unlimited Activations</span> – If software that you've deployed fails to activate due to problems in its activation code, you can use the "Unlimited Activations" option to allow activations to resume. With the <span class="strong">Unlimited Activations</span> check box selected, all software using the Product Activation set will return success, which should allow the products to activate.</p>
+                <p>After correcting the activation code, you could deploy revised software that uses a new activation set, and retain the original activation set with Unlimited Activations enabled. The older software versions could then be activated and updated, which would allow you to enforce the activation rules.</p>
+                <p class="pwNote"><span class="strong">Note:</span> While Unlimited Activations is enabled, none of the set's activations will be stored in activation history.</p>
+            </li>
+            <li value="2">
+                <p><span class="strong">Reclaim Activations</span> – This option can be useful if your customers frequently exceed the set activation limits due to new computer purchases or major hardware changes. Rather than extend the number of activations beyond the quantity purchased—which allows more total copies of the software to activate—you can reclaim old activations.</p>
+                <p>With the <span class="strong">Reclaim Activations</span> check box selected, eSellerate will be able to reclaim activations from the time period specified by the <span class="strong">Older Than</span> list. For example, assume that the Product Activation set allows four total activations for each product purchased, and that it will reclaim activations older than 90 days old. Once there are four successful activations for the serial number, eSellerate will handle subsequent activation attempts as follows:</p>
+                <ul>
+                    <li value="1">If activations older than 90 days exist, eSellerate will deactivate the oldest one and use it to activate the software making the current request.</li>
+                    <li value="2">If no activations older than 90 days exist, eSellerate will return an "activation limit exceeded" error.</li>
+                </ul>
+                <p class="pwNote"><span class="strong">Note:</span> When software uses an old activation that has been reclaimed, that product will require a new, unique activation if it attempts to activate again.</p>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="526" MadCap:lastWidth="685">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_490395"></a><a name="Embedded_SDKReference_1955650137_19062"></a>eWeb_DisposePrefillData</h2>
+        <p>
+            <MadCap:keyword term="eWeb_DisposePrefillData" />Disposes of memory allocated by <span class="strong">eWeb_NewPrefillData</span> and used by any routines that consume prefill data. This function must be called on the prefill data for it to be properly disposed.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eWebLibrary.h<br />Included in the development project.</li>
+            <li>eWebClient.lib<br />Included in the development project.</li>
+            <li>eWebClient.dll<br />Located in the eSellerate directory noted at <MadCap:xref href="SDK2_libWin_DefaultLoc.htm#Embedded_SDKReference_1955650137_562190" target="" title="" alt="">Default Locations for eWebClient.dll</MadCap:xref>. It may be already be placed here by another eSellerate-enabled application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">eWeb_DisposePrefillData</span> ( <i>prefillData </i>)</p>
+        <p class="pwDefinition"><i>prefillData – </i>prefill data buffer returned by <span class="strong">eWeb_NewPrefillData</span></p>
+        <p>
+            <br />See <MadCap:xref href="SDK2_libWin_ReturnValues.htm#Embedded_SDKReference_1955650137_413448" target="" title="" alt="">eSellerate Return Values</MadCap:xref> for details on return values.</p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eWebLibrary.h"</p>
+        <p class="pwSDKCodeSamples">BYTE *resultData = NULL;</p>
+        <p class="pwSDKCodeSamples">BYTE *prefillData = eWeb_NewPrefillData();</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use eWeb_AddPrefillData() to prefill information for the purchase */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use prefillData in a function that uses it */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error or utilize result data */</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposePrefillData(prefillData);</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposeResultData(resultData);</p>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="PDF"
+  Type="PDF"
+  Destinations=""
+  ConditionTagExpression="include[Primary.Print] exclude[Primary.ExcludeFromAllBuilds or Primary.Online] "
+  MasterToc="/Project/TOCs/PDF TOC.fltoc"
+  PatchHeadingLevels="true"
+  InjectBookHeadings="false"
+  OutputFile="eSellerateSDKReference.pdf">
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/Primary.flglo" />
+  </Glossaries>
+  <PDF
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Author=""
+    Title="eSellerate SDK Reference" />
+</CatapultTarget>

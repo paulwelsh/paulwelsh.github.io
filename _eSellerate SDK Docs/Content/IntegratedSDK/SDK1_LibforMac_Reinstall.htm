@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2133" MadCap:lastWidth="702">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>eSellerate_Reinstall</h2>
+        <p>
+            <MadCap:keyword term="eSellerate_Reinstall" />Invokes the Software Delivery Wizard to enable the user to reinstall software from a previous purchase.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eSellerate.h<br />Included in the development project.</li>
+            <li>eSellerateLibrary.lib(Carbon) or<br />libeSellerate.a (Mach-O version)<br />Included in the development project.</li>
+            <li>eSellerateEngine (Carbon)<br />Located in the appropriate folder. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li>For Mac OS 9.1 or later with CarbonLib 1.5 or later, place eSellerateEngine (Carbon) in System Folder:Application Support:MindVision</li><li>For Mac OS X, place eSellerateEngine (Carbon) in /Library/Application Support/MindVision</li></ul></li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">eSellerate_ErrorCode <span class="strong">eSellerate_Reinstall</span> ( <i>publisherID, esellerID, previewID, errorURL, openingTitle,</i><i>	openingText, showFolder, trackingID, activationID, resultData</i> )</p>
+        <p class="pwDefinition">eSellerate_InputString <i>publisherID</i>		– Publisher ID string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>esellerID</i>		– Integrated eSeller RefNum string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>previewID</i>		– Preview Certificate string</p>
+        <p class="pwDefinition">eSellerate_InputString <i>errorURL</i>		– URL string shown in error messages</p>
+        <p class="pwDefinition">eSellerate_InputString <i>openingTitle</i>		– custom title of opening page of the Software Delivery Wizard</p>
+        <p class="pwDefinition">eSellerate_InputString <i>openingText</i>		– custom first paragraph of opening page of the Software Delivery Wizard</p>
+        <p class="pwDefinition">eSellerate_TrueOrFalse <i>showFolder</i>	– 	have the eSellerateEngine open a window to display downloaded files</p>
+        <p class="pwDefinition">eSellerate_InputString <i>trackingID</i>		– tracking ID code</p>
+        <p class="pwDefinition">eSellerate_InputString <i>activationID		</i>– Product Activation Set ID string</p>
+        <p class="pwDefinition">eSellerate_ResultData* <i>resultData</i>		– address of results obtained by the Software Delivery Wizard</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Return Value</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_NOENGINE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine cannot be found.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_FAILURE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if <i>publisherID</i>  or <i>esellerID</i>  is nil or if the eSellerateEngine encounters a fatal error during reinstall.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_SUCCESS
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_CANCELED</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the user exits the eSellerateEngine before the action was completed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">-25000</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because <i>activationID</i> was unknown. (Only possible if <i>activationID</i> is present.) </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">-25002</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but no activation occurs because there is no serial number associated with the SKU. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">-25003</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the serial number is blacklisted. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">-25004</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the product was returned. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">-25005</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the activation limit was met. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">-25009</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine completes the action, but activation fails because the serial number obtained by calling <span class="strong">eSellerate_Reinstall</span> is already associated with another order. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody">-25012</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if eSellerate denies the activation request. (Only possible if <i>activationID</i> is present.)</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for eSellerate_Reinstall Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Parameter</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading" style="font-weight: bold;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>publisherID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Publisher ID, as found on the Sales Manager Home page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>esellerID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Integrated eSeller RefNum, as found on the Sales Manager Integrated eSeller Summary page. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>previewID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Preview Certificate, as found on the Sales Manager Integrated eSeller Summary page. Required to purchase in Preview mode. Pass nil in Active mode.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>errorURL</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing a contact URL for the Software Delivery Wizard to use in the text of certain message boxes when reporting an error. May be nil.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">openingTitle</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing a custom title of the opening page of the Software Delivery Wizard. May be nil, in which case the system default title will be used.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">openingText</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing a custom first paragraph of the opening page of the Software Delivery Wizard. The limit is four lines, or approximately 250 characters, depending on character width. May be nil, in which case the system default first paragraph will be used.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">showFolder</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Logical value that controls whether the eSellerateEngine opens a window after the purchase to display downloaded files. Pass a true (non-zero) value to open the folder; otherwise pass false (zero).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">trackingID</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing special information that marks the function call so that it can be tracked in reports. May be nil. See "tracking IDs" in the eSellerate <MadCap:conditionalText MadCap:conditions="Primary.Print">User's Guide</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-style: italic;">
+                        <p class="CellBody_Italic">activationID</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing an activation ID for use in eSellerate Product Activation. May be nil. Automatic activation occurs if the eSellerateEngine completes the action and returns a unique serial number for use with the <i>activationID</i> (barring any -25000 series errors). See "Product Activation: setting up" in the eSellerate <MadCap:conditionalText MadCap:conditions="Primary.Print">User's Guide</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.Online">Publishers Help</MadCap:conditionalText> index.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>resultData</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p>Address of a declared variable of type ResultData. The variable is a pointer, and may be initialized to nil. Memory is allocated and filled by the Software Delivery Wizard when <span class="strong">eSellerate_Reinstall</span>  is called. This memory must later be de-allocated by calling <span class="strong">eSellerate_DeleteResultData</span>.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for eSellerate_Reinstall Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Data Type</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Definition</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Ctype.h Naming</b></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_ErrorCode
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">unsigned long
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_InputString
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">const unsigned char*
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">ConstStrParam
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_TrueOrFalse</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">unsigned short</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_ResultData
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">char**
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p>Handle
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Type Definitions for eSellerate_Reinstall Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> Strings are handled as length-prepended Pascal strings.
+            <br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eSellerate.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_ResultData resultData = nil;</p>
+        <p class="pwSDKCodeSamples">eSellerate_ErrorCode resultCode =   eSellerate_Reinstall("\pPUB775527079", "\pES123456789", nil, nil, nil, nil, 0, nil, nil, &amp;resultData);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or utilize resultData */</p>
+        <p class="pwSDKCodeSamples">eSellerate_DeleteResultData(resultData);</p>
+    </body>
+</html>

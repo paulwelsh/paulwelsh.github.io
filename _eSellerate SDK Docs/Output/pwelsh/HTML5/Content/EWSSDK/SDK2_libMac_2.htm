@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Macintosh">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb Libraries for Macintosh — Embedded Framework</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>eWeb Libraries for Macintosh — Embedded Framework</h2>
+        <p>See also the frameworks overview at <a href="SDK2_libMac_Frameworks.htm" class="MCXref xref" xrefformat="{para}">eWeb Libraries for Macintosh</a>.</p>
+        <p>This section details the eSellerate Embedded Web Store SDK provided by the static library option for eSeller integration into Macintosh applications developed using Xcode or other comparable tool. It divides the functions into three categories: Standard, Extended and Results.</p>
+        <h4>Standard</h4>
+        <p>Standard functions enable everything from checking the system for compatibility with this solution, to software purchasing and activation. Some of these functions return result data, which can then be accessed through Results functions. The Standard functions are:</p>
+        <ul>
+            <li value="1"><a href="SDK2_libMac_IsSystem_2.htm">eWeb_IsSystemCompatible</a>
+            </li>
+            <li value="2"><a href="SDK2_libMac_Purchase_2.htm">eWeb_Purchase</a>
+            </li>
+            <li value="3"><a href="SDK2_libMac_Check_2.htm">eWeb_CheckForUpdate</a>
+            </li>
+            <li value="4"><a href="SDK2_libMac_Silent_2.htm">eWeb_SilentCheckForUpdate</a>
+            </li>
+            <li value="5"><a href="SDK2_libMac_Activate_2.htm">eWeb_ActivateSerialNumber</a>
+            </li>
+            <li value="6"><a href="SDK2_libMac_Manual_2.htm">eWeb_ManualActivateSerialNumber</a>
+            </li>
+            <li value="7"><a href="SDK2_libMac_ValidateAct_2.htm">eWeb_ValidateActivation</a>
+            </li>
+            <li value="8"><a href="SDK2_libMac_Date_2.htm">eWeb_DateActivation</a>
+            </li>
+            <li value="9"><a href="SDK2_libMac_Deactivate_2.htm">eWeb_DeactivateSerialNumber</a>
+            </li>
+            <li value="10"><a href="SDK2_libMac_Confirm_2.htm">eWeb_ConfirmSerialNumber</a>
+            </li>
+            <li value="11"><a href="SDK2_libMac_Today_2.htm">eWeb_Today</a>
+            </li>
+            <li value="12"><a href="SDK2_libMac_ValidateSeri_2.htm">eWeb_ValidateSerialNumber</a>
+            </li>
+            <li value="13"><a href="SDK2_libMac_Standardize_2.htm">eWeb_StandardizeSerialNumber</a>
+            </li>
+            <li value="14"><a href="SDK2_libMac_Today1_2.htm">eSellerate_Today</a>
+            </li>
+        </ul>
+        <h4>Extended</h4>
+        <p>Extended functions enable prefilling data to simplify the purchase process for customers. Some examples of prefill capabilities include prefilling the customer's billing information, adding one or more SKUs to the shopping cart, and activating all SKUs purchased. The Extended functions are:</p>
+        <ul>
+            <li value="1"><a href="SDK2_libMac_NewPrefill_2.htm">eWeb_NewPrefillData</a>
+            </li>
+            <li value="2"><a href="SDK2_libMac_AddPre_2.htm">eWeb_AddPrefillData</a>
+            </li>
+            <li value="3"><a href="SDK2_libMac_PurchaseEx_2.htm">eWeb_PurchaseEx</a>
+            </li>
+            <li value="4"><a href="SDK2_libMac_CheckEx_2.htm">eWeb_CheckForUpdateEx</a>
+            </li>
+            <li value="5"><a href="SDK2_libMac_Dispose_2.htm">eWeb_DisposePrefillData</a>
+            </li>
+        </ul>
+        <h4>Results</h4>
+        <p>Results functions enable access to result data returned through Standard and Extended functions that invoke the Embedded Web Store Engine. The Results functions are:</p>
+        <ul>
+            <li value="1"><a href="SDK2_libMac_GetOrderInde_2.htm">eWeb_GetOrderItemByIndex</a>
+            </li>
+            <li value="2"><a href="SDK2_libMac_GetResultDatL_2.htm">eWeb_GetResultDataValueLength</a>
+            </li>
+            <li value="3"><a href="SDK2_libMac_GetResultDat_2.htm">eWeb_GetResultDataValue</a>
+            </li>
+            <li value="4"><a href="SDK2_libMac_IndexGetResu_2.htm">eWeb_IndexGetResultDataValueLength</a>
+            </li>
+            <li value="5"><a href="SDK2_libMac_IndexGetResu1_2.htm">eWeb_IndexGetResultDataValue</a>
+            </li>
+            <li value="6"><a href="SDK2_libMac_Dispose1_2.htm">eWeb_DisposeResultData</a>
+            </li>
+        </ul>
+        <h5>Notes</h5>
+        <ul>
+            <li value="1">The system requirements for this option are as follows:<ul><li value="1">Standard SDK — Mac OS X v10.4 or later</li><li value="2">Garbage collecting SDK — Mac OS X v10.5 or later</li></ul></li>
+            <li value="2">Important information for Mach-O developers is available at <a href="SDK2_libMac_Protecting_2.htm#Embedded_SDKReference_1955650137_637824" class="MCXref xref" xrefformat="{para}">Protecting Mach-O Applications from Hackers</a>.</li>
+            <li value="3">For a summary of previous and current function calls applicable to eWeb libraries for Macintosh, see <a href="SDK2_libMac_NewFunct_2.htm#Embedded_SDKReference_1955650137_663149" class="MCXref xref" xrefformat="{para}">New Functions Summary</a>.</li>
+            <li value="4">Embedded Web Store for Macintosh is a <a name="kanchor5"></a>Universal (universal binary) solution that runs natively on both PowerPC- and Intel-based Macintosh computers. (The system requirements are listed earlier in these notes.) Application development environments that can produce Cocoa and Carbon applications should be able to integrate this solution into their applications.</li>
+            <li value="5">The SDK supports both 32-bit and 64-bit Universal Binaries.</li>
+            <li value="6">There are two versions of the SDK: a standard version and a garbage collecting version. The only difference between the two SDKs is that one is garbage collecting, and one is not. There is no difference in functionality. </li>
+            <li value="7">The standard SDK provides backwards compatibility with earlier Mac OS X versions (beginning with v10.4). If you design your software for use on Mac OS X v10.5 and later, we recommend that you use the garbage collecting SDK.</li>
+            <li value="8">The framework that&#160;is required for use with the garbage collecting SDK includes "GC" in its name: EWSEmbedded-GC.framework.</li>
+        </ul>
+        <h3>SDK&#160;Version 5.0.0.0 Notes</h3>
+        <p>The version 5.0.0.0 SDK introduced a second option for  installing the Embedded Web Store Engine to enable e-commerce functionality.  Rather than installing the engine as a separate item somewhere on the user's machine as is done with the Non-Embedded Framework, the approach with this new second option is to embed the engine in your application's bundle. The new Embedded Web Store Engine (Embedded Framework) is available in standard and garbage collecting versions.</p>
+        <p>Because the Embedded Framework is already included in your application, you do not need to make the EWS Install Engine API call (<strong>eWeb_InstallEngineFromPath</strong>).</p>
+        <p>The header file has been updated and is included within the new Embedded Framework.</p>
+        <h4>How to transition to the new SDK</h4>
+        <p>The following SDK files are not needed when using the Embedded Framework, because they apply to the Non-Embedded Framework only:</p>
+        <ul>
+            <li value="1">libEWS.a and libEWS-GC.a</li>
+            <li value="2">EWSLib.h</li>
+            <li value="3">EWSMac.framework</li>
+            <li value="4">EWSMac-GC.framework</li>
+            <li value="5">	EWSMacCompress.tar.gz (the compressed version of EWSMac.framework)</li>
+            <li value="6">EWSMacCompress-GC.tar.gz (the compressed version of EWSMac-GC.framework)</li>
+        </ul>
+        <p>The following SDK files were added specifically for the Embedded Framework:</p>
+        <ul>
+            <li value="1">EWSEmbedded.h    <![CDATA[ ]]></li>
+            <li value="2">	EWSEmbedded.framework    <![CDATA[ ]]></li>
+            <li value="3">	EWSEmbedded-GC.framework    <![CDATA[ ]]></li>
+        </ul>
+        <p>The following files (used primarily with <span class="strong">eWeb_ValidateSerialNumber</span> and e<span class="strong">Web_StandardizeSerialNumber</span> calls) did not change for this release, and can be used with both frameworks:</p>
+        <ul>
+            <li value="1">validateLib.h</li>
+            <li value="2">libValidateUniversal.a</li>
+        </ul>
+        <h5>To update applications that use the Non-Embedded Framework version of the SDK (Xcode example):</h5>
+        <ol>
+            <li value="1">Remove any calls to the <span class="strong">eWeb_InstallEngineFromPath</span> function, since it is not needed.</li>
+            <li value="2">Because the header file has a new name and path, you will need to replace instances of <span style="font-family: 'Courier New';">#include "EWSLib.h"</span> in your code with <span style="font-family: 'Courier New';">#import &lt;EWSEmbedded/EWSEmbedded.h&gt;</span>.</li>
+            <li value="3">	Add the new Embedded Framework (standard or garbage collecting) to your Xcode project's Frameworks directory.</li>
+            <li value="4">Add a "New Build Phase" / "New Copy Files Build Phase" to your Xcode project Target, and then set the <span class="strong">Destination </span>list to <span class="strong">Frameworks</span>.</li>
+            <li value="5">Drag the Embedded Framework from Xcode's Frameworks directory to the newly created Copy Files Build Phase.</li>
+            <li value="6">Make sure Xcode's "Strip Debug Symbols During Copy" build setting is turned off. Leaving it off is a requirement for enabling Embedded Framework validation checks to succeed.</li>
+            <li value="7">Recompile your application. (Your application's Contents directory should now have a Frameworks directory containing the Embedded Framework.)</li>
+            <li value="8">Complete your usual testing procedures.</li>
+            <li value="9">Make the updated application available to your customers.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

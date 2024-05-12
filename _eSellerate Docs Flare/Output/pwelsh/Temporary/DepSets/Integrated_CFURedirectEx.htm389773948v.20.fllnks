@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TableStyles/Rows.css" />
+    <Link
+      Url="Content/Resources/TableStyles/Illustration_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirect.htm" />
+    <Link
+      Url="Content/Resources/Images/ill5_7.jpg" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirectEx.htm" />
+    <Link
+      Url="Content/Resources/Images/ill5_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/ill5_9.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TableStyles/Rows.css" />
+    <Link
+      Url="Content/Resources/TableStyles/Illustration_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirect.htm" />
+    <Link
+      Url="Content/Resources/Images/ill5_7.jpg" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirectEx.htm#Integrated_eSellers_772768980_92851" />
+    <Link
+      Url="Content/Resources/Images/ill5_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/ill5_9.jpg" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirectEx.htm#Integrated_eSellers_772768980_1054014" />
+    <Link
+      Url="Content/Integrated_eSellers/Integrated_CFURedirectEx.htm#Releasingv3" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Integrated_eSellers_772768980_1041180" />
+    <Anchor
+      Name="Integrated_eSellers_772768980_91106" />
+    <Anchor
+      Name="Integrated_eSellers_772768980_1054014" />
+    <Anchor
+      Name="Integrated_eSellers_772768980_41588" />
+    <Anchor
+      Name="Releasingv3" />
+    <Anchor
+      Name="Integrated_eSellers_772768980_1055878" />
+    <Anchor
+      Name="Integrated_eSellers_772768980_92851" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/Rows.css" />
+    <Url
+      Source="Content/Resources/TableStyles/Illustration_Table.css" />
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

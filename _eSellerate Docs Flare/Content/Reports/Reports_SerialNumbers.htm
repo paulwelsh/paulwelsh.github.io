@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1056" MadCap:lastWidth="943">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Serial Numbers</h2>
+        <p>The Serial Numbers report can produce listings of any serial numbers issued for your products through the <MadCap:variable name="Primary.CompanyName" /> system. These listings may include serial numbers issued for existing and deleted products.</p>
+        <p>You can also use this report to find serial numbers that you imported in order to use <MadCap:variable name="Primary.CompanyName" /> Product Activation with products sold outside the <MadCap:variable name="Primary.CompanyName" /> system, or manually generated from within a Standard or Standard Enhanced serial number set. (See <MadCap:xref href="../SKU_Management/Activation_Ext_Import.htm" target="" title="" alt="">Importing External Serial Numbers for Activation</MadCap:xref> and <MadCap:xref href="../SKU_Management/Serial_Manual.htm" target="" title="" alt="">Manually Generating Serial Numbers</MadCap:xref>.)</p>
+        <h5>To run a Serial Numbers report:</h5>
+        <ol>
+            <li>Click the <span class="strong">Admin Reports</span> tab. The Admin Reports page appears.</li>
+            <li>Click <span class="strong">Serial Numbers</span>. The Serial Numbers page appears.<br /><img src="../Resources/Images/report_serial.jpg" class="PWimg" MadCap:conditions="Primary.Print" /><br /></li>
+            <li>To narrow the scope of this report, you can do any of the following:<ul><li>Enter an order number or a serial number, but not both. The <span class="strong">Order Number</span> field requires a complete order number. The <span class="strong">Serial Number</span> field will accept a partial serial number for a "begins with" search, and is case-insensitive.</li><li>Select a serial number set, which will limit the results to serial numbers that were issued for that set.</li><li>Use the <span class="strong">Date Range</span> list to limit the results to serial numbers that were issued within a specific date range. You can also edit or enter dates in the <span class="strong">From </span>and <span class="strong">To </span>fields.</li></ul></li>
+            <li>If appropriate, select the <span class="strong">Include Preview Orders</span> check box.</li>
+            <li>This report can return results as an HTML table, a tab-delimited file or a comma-delimited file. Make your selection from the <span class="strong">Return Results As</span> <![CDATA[ ]]>list.</li>
+            <li>Click <span class="strong">Find Serial Numbers</span>.</li>
+        </ol>
+        <h5>If you selected HTML table results:</h5>
+        <p>The table will display all serial numbers that matched your report criteria. You can now find more information about serial numbers and/or the associated orders.</p>
+        <ul>
+            <li>Click a <span class="strong">Serial Number</span> field for details on Product Activation.</li>
+            <li>Click an <span class="strong">Order Number</span> field for details on an  <MadCap:variable name="Primary.CompanyName" /> order. If a serial number does not have a corresponding Order Number field, it may be because that serial number was imported for Product Activation purposes, or manually generated from within a Standard or Standard Enhanced serial number set.</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> The order and return information that is available through this report does not include your profit or <MadCap:variable name="Primary.CompanyName" />'s commission on your orders from 4/1/2011 and later. <MadCap:conditionalText MadCap:conditions="Primary.Online">To find that information and more, please use <a href="Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reporting. See <MadCap:xref href="Reports_Business_Intel.htm" target="" title="" alt="">Business Intelligence Reporting</MadCap:xref>.</MadCap:conditionalText></p>
+        <h5>If you selected tab-delimited file results:</h5>
+        <p>The resulting Save As dialog will display a default file name, which you can change if desired. In any case, you will need to change the file extension to ".txt" before saving the file (applies to both Windows and Macintosh platforms).</p>
+        <p>You can now import the file into a database, or open it in a spreadsheet program such as Microsoft Excel. (Because this is a basic text file, you may need to specify that the data is in tab-delimited format.)</p>
+        <h5>If you selected comma-delimited file results:</h5>
+        <p>The resulting Save As dialog will display a default file name, which you can change if desired. In any case, you will need to change the file extension to ".csv" before saving the file (applies to both Windows and Macintosh platforms).</p>
+        <p>You can now import the file into a database, or open it in a spreadsheet program such as Microsoft Excel. (If a program prompts you to specify a format for this data, select comma-delimited or comma-separated values.)</p>
+    </body>
+</html>

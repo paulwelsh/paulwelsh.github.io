@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Frameworks.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IsSystem_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Purchase_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Check_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Silent_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Activate_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Manual_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_ValidateAct_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Date_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Deactivate_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Confirm_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Today_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_ValidateSeri_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Standardize_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Today1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_NewPrefill_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_AddPre_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_PurchaseEx_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_CheckEx_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Dispose_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetOrderInde_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetResultDatL_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetResultDat_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IndexGetResu_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IndexGetResu1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Dispose1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Protecting_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_NewFunct_2.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Frameworks.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IsSystem_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Purchase_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Check_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Silent_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Activate_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Manual_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_ValidateAct_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Date_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Deactivate_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Confirm_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Today_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_ValidateSeri_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Standardize_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Today1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_NewPrefill_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_AddPre_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_PurchaseEx_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_CheckEx_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Dispose_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetOrderInde_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetResultDatL_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_GetResultDat_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IndexGetResu_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_IndexGetResu1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Dispose1_2.htm" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_Protecting_2.htm#Embedded_SDKReference_1955650137_637824" />
+    <Link
+      Url="Content/EWSSDK/SDK2_libMac_NewFunct_2.htm#Embedded_SDKReference_1955650137_663149" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Universal applications"
+      Conditions=""
+      LocalConditions=""
+      Position="78" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

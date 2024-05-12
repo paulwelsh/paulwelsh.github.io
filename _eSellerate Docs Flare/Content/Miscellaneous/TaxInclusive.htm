@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1286" MadCap:lastWidth="972">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Tax-Inclusive Pricing</h2>
+        <p class="pwNote"><span class="strong">Note</span>: Standard Layouts will provide tax-inclusive functionality by default. Custom Layouts created prior to August 31, 2010, will need updating before they can represent tax-inclusive pricing as described here. A document that explains how to update layouts for tax-inclusive pricing is available for downloading at <a href="http://support.esellerate.net/FileManagement/Download/9de8c14809b94bd8bb04499c5c81d0ae" target="_blank">http://support.esellerate.net/FileManagement/Download/9de8c14809b94bd8bb04499c5c81d0ae</a>.</p>
+        <p>
+            <MadCap:keyword term="tax-inclusive pricing;VAT-inclusive pricing;US tax-inclusive pricing" />Tax-inclusive pricing is an option that ensures your customers pay the exact prices shown on your store's catalog pages, with no additional costs when taxes apply. In contrast to this option, the default pricing behavior is to exclude taxes from displayed prices, in which case customers pay the unit price plus applicable taxes. </p>
+        <p>Tax-inclusive pricing is supported for Web Store eSellers (with Custom Layouts or Standard Layouts) and Embedded Web Store eSellers. It is available for use with US tax and Value Added Tax (VAT). In both cases, the taxable amount is subtracted from the unit price, but the way this is presented to customers differs according to the tax type. The differences are as follows:</p>
+        <ul>
+            <li>With US tax, the prices shown to customers on the catalog page will be adjusted for taxes later in the purchase process. When this happens, tax is subtracted from the original prices, and the total tax amount is displayed as a separate line item. For example, assume that the SKU price shown on the catalog page is $10. Once a tax rate of 7 percent has been applied, the shopping cart will show $9.35 for the SKU and $0.65 for tax. The price stored in order history for the SKU&#160;will be $9.35.</li>
+            <li>With VAT, the prices shown to customers are not adjusted for taxes, but text in the shopping cart indicates when the grand total includes VAT. For example, assume that the SKU price shown on the catalog page is 1000 EUR, and the order will include this one item only. Once a VAT rate of 19 percent has been applied, the shopping cart will show 1000 EUR for the SKU and 1000 EUR for the grand total. Under the grand total the following line will appear: "*Includes 19.00% VAT of 159.66 EUR". The price stored in order history for the SKU&#160;will be 840.34 EUR (see <MadCap:xref href="#OrderHistory" target="" title="" alt="">Order History</MadCap:xref>). If the cart had contained multiple items the line under the grand total would have listed the VAT amounts for each item, in the order that the items appeared in the cart.</li>
+        </ul>
+        <p>  More information on tax-inclusive pricing follows.</p>
+        <h4><a name="Pricing"></a>Pricing Considerations</h4>
+        <p>When customers pay tax under tax-inclusive pricing, the publisher's net earnings are reduced by the amount of the taxes. You can avoid losing revenue on taxable orders by increasing the prices of all items in your store to make up for the tax amounts. To make those adjustments, we recommend using Native Currency Pricing, which will allow you to set pricing for SKUs, eCD and other items in your customers' preferred currencies.&#160;</p>
+        <p>Another good practice with VAT-inclusive pricing is to implement location-specific stores to cover the countries that collect VAT.</p>
+        <p>Also note:</p>
+        <ul>
+            <li>For a tax-inclusive order including eCD, the total tax cost for eCD is subtracted from the publisher markup amount (see the eCD Configuration tab for that amount). For example, assume that the <MadCap:variable name="Primary.CompanyName" /> eCD charge is $5 and the publisher markup is $5, for a total purchase price of $10. With a 7 percent tax rate, the total tax cost on $10 is $0.66. The publisher net earnings for a tax-inclusive sale would then be (5 − 0.66) = $4.34.</li>
+            <li>For a tax-inclusive order including <MadCap:variable name="Primary.CompanyName" /> Download Protection (eDP), the total tax cost for eDP is subtracted from the <MadCap:variable name="Primary.CompanyName" /> portion of the price (currently $3.99). Therefore, the publisher net earnings remain at $1 for each eDP&#160;SKU sold, and are unaffected by tax-inclusive pricing.</li>
+        </ul>
+        <h4>VAT&#160;IDs</h4>
+        <p>When the customer enters a valid VAT ID for a VAT-inclusive order, no VAT is charged, but it is subtracted from the prices of all items  subject to the tax. This is the only time when prices are shown to the customer adjusted for VAT.</p>
+        <h4><a name="OrderHistory"></a>Order History</h4>
+        <p>When showing tax-inclusive orders to publishers, <MadCap:variable name="Primary.CompanyName" /> treats VAT and US tax the same, by breaking out tax as a separate line item and listing unit prices adjusted for taxes. The adjusted prices are what the publisher earned on the sale.</p>
+        <p>This applies everywhere publishers can see order details, including publisher e-mail notifications, <MadCap:variable name="Primary.CompanyName" /> reports and the Order Detail page.</p>
+        <h4>Subscription Orders</h4>
+        <p>Recurring billings during the subscription period will honor the tax-inclusive settings that were in effect when the order was placed. Renewal billings will honor the current tax-inclusive settings for the eSeller that handled the original subscription order.</p>
+        <p>If the customer enters a valid VAT&#160;ID when placing a subscription order, no VAT&#160;will be charged for recurring billings or renewals, and this will continue for the life of the subscription.</p>
+        <p>If the customer does not enter a VAT&#160;ID when placing a subscription order but later requests a tax-only refund (using a valid VAT&#160;ID), no VAT&#160;will be charged for recurring billings or renewals after the refund is processed, and this will continue for the life of the subscription.</p>
+        <h4>Rules for Applying Tax</h4>
+        <ul>
+            <li><span class="strong">eCD</span> – eCD is taxable. See the notes under <MadCap:xref href="#Pricing" target="" title="" alt="">Pricing Considerations</MadCap:xref>.</li>
+            <li><span class="strong">eDP</span> – eDP is taxable. See the notes under <MadCap:xref href="#Pricing" target="" title="" alt="">Pricing Considerations</MadCap:xref>.</li>
+            <li><span class="strong">Cross-sells and up-sells</span> – If the price is reduced by a cross-sell or up-sell offer, the offer is applied first and then the remaining amount is taxable.</li>
+            <li><span class="strong">Volume discounts</span> – The volume discount is applied first and then the remaining amount is taxable.</li>
+            <li><span class="strong">Coupons </span>– The coupon discount is applied first and then the remaining amount is taxable.</li>
+            <li><span class="strong">Shipping </span>– Shipping costs are taxable, but only for orders subject to US tax.</li>
+            <li><span class="strong">SKUs in channel or affiliate stores</span> – Tax-inclusive status for the publisher store does not carry over to the channel or affiliate stores. Channels and affiliates would need to set up their own eSellers as tax-inclusive if that type of pricing is needed.</li>
+        </ul>
+        <h4>Tax-Only Refunds</h4>
+        <p>There are no special considerations for doing tax-only refunds on tax-inclusive orders. </p>
+        <h3 class="See_Also">See Also</h3>
+        <p>
+            <MadCap:xref href="../Order_Management/Orders_TaxOnly_Refund.htm" target="" title="" alt="">Tax-Only Refunds</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Embedded_Web_Store_eSellers/EWS_IDNameLayout.htm" target="" title="" alt="">Embedded Web Store: ID, Name, Layout, Pricing</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Web_Store_eSellers/Web_eSellerDetail.htm" target="" title="" alt="">Web Store: eSeller Detail</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1206" MadCap:lastWidth="972">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>
+            <MadCap:keyword term="URL aliases" />Creating URL Aliases</h2>
+        <p>This feature allows you to streamline your <MadCap:variable name="Primary.CompanyName" /> web store URLs for a clean, uncomplicated look. For example, both of the following URLs will open a web store, add a SKU to the shopping cart and fill in a coupon ID, but the second URL is much shorter due to use of the alias feature:</p>
+        <ul>
+            <li>http://store.eSellerate.net/s.asp?s=STR123456789&amp;Cmd=BUY&amp;SKURefnum=SKU123456789­&amp;coupon=couponname</li>
+            <li>http://store.eSellerate.net/mv/sale</li>
+        </ul>
+        <h5>To create a URL alias:</h5>
+        <ol>
+            <li>If you have not yet done so, the first step is to create a publisher short name. This unique publisher identifier will be part of all your URL aliases. It should be short yet descriptive. For instance, MindVision Software might use the short name "mv" as in the example alias above.<ol style="list-style-type: lower-alpha;"><li>From the URL Alias List page, click <span class="strong">New</span>. </li><li>Enter a short name in the field provided. The name must use alphanumeric characters, and may include dashes. </li><li>When you are finished, click <span class="strong">Create Short Name</span>.</li></ol></li>
+            <li>From the URL Alias List page, click <span class="strong">New</span>. (After you have entered a publisher short name, the <span class="strong">New </span>button is available at the bottom of the page.) The URL Alias Detail page appears.</li>
+            <li>In the <span class="strong">Alias </span>field, enter a descriptive shortcut name to identify the alias. The name must use alphanumeric characters, and may include dashes. It will appear in the URL immediately after the publisher short name.</li>
+            <li>If desired, enter a <span class="strong">Description </span>for this alias. Text that you enter here is for your reference only, and will not appear in the URL.</li>
+            <li>
+                <p>This alias can direct the user to one of several places in the web store. Make your selection from the <span class="strong">Command </span>list.</p>
+                <p class="pwNote"><span class="strong">Note:</span> <![CDATA[ ]]>The command that you select determines whether or not you should also specify a SKU for the URL alias. If you select <span class="strong">Show Web Store</span> or <span class="strong">Show Shopping Cart</span>, there is no need to specify a SKU. For any of the other commands, you should specify a SKU, either as part of the alias setup (see step 7), or by appending it to the alias (see <MadCap:xref href="#Appending" target="" title="" alt="">Appending Information to the URL Alias</MadCap:xref>).</p>
+            </li>
+            <li>From the <span class="strong">Web Store</span> list, select the web store that this alias should use.</li>
+            <li>If desired, use the <span class="strong">SKU </span>list to select the SKU that this alias should use. If you do not make a selection from  this list, you will be able to later append SKU information to the alias as  needed.</li>
+            <li>If desired, use the <span class="strong">Coupon </span>list to select the coupon that this alias should use. If you do not make a selection from this list, you will be able to later append coupon information to the alias as needed.</li>
+            <li>The Pre-Validate option  applies if you specified a coupon in the preceding step. If you select the <span class="strong">Pre-Validate</span> check box, <MadCap:variable name="Primary.CompanyName" /> will validate the specified coupon immediately, rather than at the next form post. This allows the discounted amount to display immediately, if included on the layout page. Also note:<ul><li>For information on using eSellerate variables to control what displays on layout pages, see <MadCap:xref href="../Layouts/Layouts_CustomVariablesN.htm" target="" title="" alt="">Variables Notes</MadCap:xref>.</li><li>Do not use this option for coupons that require user input, such as adding more items to the cart or entering an e-mail address used for previous purchases. Coupons such as these that <MadCap:variable name="Primary.CompanyName" /> cannot immediately validate will cause errors.</li><li>This option affects Custom Layouts and Standard Layouts only.</li></ul></li>
+            <li>
+                <p>The<span class="strong"> Final URL</span> field dynamically fills in the complete alias as you design it. This field allows copying but not editing. </p>
+                <p>When you are finished, click <span class="strong">Save Changes</span>.</p>
+            </li>
+        </ol>
+        <p>After you create an alias, you can select and copy it from the<span class="strong"> URL Alias</span> field displayed on the URL Alias List page.</p>
+        <h3><a name="Appending"></a>Appending Information to the URL Alias</h3>
+        <p>To append information such as SKU RefNum or coupon or affiliate IDs to the alias, precede the first entry with a "?" and separate additional entries with "&amp;" as in the examples below.</p>
+        <p class="pwNote"><span class="strong">Note:</span> You should not append SKU RefNum or coupon ID to an alias that already uses that information. In such a case, the SKU and coupon information specified in the alias will be used instead of the appended information. The same applies to the eSeller ID and commands such as "Buy," as these are always set in the alias.</p>
+        <h5>Original</h5>
+        <p>http://store.eSellerate.net/mv/sale</p>
+        <h5>With a coupon</h5>
+        <p>http://store.eSellerate.net/mv/sale?coupon=couponname</p>
+        <h5>With a SKU and a coupon</h5>
+        <p>http://store.eSellerate.net/mv/sale?SKURefnum=SKU123456789&amp;coupon=couponname</p>
+        <h5>With a SKU and a tracking ID</h5>
+        <p>http://store.eSellerate.net/mv/sale?SKURefnum=SKU123456789&amp;PT=trackingID</p>
+        <h5>With a basic affiliate</h5>
+        <p>http://store.eSellerate.net/mv/sale?AffIDC=AFF123456789</p>
+        <h5>With an <MadCap:variable name="Primary.CompanyName" /> Affiliate</h5>
+        <p>http://store.eSellerate.net/mv/sale?AffIDC=AFL123456789</p>
+        <p class="pwNote"><span class="strong">Note:</span> Various navigation URLs for a specific web store are available in the Web Store Links section of the Web Store eSeller Summary page. See <MadCap:xref href="../Web_Store_eSellers/Web_Links.htm" target="" title="" alt="">Web Store: Links</MadCap:xref>.</p>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1847" MadCap:lastWidth="972">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>
+            <MadCap:keyword term="XML order notice" />Using the XML Order Notice</h2>
+        <p class="pwNote"><span class="strong">Note:</span> The information that is available through the XML order notice does not include your profit or <MadCap:variable name="Primary.CompanyName" />'s commission on your orders from 4/1/2011 and later. (The values for that information will always be 0.) <MadCap:conditionalText MadCap:conditions="Primary.Online">To find that information and more, please use <a href="../Reports/Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reports. See <MadCap:xref href="../Reports/Reports_Business_Intel.htm" target="" title="" alt="">Business Intelligence Reporting</MadCap:xref>.</MadCap:conditionalText></p>
+        <p>For publishers desiring real-time order information in a format that allows maximum control and flexibility, <MadCap:variable name="Primary.CompanyName" /> offers the XML order notice. With this option, <MadCap:variable name="Primary.CompanyName" /> can post order information to your web servers in an open data format that you can use any way you choose.</p>
+        <p>A few examples of how you might use the XML data are:</p>
+        <ul>
+            <li>Post it to a database</li>
+            <li>Combine it with other information sources</li>
+            <li>Display it on a web page</li>
+            <li>Send it as e-mail</li>
+            <li>Access it through spreadsheets, applications and web services</li>
+        </ul>
+        <h5><a name="NotesXMLOrder"></a>Notes on the XML order notice</h5>
+        <ul>
+            <li>Setting up and using this option requires a strong knowledge of web servers and XML.</li>
+            <li>You can use this option in addition to <MadCap:variable name="Primary.CompanyName" /> order e-mail notices. (Use of <MadCap:variable name="Primary.CompanyName" /> reports is nonexclusive.)</li>
+            <li><MadCap:variable name="Primary.CompanyName" /> can post your data to multiple URLs.</li>
+            <li>We recommend using secure (https) web servers for receiving your data.</li>
+            <li>We cannot send your data to web servers that require authentication (such as user name and password).</li>
+            <li>You can use the Post XML Order Notice feature (available through Order Maintenance) to test URLs before you implement them.</li>
+            <li><MadCap:variable name="Primary.CompanyName" /> sends XML order notices for all types of successful orders: active, preview, fulfilled and unfulfilled. You will need to filter your data accordingly.</li>
+            <li><MadCap:variable name="Primary.CompanyName" /> provides an initial post when the order is placed, and subsequent posts for updates to the order. These updates can include changes to order status and changes to subscription information. Some examples of scenarios that would result in postings are:<ul><li>New order – one post for the new order</li><li>Fulfill an order – one post for the updated order</li><li>Void an order – one post for the updated order</li><li>Return an order – one post for the updated order</li><li>Issue a deferred serial number through After-Purchase Services – one post for the updated order</li><li>New order that includes a subscription – one post for the new order and one post for the new subscription (with the subscription marked as active)</li><li>Return an order and cancel the subscription – one post for the updated order and one post for the updated subscription (with the subscription marked as canceled)</li><li>Cancel a subscription through After-Purchase Services – one post for the updated order (with the subscription marked as canceled)</li><li>Subscription expires – one post for the updated order (with the subscription marked as expired)</li><li>Recurring subscription billing fails – one post for the updated order (with the subscription marked as suspended)</li><li>Customer corrects payment method information within 30 days after a subscription is marked as suspended – one post for the updated order (with the subscription marked as active)</li><li>Customer does not correct payment method information within 30 days after a subscription is marked as suspended — one post for the updated order (with the subscription marked as canceled)</li><li>Subscription is renewed – one post for the updated order, one post for the new subscription and one post to indicate that the previous subscription was renewed</li><li>Customer updates subscription billing information (e-mail address, billing address, VAT ID) through After-Purchase Services – one post for the updated order</li><li>Customer updates billing e-mail address (which is separate from the one for subscription orders) through After-Purchase Services – one post for the updated order</li></ul></li>
+            <li>Because of the potential for multiple posts per order, you may need to update your records in response to posts that affect previous orders (depending on how you use the XML data).</li>
+            <li>When a new order includes a subscription, the post for the new subscription will occur about an hour after the post for the new order.</li>
+            <li>When you return an order, the post for the updated order typically occurs a day or two later, after <MadCap:variable name="Primary.CompanyName" /> has processed the return.</li>
+            <li>You will receive e-mail notification if <MadCap:variable name="Primary.CompanyName" /> is unable to complete a post to your web server. This e-mail will list all XML order notice errors and provide a link that you can use to directly log in to your publisher account to address the problem. Also note:<ul><li>You will receive e-mail notification for any kind of communication error, and when posts fail with an HTTP 5xx response error code. To ensure that <MadCap:variable name="Primary.CompanyName" /> recognizes the failed posts and sends notifications as needed, you should set up your web server to return an HTTP 5xx error (such as HTTP 500) when there are exceptions in your code. If you just return HTTP 200 with your specific error, we will not parse the response and recognize it as a failed post.</li></ul></li>
+            <li>
+                <MadCap:keyword term="Order Lookup Web Service;{nopage}web service{see}Order Lookup Web Service" /><a name="orderlookupwebservice"></a>In addition to the XML order notice, <MadCap:variable name="Primary.CompanyName" /> provides a web service that you can use to get complete information about any of your orders, in real time. Resources to help you implement the Order Lookup Web Service are included with our XML Resources download. (See <MadCap:xref href="#preparingtouse" target="" title="" alt="">Preparing to Use the XML Data</MadCap:xref>.) The available resources are:<ul><li>A Read Me file (OrderLookupServiceReadMe.pdf) with general instructions for using the service</li><li>Sample code and a Windows application that you can use to look up your orders and get back basic results</li></ul></li>
+        </ul>
+        <h3><a name="preparingtouse"></a>Preparing to Use the XML Data</h3>
+        <p>Before you begin receiving the XML order notice, you'll need to prepare for handling the raw data. <MadCap:variable name="Primary.CompanyName" /> offers the following resources to help with this:</p>
+        <ul>
+            <li>The Order Lookup Service WSDL, which also describes the data in the order notice: <a href="https://secure.esellerate.net/orderlookup/orderlookupservice.wsdl" target="_blank">https://secure.esellerate.net/orderlookup/orderlookupservice.wsdl</a></li>
+            <li>Unsupported code examples for classic ASP, ASP.NET, XSLT, PHP and Ruby on Rails.</li>
+            <li>A Read Me file (XMLOrderNoticeReadMe.pdf) with general instructions for using the examples</li>
+            <li>Helpful commenting throughout the included code</li>
+            <li>Items that apply only to version 2 of the XML order notice:<ul><li>An XML Schema Definition (XSD) file with descriptions of the data format</li><li>A PDF document with information on data field names, types and lengths</li></ul></li>
+        </ul>
+        <p>These resources are available for downloading in Zip format through the <MadCap:variable name="Primary.CompanyName" /> Downloads page. The link for accessing the downloads is on the Sales Manager home page, under the "What's New for eSellerate" information. (Use the "XML Resources (for publishers)" link.)</p>
+        <p class="pwNote"><span class="strong">Note:</span> The information that is available through the Order Lookup Web Service does not include your profit or <MadCap:variable name="Primary.CompanyName" />'s commission on your orders from 4/1/2011 and later. (The values for that information will always be 0.) <MadCap:conditionalText MadCap:conditions="Primary.Online">To find that information and more, please use <a href="../Reports/Reports_Business_Intel.htm">Business Intelligence reporting</a>.</MadCap:conditionalText> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Primary.Print">To find that information and more, please use Business Intelligence reporting. See <MadCap:xref href="../Reports/Reports_Business_Intel.htm" target="" title="" alt="">Business Intelligence Reporting</MadCap:xref>.</MadCap:conditionalText></p>
+        <h3>Entering URLs and Secret Text</h3>
+        <p>When you're ready to begin receiving the XML order notice, do the following:</p>
+        <ol>
+            <li>Go to the XML Order Notice section of the Account Information page.</li>
+            <li>Select a version for the XML order notice. Version 2 is the legacy option that remains available for backwards compatibility. Version 3 includes all the information from version 2, with additional data fields for features that <MadCap:variable name="Primary.CompanyName" /> released in May of 2009. You need version 3 if you use bundles, or if any of your SKUs have "Issue serial numbers in ratio to quantity" enabled. Also, version 3 includes fields for these 10 eSellerate variables: _Custom.Data10 through _Custom.Data19.</li>
+            <li>To enable you to verify the sender, <MadCap:variable name="Primary.CompanyName" /> can include secret text in your data. Enter your text in the <span class="strong">Secret </span>field if desired. Otherwise, you can leave this field blank.</li>
+            <li>Notifications for all supported events except returns will be posted to the URLs that you specify in the <span class="strong">Orders, Order Statuses and Subscriptions</span> field. Enter one URL per line, with a return at the end of each line.</li>
+            <li>Notifications for returns will be posted to the URLs that you specify in the <span class="strong">Returns </span>field. Enter one URL per line, with a return at the end of each line.</li>
+            <li>Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <h3 class="See_Also">See Also</h3>
+        <p>
+            <MadCap:xref href="Account_Contact.htm" target="" title="" alt="">Entering Account Information</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Order_Management/Orders_XML.htm" target="" title="" alt="">Maintaining the XML Order Notice</MadCap:xref>
+        </p>
+    </body>
+</html>

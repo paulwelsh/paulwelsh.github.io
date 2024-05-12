@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1099" MadCap:lastWidth="724">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>eSellerate_LaunchUpdate</h2>
+        <p>
+            <MadCap:keyword term="eSellerate_LaunchUpdate" />Launches a standalone executable, such as an installer, or applies an Updater VISE file to a specified file and launches the resulting updated file.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eSellerate.h<br />Included in the development project.</li>
+            <li>eSellerateLibrary.lib(Carbon) or<br />libeSellerate.a (Mach-O version)<br />Included in the development project.</li>
+            <li>eSellerateEngine (Carbon)<br />Located in the appropriate folder. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li>For Mac OS 9.1 or later with CarbonLib 1.5 or later, place eSellerateEngine (Carbon) in System Folder:Application Support:MindVision</li><li>For Mac OS X, place eSellerateEngine (Carbon) in /Library/Application Support/MindVision</li></ul></li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">eSellerate_ErrorCode <span class="strong">eSellerate_LaunchUpdate</span> ( <i>updaterFile, fileToUpdate</i> )</p>
+        <p class="pwDefinition">eSellerate_FileLocation <i>updaterFile</i> – 		location of an Updater VISE file to apply or an executable to launch</p>
+        <p class="pwDefinition">eSellerate_FileLocation <i>fileToUpdate</i>	– 	location of the file that an Updater VISE file is to be applied to</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Return Value</b></p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_NOENGINE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine cannot be found.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_FAILURE
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if <i>updaterFile</i>  cannot be launched.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_SUCCESS
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if <i>updaterFile</i>  does launch.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for eSellerate_LaunchUpdate Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Parameter</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>updaterFile</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Location of either an Updater VISE file to apply to <i>fileToUpdate</i>  or a standalone executable to launch. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>fileToUpdate</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Location of the file to apply <i>updaterFile</i>  to, if <i>updaterFile</i>  is an Updater VISE file. If it is not, pass nil to launch a standalone executable, such as an installer.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for eSellerate_LaunchUpdate function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Data Type</b></p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Definition</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Ctype.h Naming</b></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_ErrorCode
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">unsigned long
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_FileLocation
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">FileSpec*
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Type Definitions for eSellerate_LaunchUpdate Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> <![CDATA[ ]]>It may well be the case that a running application calls <span class="strong">eSellerate_LaunchUpdate</span>  for the purpose of updating itself. In this situation, the application should promptly terminate itself after calling <span class="strong">eSellerate_LaunchUpdate</span>, since the application is then to be replaced.<br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eSellerate.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_FileLocation updaterFile;</p>
+        <p class="pwSDKCodeSamples">eSellerate_FileLocation fileToUpdate;</p>
+        <p class="pwSDKCodeSamples">eSellerate_ErrorCode resultCode;</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain updaterFile and, if needed, fileToUpdate */</p>
+        <p class="pwSDKCodeSamples">eSellerate_resultCode =   eSellerate_LaunchUpdate(updaterFile, fileToUpdate);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: if fileToUpdate is the running application, exit application */</p>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameMakerImport GenerateImages="false" PreserveImageSize="false" CreateTableStyleForTables="True" PreserveSourceStyles="False" KeepSourceLinks="false" ConvertInlineFormatting="True" AddContinuedLinks="False" AddContinuedFromLinks="False" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="False" UseMinCharLimit="True" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" LastCollectTime="2009-11-05T15:25:56.9657073-06:00" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2009-11-05T15:27:18.4058133-06:00">
+    <ImportStyles>
+        <Styles>
+            <Style Name="Paragraph">
+                <Classes>
+                    <StyleClass Name="Body" />
+                    <StyleClass Name="Chapter Number" />
+                    <StyleClass Name="Chapter Name" />
+                    <StyleClass Name="Body text" />
+                    <StyleClass Name="Body bullet" />
+                    <StyleClass Name="-Sidehead 1" />
+                    <StyleClass Name="Body Steps Heading" />
+                    <StyleClass Name="Body Num Bullets" />
+                    <StyleClass Name="Body Num-1" />
+                    <StyleClass Name="Body Num" />
+                    <StyleClass Name="-Sidehead 2" />
+                    <StyleClass Name="Body Note" />
+                </Classes>
+            </Style>
+            <Style Name="Character">
+                <Classes>
+                    <StyleClass Name="ZapfBullet" />
+                    <StyleClass Name="BoldSans10" />
+                    <StyleClass Name="Default Paragraph Font" />
+                    <StyleClass Name="Default_XREF_style" />
+                </Classes>
+            </Style>
+            <Style Name="Cross-Reference">
+                <Classes>
+                    <StyleClass Name="heading on page" />
+                </Classes>
+            </Style>
+            <Style Name="Table">
+                <Classes>
+                    <StyleClass Name="Illustration Table" />
+                </Classes>
+            </Style>
+        </Styles>
+    </ImportStyles>
+    <ParagraphStyles>
+        <Map From="Heading1" To="h1.(FrameMaker Style)" />
+        <Map From="Heading2" To="h2.(FrameMaker Style)" />
+        <Map From="Heading3" To="h3.(FrameMaker Style)" />
+        <Map From="Heading4" To="h4.(FrameMaker Style)" />
+        <Map From="Heading5" To="h5.(FrameMaker Style)" />
+        <Map From="Heading6" To="h6.(FrameMaker Style)" />
+        <Map From="Body" To="p" />
+        <Map From="Body bullet" To="p" />
+        <Map From="Body Note" To="p.pwNote" />
+        <Map From="Body Num" To="p" />
+        <Map From="Body Num Bullets" To="p" />
+        <Map From="Body Num-1" To="p" />
+        <Map From="Body Steps Heading" To="h5" />
+        <Map From="Body text" To="p" />
+        <Map From="Chapter Name" To="h1" />
+        <Map From="Chapter Number" To="p" />
+        <Map From="-Sidehead 1" To="h2" />
+        <Map From="-Sidehead 2" To="h2" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="BoldSans10" To="span.strong" />
+        <Map From="Default Paragraph Font" To="a" />
+        <Map From="Default_XREF_style" To="a" />
+        <Map From="ZapfBullet" To="o" />
+    </CharacterStyles>
+    <XRefStyles>
+        <Map From="heading on page" To="MadCap:xref" />
+    </XRefStyles>
+    <Files>
+        <Url Source="file:///C:/Documents and Settings/pwelsh/My Documents/_Docs to back up each Friday/_eSellerate For Importing to Flare/UserManagement.fm" AbsoluteSource="file:///C:/Documents and Settings/pwelsh/My Documents/_Docs to back up each Friday/_eSellerate For Importing to Flare/UserManagement.fm" />
+    </Files>
+    <GeneratedFiles>
+        <Url Source="../../Content/User_Management/User_Management.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/User_AndPermissions.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/user_company.jpg" TimeStamp="8/26/2008 10:57:52 AM" />
+        <Url Source="../../Content/Resources/TableStyles/Illustration_Table.css" TimeStamp="11/5/2009 3:25:57 PM" />
+        <Url Source="../../Content/User_Management/1_6.jpg" TimeStamp="11/5/2009 3:25:57 PM" />
+        <Url Source="../../Content/User_Management/User_CompanyID.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/user_users.jpg" TimeStamp="8/26/2008 10:58:38 AM" />
+        <Url Source="../../Content/User_Management/User_List.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/user_detail.jpg" TimeStamp="8/26/2008 10:59:31 AM" />
+        <Url Source="../../Content/User_Management/1_7.jpg" TimeStamp="11/5/2009 3:25:57 PM" />
+        <Url Source="../../Content/User_Management/User_Detail.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/user_reset.jpg" TimeStamp="8/26/2008 11:00:10 AM" />
+        <Url Source="../../Content/User_Management/1_2.jpg" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/User_Reset.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../../Content/User_Management/user_profile.jpg" TimeStamp="8/18/2008 9:50:51 AM" />
+        <Url Source="../../Content/User_Management/My_Profile.htm" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../ConditionTagSets/User_Management.flcts" TimeStamp="11/5/2009 3:25:58 PM" />
+        <Url Source="../TOCs/User_Management.fltoc" TimeStamp="11/5/2009 3:25:58 PM" />
+    </GeneratedFiles>
+    <NewTopicStyles>
+        <StyleName Name="Chapter Name" />
+        <StyleName Name="-Sidehead 1" />
+        <StyleName Name="-Sidehead 2" />
+    </NewTopicStyles>
+    <UsedParagraphStyles>
+        <StyleName Name="Body" />
+        <StyleName Name="Body bullet" />
+        <StyleName Name="Body Note" />
+        <StyleName Name="Body Num" />
+        <StyleName Name="Body Num Bullets" />
+        <StyleName Name="Body Num-1" />
+        <StyleName Name="Body Steps Heading" />
+        <StyleName Name="Body text" />
+        <StyleName Name="Chapter Name" />
+        <StyleName Name="Chapter Number" />
+        <StyleName Name="-Sidehead 1" />
+        <StyleName Name="-Sidehead 2" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="BoldSans10" />
+        <StyleName Name="Default Paragraph Font" />
+        <StyleName Name="Default_XREF_style" />
+        <StyleName Name="ZapfBullet" />
+    </UsedCharacterStyles>
+    <UsedXRefStyles>
+        <StyleName Name="heading on page" />
+    </UsedXRefStyles>
+    <UsedTableStyles>
+        <StyleName Name="Illustration Table" />
+    </UsedTableStyles>
+    <CharacterStyleDefinitions>
+        <Style Name="ZapfBullet" style="font-family: ZapfDingbats; font-weight: normal; font-style: normal; font-size: 7pt; letter-spacing: 0em; color: #7f99b2; text-decoration: none;" />
+        <Style Name="BoldSans10" style="font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-decoration: none;" />
+        <Style Name="Default\000020Paragraph\000020Font" style="" />
+        <Style Name="Default_XREF_style" style="font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #0000ff; text-decoration: underline;" />
+    </CharacterStyleDefinitions>
+    <ParagraphStyleDefinitions>
+        <Style Name="Body" style="" />
+        <Style Name="Chapter\000020Number" style="text-align: left; margin-left: 1.25in; margin-right: 0in; margin-top: 0pt; margin-bottom: 1pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 14pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; mc-auto-number-format: 'H:Chapter {n+}{ =0}{ =0}'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; text-indent: -118px; line-height: 14pt; text-decoration: none;" />
+        <Style Name="Chapter\000020Name" style="text-align: left; margin-left: 1.25in; margin-right: 0in; margin-top: 2pt; margin-bottom: 100pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 24pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: -118px; line-height: 24pt; text-decoration: none;" />
+        <Style Name="Body\000020text" style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+        <Style Name="Body\000020bullet" style="text-align: left; margin-left: 0.5in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 12pt; text-decoration: none;" />
+        <Style Name="-Sidehead\0000201" style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 8pt; margin-bottom: 4pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 14pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: 0px; line-height: 17pt; text-decoration: none;" />
+        <Style Name="Body\000020Steps\000020Heading" style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+        <Style Name="Body\000020Num\000020Bullets" style="text-align: left; margin-left: 0.75in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: 'n '; mc-auto-number-position: outside-head; mc-auto-number-offset: 24px; mc-auto-number-class: ZapfBullet; line-height: 12pt; text-decoration: none;" />
+        <Style Name="Body\000020Num-1" style="text-align: left; margin-left: 0.375in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: '{n=1}.	'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; mc-auto-number-class: BoldSans10; text-indent: -21px; line-height: 12pt; text-decoration: none;" />
+        <Style Name="Body\000020Num" style="text-align: left; margin-left: 0.375in; margin-right: 0in; margin-top: 6pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; mc-auto-number-format: '{n+}.	'; mc-auto-number-position: inside-head; mc-auto-number-offset: 0px; mc-auto-number-class: BoldSans10; text-indent: -21px; line-height: 12pt; text-decoration: none;" />
+        <Style Name="-Sidehead\0000202" style="text-align: left; margin-left: 0in; margin-right: 0in; margin-top: 12pt; margin-bottom: 0pt; font-family: URWGroteskT; font-weight: bold; font-style: normal; font-size: 12pt; letter-spacing: 0em; color: #000000; mc-hyphenate: never; text-indent: 0px; line-height: 14pt; text-decoration: none;" />
+        <Style Name="Body\000020Note" style="text-align: left; margin-left: 0.153in; margin-right: 0in; margin-top: 12pt; margin-bottom: 0pt; font-family: URWGaramondT; font-weight: normal; font-style: normal; font-size: 10pt; letter-spacing: 0em; color: #000000; text-indent: 0px; line-height: 12pt; text-decoration: none;" />
+    </ParagraphStyleDefinitions>
+    <XRefStyleDefinitions>
+        <Style Name="heading\000020on\000020page" style="mc-format: '{Default_XREF_style}“{paratext}” on page&#160;{paranumonly[Chapter Number]}&#8209;{page}';" />
+    </XRefStyleDefinitions>
+    <TableStyleDefinitions />
+</FrameMakerImport>

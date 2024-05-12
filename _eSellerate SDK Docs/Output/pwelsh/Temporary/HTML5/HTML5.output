@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetOutput
+  GeneratedTarget="/Output/pwelsh/HTML5/SDK_Home.htm"
+  BuildVersion="8.1.2.0">
+  <Files>
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Stylesheets/StylesHTML5.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Glossary.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Images/DR_eSellerate.jpg" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Images/DR_interim_esellerate_2c.jpg" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Stylesheets/Styles.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Stylesheets/Styles_old_Sept2011.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/TableStyles/Basic.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/TableStyles/Format_A.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/TableStyles/Illustration_Table.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/TableStyles/Large_table.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/TableStyles/Rows.css" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Resources/Images/DR_eSellerate_351x113.jpg" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/Title_Page.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_OtherResources.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Frameworks.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IsSystem_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Purchase_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Check_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Silent_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Activate_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Manual_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_ValidateAct_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Date_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Deactivate_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Confirm_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Today_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_ValidateSeri_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Standardize_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Today1_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_NewPrefill_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_AddPre_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_PurchaseEx_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_CheckEx_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Dispose_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetOrderInde_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetResultDatL_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetResultDat_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IndexGetResu_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IndexGetResu1_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Dispose1_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Protecting_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_RetValues_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_NewFunct_2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IsSystem.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_InstallPath.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_ValidateAct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Deactivate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Confirm.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_ValidateSeri.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Standardize.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Today1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_NewPrefill.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_AddPre.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_PurchaseEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_CheckEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Dispose.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetOrderInde.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetResultDatL.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_GetResultDat.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IndexGetResu.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_IndexGetResu1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Dispose1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_Protecting.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_RetValues.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libMac_NewFunct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_IsSystem.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_InstallRes.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_InstPath.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_AppLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_WebURL.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_ActivateSeri.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_ValidateAct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_DateAct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Deactivate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_ConfirmSeria.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_ValidateSeri.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Standardize.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Today1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_NewPre.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_AddPre.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_PurchaseEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_CheckEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_DisposePre.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_GetByIndex.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_GetDatLength.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_GetResultDat.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_IndexGetResu.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_IndexGetDat.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_Dispose.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_DefaultLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_InstallingCl.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_ReturnValues.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_libWin_NewFunct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_IsComp.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Install.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_SetOpt.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_GetOrderC.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_GetOrderAt.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_ValidateAc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Deact.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_ConfirmSer.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Validate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Standard.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_Translate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_GetLast.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_DefLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_RetVal.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_pluginRB_NewFunct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_IsSys.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Install.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_PurchaseEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_CheckEx.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_WebURL.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_ActivateSer.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_ValidateAct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Deact.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Confirm.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_ValidateSer.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Standard.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_PrefAttr.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_GetByIndex.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_GetResultDa.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_IndexGetRes.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_ResDatAttr.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_DefLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_Installing.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_RetVal.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/EWSSDK/SDK2_ActiveX_NewFunt.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Install.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_CheckFor.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Reinstall.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_IndexSeri.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_IndexFile.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Delete.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Launch.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_ValidateA.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Deactivat.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Confirm.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_ValidateS.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Standardi.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_Protectin.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforMac_NewFuncti.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Install.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Reinstall.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_IndexSeri.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_IndexFile.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Delete.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Launch.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_WebStore.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_ValidateA.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Deactivat.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Confirm.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_ValidateS.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Standardi.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_LibforWin_NewFuncti.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Install.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Reinstall.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Set.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GerSerialN.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GerSerialN1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetSerialN.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GerSerialN2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetShopCar.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetShopCar1.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetShopCar2.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_LaunchUp.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_ValidateAc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Deactivate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_ConfirmS.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_ValidateSe.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Standardiz.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_Translate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_GetLast.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_pluginRB_NewFunct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Purchase.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Check.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Silent.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Reinstall.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetSerialCo.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetSerialNu.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetSerialKe.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetSerialID.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetFileLocC.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetFileLoc.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetFileLocI.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetShopCoun.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetShopSKU.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_GetShopID.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_LaunchUp.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_WebURL.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Activate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Manual.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_ValidateAct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Date.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Deactivate.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Confirm.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_ValidateSer.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Standard.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_Today.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Content/IntegratedSDK/SDK1_ActiveX_NewFunct.htm" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Synonyms.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Toc.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Index_Chunk1.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Index_Chunk2.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Index.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Concepts.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk1.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk2.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk3.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk4.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk5.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk6.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk7.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk8.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk9.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk10.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk11.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk12.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk13.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk14.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk15.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk16.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk17.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk18.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk19.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk20.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk21.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk22.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk23.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk24.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk25.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk26.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk27.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk28.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk29.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk30.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk31.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk32.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk33.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk34.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk35.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk36.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk37.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk38.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk39.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk40.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk41.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk42.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk43.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk44.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk45.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk46.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk47.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk48.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk49.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk50.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk51.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk52.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk53.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk54.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk55.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk56.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk57.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk58.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk59.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk60.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk61.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk62.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk63.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk64.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk65.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk66.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk67.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk68.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk69.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk70.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk71.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk72.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk73.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk74.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk75.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk76.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk77.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk78.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk79.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk80.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk81.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk82.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk83.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk84.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk85.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/Search_Chunk86.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/SDK_Home.mcwebhelp" />
+    <Url
+      Source="Output/pwelsh/HTML5/Data/HelpSystem.xml" />
+    <Url
+      Source="Output/pwelsh/HTML5/SDK_Home.htm" />
+  </Files>
+  <Skins />
+</CatapultTargetOutput>

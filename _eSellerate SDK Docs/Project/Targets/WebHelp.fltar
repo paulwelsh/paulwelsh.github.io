@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  DefaultUrl="/Content/Title_Page.htm"
+  OutputFile="SDK_Home.htm"
+  Skin="/Project/Skins/HTML_Help_Window.flskn"
+  Type="WebHelp"
+  MasterToc="/Project/TOCs/Primary TOC.fltoc"
+  BrowseSequence="/Project/Advanced/applicationhelp.flbrs"
+  Comment="Application Help Sample"
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp"
+  ConditionTagExpression="include[Primary.Online] exclude[Primary.ExcludeFromAllBuilds or Primary.Print] "
+  InsertMOTW="false">
+  <Variables />
+  <ConditionTags />
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/Primary.flglo" />
+  </Glossaries>
+  <PrintedOutput
+    ExpandingTextConversion="expand" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/QADestination.fldes" />
+  </Destinations>
+</CatapultTarget>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Layouts|Custom Layouts">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Template File</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Template File</h2>
+        <p>With this feature, you can store frequently used header and footer information in a template file and link that template to every layout file that should use it. Keeping the header and footer information in one central location simplifies the layout files, reduces the chance for errors and allows you to change the design by editing just one file.</p>
+        <h5>Notes on the Template File</h5>
+        <ul>
+            <li value="1">Every default layout includes a template file that you can use as a starting point for your template. All other HTML files in the layout are already set up to use the template, so the only time you'll need to add special tags as described here is when you're starting from scratch.</li>
+            <li value="2">There can be only one template file per layout. </li>
+            <li value="3">A template file is not required. </li>
+            <li value="4">The Template Page list on the Settings tab designates the template file for a layout. </li>
+            <li value="5">HTML and CSS layout files can use the special  eSellerate tag &lt;_CONTENT&gt; to enable template functionality. An overview of the &lt;_CONTENT&gt; tag follows: <ul><li value="1">One pair of &lt;_CONTENT&gt; tags is allowed per file. </li><li value="2">The template file must include the shared header and footer information, and an empty pair of &lt;_CONTENT&gt; tags that define where to embed code defined in the layout files. </li><li value="3">Layout files that use the template must include a pair of &lt;_CONTENT&gt; tags that enclose the code to be embedded. </li><li value="4">All files that include a pair of &lt;_CONTENT&gt; tags must also include a pair of &lt;body&gt; tags.</li><li value="5">See <a href="Sample_code_for_using.htm#Layouts_2469577869_246619" title="" alt="" class="MCXref xref">Sample Code for Using &lt;_CONTENT&gt; Tags</a>.</li></ul></li>
+            <li value="6">The following  <span class="PrimaryCompanyName">eSellerate</span> system pages will use the template file, if one is designated: <ul><li value="1">Terms of Sale </li><li value="2">Duplicate Order Warning </li><li value="3">Processing Order </li></ul></li>
+            <li value="7">If a Template Page is not designated for the layout, the forenamed  <span class="PrimaryCompanyName">eSellerate</span> system pages will still display their content. </li>
+            <li value="8">A template file can use styles. </li>
+            <li value="9">All pages that use the template file will use the title defined by &lt;TITLE&gt; tags in the template. </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="SKU Management|Creating Serial Numbers|Ready-to-Use">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Standard</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor41"></a>Standard</h2>
+        <p>Standard is a legacy option that was superseded by Standard Enhanced serial numbers. It is not recommended for use with new serial number sets.<br /></p>
+        <p class="pwNote"><span class="strong">Note:</span> Most users will never see the Standard serial number option. The only time the option is available is when editing older serial number sets that are still set up as Standard.</p>
+        <p class="pwNote"><span class="strong">Note:</span> Your application can check the validity of a Standard serial number through an API call to ValidateSerialNumber. For more information about this API function, see the <span class="PrimaryCompanyName">eSellerate</span> SDK Reference.</p>
+        <p>For reference purposes, an example of a Standard serial number that includes a prefix and the purchase quantity follows:</p>
+        <p>
+            <img src="../Resources/Images/StandardSerialGraphic.jpg" />
+        </p>
+        <p class="pwNote"><span class="strong">Note:</span> For the key portion of a Standard serial number, <span class="PrimaryCompanyName">eSellerate</span> does not use the letters I, O, U or Z because they can be easily confused with other characters. To accommodate customers who mistakenly enter these letters in Standard serial numbers, the validation function (an API call to ValidateSerialNumber) will substitute the number 1 for I, the number 0 for O, the letter V for U and the number 2 for Z. The function also will substitute uppercase characters for lowercase ones.</p>
+        <h5>To create a Standard serial number set:</h5>
+        <ol>
+            <li value="1">From the <span class="strong">Ready-to-Use Type</span> list, select <span class="strong">Standard</span>.</li>
+            <li value="2">In the <span class="strong">Prefix </span>field, enter a prefix that will help you quickly identify this serial number set. You can use any alphanumeric characters, except for colons (:). The required length is seven characters.</li>
+            <li value="3">Your serial number generation can be based on the customer's first and last name, the company name, or none of these options. Make your selection from the <span class="strong">Based On</span> list.</li>
+            <li value="4">In the <span class="strong">Duration </span>field, enter the number of days that the serial number will be functional (optional). This setting causes serial numbers to contain the date of expiration, which you can find with the validation function. You can then use the date of expiration to limit customer usage of your demo software or shareware.</li>
+            <li value="5">If you select the             <![CDATA[ ]]><span class="strong">Use Quantity</span> check box, the serial numbers will indicate the quantity purchased. (Multiple quantity sales require a special setting at the SKU level. See <a href="SKU_Advanced.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Setting the SKU's Advanced Properties (Optional)</a>.)</li>
+            <li value="6">Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p>You also have the option to base your Standard serial numbers on dynamic information (such as user input or machine ID) sent by your application. In this case, your application would use a special parameter (extraData) to pass the information to the <span class="PrimaryCompanyName">eSellerate</span> servers during an API call to Purchase or CheckForUpdate. This may be any kind and amount of information you choose, as long as it's packaged as a single string.</p>
+        <p>For more information about these API functions and the extraData parameter, see the <span class="PrimaryCompanyName">eSellerate</span> SDK Reference.</p>
+        <p class="pwNote"><span class="strong">Note</span>: You can also manually generate a serial number. See <a href="Serial_Manual.htm" title="" alt="" class="MCXref xref" xrefformat="{para}">Manually Generating Serial Numbers</a>.</p>
+        <p>&#160;</p>
+    </body>
+</html>

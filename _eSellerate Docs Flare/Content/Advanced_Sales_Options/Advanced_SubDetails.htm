@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2826" MadCap:lastWidth="781">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="AdvancedSalesOptions_3786514807_271012"></a><a name="AdvancedSalesOptions_3786514807_31439"></a>Subscriptions: Details</h2>
+        <p><a href="Advanced_OverviewSub.htm" MadCap:conditions="Primary.Online">Subscriptions Overview</a>
+        </p>
+        <p>The Details tab of the Subscription Detail page is for setting billing frequency, number of billings, renewal policy and other options as described here. <br /><img src="../Resources/Images/advanced_subscription.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></p>
+        <h5>To set the subscription detail options:</h5>
+        <p class="pwNote"><span class="strong">Note:</span> Subscription ID is a non-editable value that appears after you save the subscription for the first time. This ID will not be visible to your customers. You will not need this ID for setting up your subscriptions, but you will need to refer to it if you use the XML order notice, which lists subscriptions by ID rather than name.</p>
+        <ol>
+            <li>
+                <p>In the <span class="strong">Name </span>field, enter a name for this subscription (up to 50 characters). The name is for internal identification only, and will not be visible to your customers.</p>
+                <p class="pwNote"><span class="strong">Note:</span>&#160;Duplicate subscription names are allowed. However, there is no built-in way to differentiate between duplicate names when you assign a subscription method to a SKU, or select a subscription for a report.<br /></p>
+            </li>
+            <li>How often do you want to bill the customer for this subscription? (The billing amount will be  the price of the SKU using the subscription, plus additional charges as needed for shipping, taxes and eCD.) You can set the billing frequency in days, weeks, months or years. The shortest possible billing frequency is 7 days/1 week, and the longest is 36 months/3 years. Select either <span class="strong">Day(s)</span>, <span class="strong">Week(s)</span>, <span class="strong">Month(s)</span> or <span class="strong">Year(s)</span> from the list provided, and also enter a value to correspond to that selection.</li>
+            <li>
+                <p>Once you have set the billing frequency, you will need to specify the number of billings that should occur before the subscription is up for renewal. This can be a set number of billings, or the billings can be unlimited ("until cancellation"), so that they continue with automatic renewals at the set billing frequency until the customer takes action to cancel the subscription.</p>
+                <p>To make the billings unlimited, select <span class="strong">Until Cancellation</span>. Otherwise, to specify a number of billings, select <span class="strong">Billings (Includes Initial Purchase)</span>, and then enter the desired number of billings.</p>
+                <p class="pwNote"><span class="strong">Note:</span> The duration is the period of time the subscription service is available before it requires a renewal. Duration cannot exceed 3 years/36 months. For your convenience when you set up subscriptions, <span class="strong">Duration</span> appears as a non-editable field below the other related settings.</p>
+                <p>See also <MadCap:xref href="Advanced_SubExamples.htm" target="" title="" alt="">Subscription Examples</MadCap:xref>.</p>
+            </li>
+            <li>The renewal policy determines what the customer has to do to renew the subscription at the end of the set duration. Your choices are as follows:<ul><li><span class="strong">Automatic Renewal</span> – Renew unless subscriber cancels</li><li><span class="strong">Manual Renewal</span> – Renew upon subscriber's explicit request</li></ul><p class="pwNote"><span class="strong">Note:</span> If you're concerned about using an automatic renewal policy because your customers might not know they've purchased it, consider that there are multiple communications designed to make the policy transparent. First, there are the subscription terms and conditions that the customer must agree to before purchasing the subscription. Second, at least one renewal reminder will be sent to the customer prior to the subscription expiring (except with "until cancellation" subscriptions, which do not use renewal reminders.) These communications explain how automatic renewal works, including the need to cancel before the expiration date if the customer chooses not to renew.</p></li>
+            <li>
+                <p>For an automatic renewal policy, you can choose whether or not to generate a new serial number on renewal. Selecting the <span class="strong">Generate new serial number on automatic renewal</span> check box instructs <MadCap:variable name="Primary.CompanyName" /> to generate a serial number, and deactivate the serial number that is associated with the most recent subscription purchase or renewal. This setting is effective only if there is a serial number set assigned to the subscription SKU.</p>
+                <p class="pwNote"><span class="strong">Note</span>: Automatic renewals into a different SKU will always receive a new serial number, regardless of whether or not <span class="strong">Generate new serial number on automatic renewal</span> <![CDATA[ ]]>is selected.</p>
+                <p class="pwNote"><span class="strong">Note:</span> If <span class="strong">Generate new serial number on automatic renewal</span> is selected and your setup allows automatic renewals into a different SKU, make sure that the serial number set for the renewal SKU does not require customer input. If a renewal occurs and the associated serial number set has <span class="strong">Prompt For</span> set to anything other than <span class="strong">None</span>, no serial number will be generated, and an error will occur.</p>
+                <p class="pwNote"><span class="strong">Note:</span> For a manual renewal policy, <MadCap:variable name="Primary.CompanyName" /> always generates a serial number on renewal, and deactivates the serial number that is associated with the most recent subscription purchase or renewal. This behavior applies only if there is a serial number set assigned to the subscription SKU.</p>
+            </li>
+            <li>
+                <p>(Skip this step if you're using "until cancellation" billings.) The <span class="strong">Notifications </span>settings apply to the e-mail messages that are automatically sent to customers who purchase the subscription.</p>
+                <p>By default, a renewal reminder will be sent seven days before expiration, a frequency billing notice will be sent seven days before a frequency billing, and an expiration notice will be sent seven days after expiration. (Expiration notices are sent for manual renewals only.) If you would like your customers to receive additional notifications for this subscription, you can select up to four options:</p>
+                <ul>
+                    <li>Renewal reminder – 30 days before expiration</li>
+                    <li>Renewal reminder – 15 days before expiration</li>
+                    <li>Expiration notice – 15 days after expiration</li>
+                </ul>
+                <p>The optional notifications will be sent only when applicable. For example, once the customer renews a subscription, no more renewal reminders will be sent.</p>
+                <p class="pwNote"><span class="strong">Note:</span> To view samples of the renewal reminder and the expiration notice, go to the E-mails tab of the Subscription page. See <MadCap:xref href="Advanced_SubEmails.htm#AdvancedSalesOptions_3786514807_271319">Subscriptions: E-mails</MadCap:xref>.<br /></p>
+            </li>
+            <li>
+                <p>Is this subscription a trial? If so, you have the option to include your own message about trials in the renewal reminder e-mails. As an example, you could use this option to give your customers reasons for renewing into a higher-priced product when the trial ends. To include your own trial renewal text, select the <span class="strong">Is Trial</span> check box. Then enter your text (plain text, up to 1,000 characters) in the <span class="strong">Trial Renewal E-mail Text</span> field.</p>
+                <p class="pwNote"><span class="strong">Note:</span> Text that you enter here also will appear in the expiration notice e-mails.</p>
+            </li>
+            <li>The <span class="strong">Grace Period</span> setting is effective for manual renewal subscriptions only. If you would like to allow your customers to use their subscriptions for a set period of time after the expiration, you can enter a value of up to 99 days here. Whether you use the default value of zero days or some other value, <MadCap:variable name="Primary.CompanyName" /> will do the following one day after the grace period ends:<ul><li>Set the subscription status to expired</li><li>Deactivate the serial number associated with the subscription SKU, when applicable</li></ul></li>
+            <li>By default, your customers will not be able to change the quantity of this subscription after they purchase it. If you would like them to be able to increase or decrease the quantity at any time while the subscription is active, select the <strong>Allow Change of Quantity</strong> check box. Your customers will then be able to change the quantity when managing their subscriptions in After-Purchase Services.  For more information, including details on how <MadCap:variable name="Primary.CompanyName" /> adjusts the charges for a change of quantity, please see <MadCap:xref href="Advanced_SubQty.htm" target="" title="" alt="">Allowing Change of Quantity</MadCap:xref>.</li>
+            <li>To save any changes that you have made on the Details tab, click <span class="strong">Save</span>. Clicking Save instead of Activate will allow you to modify and activate the subscription later.</li>
+            <li>Once you activate a subscription, you will not be able to modify it. If you are ready to activate this subscription, click <span class="strong">Activate</span>.</li>
+        </ol>
+    </body>
+</html>

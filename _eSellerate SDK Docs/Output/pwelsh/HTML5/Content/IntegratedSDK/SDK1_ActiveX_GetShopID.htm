@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate SDK (Legacy Option)|eSellerate ActiveX Control">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>GetShoppingCartID</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>GetShoppingCartID</h2>
+        <p><a name="kanchor208"></a>Retrieves the Product ID of an item obtained by a Wizard-invoking function from the information organized by <span class="strong">GetShoppingCartCount</span>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eSellerateControl365.dll<br />Registered and located in the appropriate directory. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li value="1">For Windows Vista, place and register eSellerateControl365.dll in the ProgramData\eSellerate directory</li><li value="2">For pre-Vista Windows versions, place and register eSellerateControl365.dll in the Windows directory</li></ul></li>
+        </ul>
+        <h4>Definition
+        </h4>
+        <p class="pwDefinition"><span class="strong">GetShoppingCartID</span>  (
+        </p>
+        <p class="pwDefinition1"><i>index</i>  As Long	– item number
+        </p>
+        <p class="pwDefinition">) As String
+        </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Return Values for GetShoppingCartID Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Return Value</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Courier">""
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if there is no corresponding shopping cart item.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>shopping cart ID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if there is a corresponding shopping cart item, where <i>shopping cart ID</i> is the Product ID of that item.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for GetShoppingCartID Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>index</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">Item number. Indexing runs from 1 up to the count returned by <span class="strong">GetShoppingCartCount</span>. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><b>Note</b>:<span class="strong">GetShoppingCartCount</span>  must be called before <span class="strong">GetShoppingCartID</span>  is called.<br /></p>
+        <h4>Example
+        </h4>
+        <p class="pwSDKCodeSamples">Dim eSellerate As eSeller
+        </p>
+        <p class="pwSDKCodeSamples">Dim productIDArray(64) As String
+        </p>
+        <p class="pwSDKCodeSamples">Dim count, index As Long
+        </p>
+        <p class="pwSDKCodeSamples">Set eSellerate = CreateObject("eSellerateControl.365")
+        </p>
+        <p class="pwSDKCodeSamples">' ** TO DO: call a Wizard-invoking function **
+        </p>
+        <p class="pwSDKCodeSamples">count = eSellerate.GetShoppingCartCount
+        </p>
+        <p class="pwSDKCodeSamples">For index = 1 To count
+        </p>
+        <p class="pwSDKCodeSamples1">productIDArray(index) = eSellerate.GetShoppingCartID(index)
+        </p>
+        <p class="pwSDKCodeSamples">Next index
+        </p>
+        <p class="pwSDKCodeSamples">' ** TO DO: utilize productIDArray **
+        </p>
+        <p class="pwSDKCodeSamples">Set eSellerate = Nothing
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

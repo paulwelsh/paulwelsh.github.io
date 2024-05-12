@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="Available_Resources" Link="/Content/Available_Products.htm" />
+    <Map Name="My_Products" Link="/Content/My_Products/My_Products.htm" />
+    <Map Name="SKU_Sales_Date_Range" Link="/Content/My_Reports/Sales_Reports/SKU_Sales_Date_Range.htm" />
+    <Map Name="Sales_Receivable" Link="/Content/My_Reports/Sales_Reports/Sales_Receivable.htm" />
+    <Map Name="Hosted_eST_Tracking" Link="/Content/My_Reports/Sales_Reports/Hosted_eST_Tracking.htm" />
+    <Map Name="Payments_Due" Link="/Content/My_Reports/Payment_Reports/Payments_Due.htm" />
+    <Map Name="Payment_History" Link="/Content/My_Reports/Payment_Reports/Payment_History.htm" />
+    <Map Name="My_Account" Link="/Content/My_Account.htm" />
+    <Map Name="My_Payment_Info" Link="/Content/My_Payment_Info/My_Payment_Info.htm" />
+    <Map Name="Product_Detail" Link="/Content/Product_Detail/Product_Detail.htm" />
+    <Map Name="TOC" Link="/Content/Title_Page.htm" />
+</CatapultAliasFile>

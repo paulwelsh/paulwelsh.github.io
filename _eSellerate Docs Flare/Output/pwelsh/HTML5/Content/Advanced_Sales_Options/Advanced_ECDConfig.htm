@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Advanced Sales Options|Configuring eCD">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eCD Configuration</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="AdvancedSalesOptions_3786514807_109149"></a><a name="AdvancedSalesOptions_3786514807_10880"></a>eCD Configuration</h2>
+        <p><a href="Advanced_ConfigECD.htm">eCD Overview</a>
+        </p>
+        <p>When you have finished creating eCD Images and eCD Layouts, you can set up the eCD Configuration tab.</p>
+        <h3>eCD Optional Section</h3>
+        <p>The eCD Optional section applies to SKUs that have <span class="strong">Delivery Method</span> set to <span class="strong">Download Only (eCD Optional)</span>, and <span class="strong">eCD File</span> set to something other than <span class="strong">None</span>.</p>
+        <h5>To set up the eCD Optional section:</h5>
+        <ol>
+            <li value="1">
+                <p>For each order that includes eCD Optional, your customer will pay the amount indicated under "eSellerate eCD Charge," plus any publisher markup that you enter in the <span class="strong">Publisher Markup</span> field. The markup should be high enough so that the total purchase price at least covers your production costs for eCD. (See also <a href="Advanced_NotesECD.htm#pricing" title="" alt="" class="MCXref xref">Pricing </a>.) If you choose to not charge a markup, this field can be left at $0.</p>
+                <p class="pwNote"><span class="strong">Note:</span> The <span class="strong">Total Purchase Price</span> field dynamically indicates the total of the <span class="PrimaryCompanyName">eSellerate</span> eCD charge and any publisher markup that you set. You cannot edit this field.</p>
+            </li>
+            <li value="2">If you select the <span class="strong">Allow multi-quantity CD sales</span> check box, customers will be able to purchase multiple quantities of your CD, at the per-unit price indicated under "Total Purchase Price."</li>
+            <li value="3">If you select the <span class="strong">Automatically add eCD SKU to cart with first eligible SKU</span> check box, when the customer adds the first eCD-enabled SKU to the shopping cart, a hyperlinked "eCD available" graphic will display next to the SKU name, and eCD will be automatically added to the cart. The customer can click the "eCD available" graphic to learn more about the option. If the customer removes eCD from the cart, eCD will appear as a purchase option at the bottom of the page.</li>
+            <li value="4">
+                <p>You can use eCD Layouts to control certain attributes of CDs that are delivered to your customers. Some examples are the Mailer Type (Standard Mailer, Custom Mailer or DVD Case) and the CD Face Image.</p>
+                <p>To select a layout, use the <span class="strong">eCD Layout</span> list. You can select the default layout, or one that you uploaded. If you need to edit or create a layout before you make your selection, click <span class="strong">Save</span>, and then click the <span class="strong">Edit eCD Layouts</span> icon.</p>
+                <p class="pwNote"><span class="strong">Note</span>: The default layout includes a Standard Mailer, a default image for the CD face, a basic Install Menu, and no trial files.</p>
+            </li>
+            <li value="5">Use the Valid eSellers feature to specify which of your eSellers should support eCD Optional. See <a href="Advanced_ECDeSeller.htm" title="" alt="" class="MCXref xref">Valid eSellers</a>.</li>
+            <li value="6">When you're finished with these settings, click <span class="strong">Save</span>.</li>
+        </ol>
+        <h3>All Delivery Methods Section</h3>
+        <h5>To set up the All Delivery Methods section:</h5>
+        <ol>
+            <li value="1">Use the Valid SKUs feature to assign eCD files to your SKUs. (This is the equivalent of assigning eCD files on each SKU's Advanced tab, so you can choose the method that works best for you.) See <a href="Advanced_ECDSKU.htm" title="" alt="" class="MCXref xref">Valid SKUs</a>.</li>
+            <li value="2">Use the Valid eCD Files feature to set the file action for eCD files that are Zip archives. See <a href="Advanced_ECDFile.htm" title="" alt="" class="MCXref xref">Valid eCD Files</a>.</li>
+            <li value="3">When you're finished, click <span class="strong">Save</span>.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

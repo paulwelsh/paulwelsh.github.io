@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb Libraries for Windows">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWeb_DisposeResultData</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_462688"></a><a name="Embedded_SDKReference_1955650137_95289"></a>eWeb_DisposeResultData</h2>
+        <p><a name="kanchor88"></a>Disposes of memory allocated by API that return result data. This function must be called on the result data for it to be properly disposed.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eWebLibrary.h<br />Included in the development project.</li>
+            <li value="2">eWebClient.lib<br />Included in the development project.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">eWeb_DisposeResultData</span>
+            <o style="font-weight: normal;"> ( </o><i>resultData</i>
+            <o style="font-style: normal;"> )</o>
+        </p>
+        <p class="pwDefinition"><i>resultData</i>
+            <o style="font-style: normal;"> – results returned from the Purchase or CheckForUpdate family of functions</o>
+        </p>
+        <p>
+            <br />See <a href="SDK2_libWin_ReturnValues.htm#Embedded_SDKReference_1955650137_413448" title="" alt="" class="MCXref xref">eSellerate Return Values</a> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for eWeb_DisposeResultData Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Parameter</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>resultData</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">Address of a declared variable of type BYTE *. This should have already been filled by <span class="strong">eWeb_Purchase</span>, <span class="strong">eWeb_PurchaseEx</span>, <span class="strong">eWeb_CheckForUpdate</span> or <span class="strong">eWeb_CheckForUpdateEx</span>.
+</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "eWebLibrary.h"</p>
+        <p class="pwSDKCodeSamples">BYTE *resultData = NULL</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain resultData by calling an Embedded Web Store invoking function */</p>
+        <p class="pwSDKCodeSamples">/* TO DO: utilize resultData */</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposeResultData(resultData);</p>
+        <p>&#160;</p>
+    </body>
+</html>

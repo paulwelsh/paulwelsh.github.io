@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Embedded Web Store eSellers|Adding Embedded Web Store SKUs">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Embedded Web Store SKUs: CheckForUpdate</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>Embedded Web Store SKUs: CheckForUpdate</h2>
+        <p>Information on how to set up the CheckForUpdate section follows.</p>
+        <h4><a name="CFU_Redirect"></a>CheckForUpdate Redirect</h4>
+        <p>The CheckForUpdate Redirect feature allows an application to use the same SKU RefNum for purchasing and checking for updates. This is useful because only one Embedded Web Store SKU is required for initial setup. When you're ready to release an update, you can create a second SKU for that purpose, and redirect to it from the original SKU.</p>
+        <p class="pwNote"><span class="strong">Tip:</span> For an example of how to handle updates throughout several product releases, see <a href="EWS_ProductUpdateEx.htm#Embedded__eSellers_430221130_1023365" title="" alt="" class="MCXref xref">Product Update Example</a>.</p>
+        <p>The following settings apply only to the Embedded Web Store SKU that your application references in the CheckForUpdate function call. CheckForUpdate Redirect settings are ignored for all other Embedded Web Store SKUs.</p>
+        <h5>To set the CheckForUpdate Redirect:</h5>
+        <ul>
+            <li value="1">
+                <p>In the CheckForUpdate Redirect dialog box, click a radio button to select one of the following options:</p>
+                <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+                    <caption>CheckForUpdate Redirect Options</caption>
+                    <thead>
+                        <tr>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColSep">Option</th>
+                            <th class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">Use current SKU, no update available</td>
+                            <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">This is the appropriate setting for the first time you release your application as an Embedded Web Store eSeller, and any other time that no update is available. When a customer uses your application to check for a newer version, the CheckForUpdate Message specified for this SKU will display. After reading your message, the customer will need to close the Embedded Web Store window, which will return control to your application.</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">Use current SKU, update available</td>
+                            <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Use this setting if an update is available, and this SKU will provide the update. When a customer uses your application to check for a newer version, the CheckForUpdate Message specified for this SKU will display. After reading your message, the customer will have the option to receive the newer version, which could be a free upgrade or a purchased upgrade.</td>
+                        </tr>
+                        <tr>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                                <p class="CellBodyPW">Redirect to different SKU</p>
+                            </td>
+                            <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">Use this setting if an update is available, and a different SKU will provide the update. Make your SKU selection from the list provided. When a customer uses your application to check for a newer version, the CheckForUpdate Message specified for this SKU will display. After reading your message, the customer will have the option to receive the newer version, which could be a free upgrade or a purchased upgrade.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h5><span class="strong">Notes</span>:</h5>
+        <ul>
+            <li value="1">The preceding instructions describe the check for update behavior of the default Custom Layouts for Embedded Web Store eSellers.</li>
+            <li value="2">If you use this feature in conjunction with the SKU Redirect, the check for update behavior changes as follows:<ul><li value="1">For "Use current SKU, no update available," the behavior is unchanged.</li><li value="2">For "Use current SKU, update is available," the SKU specified by the SKU Redirect will be made available, and the CheckForUpdate Message specified for the current SKU will display.</li><li value="3">For "Redirect to different SKU," the behavior is unchanged.</li></ul></li>
+            <li value="3">For a look at all the CheckForUpdate Redirects set up for your Embedded Web Store eSellers, use the Embedded Web Store CheckForUpdate Redirects report, which is available in Admin Reports.</li>
+        </ul>
+        <h4>CheckForUpdate Message</h4>
+        <p>Complete the <span class="strong">CheckForUpdate Message</span> field, if applicable to this Embedded Web Store eSeller. (See <a href="#CFU_Redirect" title="" alt="" class="MCXref xref">CheckForUpdate Redirect</a> for details.) This message will display when a customer uses your application to check for a newer version.</p>
+        <p>&#160;</p>
+    </body>
+</html>

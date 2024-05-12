@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="475" MadCap:lastWidth="998">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_647291"></a><a name="Embedded_SDKReference_1955650137_15088"></a>eSellerate_Today</h2>
+        <p>
+            <MadCap:keyword term="eSellerate_Today" />Returns the current date, expressed as the number of days since Jan. 1, 2000. </p>
+        <p>This function relies on the library libValidateUniversal.a, which you will need to link into your application.</p>
+        <p class="pwNote"><span class="strong">Tip</span>: <span class="strong">eSellerate_Today</span> is for finding the current date when you're using the validation library (libValidateUniversal.a) for Standard or Standard Enhanced serial numbers. To find the current date with the purchase library (EWSEmbedded.framework/EWSEmbedded-GC.framework), you can use <span class="strong">eWeb_Today</span>. See <MadCap:xref href="SDK2_libMac_Today_2.htm#Embedded_SDKReference_1955650137_668458">eWeb_Today</MadCap:xref>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>validateLib.h <br />Included in the development project.</li>
+            <li>libValidateUniversal.a<br />Linked into your application.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">
+            <o>eSellerate_DaysSince2000 </o><span class="strong">eSellerate_Today</span>
+            <o style="font-weight: normal;"> ()</o>
+        </p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "validateLib.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_DaysSince2000 timeStamp;</p>
+        <p class="pwSDKCodeSamples">timeStamp = eSellerate_DaysSince2000 eSellerate_Today()</p>
+        <p class="pwSDKCodeSamples">/* TO DO: use result to verify valid serial number using </p>
+        <p class="pwSDKCodeSamples">eWeb_ValidateSerialNumber */</p>
+    </body>
+</html>

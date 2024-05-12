@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Install.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Check.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_IndexSeri.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_IndexFile.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Delete.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Launch.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_WebStore.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_ValidateA.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Deactivat.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Confirm.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_ValidateS.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Standardi.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_NewFuncti.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Install.htm#SDKReference_3538791983_277523" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Purchase.htm#SDKReference_3538791983_71721" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Check.htm#SDKReference_3538791983_92359" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Silent.htm#SDKReference_3538791983_277581" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Reinstall.htm#SDKReference_3538791983_92366" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_IndexSeri.htm#SDKReference_3538791983_94012" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_IndexFile.htm#SDKReference_3538791983_277591" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Delete.htm#SDKReference_3538791983_405251" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Launch.htm#SDKReference_3538791983_59070" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_WebStore.htm#SDKReference_3538791983_373361" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Activate.htm#SDKReference_3538791983_373358" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Manual.htm#SDKReference_3538791983_242706" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_ValidateA.htm#SDKReference_3538791983_277608" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Date.htm#SDKReference_3538791983_373961" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Deactivat.htm#SDKReference_3538791983_382493" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Confirm.htm#SDKReference_3538791983_374074" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_ValidateS.htm#SDKReference_3538791983_374250" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Standardi.htm#SDKReference_3538791983_374186" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_Today.htm#SDKReference_3538791983_374276" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforWin_NewFuncti.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

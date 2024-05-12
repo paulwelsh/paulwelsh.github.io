@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1351" MadCap:lastWidth="728">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>eSellerate_ValidateSerialNumber</h2>
+        <p>
+            <MadCap:keyword term="eSellerate_ValidateSerialNumber" />Checks the validity of a Standard or Standard Enhanced serial number.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>validate.h<br />Included in the development project.</li>
+            <li>validateLibrary.lib(PPC) or<br />libValidate.a (Mach-O version)<br />Included in the development project.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">eSellerate_DaysSince2000 <span class="strong">eSellerate_ValidateSerialNumber</span>  ( <i>serialNumber, nameBasedKey, extraDataKey, </i><i>	publisherKey</i>  )
+        </p>
+        <p class="pwDefinition">eSellerate_String <i>serialNumber</i> 		– serial number string
+        </p>
+        <p class="pwDefinition">eSellerate_String <i>nameBasedKey</i> 		– Name-based Key string
+        </p>
+        <p class="pwDefinition">eSellerate_String <i>extraDataKey</i> 		– additional validation key string
+        </p>
+        <p class="pwDefinition">eSellerate_String <i>publisherKey</i> 		– Publisher Key string
+        </p>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Return Value</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">0</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned for invalid <i>serialNumber.</i></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>n</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned for valid <i>serialNumber</i>, where <i>n</i> is a date expressed as the number of days since Jan. 1, 2000. If Duration is set on the Sales Manager Serial Number Set Detail page, then <i>n</i> is the date of expiration; otherwise, it is the date of purchase.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for eSellerate_ValidateSerialNumber Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>serialNumber</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the serial number. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>nameBasedKey</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the Name-based Key to be used to validate <i>serialNumber</i>. If the Based On setting on the Sales Manager Serial Number Set Detail page is set as None, pass nil.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>extraDataKey</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing additional information to be used to validate <i>serialNumber</i>. If your Integrated eSeller did not use a special parameter (<i>extraData</i>) to pass additional information to the eSellerate servers during an API call to <span class="strong">eSellerate_Purchase</span> or <span class="strong">eSellerate_CheckForUpdate</span>, pass nil.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>publisherKey</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing the Publisher Key to be used to validate <i>serialNumber</i>, as found on the Sales Manager Serial Number Set Detail page. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for eSellerate_ValidateSerialNumber Function
+            </caption>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Data Type</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Definition</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"> <![CDATA[ ]]><b>Ctype.h Naming</b></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">eSellerate_DaysSince2000
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">signed short
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">eSellerate_String</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">unsigned char*</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">StringPtr</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Type Definitions for eSellerate_ValidateSerialNumber Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span> Strings are handled as length-prepended Pascal strings.
+            <br /></p>
+        <p class="pwNote"><span class="strong">Caution:</span> The <i>publisherKey</i>  is not the same as <i>publisherID</i>  used in functions that invoke the Software Delivery Wizard.
+            <br /></p>
+        <p class="pwNote"><span class="strong">Note:</span>&#160;For the key portion of a Standard or Standard Enhanced serial number (see "serial numbers: Serial Number Type options" in the eSellerate User's Guide index), eSellerate does not use the letters I, O, U or Z because they can be easily confused with other characters. To accommodate customers who mistakenly enter these letters in Standard or Standard Enhanced serial numbers, <span class="strong">eSellerate_ValidateSerialNumber</span> will substitute the number 1 for I, the number 0 for O, the letter V for U and the number 2 for Z. The function also will substitute uppercase characters for lowercase ones. </p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "validate.h"</p>
+        <p class="pwSDKCodeSamples">eSellerate_String serialNumber;</p>
+        <p class="pwSDKCodeSamples">eSellerate_String nameBasedKey;</p>
+        <p class="pwSDKCodeSamples">eSellerate_DaysSince2000 timeStamp;</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain serialNumber and, if needed, nameBasedKey */</p>
+        <p class="pwSDKCodeSamples">timeStamp = eSellerate_ValidateSerialNumber(serialNumber, nameBasedKey, nil, 	"\pHST8-T063-05DY-H9F9-FNY5");</p>
+        <p class="pwSDKCodeSamples">if ( timeStamp ) {</p>
+        <p class="pwSDKCodeSamples1">  /* TO DO: handle validation success */</p>
+        <p class="pwSDKCodeSamples">} else {</p>
+        <p class="pwSDKCodeSamples1">  /* TO DO: handle validation failure */</p>
+        <p class="pwSDKCodeSamples">}</p>
+    </body>
+</html>

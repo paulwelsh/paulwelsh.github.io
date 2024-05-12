@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1880" MadCap:lastWidth="781">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>eSellerate Functions</h2>
+        <p MadCap:conditions="Primary.Online">
+            <MadCap:xref href="Layouts_CLExt.htm" target="" title="" alt="">Custom Layout Extensions</MadCap:xref>
+        </p>
+        <p class="pwNote"><span class="strong">Note:</span> A summary of the following functions is available at <a href="http://publishers.esellerate.net/functions.aspx" target="_blank">http://publishers.esellerate.net/functions.aspx</a>. To make this information easy to find, the Custom Layout editing pages provide a link to the summary (labeled "Functions"), in the same area as the "Tags" and "Variables" links.</p>
+        <p>Just as defined  eSellerate variables denote certain preserved values, there are defined  eSellerate functions that denote certain processes or processed values. The function names are case-insensitive, are preceded by an underscore, and are followed by a parenthesized, comma-separated argument list.  They are replaced by evaluated values when the Custom Layout page containing them is rendered. Functions that are not recognized or cannot be evaluated remain unchanged when rendered.</p>
+        <p>All functions return strings; some functions, whose only purpose is an action, always return blank strings. All functions also have a shorter alternative name that can be used instead of their fuller descriptive name.</p>
+        <p>Functions may contain variables, and they can be nested. For example:</p>
+        <p class="pwcode"><font face="Courier New, Courier, mono">&lt;Span _If="_Shopper.BillingFirstName != ""&gt;
+				<br />&#160;&#160;&lt;_OnLoad&gt;  
+				<br />&#160;&#160;&#160;&#160;_My.Welcome = _Concatenate(
+				<br />&#160;&#160;&#160;&#160;&#160;&#160;_QueryToUrl("http://vendor.com?get=welcome"),
+				<br />&#160;&#160;&#160;&#160;&#160;&#160;"&amp;nbsp;",
+				<br />&#160;&#160;&#160;&#160;&#160;&#160;_Shopper.BillingFirstName
+				<br />&#160;&#160;&#160;&#160;)  
+				<br />&#160;&#160;&lt;/_OnLoad&gt;  
+				<br />&#160;&#160;_My.Welcome 
+				<br />				&lt;/Span&gt;
+    </font>
+        </p>
+        <p>Also, note that inside expressions: 1, string literals must be single-quoted; and 2, evaluations you want treated as strings must be single-quoted.</p>
+        <table style="caption-side: bottom;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" MadCap:mediastyle="@media print { mc-table-style: url('../Resources/TableStyles/Rows.css'); }" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <caption>eSellerate Functions</caption>
+            <thead>
+                <tr>
+                    <td colspan="2" class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p style="text-align: left;"><b>eSellerate Functions</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">Concatenate</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p>Takes any number of string arguments, appends them into a single string, and returns that string. (Short name: <span class="strong">Append</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">StringContains</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes two string arguments, and returns "True" if the second string is a substring of the first, or "False" otherwise. The matching is case-insensitive. (Short name: <span class="strong">IsSubstring</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">StringIsLike</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes two arguments—the first a string, the second a regular expression—and returns "True" or "False", depending on whether the string matches the regular expression. The matching is case-insensitive. (Short name: <span class="strong">IsMatch</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">FindInString</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes two strings as arguments, and returns the zero-indexed position of the second string inside the first, if it is a substring. If the second string isn't a substring of the first, "-1" is returned. The substring matching is case-insensitive. (Short name: <span class="strong">Position</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">GetFromString</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes two or three arguments. The first argument is a source string, from which a substring is extracted and returned. The second argument is the zero-indexed position of the extracted substring within the source string, and the optional third argument is the length of the substring. If this length is omitted or overlong, the extracted substring extends to the end of the source string. (Short name: <span class="strong">Substring</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">ReplaceInString</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes three arguments, and returns the string created by replacing all occurrences of the second argument within the first argument with instances of the third argument. The matching of the second argument is case-insensitive. (Short name: <span class="strong">Replace</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">EvaluateBooleanExpression</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes a single argument in the form of a Boolean expression, evaluates it just as it would an _If attribute in a &lt;span&gt; tag, and returns either "True" or "False", as the case may be. Also, note that inside expressions: 1, string literals must be single-quoted; and 2, evaluations you want treated as strings must be single-quoted. (Short name: <span class="strong">IsTrue</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">EvaluateNumericExpression</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes a single argument in the form of a numerical expression, evaluates it just as it would the numerical portion of an _If attribute in a &lt;span&gt; tag, and returns the resulting number as a string. Also, note that inside expressions: 1, string literals must be single-quoted; and 2, evaluations you want treated as strings must be single-quoted. (Short name: <span class="strong">AsNumber</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">GetQueryStringValue</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes one argument, the name of a desired variable in the current query string, and returns its value, or blank if the query string doesn't include the variable. (Short name: <span class="strong">FromUrl</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">GetXmlValue</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes two arguments—a text string and the name of a desired markup tag—and returns the content of the so-named tag in the text string, or blank if the text string does not contain the tag. For example, if the desired tag name is "result", the function returns the first and innermost instance of text enclosed between &lt;result&gt; and &lt;/result&gt; delimiters. (Short name: <span class="strong">FromXml</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">GetCookieValue</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes one or two arguments. The first argument is the name of a desired cookie value; the second is optional. The function returns the cookie value, or blank if the cookie does not contain a so-named value within the current scope, which by default is the particular web store being visited. However, cookie values can optionally be specified to instead have the particular publisher for their scope, in which case a second argument of either "scope=publisher" or "scope=vendor" is needed in order to retrieve the value. (Short name: <span class="strong">FromCookie</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="strong">AddCookieValue</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes named arguments, creates a cookie, and returns blank. If either "scope=publisher" or "scope=vendor" is among the named arguments, then the scope of cookie values added by the function will be that of the current publisher; otherwise, by default, the scope is that of the current web store. The duration of the cookie value can be optionally specified by an argument named "duration" given an integer value. That value specifies the number of days that the values added by the function should persist. Or that value may be followed by "m", to indicate minutes, rather than days. For example, added cookie values will expire after one hour if accompanied by the argument "duration=60m". If no duration is given, the added cookie values will expire after 30 days. All other named arguments will be taken as naming cookie values to be added by the function. For example, a publisher could preserve a coupon in a cookie that could be accessed by any of their web stores during the upcoming week:</p>
+                        <p class="CellBodyFM"><span class="strong">_AddCookieValue</span>("scope=publisher", "duration=7", "coupon=BigDeal", "name=_Shopper.FirstName")</p>
+                        <p class="CellBodyFM">(Short name: <span class="strong">Cookie.</span>)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="strong">QueryToUrl</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBodyFM">Takes one or two arguments. The first argument is a URL; the function queries the URL, and returns the response from the query. An optional second variable named "timeout" can be used to specify a timeout value for the query, as measured in tenths of a second. If not specified, the default timeout for queries by the function is two seconds. The function returns blank if the query times out or otherwise fails. (Short name: <span class="strong">Query</span>.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep"><span class="strong">PostToUrl</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBodyFM">Is very like _QueryToUrl, but additionally posts data formatted as XML to the URL. Additional named arguments are taken as specifying tagged values to be included in the XML. For example:</p>
+                        <p class="CellBodyFM"><span class="strong">_PostToURL</span>("http://dot.com", "timeout=10", "UserID=John Smith", "Password=Pocahontas")</p>
+                        <p class="CellBodyFM">will wait up to one second for a response to posted data:</p>
+                        <p class="CellBodyFM">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+							<br />&lt;request&gt;
+							<br />&#160;&#160;&lt;UserID&gt;John Smith&lt;/UserID&gt;
+							<br />&#160;&#160;&lt;Password&gt;Pocahontas&lt;/Password&gt;
+						    <br />&lt;/request&gt;</p>
+                        <p class="CellBodyFM">(Short name: <span class="strong">Post</span>.)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Install.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Check.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Set.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN1.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetSerialN.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc1.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar1.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_LaunchUp.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ValidateAc.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Deactivate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ConfirmS.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ValidateSe.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Standardiz.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Translate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetLast.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_NewFunct.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Install.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Check.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Silent.htm#SDKReference_3538791983_501270" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Reinstall.htm#SDKReference_3538791983_501370" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Set.htm#SDKReference_3538791983_501520" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN.htm#SDKReference_3538791983_501615" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN1.htm#SDKReference_3538791983_501656" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetSerialN.htm#SDKReference_3538791983_501711" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GerSerialN2.htm#SDKReference_3538791983_501770" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc.htm#SDKReference_3538791983_501827" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc1.htm#SDKReference_3538791983_501868" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetFileLoc2.htm#SDKReference_3538791983_501923" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar.htm#SDKReference_3538791983_501980" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar1.htm#SDKReference_3538791983_502021" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetShopCar2.htm#SDKReference_3538791983_502078" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_LaunchUp.htm#SDKReference_3538791983_502135" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Activate.htm#SDKReference_3538791983_502208" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Manual.htm#SDKReference_3538791983_502343" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ValidateAc.htm#SDKReference_3538791983_502454" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Date.htm#SDKReference_3538791983_502564" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Deactivate.htm#SDKReference_3538791983_502645" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ConfirmS.htm#SDKReference_3538791983_502780" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_ValidateSe.htm#SDKReference_3538791983_502884" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Standardiz.htm#SDKReference_3538791983_502966" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Today.htm#SDKReference_3538791983_503006" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_Translate.htm#SDKReference_3538791983_508023" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_GetLast.htm#SDKReference_3538791983_509152" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_pluginRB_NewFunct.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

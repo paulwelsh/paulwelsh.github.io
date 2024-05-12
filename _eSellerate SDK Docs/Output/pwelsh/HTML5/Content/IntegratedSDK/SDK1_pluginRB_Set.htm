@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate SDK (Legacy Option)|eSellerate Plug-in for REALbasic">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>SetOption</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>SetOption</h2>
+        <p><a name="kanchor172"></a>Assigns a value to options available to the following functions: <span class="strong">Purchase</span>, <span class="strong">CheckForUpdate</span>, <span class="strong">SilentCheckForUpdate</span>, <span class="strong">Reinstall</span>, <span class="strong">ActivateSerialNumber</span>, <span class="strong">DeactivateSerialNumber</span> and <span class="strong">ConfirmSerialNumber</span>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li value="1">eSelleratePlugin.rbx<br />Located in the REALbasic:Plugins folder.
+                <br /></li>
+        </ul>
+        <h5>Macintosh Targets</h5>
+        <ul>
+            <li value="1">eSellerateEngine (Carbon)<br />Located in the appropriate folder. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:<ul><li value="1">For Mac OS 9.1 or later with CarbonLib 1.5 or later, place eSellerateEngine (Carbon) in System Folder:Application Support:MindVision</li><li value="2">For Mac OS X, place eSellerateEngine (Carbon) in /Library/Application Support/MindVision</li></ul></li>
+        </ul>
+        <h5>Windows Targets</h5>
+        <ul>
+            <li value="1">eSellerateEngine.dll<br />Located in the appropriate directory. It may be already placed here by another eSellerate-enabled application. The location depends on the platform:
+                <br /><ul><li value="1">For Windows Vista, place eSellerateEngine.dll in the ProgramData\eSellerate directory
+                    </li><li value="2">For pre-Vista Windows versions, place eSellerateEngine.dll in the Windows directory
+                    </li></ul></li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">SetOption</span> (</p>
+        <p class="pwDefinition1"><i>option</i> as String,	– defined name of option</p>
+        <p class="pwDefinition1"><i>setting</i> as String	– value to be assigned to option</p>
+        <p class="pwDefinition">) </p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Parameters for SetOption Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody"><i>option</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing one of the defined option names listed in the next table. Required.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>setting</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">String containing a value to be assigned to the option. Required.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <caption>Option Details for SetOption Function
+            </caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading" style="font-weight: bold;">Option Name</p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading" style="font-weight: bold;">Used by Function</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">"OpeningTitle"
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate, Reinstall
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">"OpeningText"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate, Reinstall
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">"TrackingID"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate, SilentCheckForUpdate, Reinstall
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">"AffiliateID"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">"CouponID"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">"ExtraData"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">"ActivationID"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate, Reinstall</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody">"ShowFolder"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Purchase, CheckForUpdate, Reinstall</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody">"AskToConnect"</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">SilentCheckForUpdate, ActivateSerialNumber, DeactivateSerialNumber, ConfirmSerialNumber</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pwNote"><span class="strong">Note:</span>&#160;Option settings are "" (or "FALSE" when applicable) until set by <span class="strong">SetOption</span>. <br /><br />Functions use the latest setting set by <span class="strong">SetOption</span>.
+            <br /><br />Call <span class="strong">SetOption </span>before calling the function(s) that will use it.<br /><br />There is no need to reset an option setting between function calls, unless that setting needs to change.</p>
+        <h4>Example
+        </h4>
+        <p class="pwSDKCodeSamples">dim eSellerate as eSeller</p>
+        <p class="pwSDKCodeSamples">dim resultCode as Integer</p>
+        <p class="pwSDKCodeSamples">eSellerate = new eSeller</p>
+        <p class="pwSDKCodeSamples">eSellerate.SetOption("ActivationID", 	"ACT123456789:9EUYLP-UZ8H-9J7J70-7FE4-6T18FY-72X9YK-FU9K-BDKLNQ-G53H-7FZTTU")</p>
+        <p class="pwSDKCodeSamples">resultCode = eSellerate.Purchase("PUB775527079", "ES123456789", "", "")</p>
+        <p class="pwSDKCodeSamples">' ** TO DO: handle error, or utilize results **</p>
+        <p>&#160;</p>
+    </body>
+</html>

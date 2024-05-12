@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="SDK_Home.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Embedded Web Store SDK|eWeb ActiveX Control">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>eWebResultData Attributes</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-19']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2>eWebResultData Attributes</h2>
+        <p>The following attributes can be retrieved directly from the eWebResultData class after creation of the eWebResultData object:</p>
+        <ul>
+            <li value="1">BillingFirstName</li>
+            <li value="2">BillingLastName</li>
+            <li value="3">BillingAddress1</li>
+            <li value="4">BillingAddress2</li>
+            <li value="5">BillingCity</li>
+            <li value="6">BillingState</li>
+            <li value="7">BillingZip</li>
+            <li value="8">BillingCountry</li>
+            <li value="9">BillingEmail</li>
+            <li value="10">BillingPhone</li>
+            <li value="11">BillingCompany</li>
+            <li value="12">OrderID</li>
+            <li value="13">OrderLineCount</li>
+        </ul>
+        <p>Both lines that follow the variable declaration in the example code below retrieve the shopper's billing first name. The first line retrieves the data directly, and the second uses <span class="strong">eWeb_GetResultDataValue</span>.<br></br></p>
+        <p class="pwSDKCodeSamples">Dim myBillingFirstName As string</p>
+        <p class="pwSDKCodeSamples">&#160;</p>
+        <p class="pwSDKCodeSamples">myBillingFirstName = resultData.BillingFirstName</p>
+        <p class="pwSDKCodeSamples">resultData.eWeb_IndexGetResultDataValue("_Shopper", "BillingFirstName", 0, myBillingFirstName)</p>
+        <p>&#160;</p>
+    </body>
+</html>

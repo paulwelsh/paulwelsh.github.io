@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="MadCap WebHelp Plus Target"
+  Type="WebHelpPlus"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Primary TOC.fltoc"></CatapultTarget>

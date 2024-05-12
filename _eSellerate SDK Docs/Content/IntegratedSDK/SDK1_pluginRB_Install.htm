@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="879" MadCap:lastWidth="750">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>InstallEngine</h2>
+        <p>
+            <MadCap:keyword term="InstallEngine" />Copies the eSellerateEngine from the application to its proper location, if one of the following conditions are true:</p>
+        <ul>
+            <li>No engine is present.</li>
+            <li>The engine that is present is older than the one carried by the application. In this case, the function replaces the older engine.</li>
+            <li>The engine that is present has been altered. In this case, the function replaces the altered engine.</li>
+        </ul>
+        <p>This approach requires that the eSellerateEngine is built into the application as a resource. While this makes the application file bigger, it allows the application to not depend on an installer or other strategy to ensure that the engine is in place.</p>
+        <p>This function of the REALbasic plug-in option is available for Macintosh targets only.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>eSelleratePlugin.rbx<br />Located in the REALbasic:Plugins folder.</li>
+        </ul>
+        <h5>Macintosh Targets</h5>
+        <ul>
+            <li>Resources 
+                <br />Included in the development project. (If the project already contains a file named Resources, combine the resources of both files.)<br /><br />Because the eSellerate SDK does not include a file with this name, you will need to copy the file eSellerateEngine(Carbon).rsrc and rename the file Resources.
+                <br />
+            </li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition"><span class="strong">InstallEngine </span>()<span class="strong"> <![CDATA[ ]]></span>as Integer</p>
+        <p>&#160;</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Return Value</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody">0</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine is already properly installed, or if this function installed the engine.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody">-1</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Returned if the eSellerateEngine is not already properly installed, and this function could not install the engine (perhaps because the eSellerateEngine was not built into the application as a resource).</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Return Values for InstallEngine Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Tip:</span> For the best protection against engine tampering, you should compile your application with the latest eSelleratePlugin.rbx, and include the latest eSellerateEngine as a resource. Next, use the API call <span class="strong">InstallEngine</span> immediately before any call that requires the eSellerateEngine. Calling <span class="strong">InstallEngine</span> replaces an altered eSellerateEngine, if one is present.</p>
+        <h4>Example
+        </h4>
+        <p class="pwSDKCodeSamples">dim eSellerate as eSeller
+        </p>
+        <p class="pwSDKCodeSamples">dim resultCode as Integer
+        </p>
+        <p class="pwSDKCodeSamples">eSellerate = new eSeller
+        </p>
+        <p class="pwSDKCodeSamples">resultCode = eSellerate.InstallEngine()
+        </p>
+        <p class="pwSDKCodeSamples">' ** TO DO: handle error, or use the eSellerateEngine **
+        </p>
+    </body>
+</html>

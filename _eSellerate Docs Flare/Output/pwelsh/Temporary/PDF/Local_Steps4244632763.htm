@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3156" MadCap:lastWidth="972" MadCap:tocPath="Miscellaneous|Localizing [%=Primary.CompanyName%] Stores" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Localization Steps for Publishers</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 MadCap:xrefTargetName="Localization Steps for Publishers" MadCap:sourceTitle="Localization Steps for Publishers"><a MadCap:generatedBookmark="TOC" name="Localization Steps for Publishers"></a>Localization Steps for Publishers</h3>
+        <h5>Using Layouts That Support Localization</h5>
+        <p>Before a web store can provide different language options, it needs to use the right layout.</p>
+        <p><span class="strong">Custom Layouts:</span> Custom Layouts created prior to  June 18, 2012, will not work with localization. Publishers wanting to support localization must create new layouts for that purpose, by starting with the current version of one of the following default layouts:</p>
+        <ul>
+            <li value="1">Simple Responsive Layout</li>
+            <li value="2">Multi-Page Responsive Layout</li>
+            <li value="3">Simple Layout</li>
+            <li value="4">Multi-Page Layout
+            </li>
+            <li value="5">Embedded Simple Layout
+</li>
+            <li value="6">Embedded Multi-Page Layout          </li>
+        </ul>
+        <p><span class="strong">Standard Layouts:</span> Standard Layouts that existed prior to June 18, 2012, will not work with localization. Publishers wanting to support localization must choose one of two new localized layouts, which are:</p>
+        <ul>
+            <li value="1">Simple, Responsive              <![CDATA[
+            ]]></li>
+            <li value="2">Multiple, Responsive              <![CDATA[
+            ]]></li>
+        </ul>
+        <h5>Optional Ways to Localize Custom Layouts</h5>
+        <p>The only requirement for preparing Custom Layouts for localization is to start with a current template (one of the default layouts previously noted). When you start with a current template and localize strings by using the Lexicon and Translation features, your stores will have everything that they need to support localization. There is no need for extra steps, such as manually editing markup in regard to localization.</p>
+        <p>If you understand that the preceding approach is the most convenient, but you still want to directly mark up the HTML in your Custom Layouts, there are mechanisms that you can use to do that: <MadCap:keyword term="variables:string" />string variables and language markup tags. String variables are a way to manage localized language, and language markup tags are a way to manage localized structure.</p>
+        <p><span class="strong">String Variables:</span> These variables were added for localization, so that there are now three types: layout, ad hoc, and string. String variables have the form:</p>
+        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;_String.<i>name</i></p>
+        <p>where <i>name</i> is a standard identifier (begins with a letter, contains only letters, digits, or underscores). The value of the variable will vary according to the language selected at display time. Its various values are defined in either the Lexicon section or the Translations section of the Sales Manager.</p>
+        <p><span class="strong">Language Markup Tags:</span> These tags have the form:</p>
+        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;_language.name&gt;content&lt;/_language.name&gt;</p>
+        <p>where name is the name of a selected language and content is well-enclosed Custom Layout content.</p>
+        <h5>Inspecting Custom Layouts</h5>
+        <p>Custom Layout inspection inspects the layout for each selected language. If the layout does not pass inspection for a certain language, that language will not be available in the web store.</p>
+        <p>Inspection passes with the <i>current state</i> of the lexicon. After you change the lexicon, you may want to go back to your Custom Layout—which would still be published, as you haven’t made changes to it—and inspect it again to see if any warnings or errors come up as a result of your language updates.</p>
+        <h5 MadCap:xrefTargetName="$$xref$$_19" MadCap:sourceTitle="Localization Steps for Publishers"><a name="Selectin"></a>Selecting Languages for Localization</h5>
+        <p>Publishers specify the languages that they want to work with by making selections at two levels: the publisher level and the web store level.</p>
+        <p>To get to the Language Selection page at the publisher level, go to the Layouts section of the Sales Manager home page, and then click <span class="strong">Custom Layout Lexicon</span>. After the Lexicon page appears, click <span class="strong">Select Languages</span>.</p>
+        <p>The Language Selection page for a web store is accessible from an <span class="strong">Edit Language Selection</span> link at the bottom of the Web Store eSeller Detail page, and in the top ("General Attributes") section of the Embedded Web Store eSeller Summary page.</p>
+        <p>An example of the Language Selection page for a web store (regular or embedded) follows. By selecting options on the right side of the page, publishers can control when each selected language is available in the web store. Preview status makes the language available for testing, and Active status makes the language available for customers to choose when they visit the live store.</p>
+        <p class="pwNote"><span class="strong" style="color: #ff0000;">Warning:</span> In regard to non-English languages: Do not turn on Active languages for stores that are not using localized layouts.  The only time that you should set a non-English language to Active status is when the store is using a localized layout, and you have finished testing the language in your store.</p>
+        <p>
+            <img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/Lang_store_level.png" class="PWimg">
+            </img>
+        </p>
+        <h5>Differences between Translations and the Lexicon</h5>
+        <p>Although both translations and the lexicon enable the localization of customer-facing language, they serve different functions within web store layouts. Translations have to do with the localization of Custom Layout variables, while the lexicon is for localizing text strings on the layout.</p>
+        <h5>Localizing Layout Content (the Lexicon)</h5>
+        <p>As previously mentioned, text on new store layouts is localized in all supported languages. Publishers can customize most text and translations, or take them as they are, ready to go.</p>
+        <p>Customization takes place on the Lexicon page, which is accessed by going to the Layouts section of the home page and clicking <span class="strong">Custom Layout Lexicon</span>. Publishers can view the lexicon by name or by language. At that point, they have the option to edit the strings one-by-one in the Sales Manager. Alternatively, they can export the lexicon to Excel for editing, and later import the modified Excel file. (Also see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Miscellaneous/Local_Translators.htm" target="" title="" alt="" MadCap:xrefTarget="Information for Translators"><span style="color: Blue;" class="mcFormatColor"><u>"Information for Translators" on page 1</u></span></MadCap:xref>.)</p>
+        <p>
+            <img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/lexicon_edits.png" class="PWimg">
+            </img>
+        </p>
+        <h5>Notes</h5>
+        <ul>
+            <li value="1">Before you edit any of the default lexicon strings, please consider the following: Default lexicon strings will receive any updates that eSellerate pushes out for them, but overridden strings do not receive those updates. So, you can override a string or you can allow it to receive future updates, but not both.</li>
+            <li value="2">To add a named string to the lexicon, make sure the current view is by name, rather than by language. Then click <span class="strong">New</span>. Enter a name (which must have no spaces, begin with a letter, and contain only letters, digits, or underscores), fill out the other fields as needed, and then click <span class="strong">Save Changes</span>. To remove a named string that was manually added in this way, select it from the list of Named Strings, and then click <span class="strong">Delete</span>.<ul><li value="1">Before you add a named string, make sure that the name you've chosen for it is not already in use (regardless of case, because the names are case-insensitive). You will override existing data if you add a string name that is already present in the lexicon.</li></ul></li>
+            <li value="3">Named strings in the lexicon can contain other named strings. For example, assume that the English text for "OrderConfirmation" is "Order Confirmation: _String.MyData". When web stores read in "OrderConfirmation" for English, they will also include the English text for the named string "MyData".</li>
+            <li value="4">  Strings that are left blank will not show up for the corresponding language in the web store. For example, if the web store is showing Spanish, but the Spanish string for Address1 was left blank in the lexicon, then nothing will appear for Address1. (The stores don't drop back to English, or any other language, for strings that are left blank in the lexicon.)</li>
+            <li value="5">We recommend that you frequently back up  the lexicon—ideally every time that you finish making significant changes. By exporting the lexicon to Excel and archiving the Excel files somewhere, you will have a way to easily restore your most recent work if data is ever lost.</li>
+        </ul>
+        <h5>Localizing Publisher Content (Translations)</h5>
+        <p>Publishers have the option to localize customer-facing language that is specific to their own products and web stores. Localizable items are designated by a "Translate Data" icon   in the Sales Manager.  A few examples of these localizable items: SKU Name, Short Description (SKU setting), Store Name (eSeller setting), and Support URL (Receipt Information). Clicking <span class="strong">Translate Data</span> brings up the Translations page for the corresponding item. At that point, publishers have the option to edit the strings one-by-one in the Sales Manager. Alternatively, they can export all translations to Excel for editing, and later import the modified Excel file. (Also see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Miscellaneous/Local_Translators.htm" target="" title="" alt="" MadCap:xrefTarget="Information for Translators"><span style="color: Blue;" class="mcFormatColor"><u>"Information for Translators" on page 1</u></span></MadCap:xref>.)</p>
+        <p>
+            <img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/ClickingTranslateData.png" class="PWimg">
+            </img>
+        </p>
+        <p>
+            <img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/translations_edit.png" class="PWimg">
+            </img>
+        </p>
+        <h5>Notes</h5>
+        <ul>
+            <li value="1">Non-English translations that are left blank will default to English. For example, if the web store is showing Spanish, but there is no Spanish translation for Store Name, then the English translation for that item will appear. (This assumes that an English translation exists.) To intentionally blank out a translation so that nothing shows up for it in the corresponding language, you can enter non-displaying content such as &lt;b&gt;&lt;/b&gt;.            </li>
+            <li value="2">We recommend that you frequently back up your translations—ideally every time that you finish making significant changes. By exporting the translations to Excel and archiving the Excel files somewhere, you will have a way to easily restore your most recent work if data is ever lost.</li>
+        </ul>
+        <h3 class="See_Also">See Also</h3>
+        <p MadCap:conditions="Primary.Print">Defined eSellerate Variables – <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Layouts/Layouts_CustomVariablesN.htm" target="" title="" alt="" MadCap:xrefTarget="Variables Notes"><span style="color: Blue;" class="mcFormatColor"><u>"Variables Notes" on page 1</u></span></MadCap:xref></p>
+        <p>
+            <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Layouts/Layouts_AdHoc.htm" target="" title="" alt="" MadCap:xrefTarget="Ad Hoc Variables"><span style="color: Blue;" class="mcFormatColor"><u>"Ad Hoc Variables" on page 1</u></span>
+            </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Layouts/Language_Selection.htm" target="" title="" alt="" MadCap:xrefTarget="Language Selection"><span style="color: Blue;" class="mcFormatColor"><u>"Language Selection" on page 1</u></span>
+            </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Layouts/Custom_Layout_Lexicon.htm" target="" title="" alt="" MadCap:xrefTarget="Custom Layout Lexicon"><span style="color: Blue;" class="mcFormatColor"><u>"Custom Layout Lexicon" on page 1</u></span>
+            </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/Layouts/Translations.htm" target="" title="" alt="" MadCap:xrefTarget="Translations"><span style="color: Blue;" class="mcFormatColor"><u>"Translations" on page 1</u></span>
+            </MadCap:xref>
+        </p>
+    </body>
+</html>

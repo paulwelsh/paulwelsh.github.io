@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Embedded Web Store eSellers">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Product Update Example</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../Resources/TableStyles/Illustration_Table.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="Embedded__eSellers_430221130_1023365"></a><a name="Embedded__eSellers_430221130_40271"></a>Product Update Example</h2>
+        <p>This example demonstrates how you can use the following features to handle updates throughout several product releases:</p>
+        <ul>
+            <li value="1">SKU Redirect</li>
+            <li value="2">CheckForUpdate Redirect</li>
+        </ul>
+        <p>For information on how to set these features, see <a href="EWS_AddingSKUs.htm#Embedded__eSellers_430221130_1022661" title="" alt="" class="MCXref xref">Adding Embedded Web Store SKUs</a>.</p>
+        <h4>Releasing Version 1</h4>
+        <p>When first released, software version 1 has no updates available, so no redirect is needed. Instead, you would set up one Embedded Web Store SKU (SKU1) to handle both purchase and check for update duties, as shown here:</p>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+            <caption>Example Settings for Software Version 1</caption>
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p><span class="strong">SKU Name:</span> SKU 1</p>
+                        <p><span class="strong">SKU Status:</span> Active</p>
+                        <p><span class="strong">SKU Not Active Message:</span> Not applicable</p>
+                        <p><span class="strong">SKU Redirect:</span> None</p>
+                        <p><span class="strong">CheckForUpdate Redirect:</span> Use current SKU, no update available</p>
+                        <p><span class="strong">CheckForUpdate Message:</span> This is the most current version.</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">Not applicable</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Next, you would set up your Embedded Web Store eSeller application to reference SKU1 in Purchase and CheckForUpdate function calls.</p>
+        <p>With the eSeller and SKU set up as described above, the behavior of software version 1 would be as follows:</p>
+        <ul>
+            <li value="1">A customer who initiated a purchase using demo software version 1 would be able to purchase retail software version 1.</li>
+            <li value="2">A customer who checked for updates using retail software version 1 would see this message: "This is the most current version."</li>
+        </ul>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Illustration_Table.css');margin-left: 0;margin-right: auto;" class="TableStyle_Illustration_Table" cellspacing="0">
+            <caption>Purchase and Check for Update Behaviors for Software Version 1</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Illustration_Table_Body_0_0_RowEnd_ColEnd">
+                        <img src="../Resources/Images/update_graphic_01.jpg" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="Embedded__eSellers_430221130_41588"></a>Releasing Version 2</h4>
+        <p>To release software version 2, you would need to do the following:</p>
+        <ol>
+            <li value="1">Create a SKU (SKU2) for updating to version 2 using the settings shown.</li>
+            <li value="2">Set up a SKU Redirect from SKU1 to SKU2.</li>
+            <li value="3">Set up a CheckForUpdateRedirect from SKU1 to SKU2.</li>
+            <li value="4">Update the CheckForUpdate Message for SKU1.</li>
+            <li value="5">Update your Embedded Web Store eSeller application to reference SKU2 in Purchase and CheckForUpdate function calls and make the new demo software available to your customers.</li>
+        </ol>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+            <caption>Example Settings for Software Version 2</caption>
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBodyPW"><span class="strong">SKU Name:</span> SKU1</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Status:</span> Active</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Not Active Message:</span> Not applicable</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Redirect:</span> SKU2</p>
+                        <p class="CellBodyPW"><span class="strong">CheckForUpdate Redirect</span>: SKU2</p>
+                        <p class="CellBodyPW"><span class="strong">CheckForUpdate Message</span>: An update is available. If you would like to purchase the update, click the "update now" button to proceed.</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBodyPW"><span class="strong">SKU Name:</span> SKU2</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Status: </span>Active</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Not Active Message:</span> Not applicable</p>
+                        <p class="CellBodyPW"><span class="strong">SKU Redirect: </span>None</p>
+                        <p class="CellBodyPW"><span class="strong">CheckForUpdate Redirect</span>: Use current eSeller, no update is available</p>
+                        <p class="CellBodyPW"><span class="strong">CheckForUpdate Message</span>: This is the most current version.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After you made these changes, all existing versions of your product would help customers purchase or upgrade to version 2, as summarized below:</p>
+        <ul>
+            <li value="1">A customer who initiated a purchase using demo software version 1 would be able to purchase retail software version 2.</li>
+            <li value="2">A customer who checked for updates using retail software version 1 would see this message: "An update is available. If you would like to purchase the update, click the 'update now' button to proceed." The customer would then be able to obtain retail software version 2.</li>
+            <li value="3">A customer who initiated a purchase using demo software version 2 would be able to purchase retail software version 2.</li>
+            <li value="4">A customer who checked for updates using retail software version 2 would see this message: "This is the most current version."</li>
+        </ul>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Illustration_Table.css');margin-left: 0;margin-right: auto;" class="TableStyle_Illustration_Table" cellspacing="0">
+            <caption>Purchase and Check for Update Behaviors for Software Version 2</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Illustration_Table_Body_0_0_RowEnd_ColEnd">
+                        <img src="../Resources/Images/update_graphic_02.jpg" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a name="Embedded__eSellers_430221130_86572"></a>Releasing Version 3</h4>
+        <p>To release software version 3, you would need to do the following:</p>
+        <ol>
+            <li value="1">Create a SKU (SKU3) for updating to version 3 using the settings shown.</li>
+            <li value="2">Uncheck the Active status for SKU1.</li>
+            <li value="3">Update the SKU Not Active Message for SKU1.</li>
+            <li value="4">Update the SKU Redirect for SKU1.</li>
+            <li value="5">Update the CheckForUpdate Redirect for SKU1.</li>
+            <li value="6">Update the CheckForUpdate Message for SKU1.</li>
+            <li value="7">Set up a SKU Redirect from SKU2 to SKU3.</li>
+            <li value="8">Set up a CheckForUpdateRedirect from SKU2 to SKU3.</li>
+            <li value="9">Update your Embedded Web Store eSeller application to reference SKU3 in Purchase and CheckForUpdate function calls and make the new demo software available to your customers.</li>
+        </ol>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;" class="TableStyle_Rows" cellspacing="0">
+            <caption>Example Settings for Software Version 3</caption>
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p><span class="strong">SKU Name:</span> SKU1</p>
+                        <p><span class="strong">SKU Status:</span> Not Active</p>
+                        <p><span class="strong">SKU Not Active Message:</span> A newer version is available. Please download it from our web site and purchase from that version.</p>
+                        <p><span class="strong">SKU Redirect:</span> NoneCheckForUpdate Redirect: Use current SKU, no update available</p>
+                        <p><span class="strong">CheckForUpdate Message:</span> An update for this version of the software is no longer available. If you would like to purchase the latest version, please download it from our web site, and purchase from that version.</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p><span class="strong">SKU Name:</span> SKU2</p>
+                        <p><span class="strong">SKU Status:</span> Active
+</p>
+                        <p><span class="strong">SKU Not Active Message:</span> Not applicable
+</p>
+                        <p><span class="strong">SKURedirect:</span> SKU3
+</p>
+                        <p><span class="strong">CheckForUpdate Redirect:</span> SKU3
+</p>
+                        <p><span class="strong">CheckForUpdate Message:</span> An update is available. If you would like to purchase the update, click the "update now" button to proceed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p><span class="strong">SKU Name:</span> SKU3</p>
+                        <p><span class="strong">SKU Status:</span> Active</p>
+                        <p><span class="strong">SKU Not Active Message:</span> Not applicable</p>
+                        <p><span class="strong">SKU Redirect:</span> None</p>
+                        <p><span class="strong">CheckForUpdate Redirect:</span> Use current eSeller, no update available</p>
+                        <p><span class="strong">CheckForUpdate Message:</span> This is the most current version.</p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">Not applicable</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After you made these changes, all existing versions of your product would help customers purchase or upgrade to version 3, as summarized below:</p>
+        <ul>
+            <li value="1">A customer who initiated a purchase using demo software version 1 would see this message: "A newer version is available. Please download it from our web site and purchase from that version."</li>
+            <li value="2">A customer who checked for updates using retail software version 1 would see this message: "An update for this version of the software is no longer available. If you would like to purchase the latest version, please download it from our web site, and purchase from that version."</li>
+            <li value="3">A customer who initiated a purchase using demo software version 2 would be able to purchase retail software version 3.</li>
+            <li value="4">A customer who checked for updates using retail software version 2 would see this message: "An update is available. If you would like to purchase the update, click the 'update now' button to proceed." The customer would then be able to obtain retail software version 3.</li>
+            <li value="5">A customer who initiated a purchase using demo software version 3 would be able to purchase retail software version 3.</li>
+            <li value="6">A customer who checked for updates using retail software version 3 would see this message: "This is the most current version."</li>
+        </ul>
+        <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/Illustration_Table.css');margin-left: 0;margin-right: auto;" class="TableStyle_Illustration_Table" cellspacing="0">
+            <caption>Purchase and Check for Update Behaviors for Software Version 3</caption>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Illustration_Table_Body_0_0_RowEnd_ColEnd">
+                        <img src="../Resources/Images/update_graphic_03.jpg" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

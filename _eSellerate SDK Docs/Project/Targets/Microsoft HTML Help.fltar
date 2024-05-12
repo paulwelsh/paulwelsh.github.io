@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget Version="1" OutputFile="ApplicationHelp.chm" Type="HtmlHelp" MasterToc="/Project/TOCs/Primary TOC.fltoc" GlossaryTermConversion="marked" BrowseSequence="/Project/Advanced/applicationhelp.flbrs" AliasFile="/Project/Advanced/applicationhelp.flali">
+    <Variables />
+    <ConditionTags />
+    <Glossaries>
+        <Glossary Link="/Project/Glossaries/Primary.flglo" />
+    </Glossaries>
+</CatapultTarget>

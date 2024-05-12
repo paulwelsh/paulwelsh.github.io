@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="5320" MadCap:lastWidth="998">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Adding Functionality</h2>
+        <p>In the preceding exercise we skipped over most available options in order to quickly set up a web store and try it out with a preview purchase. As a result, the store was missing some basic elements like the SKU image and a banner logo, and when we ran through a preview purchase we didn't actually receive anything. We'll take care of those issues next as we add some basic functionality.</p>
+        <h3>SKU Settings</h3>
+        <p>For a typical setup, you will probably want to at least do the following:</p>
+        <ul>
+            <li>Assign a download file. This will be the default download file for the SKU, unless you override this setting when adding the SKU to an eSeller. <MadCap:variable name="Primary.CompanyName" /> will deliver the assigned download file when customers purchase the SKU or download a trial version. <span class="strong">Prerequisites:</span> Create a download file. See <MadCap:xref href="../References/References_Downloads.htm" target="" title="" alt="">Creating Downloads</MadCap:xref>.</li>
+            <li>Assign a serial number set. <MadCap:variable name="Primary.CompanyName" /> will issue a serial number for use in registering the purchased SKU. <span class="strong">Prerequisites:</span> Create a serial number set. See <MadCap:xref href="../SKU_Management/Creating_Serial.htm" target="" title="" alt="">Creating Serial Numbers</MadCap:xref>. Also, your application will need to support serial number registration.</li>
+            <li>Use HTML to add some formatting to the Short Description and "More Info" Text.</li>
+            <li>Upload a boxshot image. The image will appear with the SKU when you list it in eSellers.</li>
+            <li>Assign terms of sale. This setting specifies terms that the customer must agree to before purchasing the SKU. <span class="strong">Prerequisites:</span> Add a terms of sale item. See <MadCap:xref href="../Account_Management/Account_Terms.htm" target="" title="" alt="">Creating Terms of Sale</MadCap:xref>.</li>
+            <li>Add Order E-mail and Receipt Text. This is a way to communicate information that customers will need to know about the SKU after the purchase, such as how to register the product or check for updates.</li>
+        </ul>
+        <p>The options that you would need to set up are highlighted in the next two illustrations.<br /><img src="../Resources/Images/quick_sku_settings.jpg" class="PWimg" /></p>
+        <p>
+            <img src="../Resources/Images/quick_sku_settings2.jpg" class="PWimg" />
+        </p>
+        <h3>eSeller Settings</h3>
+        <p>Next, we'll focus on the web store's layout. There are two main options for this:</p>
+        <ul>
+            <li>The Standard Layouts option, which offers 14 different layouts that support limited customization</li>
+            <li>The Custom Layouts option, which offers several different default layouts that support major customization</li>
+        </ul>
+        <p>The right type of layout for your web store depends on your customization needs. If one of the Standard Layouts works for you and you have no need to customize anything other than the color scheme and banner logo, you should use that option. If you require more customization you should use Custom Layouts.</p>
+        <p>The layout options for a Web Store eSeller are highlighted below. For each eSeller that you set up you will use either the top section (for Standard Layouts) or the bottom section (for Custom Layouts), but not both.<br /><img src="../Resources/Images/quick_eseller_settings.jpg" class="PWimg" /></p>
+        <p>To select a Standard Layout, follow the instructions provided at <MadCap:xref href="../Web_Store_eSellers/Web_CreatingeSeller.htm" target="" title="" alt="">Creating a Web Store eSeller</MadCap:xref>.</p>
+        <p>If you choose to use a Custom Layout, you'll need to create one first, as explained below. Then return to the Web Store eSeller and make your selection.</p>
+        <h4>Creating a Custom Layout</h4>
+        <p>The Custom Layouts editor provides a number of advanced customization options for when you need them, but for now you can get started just by selecting a layout and replacing the default banner logo with one of your own. The basic steps for doing this are as follows:</p>
+        <ol style="list-style-type: decimal;">
+            <li>Select one of the default layouts to use as a starting point for your layout.<br /><img src="../Resources/Images/quick_select_layout.jpg" class="PWimg" /></li>
+            <li>Name the layout and update your settings.<br /><img src="../Resources/Images/quick_name_layout.jpg" class="PWimg" /></li>
+            <li>Set the <span class="strong">Files </span>tab to show image files.<br /><img src="../Resources/Images/quick_show_images.jpg" class="PWimg"  /></li>
+            <li>Upload a new banner logo (named "banner.jpg") to replace the default one.<br /><img src="../Resources/Images/quick_upload.jpg" class="PWimg" /></li>
+            <li>Inspect and publish the layout.<br /><img src="../Resources/Images/quick_inspection.jpg" class="PWimg"  /></li>
+        </ol>
+        <p>Detailed information on Custom Layouts is available at <MadCap:xref href="../Layouts/Layouts_Custom.htm" target="" title="" alt="">Custom Layouts</MadCap:xref>.</p>
+        <p MadCap:conditions="Primary.Online">Next, see <MadCap:xref href="Doing_More_With.htm" target="" title="" alt="">Doing More with </MadCap:xref>.</p>
+    </body>
+</html>

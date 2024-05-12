@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="588" MadCap:lastWidth="1252">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_668458"></a><a name="Embedded_SDKReference_1955650137_76301"></a>eWeb_Today</h2>
+        <p>
+            <MadCap:keyword term="eWeb_Today" />Returns the current date, expressed as the number of days since Jan. 1, 2000. </p>
+        <p class="pwNote"><span class="strong">Tip</span>: <span class="strong">eWeb_Today</span> is for finding the current date when you're using the purchase library (libEWS.a/libEWS-GC.a). To find the current date with the validation library for Standard or Standard Enhanced serial numbers (libValidateUniversal.a), you can use <span class="strong">eSellerate_Today</span>. See <MadCap:xref href="SDK2_libMac_Today1.htm#Embedded_SDKReference_1955650137_647291" target="" title="" alt="">eSellerate_Today</MadCap:xref>.</p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>EWSLib.h <br />Included in the development project.</li>
+            <li>libEWS.a (standard) or<br />libEWS-GC.a (garbage collecting)<br />Included in the development project.</li>
+            <li>(EWSMac.framework/EWSMac-GC.framework is not required for <span class="strong">eWeb_Today</span>, but it would be needed for other functions in the example code shown here.)</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">unsigned long<span class="strong"> eWeb_Today</span><o style="font-weight: normal;"> ()</o></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "EWSLib.h"</p>
+        <p class="pwSDKCodeSamples">char *serialNumber;</p>
+        <p class="pwSDKCodeSamples">eSellerate_DaysSince2000 timeStamp;</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain serialNumber */</p>
+        <p class="pwSDKCodeSamples">timeStamp = eWeb_DateActivation("PUB775527079", "ACT123456789:9EUYLP-UZ8H-9J7J70-7FE4-6T18FY-72X9YK-FU9K-BDKLNQ-G53H-7FZTTU", serialNumber);</p>
+        <p class="pwSDKCodeSamples">if ( timeStamp + 30 &lt; eWeb_Today() ) {</p>
+        <p class="pwSDKCodeSamples1">	/* TO DO: use eWeb_ActivateSerialNumber to reactivate the serial number */</p>
+        <p class="pwSDKCodeSamples">} else {</p>
+        <p class="pwSDKCodeSamples1">	/* TO DO: handle error if one is returned; otherwise, no action is required */</p>
+        <p class="pwSDKCodeSamples">}</p>
+    </body>
+</html>

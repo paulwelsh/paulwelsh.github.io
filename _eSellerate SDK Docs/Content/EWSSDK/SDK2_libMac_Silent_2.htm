@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="896" MadCap:lastWidth="1226">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_527072"></a><a name="Embedded_SDKReference_1955650137_57829"></a>eWeb_SilentCheckForUpdate</h2>
+        <p>
+            <MadCap:keyword term="eWeb_SilentCheckForUpdate" />Contacts the eSellerate servers <o>without invoking the Embedded Web Store Engine in order to determine if an update is available for the identified SKU.</o></p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>EWSEmbedded.framework (standard) or <br />EWSEmbedded-GC.framework (garbage collecting)<br />Included in the development project. </li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">OSStatus <span class="strong">eWeb_SilentCheckForUpdate</span> ( <i>esellerID, SkuRefNum, previewID, AskToConnect, </i></p>
+        <p class="pwDefinition"><i>	trackingID </i>)</p>
+        <p class="pwDefinition"><i>esellerID</i> – eSeller RefNum string</p>
+        <p class="pwDefinition"><i>SkuRefNum</i> – SKU RefNum</p>
+        <p class="pwDefinition"><i>previewID</i> – Preview Certificate ID code (optional)</p>
+        <p class="pwDefinition"><i>askToConnect</i> – not yet implemented</p>
+        <p class="pwDefinition"><i>trackingID</i> – reserved for future functionality</p>
+        <p>
+            <br />See <MadCap:xref href="SDK2_libMac_RetValues_2.htm#Embedded_SDKReference_1955650137_528087">eSellerate Return Values</MadCap:xref> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>esellerID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            <o>String containing the Embedded Web Store ID, as found on the Sales Manager Embedded Web Store eSeller Summary page. Required.</o>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>SkuRefNum</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">String containing the SKU RefNum, <o>as found on the Sales Manager Embedded Web Store SKU Attributes page</o>. Required.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>previewID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">
+                            <o>String containing the Preview Certificate, as found on the Sales Manager Embedded Web Store eSeller Summary page. Required to purchase in Preview mode. Pass NULL in Active mode. If the Preview Certificate passed here does not match the Preview Certificate on the Sales Manager Embedded Web Store eSeller Summary page, the purchase will be Active. This means that you can clear the Preview Certificate in the Sales Manager to activate the eSeller without having to recompile your application.</o>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>askToConnect</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Boolean not yet implemented. Pass FALSE.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>trackingID</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowEnd_ColEnd">
+                        <p class="CellBody">String reserved for future functionality. Pass NULL.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for eWeb_SilentCheckForUpdate Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note</span>:&#160;All strings passed into the engine are UTF-8 encoded cStrings.<br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#import&lt;EWSEmbedded/EWSEmbedded.h&gt;</p>
+        <p class="pwSDKCodeSamples">OSStatus resultCode = eWeb_SilentCheckForUpdate("STR039256175", "SKU943434078", "NzIk6XXD", false, NULL);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: handle error, or invoke the eSellerate Embedded Web Store Engine with </p>
+        <p class="pwSDKCodeSamples">eWeb_CheckForUpdate */</p>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Install.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_CheckFor.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_IndexSeri.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_IndexFile.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Delete.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Launch.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_ValidateA.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Deactivat.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Confirm.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_ValidateS.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Standardi.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Protectin.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_NewFuncti.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/EWSSDK/SDK2.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Install.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Purchase.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_CheckFor.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Silent.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Reinstall.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_IndexSeri.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_IndexFile.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Delete.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Launch.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Activate.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Manual.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_ValidateA.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Date.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Deactivat.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Confirm.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_ValidateS.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Standardi.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Today.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_Protectin.htm" />
+    <Link
+      Url="Content/IntegratedSDK/SDK1_LibforMac_NewFuncti.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

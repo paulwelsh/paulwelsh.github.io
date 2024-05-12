@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="no-feedback" data-mc-search-type="Stem" data-mc-help-system-file-name="ApplicationHelp.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="eSellerate Affiliates">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Testing eST Downloads</title>
+        <script type="text/javascript">/* <![CDATA[ */
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6362037-18']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/StylesHTML5.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <h2><a name="eSellerateAffiliates_686029767_85936"></a><a name="eSellerateAffiliates_686029767_41684"></a>Testing eST Downloads</h2>
+        <p>The <span class="PrimaryCompanyName">eSellerate</span> system provides two ways to test eST downloads:</p>
+        <ul>
+            <li value="1">The Test eST Download function, which can be used prior to the release to affiliates. </li>
+            <li value="2">The Test eST Trial Version function, which is for use after the release to affiliates.</li>
+        </ul>
+        <p class="pwNote"><span class="strong">Note:</span> A test eST download will be identical to the one used by affiliates, except it will use "AFLTESTOK" as the affiliate ID.<br /></p>
+        <h5>To test an eST download:</h5>
+        <ol>
+            <li value="1">From the Test eST Download page, select the SKU to associate with this test. It must be the same SKU offered by the download you select in the next step.</li>
+            <li value="2">Select the download file you wish to test.</li>
+            <li value="3">Click <span class="strong">Test eST Download</span>.</li>
+            <li value="4">Launch the downloaded file, which will write an affiliate-specific URL to the registry. This URL is stored as the "URL" (string) value of the registry key "HKEY_CURRENT_USER\Software\eSellerate\Affiliates\PUB123456789\SKU123456789" </li>
+            <li value="5">Verify that your application is retrieving and making use of the correct affiliate information, which can be done in one of three ways: <ul><li value="1">To test an eST download that delivers an Integrated eSeller, launch the eSeller and initiate a purchase. When the Software Delivery Wizard appears, click <span class="strong">Start</span>. At any screen you choose, press <span class="strong">Control+Shift</span> and click on the "Powered by eSellerate" logo. The web store URL displayed should include the correct SKU RefNum and the "AFLTESTOK" affiliate ID.</li><li value="2">To test an eST download that delivers an Embedded Web Store eSeller, launch the eSeller and initiate a purchase. At any screen you choose, press <span class="strong">Control+Shift</span> and click on the globe in the browser status bar. The web store URL displayed should include the correct SKU RefNum and the "AFLTESTOK" affiliate ID.</li><li value="3">If your eST download uses an In-App Buy URL, you should initiate a purchase and verify that the URL includes the correct SKU RefNum and the "AFLTESTOK" affiliate ID.</li></ul></li>
+        </ol>
+        <h5>To use Test eST Trial Version:</h5>
+        <ol>
+            <li value="1">At the Available SKU Detail page, click Test eST Trial Version.</li>
+            <li value="2">Launch the downloaded file, which will write an affiliate-specific URL to the registry. This URL is stored as the "URL" (string) value of the registry key "HKEY_CURRENT_USER\Software\eSellerate\Affiliates\PUB123456789<br />\SKU123456789" </li>
+            <li value="3">Verify that your application is retrieving and making use of the correct affiliate information, which can be done in one of three ways: <ul><li value="1">To test an eST download that delivers an Integrated eSeller, launch the eSeller and initiate a purchase. When the Software Delivery Wizard appears, click <span class="strong">Start</span>. At any screen you choose, press <span class="strong">Control+Shift</span> and click on the "Powered by eSellerate" logo. The web store URL displayed should include the correct SKU RefNum and the "AFLTESTOK" affiliate ID.</li><li value="2">To test an eST download that delivers an Embedded Web Store eSeller, launch the eSeller and initiate a purchase. At any screen you choose, press <span class="strong">Control+Shift</span> and click on the globe in the browser status bar. The web store URL displayed should include the correct SKU RefNum and the "AFLTESTOK" affiliate ID. </li><li value="3">If your eST download uses an In-App Buy URL, you should initiate a purchase and verify that the URL includes the correct SKU RefNum and the "AFLTESTOK" affiliate ID.</li></ul></li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

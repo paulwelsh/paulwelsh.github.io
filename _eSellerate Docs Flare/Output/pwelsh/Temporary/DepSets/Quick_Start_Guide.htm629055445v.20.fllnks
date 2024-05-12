@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Getting_Started/Setting_Up_a_Basic_Web_Store.htm" />
+    <Link
+      Url="Content/Getting_Started/Adding_Functionality.htm" />
+    <Link
+      Url="Content/Getting_Started/Doing_More_With.htm" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Getting_Started/Setting_Up_a_Basic_Web_Store.htm" />
+    <Link
+      Url="Content/Getting_Started/Adding_Functionality.htm" />
+    <Link
+      Url="Content/Getting_Started/Doing_More_With.htm" />
+    <Link
+      Url="Project/VariableSets/Primary.flvar" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Quick Start Guide"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables>
+    <Variable
+      Name="Primary.CompanyName" />
+  </Variables>
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

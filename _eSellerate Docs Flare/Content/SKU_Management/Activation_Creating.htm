@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1171" MadCap:lastWidth="969" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Creating Product Activation Sets</h2>
+        <p>For an overview of Product Activation, see <MadCap:xref href="Activation_Overview.htm" target="" title="" alt="">Setting Up Product Activation</MadCap:xref>.</p>
+        <h5>To create a Product Activation set:</h5>
+        <ol>
+            <li>Click the <span class="strong">Product Activation</span> tab. The Product Activation Sets page appears.
+</li>
+            <li>Click <span class="strong">New</span>. The Product Activation Set Detail page appears.
+<br /><img src="../Resources/Images/sku_prod_act.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li>In the <span class="strong">Description </span>field, enter a description for this Product Activation set. This is a good place to note important details, such as "Used with Product X version 3.2, Q4 2009." The description is for internal identification only, and will not be visible to your customers.</li>
+            <li>Leave the <span class="strong">Unlimited Activations</span> check box cleared at this point. See <MadCap:xref href="Activation_Other.htm" target="" title="" alt="">Other Options for Activation</MadCap:xref> for details.
+</li>
+            <li>The <span class="strong">Activations Per Quantity</span> field is for specifying the number of activations to allow for each product purchased. For example, if five copies of Product X are purchased and the Activations Per Quantity is 1, each product is allowed one activation (plus any additional activations that you specify, as described below). You can enter a number here (whole numbers or decimals), or you can accept the default value of 1.
+</li>
+            <li>In the <span class="strong">Activations Beyond Quantity</span> field, enter the number of activations to allow beyond the quantity purchased (whole numbers only). If you accept the default value of 0, each product purchased will be allowed exactly the number of activations specified in the Activations Per Quantity field. Any value other than 0 will extend the activations. For example, assume that you enter 2 here and the Activations Per Quantity is 4. When a customer purchases two copies of Product X (which uses this activation set), the total number of activations allowed is: Quantity Purchased (2) x Activations Per Quantity (4) + Activations Beyond Quantity (2) = 10.
+</li>
+            <li>Leave the <span class="strong">Reclaim Activations</span> check box cleared at this point. See <MadCap:xref href="Activation_Other.htm" target="" title="" alt="">Other Options for Activation</MadCap:xref> for details.
+</li>
+            <li>
+                <p>The "Country Restrictions" option is for restricting customers in certain countries from activating your product. If an activation fails due to country restrictions, the SDK will return an error that indicates <MadCap:variable name="Primary.CompanyName" /> denied the activation request. </p>
+                <p>To use this option, make a selection from the <span class="strong">Country Restrictions</span> <![CDATA[ ]]>list. </p>
+                <p>If you need to edit or create a country restriction set before you make your selection, click <span class="strong">Save</span>, and then click <span class="strong">Edit Country Restriction Sets</span>.
+</p>
+            </li>
+            <li>To allow unlimited deactivations through the DeactivateSerialNumber API, select the <span class="strong">Unlimited Deactivations</span> check box.</li>
+            <li>The <span class="strong">Deactivations Per Quantity</span> field is for specifying the number of deactivations (successful calls to the DeactivateSerialNumber API) to allow for each product purchased. For example, if five copies of Product X are purchased and the Deactivations Per Quantity is 1, each product is allowed one deactivation (plus any additional deactivations that you specify, as described below). You can enter a number here (whole numbers or decimals), or you can accept the default value of 1.</li>
+            <li>In the <span class="strong">Deactivations Beyond Quantity</span> field, enter the number of deactivations to allow beyond the quantity purchased (whole numbers only). If you accept the default value of 0, each product purchased will be allowed exactly the number of deactivations specified in the Deactivations Per Quantity field. Any value other than 0 will extend the deactivations. For example, assume that you enter 2 here and the Deactivations Per Quantity is 4. When a customer purchases two copies of Product X (which uses this activation set), the total number of deactivations allowed is: Quantity Purchased (2) x Deactivations Per Quantity (4) + Deactivations Beyond Quantity (2) = 10.</li>
+            <li>Click <span class="strong">Save Changes</span>.</li>
+        </ol>
+        <p class="pwNote"><span class="strong">Note:</span> If you use country restrictions with your Product Activation sets (see the preceding step 8), we recommend using the same country restrictions for the SKUs that you plan to activate. Doing so can prevent scenarios in which customers are able to purchase a product, but are unable to use the product because of country restrictions on the activation. For information on assigning country restrictions at the SKU level, see <MadCap:xref href="SKU_Advanced.htm" target="" title="" alt="">Setting the SKU's Advanced Properties (Optional)</MadCap:xref>.
+</p>
+        <p class="pwNote"><span class="strong">Note:</span> The deactivation rules for a Product Activation set (see the preceding steps 9-11) apply only to deactivations made through the DeactivateSerialNumber API. These rules do not apply to deactivations that you can perform from the Activation Details page, which are unrestricted.</p>
+    </body>
+</html>

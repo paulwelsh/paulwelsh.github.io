@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Reports/Reports_SKUbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_VolumebyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CrossbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CouponsbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_UpSellbyCurrency.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="Content/Reports/Reports_SKUbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_VolumebyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CrossbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_CouponsbyCurrency.htm" />
+    <Link
+      Url="Content/Reports/Reports_UpSellbyCurrency.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="reports:Pricing"
+      Conditions=""
+      LocalConditions=""
+      Position="5" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

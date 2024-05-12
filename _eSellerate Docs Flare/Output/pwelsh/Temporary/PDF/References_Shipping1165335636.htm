@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1758" MadCap:lastWidth="798" MadCap:tocPath="References" MadCap:medium="print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="PDF">
+    <head><title>Creating Shipping Tables</title>
+        <link href="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 MadCap:xrefTargetName="Creating Shipping Tables" MadCap:sourceTitle="Creating Shipping Tables"><a MadCap:generatedBookmark="TOC" name="Creating Shipping Tables"></a>
+            <MadCap:keyword term="shipping:creating shipping tables" />Creating Shipping Tables</h2>
+        <p class="pwNote"><span class="strong">Note:</span> No shipping setup is required to use the eCD fulfillment service.</p>
+        <p>If any of your products require shipping, you will need to create at least one type of shipping table, as explained here. You can then designate shipping requirements at the SKU level. For details, see <MadCap:xref href="file:///H:/Win/_eSellerate Docs Flare/Content/SKU_Management/SKU_Advanced.htm" target="" title="" alt="" MadCap:xrefTarget="Setting the SKU's Advanced Properties (Optional)"><span style="color: Blue;" class="mcFormatColor"><u>"Setting the SKU's Advanced Properties (Optional)" on page 1</u></span></MadCap:xref>.</p>
+        <h3><a name="shippingunits"></a>About Shipping Units</h3>
+        <p>The eSellerate system uses shipping units to allow you complete flexibility in setting shipping prices. Rather than restrict pricing to a single measurement, such as weight, shipping units can be based on any criterion you choose.</p>
+        <p>The following are three different examples of shipping units.</p>
+        <ul>
+            <li value="1"><span class="strong">Weight </span>– In this case, you would enter a weight in the Shipping Units field of each SKU that requires shipping. You can use any system of measurement, as long as it's consistent.</li>
+            <li value="2"><span class="strong">Box size</span> – For this example, shipping units would increase relative to the size of the box required to ship the products.</li>
+            <li value="3"><span class="strong">Degree of difficulty</span> – Because of special handling requirements, some products can cost more to ship than others, regardless of weight or size. For instance, shipments that involve expensive electronics would likely require special handling that a CD shipment would not. Shipping units allow you to set pricing to handle these special situations.</li>
+        </ul>
+        <h5>To create a shipping table:</h5>
+        <ol>
+            <li value="1">Click the <span class="strong">Shipping </span>tab. The Shipping Tables page appears.</li>
+            <li value="2">Click <span class="strong">New</span>. The Shipping Table Detail page appears.<br /><img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/reference_shipping.jpg" class="PWimg" MadCap:conditions="Primary.Print" /></li>
+            <li value="3">In the <span class="strong">Shipping Type</span> field, enter the name that you want your customers to see for this option when they choose a shipping method.  </li>
+            <li value="4">If desired, enter a description in the <span class="strong">Description </span>field. This information will not be visible to your customers.</li>
+            <li value="5">
+                <p>In the first row of the Shipping Units dialog, enter the shipping costs for your entry-level shipping unit class.</p>
+                <p class="pwNote"><span class="strong">Note:</span> If you do not support shipping for a region, leave all its fields blank. If shipping is free for a region/shipping unit class, enter a zero in the field.</p>
+            </li>
+            <li value="6">In the <span class="strong">Shipping Units</span> field of the second row, enter the minimum shipping units required for your second shipping unit class. For instance, if you enter 5 here, all SKUs with fewer than 5 shipping units would use the rates from your first shipping units class.</li>
+            <li value="7">
+                <p>Enter the shipping costs for the second row.</p>
+                <p class="pwNote"><span class="strong">Note:</span> Make sure that your pricing covers the largest shipping unit available to your customers. Otherwise, you may inadvertently undercharge for shipping on items that use higher unit values.</p>
+            </li>
+            <li value="8">When you're finished, click <span class="strong">Save</span>.</li>
+        </ol>
+        <h3>Shipping Table Example</h3>
+        <p>For SKUs using the shipping table shown here, the following statements would be true:</p>
+        <ul>
+            <li value="1">Shipping is available to these regions only: U.S., Canada, Alaska/Hawaii and Europe.</li>
+            <li value="2">If the SKU requires 1.25 shipping units, shipping to the USA region is free.</li>
+            <li value="3">If the SKU requires 7.5 shipping units, the shipping rates are $11.50 for USA and $15.25 for all other supported regions.</li>
+            <li value="4">If the SKU requires 10.00 or more shipping units, the maximum shipping rates ($15.50 for USA, $21.25 for all other supported regions) apply.</li>
+        </ul>
+        <p>
+            <img src="file:///H:/Win/_eSellerate Docs Flare/Output/pwelsh/Temporary/PDF/PDF_1ABAD487/Resources/Images/reference_sample_ship.jpg" class="PWimg" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1192" MadCap:lastWidth="706">
+    <head>
+        <link href="../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2><a name="Embedded_SDKReference_1955650137_527962"></a><a name="Embedded_SDKReference_1955650137_42314"></a>eWeb_IndexGetResultDataValue</h2>
+        <p>
+            <MadCap:keyword term="eWeb_IndexGetResultDataValue" />Returns the data for the supplied record/field combination. In order to provide enough memory for the resultant data value, call <span class="strong">eWeb_IndexGetResultDataLength</span>.</p>
+        <p class="pwNote"><span class="strong">Tip</span>: This API can retrieve the value of indexed eSellerate variables only. Indexed variables are designated as "Loop Only" on the variables page at <a><a href="http://publishers.esellerate.net/embeddedvar.aspx">http://publishers.esellerate.net/embeddedvar.aspx</a></a>. To retrieve the value of a non-indexed variable, use <span class="strong">Web_GetResultDataValue</span>.<br /></p>
+        <h4>Required Files</h4>
+        <ul>
+            <li>EWSLib.h<br />Included in the development project.</li>
+            <li>libEWS.a (standard) or <br />libEWS-GC.a (garbage collecting)<br />Included in the development project.</li>
+            <li>EWSMacCompress.tar.gz or EWSMac.framework (standard) or<br />EWSMacCompress-GC.tar.gz or EWSMac-GC.framework (garbage collecting)<br />Included in the development project.</li>
+        </ul>
+        <h4>Definition</h4>
+        <p class="pwDefinition">OSStatus <span class="strong">eWeb_IndexGetResultDataValue</span> ( <i>resultData, Record, Field, Index, Value, ValueLen )</i></p>
+        <p class="pwDefinition"><i>resultData</i> – results obtained from the Purchase or CheckForUpdate family of functions</p>
+        <p class="pwDefinition"><i>Record</i> – name of the record containing the variable being searched </p>
+        <p class="pwDefinition"><i>Field – </i>name of the field within the record for which you wish to search</p>
+        <p class="pwDefinition"><i>Index – </i><i style="font-style: normal;">zero-based index of the record/field instance</i>
+        </p>
+        <p class="pwDefinition"><i>Value</i> – buffer to receive the value upon success</p>
+        <p class="pwDefinition"><span class="_Override" style="font-style: italic;">ValueLen</span> – length of the buffer to receive the value upon success</p>
+        <p>
+            <br />For a listing of all eSellerate variables that Embedded Web Store eSellers can pull from result data, use the following URL: <a><a href="http://publishers.esellerate.net/embeddedvar.aspx" target="_blank">http://publishers.esellerate.net/embeddedvar.aspx</a></a>.</p>
+        <p>See <MadCap:xref href="SDK2_libMac_RetValues.htm#Embedded_SDKReference_1955650137_528087" target="" title="" alt="">eSellerate Return Values</MadCap:xref> for details on return values.</p>
+        <table style="caption-side: bottom;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColSep">
+                        <p class="CellHeading"><b>Parameter</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">
+                        <p class="CellHeading"><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>resultData</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Address of a declared variable of type char *. This should have already been filled by <span class="strong">eWeb_Purchase</span> or <span class="strong">eWeb_CheckForUpdate</span>.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>Record</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody">Name of the record containing the variable being searched. Required. An example of a valid record name follows:</p>
+                        <p class="CellBody">Complete variable name: _CartItem.Quantity<br />Record name: _CartItem</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>Field</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Name of the field within the record for which you wish to search. Required. An example of a valid field name follows:</p>
+                        <p class="CellBody">Complete variable name: _CartItem.Quantity<br />Field name: Quantity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>Index</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                        <p class="CellBody"><i style="font-style: normal;">Zero-based index of the record/field instance. Required.</i>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                        <p class="CellBody_Italic"><i>Value</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                        <p class="CellBody">Buffer to receive the value upon success. Required.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep">
+                        <p class="CellBody_Italic"><i>ValueLen</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd">
+                        <p class="CellBody">Length of the buffer to receive the value upon success. Required.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <caption>Parameters for eWeb_IndexGetResultDataValue Function
+            </caption>
+        </table>
+        <p class="pwNote"><span class="strong">Note</span>:&#160;All strings passed into the engine are UTF-8 encoded cStrings.<br /></p>
+        <h4>Example</h4>
+        <p class="pwSDKCodeSamples">#include "EWSLib.h"</p>
+        <p class="pwSDKCodeSamples">char *resultData = NULL;</p>
+        <p class="pwSDKCodeSamples">char *serialNumber = "";</p>
+        <p class="pwSDKCodeSamples">/* TO DO: obtain resultData by calling an Embedded Web Store invoking function */</p>
+        <p class="pwSDKCodeSamples">OSStatus resultCode = eWeb_IndexGetResultDataValue(resultData, "_OrderItem", "SerialNumber", 0, &amp;serialNumber, 64);</p>
+        <p class="pwSDKCodeSamples">/* TO DO: utilize value retrieved */</p>
+        <p class="pwSDKCodeSamples">eWeb_DisposeResultData(resultData);</p>
+    </body>
+</html>

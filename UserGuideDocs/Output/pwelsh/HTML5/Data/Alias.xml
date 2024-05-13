@@ -201,4 +201,8 @@
     <Map Name="Translations" Link="Layouts/Translations.htm" ResolvedId="1030" />
     <Map Name="Languages" Link="Layouts/Language_Selection.htm" ResolvedId="1031" />
     <Map Name="Lexicon" Link="Layouts/Custom_Layout_Lexicon.htm" ResolvedId="1032" />
+    <Map Name="Third_Party_Tracking" Link="Advanced_Sales_Options/Advanced_ThirdParty.htm" ResolvedId="1033" />
+    <Map Name="Page_Tracking_Web" Link="Web_Store_eSellers/Web_PageTracking.htm" ResolvedId="1034" />
+    <Map Name="Page_Tracking_EWS" Link="Embedded_Web_Store_eSellers/EWS_PageTracking.htm" ResolvedId="1035" />
+    <Map Name="SeeWhy_Config" Link="Advanced_Sales_Options/Advanced_SeeWhy.htm" ResolvedId="1036" />
 </CatapultAliasFile>

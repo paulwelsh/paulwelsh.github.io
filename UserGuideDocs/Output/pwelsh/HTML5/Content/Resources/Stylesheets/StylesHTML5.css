@@ -77,29 +77,6 @@ a.Popup
 	
 }
 
-a:link
-{
-	text-decoration: underline;
-}
-
-a:visited
-{
-	color: #0000ff;
-	text-decoration: underline;
-}
-
-a:active
-{
-	cursor: hand;
-}
-
-a:hover
-{
-	cursor: hand;
-	text-decoration: underline;
-	color: #708090;
-}
-
 p
 {
 	margin-top: .5em;
@@ -511,18 +488,6 @@ a.NoUnderline
 	
 }
 
-a.NoUnderline:link
-{
-	text-decoration: none;
-	color: #0000ff;
-}
-
-a.NoUnderline:visited
-{
-	text-decoration: none;
-	color: #0000ff;
-}
-
 img.PWimgAPS
 {
 	border: solid 1.00px #000000;
@@ -539,6 +504,48 @@ MadCap|xref:hover
 {
 	text-decoration: underline;
 	color: #708090;
+}
+
+img.LargeImages
+{
+	mc-thumbnail-max-width: auto;
+	mc-thumbnail-max-height: 96px;
+	mc-thumbnail: popup;
+}
+
+a:link
+{
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	cursor: hand;
+	text-decoration: underline;
+	color: #708090;
+}
+
+a:active
+{
+	cursor: hand;
+}
+
+a.NoUnderline:link
+{
+	text-decoration: none;
+	color: #0000ff;
+}
+
+a.NoUnderline:visited
+{
+	text-decoration: none;
+	color: #0000ff;
 }
 
 a.NoUnderline:hover

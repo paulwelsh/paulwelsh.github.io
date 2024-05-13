@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1" DescendantCount="304">
+<CatapultToc Version="1" DescendantCount="312">
     <TocEntry Title="Home" Link="/Content/Title_Page.htm" ComputedResetPageLayout="true" ComputedFirstTopic="true" DescendantCount="0" />
     <TocEntry Title="eSellerate User's Guide" Link="/Content/eSellUsersGuide.htm" ComputedFirstTopic="false" DescendantCount="0" />
     <TocEntry Title="eSellerate SDK Reference" Link="/Content/eSellSDKRef.htm" ComputedFirstTopic="false" DescendantCount="0" />
@@ -156,7 +156,7 @@
         </TocEntry>
         <TocEntry Title="Selecting a Date from the Calendar Interface" Link="/Content/Reports/Reports_CalendarInterface.htm" ComputedFirstTopic="false" DescendantCount="0" />
     </TocEntry>
-    <TocEntry Title="Advanced Sales Options" Link="/Content/Advanced_Sales_Options/AdvancedSalesOptions.htm" StartSection="false" StartChapter="false" PageType="first" PageNumber="1" PageNumberReset="continue" ComputedFirstTopic="false" DescendantCount="56">
+    <TocEntry Title="Advanced Sales Options" Link="/Content/Advanced_Sales_Options/AdvancedSalesOptions.htm" StartSection="false" StartChapter="false" PageType="first" PageNumber="1" PageNumberReset="continue" ComputedFirstTopic="false" DescendantCount="62">
         <TocEntry Title="Setting Up Subscription-Based Licensing" Link="/Content/Advanced_Sales_Options/Advanced_SettingUpSub.htm" ComputedFirstTopic="false" DescendantCount="12">
             <TocEntry Title="Getting Started: About Subscriptions Page" Link="/Content/Advanced_Sales_Options/Advanced_SigningUpSub.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Overview of Subscriptions" Link="/Content/Advanced_Sales_Options/Advanced_OverviewSub.htm" ComputedFirstTopic="false" DescendantCount="0" />
@@ -218,6 +218,14 @@
             <TocEntry Title="Volume Discount Example" Link="/Content/Advanced_Sales_Options/Advanced_VolumeExample.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Creating Volume Discount Sets" Link="/Content/Advanced_Sales_Options/Advanced_VolumeCreating.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Assigning Volume Discounts to eSellers" Link="/Content/Advanced_Sales_Options/Advanced_VolumeAssign.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Setting Up Third-Party Integration" Link="/Content/Advanced_Sales_Options/Advanced_SettingUpIntegration.htm" ComputedFirstTopic="false" DescendantCount="5">
+            <TocEntry Title="Setting Up Third-Party Tracking" Link="/Content/Advanced_Sales_Options/Advanced_ThirdParty.htm" ComputedFirstTopic="false" DescendantCount="3">
+                <TocEntry Title="Google Analytics Tracking Methods" Link="/Content/Advanced_Sales_Options/Advanced_GA.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Custom JavaScript Tracking Methods" Link="/Content/Advanced_Sales_Options/Advanced_JavaScript.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Custom Pixel Tracking Methods" Link="/Content/Advanced_Sales_Options/Advanced_Pixel.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="SeeWhy Configuration" Link="/Content/Advanced_Sales_Options/Advanced_SeeWhy.htm" ComputedFirstTopic="false" DescendantCount="0" />
         </TocEntry>
     </TocEntry>
     <TocEntry Title="eSellerate Affiliates" Link="/Content/eSellerate_Affiliates/Affiliates.htm" conditions="Primary.eSellerateOnly" ComputedFirstTopic="false" DescendantCount="12">
@@ -283,11 +291,12 @@
         </TocEntry>
         <TocEntry Title="My Profile" Link="/Content/User_Management/User_MyProfile.htm" ComputedFirstTopic="false" DescendantCount="0" />
     </TocEntry>
-    <TocEntry Title="Embedded Web Store eSellers" Link="/Content/Embedded_Web_Store_eSellers/EWS_Main.htm" conditions="Primary.eSellerateOnly" ComputedFirstTopic="false" DescendantCount="14">
+    <TocEntry Title="Embedded Web Store eSellers" Link="/Content/Embedded_Web_Store_eSellers/EWS_Main.htm" conditions="Primary.eSellerateOnly" ComputedFirstTopic="false" DescendantCount="15">
         <TocEntry Title="Development Options" Link="/Content/Embedded_Web_Store_eSellers/EWS_DevOptions.htm" ComputedFirstTopic="false" DescendantCount="0" />
         <TocEntry Title="Overview" Link="/Content/Embedded_Web_Store_eSellers/EWS_Overview.htm" ComputedFirstTopic="false" DescendantCount="0" />
-        <TocEntry Title="Creating an Embedded Web Store eSeller" Link="/Content/Embedded_Web_Store_eSellers/EWS_CreatingeSeller.htm" ComputedFirstTopic="false" DescendantCount="2">
+        <TocEntry Title="Creating an Embedded Web Store eSeller" Link="/Content/Embedded_Web_Store_eSellers/EWS_CreatingeSeller.htm" ComputedFirstTopic="false" DescendantCount="3">
             <TocEntry Title="Embedded Web Store: General Attributes" Link="/Content/Embedded_Web_Store_eSellers/EWS_IDNameLayout.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Embedded Web Store: Page Tracking" Link="/Content/Embedded_Web_Store_eSellers/EWS_PageTracking.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Embedded Web Store: Receipt Information" Link="/Content/Embedded_Web_Store_eSellers/EWS_ReceiptInfo.htm" ComputedFirstTopic="false" DescendantCount="0" />
         </TocEntry>
         <TocEntry Title="Adding Embedded Web Store SKUs" Link="/Content/Embedded_Web_Store_eSellers/EWS_AddingSKUs.htm" ComputedFirstTopic="false" DescendantCount="4">
@@ -318,10 +327,11 @@
         <TocEntry Title="Configuring Your Application’s Source Code to Reference the eSeller" Link="/Content/Integrated_eSellers/Integrated_ConfiguringSo.htm" ComputedFirstTopic="false" DescendantCount="0" />
         <TocEntry Title="CheckForUpdate Redirect Example" Link="/Content/Integrated_eSellers/Integrated_CFURedirectEx.htm" ComputedFirstTopic="false" DescendantCount="0" />
     </TocEntry>
-    <TocEntry Title="Web Store eSellers" Link="/Content/Web_Store_eSellers/Web_Main.htm" ComputedFirstTopic="false" DescendantCount="19">
+    <TocEntry Title="Web Store eSellers" Link="/Content/Web_Store_eSellers/Web_Main.htm" ComputedFirstTopic="false" DescendantCount="20">
         <TocEntry Title="Overview" Link="/Content/Web_Store_eSellers/Web_Overview.htm" ComputedFirstTopic="false" DescendantCount="0" />
-        <TocEntry Title="Creating a Web Store eSeller" Link="/Content/Web_Store_eSellers/Web_CreatingeSeller.htm" ComputedFirstTopic="false" DescendantCount="4">
+        <TocEntry Title="Creating a Web Store eSeller" Link="/Content/Web_Store_eSellers/Web_CreatingeSeller.htm" ComputedFirstTopic="false" DescendantCount="5">
             <TocEntry Title="Web Store: General Attributes" Link="/Content/Web_Store_eSellers/Web_eSellerDetail.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Web Store: Page Tracking" Link="/Content/Web_Store_eSellers/Web_PageTracking.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Web Store: Receipt Information" Link="/Content/Web_Store_eSellers/Web_Receipt.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Web Store: Private Login" Link="/Content/Web_Store_eSellers/Web_PrivateLogin.htm" ComputedFirstTopic="false" DescendantCount="0" />
             <TocEntry Title="Web Store: Layout" Link="/Content/Web_Store_eSellers/Web_Layout.htm" ComputedFirstTopic="false" DescendantCount="0" />

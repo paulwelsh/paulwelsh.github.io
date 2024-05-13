@@ -196,6 +196,16 @@ a.MCHelpControl
 	text-decoration: none;
 }
 
+.img
+{
+	border: none;
+}
+
+.img.imgLargeImages
+{
+	
+}
+
 .MCWebHelpFramesetLink a
 {
 	
